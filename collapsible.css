@@ -1,0 +1,255 @@
+.burguermenu {
+    display: inline-block;
+    width: 2%;
+    cursor: pointer;
+    left: 5%;
+    position: fixed;
+    padding: 0.6% 1% 0.3% 1%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: #00000091;
+    z-index: 100;
+    transition: 0.2s ease-in;
+    font-size: 1.3vw;
+  }
+  .burguermenu:hover {
+    display: inline-block;
+  
+    cursor: pointer;
+    position: fixed;
+
+    background-color: #00000091;
+    z-index: 100; 
+    border-bottom: 10px solid white;
+transition: 0.2s ease-in;
+animation: changeBg 0.5s infinite;
+background: url(R1.jpeg);
+  }
+
+  .burger-line {
+    height: 0.3vw;
+    margin-bottom: 0.3vw;
+    background: #ffffff;
+    transition: all 0.4s ease; /* important for animation */
+  }
+
+
+
+  .burguermenu-bar {
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    height: 0%;
+    width: 100%;
+    margin-top: 0%;
+  
+    z-index: 8;
+    overflow-y: hidden;
+    transition: 1s cubic-bezier(0, 0, 0.17, 0.84);
+    background-color: rgba(0, 0, 0, 0.80);
+    
+  }
+
+
+  .CloseBTNburguermenu{
+    position: sticky;
+    top: 14%;
+    color: white;
+    float: right;
+    right: 21%;
+    margin-top: -2%;
+    font-size: 5vw;
+    z-index: 999;
+    cursor: pointer;
+  
+  }
+
+
+
+.CloseBTNburguermenu:hover{
+
+  font-size: 5vw;
+
+
+}
+
+.collapsible {
+  background-color: #000000d2;
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  margin-top: 2%;
+  margin-left: 25%;
+  width: 50%;
+  border: 1px solid white;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  text-align: center;
+}
+
+.collapsible.active, .collapsible:hover {
+  
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 10px solid white;
+  transition: 0.1s cubic-bezier(0, 0, 0.17, 0.84);
+  animation: changeBg 0.5s infinite;
+  background: url(R1.jpeg);
+}
+
+.content {
+  padding: 2%;
+  color: #008f00;
+  animation: 1s cubic-bezier(0, 0, 0.17, 0.84);
+  display: none;
+  margin-left: 25%;
+  width: 45.9%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #000000de;
+  border: 1px solid white;
+  height: 30%;
+}
+
+
+
+
+  /* clear fix */
+  .grid-noticias{
+    content: '';
+    display: block;
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .filterDiv-noticias {
+
+    float: left;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 10px;
+    margin: 1%;
+    display: block;
+    width: 26%;
+    border: 1px dashed rgb(255, 255, 255);
+    transition: box-shadow .25s;
+    font-weight: 300;
+    font-size: 0.8vw;
+    padding: 2%;
+ 
+    text-align: left;
+   
+  }
+
+  .filterDiv-noticias img {
+  width: 100%;
+  height: auto;
+
+  }
+
+  .filterDiv-noticias:hover {
+    cursor: move;
+    box-shadow: 0px 5px;
+    border: 1px solid rgb(255, 255, 255);
+    animation: changeBg 0.5s infinite !important;
+    background: url(R1.jpeg);
+    border-radius: 15px;
+  }
+
+.imagem-noticia{
+    cursor: pointer;
+    z-index: 1;
+    background: inherit;
+    border: none;
+    display: block;
+    outline: none;
+   
+   color: #000000;
+}
+  
+
+
+.filterDiv-eventos {
+
+    float: left;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 10px;
+    margin: 1%;
+    display: block;
+    width: 43%;
+    border: 1px dashed rgb(255, 255, 255);
+    transition: box-shadow .25s;
+    font-weight: 300;
+    font-size: 0.8vw;
+    padding: 2%;
+ min-height: 20%;
+    text-align: left;
+   
+  }
+
+
+
+  .filterDiv-eventos:hover {
+    cursor: move;
+    box-shadow: 0px 5px;
+    border: 1px solid rgb(255, 255, 255);
+    animation: changeBg 0.5s infinite !important;
+    background: url(R1.jpeg);
+    border-radius: 15px;
+  }
+
+h1{
+ 
+    font-size: 0.7vw;
+    line-height: 1.5vw;
+    font-weight: lighter;
+    color: white;
+}
+h2{
+    font-size: 1vw;
+    line-height: 1.2vw;
+    font-weight: lighter;
+    color: white;
+}
+h3{
+    font-size: 0.7vw;
+    line-height: 1.5vw;
+    font-weight: lighter;
+    color: white;
+}
+
+
+
+
+a.noticia-link:link{
+    color: white;
+    text-decoration: underline;
+}
+a.noticia-link:visited{
+    color: white;
+    text-decoration: underline;
+}
+
+a.noticia-link:hover{
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+a.noticia-link:active{
+    color: white;
+    text-decoration: underline;
+}
+
+
+.lexico p{
+color: white;
+padding-bottom: 1%;
+font-size: 1vw;
+}
+
+

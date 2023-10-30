@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, inicial=scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/networkgraph.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <title>Sintra Street Art Mapping</title>
+    <link rel="shortcut icon" type="image/png" href="sintraicon.png">
+    <link href="menu.css" rel="stylesheet">
+    <link href="stylearquivov3.css" rel="stylesheet" />
+    <link href="collapsible.css" rel="stylesheet">
+    <link href="network/networkstyle2.css" rel="stylesheet" />
+  
+  </head>
+
+
+
+
+
+  <body>
+    <header>
+
+      <div class="menucontainer"> 
+          
+
+        <a class="title" style="background-color: black;" > Sintra  <span class="typing1"></span>  Mapping  </a>
+    
+        <div class="about-bar">
+                       
+                          
+          <div class="CloseBTNlexicon1">&times;</div>
+                 
+                 <div class="title-about"><i>About</i></div>
+                 
+                 <div class="texto">
+     
+    
+                  <div class="about">
+                   
+                   A <i>Street Art</i> tem as suas raízes no <i>graffiti</i> e na cultura urbana da segunda metade do século XX. 
+                   Influenciada pela emergência da cultura hip hop, a revolução do <i>graffiti</i> teve lugar, inicialmente, 
+                   em Nova Iorque nos anos 1970 e 1980. Nessa altura, a juventude mais underground, irreverente e 
+                   de uma condição social mais precária começou a pintar profusamente as carruagens do metro e comboios, 
+                   bem como paredes e muros, dando voz a uma rebeldia antiautoritária, que procurava ter uma identidade 
+                   sentida, ouvida e reconhecida. O <i>graffiti</i> ainda é um estilo presente no quotidiano actual, 
+                   mas foi transformado e alterado de tal forma que atualmente torna-se díficil perceber as diferenças 
+                   quando relacionado com a <i>Street Art</i>.
+             
+                   <br><br>
+                   Neste sentido, hoje em dia, a <i>Street Art</i> é considerada um fenómeno global e uma prática multidimensional 
+                   entre o <i>graffiti</i>, a arte pública e as artes plásticas. Apesar de ser algo estigmatizado e existir uma linha 
+                   cinzenta entre a legalidade e a ilegalidade, a <i>Street Art</i> tornou-se uma forma de expressão e inclusão social, 
+                   através da sua inevitável relação e associação a movimentos políticos e às dinâmicas sociais (Ferreira, 2018). 
+                   A variedade de conteúdos, características, ideologias e conceitos é muito ampla, sendo estas as principais 
+                   razões pelas quais a <i>Street Art</i> é considerada uma expressão artística associada à contestação e protesto social. 
+                   Instalações, murais, <i>pieces</i>, <i>yarn-bombings</i>, <i>stickers</i>, mosaicos, <i>stickers</i>, posters, <i>tags</i>, 
+                   <i>throw-ups</i> e <i>stencils</i> são algumas das técnicas e estilos mais utilizados na disseminação de arte, mensagens, narrativas e manifestações 
+                   que se encontram presentes no espaço público.
+                   
+                  <br><br>
+                
+                  O projeto <i>“Sintra Street Art Mapping”</i> é uma plataforma open-source para a memória e exploração visual da <i>Street Art</i>
+                  do concelho de Sintra. Esta abordagem procura promover uma reflexão e contextualização informada sobre a relação da <i>Street Art</i>, 
+                  enquanto manifestação artística e expressiva de natureza efémera, com as expressões e dinâmicas de contestação, transformação 
+                  e inclusão social, através de diferentes representações visuais de informação interativas (mapeamento, arquivo e redes de conceitos).
+                  
+                  
+                  </div>
+             
+                  <div class="names" >
+                   <b>Marco Alpoim</b> 
+                   <br> <br>
+                    Projecto final do mestrado  
+                    em Design de Comunicação da Faculdade  
+                    de Belas-Artes da Universidade de Lisboa 
+               
+                   <br> <br>
+                   <b>Orientação</b> <br>
+                   Pedro Almeida <br>
+                   António Nicolas <br>
+                   <br>
+                   <b>Desenvolvimento <i>Web</i></b> <br>
+                   Bibliotecas: jQuery, packery, leaflet, typed<br>
+                   Fonte: ocr<br>
+                   <br>
+                 
+                   2022/23<br>
+                   <br>
+                
+                  </div>
+             
+             
+             
+                  </div>
+                      
+                       
+                   </div>
+         
+         
+        <a class="mapa" href="index.html" >Mapa </a>
+        <a class="arquivo" href="arquivo.html" >Arquivo  </a>
+        <a class="rede-ativo" href="rede.html" >Rede</a>
+        <a class="blank">ola</a>
+        <a class="addmore" href="addmore_login.html" >+</a>
+        <div class="noise"></div>
+
+        <a class="burguermenu" > 
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div> 
+        </a>
+    
+         <div class="burguermenu-bar">
+                                     
+        <div class="CloseBTNburguermenu">&times;</div>
+<br><br><br><br><br><br>
+<button type="button" class="collapsible">Notícias</button>
+
+<div class="content">
+
+<div class="grid-noticias">
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not1.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2021</h1>
+<h2>VÍDEO: o incrível tributo de um artista português a Senna e Hamilton</h2>
+<h3> <a class="noticia-link" href="https://cnnportugal.iol.pt/lewis-hamilton/ayrton-senna/video-o-incrivel-tributo-de-um-artista-portugues-a-senna-e-hamilton">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not2.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>Artista portuguesa no ranking dos melhores do mundo em arte urbana</h2>
+<h3> <a class="noticia-link" href="https://creativenews.pt/2023/01/08/artista-portuguesa-no-ranking-dos-melhores-do-mundo-em-arte-urbana/">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not3.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>The World of Banksy: exposição (não)-autorizada fica em Lisboa até final do ano</h2>
+<h3> <a class="noticia-link" href="https://www.dn.pt/cultura/the-world-of-banksy-exposicao-nao-autorizada-fica-em-lisboa-ate-final-do-ano-15653405.html">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not4.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2022</h1>
+<h2>Arte urbana: há três murais portugueses entre os melhores do mundo</h2>
+<h3> <a class="noticia-link" href="https://www.idealista.pt/news/ferias/turismo/2022/02/03/50805-arte-urbana-ha-tres-murais-portugueses-entre-os-melhores-do-mundo">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not5.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>Festival de arte urbana de Bragança tem o primeiro mural criado com inteligência artificial</h2>
+<h3> <a class="noticia-link" href="https://cnnportugal.iol.pt/videos/festival-de-arte-urbana-de-braganca-tem-o-primeiro-mural-criado-com-inteligencia-artificial/648eeeac0cf2dce741bd8b91">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not6.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2019</h1>
+<h2>Street Art em Portugal: um roteiro improvável</h2>
+<h3> <a class="noticia-link" href="https://bercodomundo.com/2019/09/street-art-portugal.html">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not7.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2021</h1>
+<h2>Street art eternizada no digital</h2>
+<h3> <a class="noticia-link" href="https://eco.sapo.pt/especiais/street-art-eternizada-no-digital-nft-chegam-a-portugal-pelas-maos-da-underdogs/">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-noticias">
+<div class="imagem-noticia"> 
+<img  src="noticias/not8.jpg" alt="">
+</div> 
+<div class="Description-noticia">
+<h1>2022</h1>
+<h2>Nasceu em Lisboa o primeiro ‘Street Park Art’ do país</h2>
+<h3> <a class="noticia-link" href="https://www.idealista.pt/news/imobiliario/construcao/2022/07/08/53059-nasceu-em-lisboa-o-primeiro-street-park-art-do-pais">ver mais</a></h3>
+</div>
+
+</div>
+</div>
+
+</div>
+
+<button type="button" class="collapsible">Eventos e Iniciativas</button>
+
+<div class="content">
+
+<div class="grid-eventos">
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>Lisboa: Exposição de arte urbana - Urban(R)Evolution</h2>
+<h3> <a class="noticia-link" href="https://www.getyourguide.pt/lisboa-l42/lisboa-exposicao-de-arte-urbana-urbanrevolution-t522481/?ranking_uuid=7fc346af-3333-44d0-9012-192c9c3b747f">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>Showcase 2023 - <br> Candidaturas</h2>
+<h3> <a class="noticia-link" href="https://outdoorarts.pt/post/showcase-2023-candidaturas/">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>5.ª edição do MURO Festival <br> de Arte Urbana LX</h2>
+<h3> <a class="noticia-link" href="http://gau.cm-lisboa.pt/muro.html">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>Festival <br> TODOS</h2>
+<h3> <a class="noticia-link" href="http://gau.cm-lisboa.pt/noticias/detalhe/news/detail/News/festival-todos-2023.html">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2022</h1>
+<h2>The World as a Whole <br> - Documentary 2022</h2>
+<h3> <a class="noticia-link" href="https://www.under-dogs.net/blogs/projects/the-world-as-a-whole-documentary-2022">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>Arte de Portas <br> Abertas</h2>
+<h3> <a class="noticia-link" href="https://www.arteportasabertas.com/">ver mais</a></h3>
+</div>
+
+</div>
+<div class="filterDiv-eventos">
+
+<div class="Description-noticia">
+<h1>2023</h1>
+<h2>MURAL 18 | Sintra junta-se a um novo roteiro de arte urbana</h2>
+<h3> <a class="noticia-link" href="https://cm-sintra.pt/atualidade/cultura/mural-18-sintra-junta-se-a-um-novo-roteiro-de-arte-urbana">ver mais</a></h3>
+</div>
+
+</div>
+
+<br><br>
+</div>
+
+</div>
+
+<button type="button" class="collapsible">Glossário</button>
+
+<div class="content">
+
+
+  <div class="lexico">
+    <p><b>A</b></p>
+     <p>Arte Pública – Variante inócua, comissionada, institucional e legal da Street Art, produzida e experienciada, diariamente, nos diferentes ambientes urbanos e espaços públicos.</p>
+    <p>Arte Urbana – Variante de Street Art, institucional e legalizada, presente em contexto de museus, galerias e agentes instituídos no mundo da arte.</p>
+    <p><b>B</b></p>
+    <p>Bombing (to bomb) – Ato de espalhar um tag, um throwie, um lettering ou mesmo um piece, desde que seja de modo prolífico e intenso, alcançando o maior número possível de locais.
+    </p>
+    <p><b>C</b></p>
+    <p>Crew – Refere-se a uma união de writers, bastando dois ou três indivíduos para que se assumam como crew, se bem que frequentemente dela faça parte no mínimo meia dúzia de writers, que colaboram na criação e promoção da Street Art no espaço público. Estes writers partilham, geralmente, uma tag coletiva, uma mensagem e um estilo ou estética comum, trabalham em grupo, dividem tarefas e defendem-se mutuamente.</p>
+    <p><b>D</b></p>
+    <p>Dinâmicas Sociais – Atividades e comportamentos coletivos que envolvem uma comunidade interagindo entre si ou entre outras comunidades. Estas determinam as normas sociais, os valores, as tradições e os costumes que guiam o comportamento das pessoas numa determinada sociedade.</p>
+    <p><b>E</b></p>
+    <p>Efemeridade – Refere-se a instalações ou criações artísticas temporárias no espaço público, intencionalmente efémeras ou de curta duração.</p>
+    <p>Espaço Público – Local, dentro do território urbano tradicional, de uso comum e posse coletiva, destinado à circulação e interação das pessoas com a cidade e onde a Street Art e Arte pública podem surgir.
+    </p>
+    <p><b>G</b></p>
+    <p>Graffiti – Arte escrita, pintada ou desenhada, com tintas spray, sobre uma parede ou outra superfície. O graffiti é geralmente obsceno, informativo e descritivo, feito sem permissão no espaço público.</p>
+    <p><b>I</b></p>
+    <p>Instalações – Obras de arte, temporárias ou permanentes, que surgem de vários tamanhos, formas e materiais e encontram-se, habitualmente, instaladas no espaço público e estão acessíveis ao público de forma gratuita. No entanto, as instalações têm uma vertente mais privada, ou seja, encontram-se, também, instaladas em espaços interiores.
+    </p>
+    <p>Institucional – Encomendas públicas, financiadas por instituições, organismos, plataformas ou municípios.</p>
+    <p><b>L</b></p>
+    <p>Lettering – Surge como uma variante da assinatura tag e consiste, essencialmente, num desenho personalizado de uma ou várias letras, em grandes ou pequenas dimensões.
+    </p>
+    <p><b>M</b></p>
+    <p>Mosaicos – Técnica única de arte pública, utilizada por alguns artistas em alternativa à tinta e resulta da colagem de pequenos quadrados de vidro, pedra, plástico ou azulejo, de forma a configurar uma imagem.</p>
+    <p>Murais – Distinguem-se pelas pinturas e desenhos de grandes dimensões, elaborados e, geralmente, executados de forma legal, diretamente sobre as paredes, edifícios e muros do espaço público.
+    </p>
+    <p><b>N</b></p>
+    <p>Narrativas – As narrativas desafiam as estruturas de poder, suscitam diálogo e pressupõem contar uma determinada história, de maior ou menor dimensão, usando diferentes meios (escrita, som, imagem, entre outros).</p>
+   <p><b>P</b></p>
+    <p>Pieces – O piece é um diminutivo de masterpiece e trata-se, então, de uma obra grande, complexa e demorada, geralmente, escrita e pintada por writers experientes e habilidosos. Apresenta-se, habitualmente, com pelo menos três cores e assume-se na companhia de outros desenhos, texturas, transições de cor, sombras, efeitos tridimensionais e alegorias como bolhas, nuvens, brilhos diversos, personagens, setas, coroas, entre outros.
+    </p>
+    <p>Pós-graffiti – Variante do graffiti que designa a tentativa de passagem do graffiti elaborado das ruas para o institucional das telas, galerias e museus.</p>
+    <p>Posters – O poster, ou cartaz, é uma tipologia da Street Art que se baseia na disseminação visual de informação através de gráficos, imagens e textos visualmente apelativos, que surgem com o objetivo de promover eventos, produtos, manifestações sociais, campanhas políticas e outros.
+    </p>
+    <p><b>S</b></p>
+    <p>Stencils – Envolve a utilização de um molde, naturalmente, pré-recortado para criar um ou vários desenhos sobre uma superfície à escolha, através do uso de tintas em spray e outros materiais.
+    </p>
+    <p>Stickers – Autocolante usado de modo semelhante ao tag e que segue o princípio básico do graffiti: espalhar o nome pelo máximo de locais possíveis, com o objetivo final de atingir a fama no meio.</p>
+    <p>Street Art – Com as suas raízes no graffiti e na cultura urbana na segunda metade do século XX, a Street Art é considerada, nos dias de hoje, um fenómeno artístico, expressivo e social à escala global que deu espaço a uma infindável possibilidade de linguagens criadas e inspiradas no espaço público, tornando-se numa inovadora forma de expressão e manifestação artística contra problemáticas sociais, políticas ou culturais presentes no espaço público, e categorizada pela sua presença única e o rápido crescimento nas grandes cidades, chamando à atenção do público geral, dos seguidores de arte contemporânea, dos media, das instituições, das galerias e das plataformas de arte, cujo objetivo é valorizar, promover, divulgar e enriquecer a cultura nas cidades.
+    </p>
+  
+    <p><b>T</b></p>
+    <p>Tags – O tag é conhecido e caracterizado como a forma mais básica do graffiti e, também, a que mais se pratica no espaço público. Surge em Nova Iorque e é, essencialmente, uma assinatura do nome desenhada e estilizada de forma a poder ser executada o mais rapidamente possível, respondendo à necessidade principal dos writers – disseminar o pseudónimo e a identidade de uma forma rápida e no máximo de locais possíveis.
+    </p>
+    <p>Territorialidade – Refere-se ao sentimento de domínio ou controlo sobre uma determinada área ou território através do uso, individual ou coletivo, da Street Art.
+    </p>
+    <p>Throw-ups – O throw-up, throw ou throwie é visto como uma versão mais complexa e elaborada de um tag. Consistem em letras grandes, arredondadas, em bloco e têm, geralmente, duas a três cores ou somente as linhas de contorno.</p>
+    <p><b>W</b></p>
+    <p>Wildstyle – O wildstyle é a forma mais complexa de um piece e tornou-se popular através do crescimento da crew Wild Style. Consiste em letras e formas intrincadas e sobrepostas entre si. Pode incluir conjuntos de setas, espigões, curvas e outros elementos decorativos, dependendo sempre da técnica utilizada.
+    </p>
+    <p>Writer – Distingue aqueles que executam e se dedicam às assinaturas do Graffiti contemporâneo. Reconhecidos, geralmente, pelo pseudónimo ou nome da tag, e através das suas obras instaladas no espaço público e, por vezes, em galerias.
+    </p>
+    <p><b>Y</b></p>
+    <p>Yarn-Bombings – O Yarn bombing, yarn storming, wool bombing, guerrilla knitting, urban knitting ou graffiti knitting é uma tipologia da Street Art que se manifesta com fios de crochê ou malha em vez de tinta
+    </p>
+
+    
+  </div>
+
+
+</div>
+        
+   
+             
+              
+          </div>
+        <div class="blank2">
+
+
+          <div class="freguesiascontainer freguesias" id="myBtnContainer">
+            <li > <a href="rede.html" ><button class="btn freguesiatag">Reset</button></a></li> 
+            <li >  <a  href="rede_saojoaodaslampaseTerrugem.html"><button class="btn freguesiatag">São João das Lampas e Terrugem</button></a> </li> 
+            <li >  <a  href="rede_montelavarAlmargemPeropinheiro.html"><button class="btn freguesiatag">Montelavar, Almargem e Pêro Pinheiro</button></a> </li>
+            <li >  <a  href="rede_colares.html"><button class="btn freguesiatag">Colares</button></a> </li>
+            <li >  <a  href="rede_sintra.html"><button class="btn freguesiatag ">Sintra</button></a> </li>
+            <li >  <a  href="rede_algueirao.html"><button class="btn freguesiatag active">Algueirão Mem-Martins</button></a> </li>
+            <li >  <a  href="rede_riodemouro.html"><button class="btn freguesiatag">Rio de Mouro</button></a> </li>
+            <li >  <a  href="rede_agualva-cacem.html"><button class="btn freguesiatag">Agualva-Cacém</button></a> </li>
+            <li >  <a  href="rede_queluz.html"><button class="btn freguesiatag">Queluz e belas</button></a> </li>
+            <li >  <a  href="rede_casaldecambra.html"><button class="btn freguesiatag">Casal de Cambra</button></a> </li>
+            <li >  <a href="rede_massama.html"> <button class="btn freguesiatag">Massamá e Monte Abraão</button></a> </li>
+  
+             </div>
+       
+  
+        </div>
+
+       
+
+  <div class="top"></div>
+  <div class="left"></div>
+  <div class="bottom"></div>
+  <div class="right"></div>
+      </header>
+      
+      <section>
+
+        <div class="" >
+       
+       
+         <figure class="highcharts-figure active">
+           <div id="container8"></div>
+         </figure>
+       </div>  
+       
+       
+       </section>
+
+      <!--JS - REDE -------------------------->
+      <script src="network/data8.js"></script>
+      <script src="network/chart8.js"></script>
+
+
+
+
+    <!--JS - DIVISÃO SITE -------------------------->
+    <script src="rede.js"></script>
+    <script src="redev2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+ 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script src="script2.js"></script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+      </script>
+    <script>
+      // sliding aviso
+      {
+        nodeMarquee({
+            parent: 'p.contentaviso',
+            speed: 0.5
+          });
+         
+        }
+         
+         </script>
+<script>
+
+var typed = new Typed(".typing1", {
+  strings: ["Street Art", "Street Art"],
+  typeSpeed: 250,
+  backSpeed: 250,
+  loop: true
+})
+
+
+</script>
+  </body>
+</html>
