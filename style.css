@@ -1,0 +1,133 @@
+#map{
+    margin-top: 0%;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+
+@font-face {
+    font-family: "ocr-aregular";
+    src: url("font/ocr-aregular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+.info2 {
+    padding: 2% 2%;
+    font-size: 1vw;
+    background-color: #00000088;
+    border-left: 1px solid rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-right: 10px solid rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    background: url(R1.jpeg);
+    animation: changeBg 0.5s infinite;
+    color: #ffffff;
+    line-height: 1.1vw;
+    right: 5vw;
+    font-family: "ocr-aregular";
+    float: right;
+    position: fixed;
+    top: 30vh;
+    }
+
+    b.legenda{
+        font-size: 1vw;
+        font-weight: lighter;
+        line-height: 1vw;
+    color: rgb(255, 255, 255);
+   
+      }
+      
+
+
+      img.imgpopup{
+        width:200px;
+        height: auto;
+        align-content: center;
+        padding: 0%;
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+      }
+ 
+
+
+
+
+.containerpreloader {
+    position: fixed;
+    left: 0;
+      background: #000000;
+      color: #fff;
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+    z-index: 90;
+  }
+  
+  .preloader {
+      margin: auto;
+      width: 10%;
+      
+      background: rgba(0, 0, 0, 0.1);
+      
+      position: relative;
+  }
+  
+  .preloader:before {
+      content: "";
+      position: absolute;
+      background: rgb(255, 255, 255);
+      width: 0;
+      height: 2px;
+      
+      animation: preloader 2s;
+  }
+  
+  
+  .cerrar {
+      opacity: 0;
+      transition: all 1s;
+  }
+
+
+
+
+
+  @keyframes preloader {
+      90% {
+          width: 100%;
+          opacity: 1;
+      }
+      100% {
+          width: 100%;
+          opacity: 0;
+      }
+  }
+  
+
+  @media only screen and (max-width: 550px) {
+ 
+    .info2 {
+   
+        font: 1.4vh Arial, Helvetica, sans-serif;
+        border: 1px solid white;
+        
+        color: #ffffff;
+      
+        margin-right: 0vw;
+        }
+    
+        b.legenda{
+            font-size: 1vh;
+            font-weight: lighter;
+            line-height: 1.6vh;
+        padding: 5% 0%;
+          }
+          
+
+     
+  }
+  

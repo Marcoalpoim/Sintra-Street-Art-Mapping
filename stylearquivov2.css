@@ -1,0 +1,1094 @@
+
+
+
+@font-face {
+  font-family: "ocr-aregular";
+  src: url("font/ocr-aregular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.avisoicon {
+  position: relative;
+left: -17px;
+top: -17px;
+height: 0px !important;
+width: 0px !important;
+
+}
+.avisoiconimage{
+  position: relative;
+height: 20px !important;
+width: 20px !important;
+}
+
+.avisoiconimage:hover{
+  
+height: 22px !important;
+width: 22px !important;
+}
+.avisotext{ 
+
+  position: fixed;
+  display: flex;
+  left: 5.1%;
+  bottom: 100px;
+  height: 6vw !important;
+  width: 19.9% !important;
+  background-color: rgb(0, 0, 0);
+  border-top: 1px solid white;
+  z-index: 1998;
+  visibility: hidden;
+}
+.avisotext p{
+
+  align-items: center;
+padding: 11% 5% ;
+line-height: 1vw;
+align-items: center;
+color: rgb(255, 255, 255);
+}
+.avisotext .avisotextimage{
+  padding: 13% 5%;
+  position: relative;
+height: 20px !important;
+width: 20px !important;
+}
+
+
+.shuffle-button{
+  margin-top: 21vh;
+    right: 5vw;
+    float: right;
+
+    padding: 1%;
+    line-height: 80%;
+    text-align: center;
+    justify-content: center;
+    z-index: 88;
+    font-size: 1vw; 
+    width: auto;
+    text-decoration: none;
+    position: fixed;
+  
+    color: white;
+    background: rgb(0, 0, 0);
+  
+    font-family: "ocr-aregular";
+    transition: box-shadow .25s;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+
+}
+
+.shuffle-button:hover{
+
+  color: #ffffff;
+ box-shadow: 0px 6px;
+ border-bottom: 5px solid rgb(255, 255, 255);
+ cursor: pointer;
+ animation: changeBg 0.5s infinite;
+ background: url(R1.jpeg);
+}
+
+
+
+
+.freguesias{
+ list-style: none;
+}
+
+.freguesias button{
+  list-style: none;
+ /*padding: 1%;*/
+}
+.titletag{
+  margin-bottom: 0%;
+  color: rgba(255, 255, 255, 0.432);
+  background: rgba(0, 0, 0, 0);
+  text-align: left;
+  font-family: "ocr-aregular";
+  white-space:nowrap;
+  font-size: 0.8vw;
+  height: 3.1vh;
+ margin-left: 2vw; 
+    /*   padding: 2% 2% 2% 2%; */
+  border: 1px solid rgba(255, 255, 255, 0.432);
+  transition: 0.2s ease-out;
+  width: 108.4%;
+}
+
+button.freguesiatag {
+
+    margin-bottom: 0%;
+    white-space: inherit;
+    color: rgba(255, 255, 255, 0.432);
+    background: rgba(0, 0, 0, 0);
+    text-align: left;
+    font-family: "ocr-aregular";
+    white-space:nowrap;
+    font-size: 0.8vw;
+    height: 5.1vh;
+      /*  margin-left: 2.5vw; */
+      /*   padding: 2% 2% 2% 2%; */
+    border: 1px solid rgba(255, 255, 255, 0.432);
+    transition: 0.2s ease-out;
+    width: 91%;
+    z-index: 9;
+    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  
+}
+
+button.freguesiatag:hover{
+    color: white;
+    
+    font-style: italic;
+    transition: 0.2s ease-in;
+    border-left: 8px solid rgb(255, 255, 255);
+    border-top: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-right: 2px solid rgb(255, 255, 255);;
+    z-index: 9;
+    background: url(R1.jpeg);
+    animation: changeBg 0.5s infinite;
+    box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+button.freguesiatag.active{
+  color: white;
+  border-left: 8px solid rgb(255, 255, 255);
+  border-top: 2px solid rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+  border-right: 2px solid rgb(255, 255, 255);;
+  animation: changeBg 0.5s infinite;
+  background: url(R1.jpeg);
+  z-index: 9;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+
+.filterDiv {
+
+    float: left;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 10px;
+    margin: 1%;
+    display: none;
+    width: 15%; 
+    border: 1px dashed rgb(255, 255, 255);
+    transition: box-shadow .25s;
+    font-weight: 300;
+    font-size: 0.8vw;
+    padding:1%;
+ 
+    text-align: left;
+   
+  }
+
+  /* clear fix */
+  .grid:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+
+
+
+.avisoppi{
+
+  position: relative;
+  z-index: 50;
+  padding: 1% 0%;
+  font-size: 0.8vw;
+background-color: #000000;
+line-height: 1.2vw;
+  border: 1px solid white;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+.avisoiconppi{
+  position: absolute;
+height: 20px !important;
+width: 20px !important;
+left: -11px;
+bottom: 28px;
+}
+
+
+
+
+  .filterDiv:hover {
+    cursor: move;
+    box-shadow: 0px 5px;
+    border: 1px solid rgb(255, 255, 255);
+    animation: changeBg 0.5s infinite !important;
+    background: url(R1.jpeg);
+    border-radius: 15px;
+  }
+  
+  .filterDiv:hover .imagensprojeto img{
+   
+    border-radius: 0px;
+  }
+ 
+  .filterDiv:hover .avisoiconimage{
+  
+    border-radius: 0px;
+  }
+  .filterDiv:hover .avisoiconppi{
+  
+    border-radius: 0px;
+  }
+  .filterDiv:hover .imagensprojeto2 {
+   
+    border-radius: 0px;
+  }
+  .show {
+    display: block;
+ 
+  
+    
+  }
+  
+
+
+
+.containerpreloader {
+  position: fixed;
+  left: 0;
+	background: #000000;
+	color: #fff;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+  z-index: 90;
+}
+
+.preloader {
+	margin: auto;
+	width: 10%;
+	
+	background: rgba(0, 0, 0, 0.1);
+	
+	position: relative;
+}
+
+.preloader:before {
+	content: "";
+	position: absolute;
+	background: rgb(255, 255, 255);
+	width: 0;
+	height: 2px;
+	
+	animation: preloader 15s;
+}
+
+
+.cerrar {
+	opacity: 0;
+	transition: all 10s;
+}
+
+@keyframes preloader {
+	90% {
+		width: 100%;
+		opacity: 1;
+	}
+	100% {
+		width: 100%;
+		opacity: 0;
+	}
+}
+
+
+
+  .freguesiascontainer{
+    margin-top: 5.2%;
+    width: 22%;
+    height: 75%;
+    display: block;
+    float: left;
+    z-index: 998;
+    position: fixed;
+    
+  }
+
+  .filterDiv img{
+    width:100%;
+    height: 99.5%;
+    align-content: center;
+    padding: 0%;
+    border: 0px solid rgb(255, 255, 255);
+    cursor: pointer;
+  
+  }
+
+  .filterDiv:hover img{
+    border-radius: 10px;
+  
+  }
+
+ 
+  .imagensprojeto{
+    max-width: 50%;
+    max-height:100%;
+
+    align-content: center;
+    padding: 0%;
+    border: 0px solid rgb(255, 255, 255);
+    cursor: pointer;
+
+  }
+
+  .imagensprojeto2{
+    max-width: 30%;
+
+
+    align-content: center;
+    padding: 0%;
+    border: 0px solid rgb(255, 255, 255);
+    cursor: pointer;
+
+  }
+  
+  
+  .imagensprojeto img{
+  border: 1px solid white;
+  line-height: none;
+  }
+
+  .imagensprojeto2 img{
+    border: 1px solid white;
+    line-height: none;
+    }
+  
+
+
+  .tagscontainer{
+
+    margin-top: 2vw;
+    cursor: pointer;
+    display: inline;
+    list-style: square;
+    text-decoration: none;
+    transition: text-decoration 0.25s;
+  }
+
+  .filterDiv ul {
+    padding-inline-start: 0;
+  }
+  
+  .filterDiv ul li {
+    cursor: pointer;
+    display: inline;
+    list-style: none;
+  
+    transition: text-decoration 0.25s;
+  }
+  
+  li {
+    height: 5vh;
+  }
+  
+  .container {
+    display: block;
+    margin-top: 20vh;
+    margin-left: 30%;
+    margin-right: auto;
+    padding: 0vw 8vw 2vw 0vw;
+    width: 60%;
+    height: auto;
+    overflow: visible;
+    float: left;
+    
+
+  }
+
+  
+  /* Style the buttons */
+  .tagbtn {
+    color: rgb(192, 192, 192);
+    border: none;
+    outline: none;
+    padding: 1% 1%;
+    background-color: #f1f1f100;
+    cursor: pointer;
+    line-height: 100%;
+    font-weight: 300;
+    font-size: 0.6vw;
+    text-decoration: none;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+  
+  .tagbtn:hover {
+    color: rgb(255, 255, 255);
+   border: 1px solid white;
+   border-radius: 10px;
+  font-style: italic;
+    
+  }
+  
+
+  .tagbtn.active {
+ 
+    background-color: #66666600;
+    background-color: #f1f1f100;
+   
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #dddddd00;
+   
+    transition: 1s ease-out;
+  }
+  
+  .btn.active {
+ 
+    background-color: #66666600;
+    color: white;
+ 
+  }
+  .btn:active {
+ 
+    background-color: #66666600;
+    color: white;
+   
+  }
+
+
+.ppicontainer{
+  margin-top: 7vw;
+  margin-right: auto;
+  margin-left: auto;
+  width: 45%;
+  border: 1px solid white;
+}
+
+.ppi{
+  display: flex;
+  align-items: stretch;
+  margin-right: auto;
+  margin-left: 0%;
+  /* height: 10%; */
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.informaçaoobra{
+  width: 70%;
+  padding-left: 0px;
+  border: 1px solid white;
+}
+
+
+.local{
+color: white;
+
+line-height: 100%;
+padding-top: 2%;
+padding-left: 5%;
+padding-bottom: 2%;
+}
+
+.freguesiatitle{
+  color: white;
+font-size: 1.3vw;
+line-height: 100%;
+padding-top: 2%;
+
+}
+
+.autor{
+  color: white;
+  font-size: 0.8vw;
+  line-height: 100%;
+  padding-left: 5%;
+  padding-bottom: 2%;
+  padding-top: 6%;
+  border-top: 1px solid white;
+}
+.sub-local{
+  color: white;
+  font-size: 0.8vw;
+  line-height: 100%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+}
+
+.data{
+  color: white;
+  font-size: 0.8vw;
+  line-height: 100%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+}
+
+.categoria{
+  color: white;
+  font-size: 0.8vw;
+  line-height: 100%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+}
+
+
+.tags{
+  color: white;
+  font-size: 0.8vw;
+  line-height: 100%;
+  padding-bottom: 6%;
+  padding-left: 5%;
+  padding-right: 2%;
+}
+
+.tags ul{
+  display: flex !important;
+  /* width: 10%; */
+  /* cursor: pointer; */
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+  padding-top: 6%;
+  flex-wrap: wrap;
+
+}
+.tags ul li{
+height: 2vh !important;
+ 
+ }
+/*
+.noiseppi{
+
+    position: relative;
+    z-index: 50;
+    font-size: 2vw;
+    background: url(R1.jpeg);
+    animation: changeBg 0.5s infinite;
+    height: 2.5vw;
+    border: 1px solid white;
+    text-decoration: none;
+}*/
+
+
+@keyframes changeBg{
+   50%  {background: url(R.jpeg);}
+
+
+
+}
+.localizaçao {
+  display: block;
+
+}
+.localizaçao .textlocalizaçao{
+  position: relative;
+    color: white;
+    font-size: 0.8vw;
+    line-height: 100%;
+    padding: 2%;
+    border: 1px solid white;
+  
+  }
+
+
+.coment-section{
+
+  display: block;
+  color: white;
+  font-size: 0.6vw;
+  line-height: 1vw;
+  padding: 2%;
+  border: 1px solid white;
+  overflow-y: scroll;
+ 
+  font-weight: lighter;
+}
+.coment-section2{
+  position: relative;
+  display: flex;
+  color: white;
+  font-size: 0.6vw;
+  line-height: 100%;
+  padding: 2%;
+  border: 1px solid white;
+}
+.comentario{
+
+  color: white;
+  font-size: 0.6vw;
+  line-height: 100%;
+  background-color: #000000;
+  border: 1px dashed white;
+  width: 95%;
+  padding-left: 2%;
+}
+
+
+.sendit{
+  color: #000000;
+  background-color: white;
+  font-size: 0.6vw;
+  border: 1px solid white;
+  line-height: 100%;
+  padding: 1%;
+}
+
+
+
+
+
+
+
+.leaflet-container{
+  height: 5vw;
+}
+
+
+
+ #map, #map2,  #map3, #map4, #map5, #map6,
+ #map7, #map8, #map9, #map10, #map11,#map12, 
+ #map13,#map14, #map15, #map16, #map17, #map18, 
+ #map19, #map20, #map21, #map22, #map22, #map23, 
+ #map24,#map25, #map26, #map27, #map28, #map29, 
+ #map30, #map31, #map32, #map33, #map34, #map35, #map36, 
+ #map37, #map38, #map39, #map40, #map41, #map42, #map43, 
+ #map44, #map45, #map46, #map47, #map48, #map49, #map50, #map51, 
+ #map52, #map53, #map54, #map55, #map56, #map57, #map58, #map59, 
+ #map60, #map61,#map62, #map63, #map64, #map65, #map66, #map67, 
+ #map68, #map69, #map70, #map71, #map72, #map73, #map74, #map75, 
+ #map76, #map77, #map78, #map79, #map80, #map81, #map82, #map83, 
+ #map84, #map85, #map86, #map87, #map88, #map89, #map90, #map91, 
+ #map92, #map93, #map94, #map95, #map96, #map97, #map98, #map99,  #map100,
+ #map101, #map102, #map103, #map104, #map105, #map106, #map107, #map108, 
+ #map109, #map110, #map111, #map112, #map113, #map114, #map115, #map116, 
+ #map117, #map118, #map119, #map120, #map121, #map122, #map123, #map124, 
+ #map125, #map126, #map127, #map128, #map129, #map130, #map131, #map132, 
+ #map133, #map134, #map135, #map136, #map137 , #map138, #map139, #map140, #map141, #map142, #map143, 
+ #map144, #map145, #map146, #map147, #map148, #map149, #map150, #map151, 
+ #map152, #map153, #map154, #map155, #map156, #map157, #map158, #map159, 
+ #map160, #map161,#map162, #map163, #map164, #map165, #map166, #map167, 
+ #map168, #map169, #map170, #map171, #map172, #map173, #map174, #map175, 
+ #map176, #map177, #map178, #map179, #map180, #map181, #map182, #map183, 
+ #map184, #map185, #map186, #map187, #map188, #map189, #map190, #map191, 
+ #map192, #map193, #map194, #map195, #map196, #map197, #map198, #map199,  #map200,
+ #map201, #map202, #map203, #map204, #map205, #map206, #map207, #map208, 
+ #map209, #map210, #map211, #map212, #map213, #map214, #map215, #map216, 
+ #map217, #map218, #map219, #map220, #map221, #map222, #map223, #map224, 
+ #map226, #map227, #map228, #map229, #map230, #map231, #map232, 
+ #map233, #map234, #map235, #map236, #map237 , #map238, #map239, #map240, #map241, #map242, #map243, 
+ #map244, #map245, #map246, #map247, #map248, #map249, #map250, #map251, 
+ #map252, #map253, #map254, #map255, #map256, #map257, #map258, #map259, 
+ #map260, #map261, #map262, #map263, #map264, #map265, #map266, #map267, 
+ #map268, #map269, #map270, #map271, #map272, #map273, #map274, #map275, 
+ #map276, #map277, #map278, #map279, #map280, #map281, #map282, #map283, 
+ #map284, #map285, #map286, #map287, #map288, #map289, #map290, #map291, 
+ #map292, #map293, #map294, #map295, #map296, #map297, #map298, #map299,  #map300,
+ #map301, #map302, #map303, #map304, #map305, #map306, #map307, #map308, 
+ #map309, #map310, #map311, #map312, 
+ #map313,#map314, #map315, #map316, #map317, #map318, #map3188, 
+ #map319, #map320, #map321, #map322, #map323, 
+ #map324,#map325, #map326, #map327, #map328, #map329, 
+ #map330, #map331, #map332, #map333, #map334, #map335, #map336, 
+ #map337, #map338, #map339, #map340, #map341, #map342, #map343, 
+ #map344, #map345, #map346, #map347, #map348, #map349, #map350, #map351, 
+ #map352, #map353, #map354, #map355 {
+
+    height: 5vw;
+    padding: 4%;
+    display: block;
+    margin-left: auto;
+  margin-right:auto;
+  border: 1px solid white;
+  background-color: #000000;
+  
+  }
+
+ .sidebar, .sidebar2,  .sidebar3, .sidebar4, .sidebar5, .sidebar6,
+  .sidebar7, .sidebar8, .sidebar9, .sidebar10, .sidebar11,.sidebar12, 
+  .sidebar13,.sidebar14, .sidebar15, .sidebar16, .sidebar17, .sidebar18, 
+  .sidebar19, .sidebar20, .sidebar21, .sidebar22, .sidebar22, .sidebar23, 
+  .sidebar24,.sidebar25, .sidebar26, .sidebar27, .sidebar28, .sidebar29, 
+  .sidebar30, .sidebar31, .sidebar32, .sidebar33, .sidebar34,.sidebar35, .sidebar36, 
+  .sidebar37, .sidebar38, .sidebar39, .sidebar40, .sidebar41, .sidebar42, .sidebar43, 
+  .sidebar44, .sidebar45, .sidebar46, .sidebar47, .sidebar48, .sidebar49, .sidebar50, .sidebar51, 
+  .sidebar52, .sidebar53, .sidebar54, .sidebar55, .sidebar56, .sidebar57, .sidebar58, .sidebar59, 
+  .sidebar60, .sidebar61,.sidebar62, .sidebar63, .sidebar64, .sidebar65, .sidebar66, .sidebar67, 
+  .sidebar68, .sidebar69, .sidebar70, .sidebar71, .sidebar72, .sidebar73, .sidebar74, .sidebar75, 
+  .sidebar76, .sidebar77, .sidebar78, .sidebar79, .sidebar80, .sidebar81, .sidebar82, .sidebar83, 
+  .sidebar84, .sidebar85, .sidebar86, .sidebar87, .sidebar88, .sidebar89, .sidebar90, .sidebar91, 
+  .sidebar92, .sidebar93, .sidebar94, .sidebar95, .sidebar96, .sidebar97, .sidebar98, .sidebar99, 
+  .sidebar100, .sidebar101, .sidebar102, .sidebar103, .sidebar104, .sidebar105, .sidebar106, .sidebar107, 
+  .sidebar108, .sidebar109, .sidebar110, .sidebar111, .sidebar112, .sidebar113, .sidebar114, .sidebar115, 
+  .sidebar116, .sidebar117, .sidebar118, .sidebar119, .sidebar120, .sidebar121, .sidebar122, .sidebar123, 
+  .sidebar124, .sidebar125, .sidebar126, .sidebar127, .sidebar128, .sidebar129, .sidebar130, .sidebar131, 
+  .sidebar132, .sidebar133, .sidebar134, .sidebar135, .sidebar136, .sidebar137, .sidebar138, .sidebar139, 
+  .sidebar140, .sidebar141, .sidebar142, .sidebar143, .sidebar144, .sidebar145, .sidebar146, .sidebar147, 
+  .sidebar148, .sidebar149, .sidebar150, .sidebar151, .sidebar152, .sidebar153, .sidebar154, .sidebar155, 
+  .sidebar156, .sidebar157, .sidebar158, .sidebar159, .sidebar160, .sidebar161,.sidebar162, .sidebar163, 
+  .sidebar164, .sidebar165, .sidebar166, .sidebar167, .sidebar168, .sidebar169, .sidebar170, .sidebar171, 
+  .sidebar172, .sidebar173, .sidebar174, .sidebar175, .sidebar176, .sidebar177, .sidebar178, .sidebar179, 
+  .sidebar180, .sidebar181, .sidebar182, .sidebar183, .sidebar184, .sidebar185, .sidebar186, .sidebar187, 
+  .sidebar188, .sidebar189, .sidebar190, .sidebar191,  .sidebar192, .sidebar193, .sidebar194, .sidebar195, 
+  .sidebar196, .sidebar197, .sidebar198, .sidebar199, .sidebar200, 
+  .sidebar201, .sidebar202, .sidebar203, .sidebar204, .sidebar205, .sidebar206, .sidebar207, 
+  .sidebar208, .sidebar209, .sidebar210, .sidebar211, .sidebar212, .sidebar213, .sidebar214, .sidebar215, 
+  .sidebar216, .sidebar217, .sidebar218, .sidebar219, .sidebar220, .sidebar221, .sidebar222, .sidebar223, 
+  .sidebar224, .sidebar225, .sidebar226, .sidebar227, .sidebar228, .sidebar229, .sidebar230, .sidebar231, 
+  .sidebar232, .sidebar233, .sidebar234, .sidebar235, .sidebar236, .sidebar237, .sidebar238, .sidebar239, 
+  .sidebar240, .sidebar241, .sidebar242, .sidebar243, .sidebar244, .sidebar245, .sidebar246, .sidebar247, 
+  .sidebar248, .sidebar249, .sidebar250, .sidebar251, .sidebar252, .sidebar253, .sidebar254, .sidebar255, 
+  .sidebar256, .sidebar257, .sidebar258, .sidebar259, .sidebar260, .sidebar261, .sidebar262, .sidebar263, 
+  .sidebar264, .sidebar265, .sidebar266, .sidebar267, .sidebar268, .sidebar269, .sidebar270, .sidebar271, 
+  .sidebar272, .sidebar273, .sidebar274, .sidebar275, .sidebar276, .sidebar277, .sidebar278, .sidebar279, 
+  .sidebar280, .sidebar281, .sidebar282, .sidebar283, .sidebar284, .sidebar285, .sidebar286, .sidebar287, 
+  .sidebar288, .sidebar289, .sidebar290, .sidebar291,  .sidebar292, .sidebar293, .sidebar294, .sidebar295, 
+  .sidebar296, .sidebar297, .sidebar298, .sidebar299, .sidebar300, .sidebar301, .sidebar302, .sidebar303, 
+  .sidebar304, .sidebar305, .sidebar306, .sidebar307, .sidebar308, .sidebar309, .sidebar310, .sidebar311, .sidebar312,
+  .sidebar313,.sidebar314, .sidebar315, .sidebar316, .sidebar317, .sidebar318, .sidebar3188,
+  .sidebar319, .sidebar320, .sidebar321, .sidebar322, .sidebar322, .sidebar323, 
+  .sidebar324,.sidebar325, .sidebar326, .sidebar327, .sidebar328, .sidebar329, 
+  .sidebar330, .sidebar331, .sidebar332, .sidebar333, .sidebar334,.sidebar335, .sidebar336, 
+  .sidebar337, .sidebar338, .sidebar339, .sidebar340, .sidebar341, .sidebar342, .sidebar343, 
+  .sidebar344, .sidebar345, .sidebar346, .sidebar347, .sidebar348, .sidebar349, .sidebar350, .sidebar351, 
+  .sidebar352, .sidebar353, .sidebar354, .sidebar355  {
+ 
+    cursor: pointer;
+    z-index: 1;
+    background: inherit;
+    border: none;
+    display: block;
+    outline: none;
+   
+   color: #000000;
+  }
+
+
+  
+ 
+  .nav-links, .nav-links2,  .nav-links3, .nav-links4, .nav-links5, .nav-links6,
+   .nav-links7, .nav-links8, .nav-links9, .nav-links10, .nav-links11, .nav-links12, 
+   .nav-links13, .nav-links14, .nav-links15, .nav-links16, .nav-links17, .nav-links18, 
+   .nav-links19, .nav-links20, .nav-links21, .nav-links22, .nav-links22, .nav-links23, 
+   .nav-links24, .nav-links25, .nav-links26, .nav-links27, .nav-links28, .nav-links29, 
+   .nav-links30, .nav-links31, .nav-links32, .nav-links33, .nav-links34, .nav-links35, .nav-links36, 
+   .nav-links37, .nav-links38, .nav-links39, .nav-links40, .nav-links41, .nav-links42, .nav-links43, 
+   .nav-links44, .nav-links45, .nav-links46, .nav-links47, .nav-links48, .nav-links49, .nav-links50, .nav-links51, 
+   .nav-links52, .nav-links53, .nav-links54, .nav-links55, .nav-links56, .nav-links57, .nav-links58, .nav-links59, 
+   .nav-links60, .nav-links61, .nav-links62, .nav-links63, .nav-links64, .nav-links65, .nav-links66, .nav-links67, 
+   .nav-links68, .nav-links69, .nav-links70, .nav-links71, .nav-links72, .nav-links73, .nav-links74, .nav-links75, 
+   .nav-links76, .nav-links77, .nav-links78, .nav-links79, .nav-links80, .nav-links81, .nav-links82, .nav-links83, 
+   .nav-links84, .nav-links85, .nav-links86, .nav-links87, .nav-links88, .nav-links89, .nav-links90, .nav-links91, 
+   .nav-links92, .nav-links93, .nav-links94, .nav-links95, .nav-links96, .nav-links97, .nav-links98, .nav-links99, 
+   .nav-links100, .nav-links101, .nav-links102, .nav-links103, .nav-links104, .nav-links105, .nav-links106, .nav-links107, .nav-links108, 
+   .nav-links109, .nav-links110, .nav-links111, .nav-links112, .nav-links113, .nav-links114, .nav-links115, .nav-links116, 
+   .nav-links117, .nav-links118, .nav-links119, .nav-links120, .nav-links121, .nav-links122, .nav-links123, .nav-links124, 
+   .nav-links125, .nav-links126, .nav-links127, .nav-links128, .nav-links129, .nav-links130, .nav-links131, .nav-links132, 
+   .nav-links133, .nav-links134, .nav-links135, .nav-links136, .nav-links137, .nav-links138, .nav-links139, .nav-links140, .nav-links141, .nav-links142, .nav-links143, 
+   .nav-links144, .nav-links145, .nav-links146, .nav-links147, .nav-links148, .nav-links149, .nav-links150, .nav-links151, 
+   .nav-links152, .nav-links153, .nav-links154, .nav-links155, .nav-links156, .nav-links157, .nav-links158, .nav-links159, 
+   .nav-links160, .nav-links161, .nav-links162, .nav-links163, .nav-links164, .nav-links165, .nav-links166, .nav-links167, 
+   .nav-links168, .nav-links169, .nav-links170, .nav-links171, .nav-links172, .nav-links173, .nav-links174, .nav-links175, 
+   .nav-links176, .nav-links177, .nav-links178, .nav-links179, .nav-links180, .nav-links181, .nav-links182, .nav-links183, 
+   .nav-links184, .nav-links185, .nav-links186, .nav-links187, .nav-links188, .nav-links189, .nav-links190, .nav-links191, 
+   .nav-links192, .nav-links193, .nav-links194, .nav-links195, .nav-links196, .nav-links197, .nav-links198, .nav-links199, 
+   .nav-links200, .nav-links201, .nav-links202, .nav-links203, .nav-links204, .nav-links205, .nav-links206, .nav-links207, .nav-links208, 
+   .nav-links209, .nav-links210, .nav-links211, .nav-links212,
+   
+   .nav-links213, .nav-links214, .nav-links215, .nav-links216, .nav-links217, .nav-links218, 
+   .nav-links219, .nav-links220, .nav-links221, .nav-links222,  .nav-links223, 
+   .nav-links224, .nav-links225, .nav-links226, .nav-links227, .nav-links228, .nav-links229, 
+   .nav-links230, .nav-links231, .nav-links232, .nav-links233, .nav-links234, .nav-links235, .nav-links236, 
+   .nav-links237, .nav-links238, .nav-links239, .nav-links240, .nav-links241, .nav-links242, .nav-links243, 
+   .nav-links244, .nav-links245, .nav-links246, .nav-links247, .nav-links248, .nav-links249, .nav-links250, .nav-links251, 
+   .nav-links252, .nav-links253, .nav-links254, .nav-links255, .nav-links256, .nav-links257, .nav-links258, .nav-links259, 
+   .nav-links260, .nav-links261, .nav-links262, .nav-links263, .nav-links264, .nav-links265, .nav-links266, .nav-links267, 
+   .nav-links268, .nav-links269, .nav-links270, .nav-links271, .nav-links272, .nav-links273, .nav-links274, .nav-links275, 
+   .nav-links276, .nav-links277, .nav-links278, .nav-links279, .nav-links280, .nav-links281, .nav-links282, .nav-links283, 
+   .nav-links284, .nav-links285, .nav-links286, .nav-links287, .nav-links288, .nav-links289, .nav-links290, .nav-links291, 
+   .nav-links292, .nav-links293, .nav-links294, .nav-links295, .nav-links296, .nav-links297, .nav-links298, .nav-links299, 
+   .nav-links300, .nav-links301, .nav-links302, .nav-links303, .nav-links304, .nav-links305, .nav-links306, .nav-links307, .nav-links308, 
+   .nav-links309, .nav-links310, .nav-links311, .nav-links312, 
+   .nav-links313, .nav-links314, .nav-links315, .nav-links316, .nav-links317, .nav-links318, .nav-links3188, 
+   .nav-links319, .nav-links320, .nav-links321, .nav-links322, .nav-links322, .nav-links323, 
+   .nav-links324, .nav-links325, .nav-links326, .nav-links327, .nav-links328, .nav-links329, 
+   .nav-links330, .nav-links331, .nav-links332, .nav-links333, .nav-links334, .nav-links335, .nav-links336, 
+   .nav-links337, .nav-links338, .nav-links339, .nav-links340, .nav-links341, .nav-links342, .nav-links343, 
+   .nav-links344, .nav-links345, .nav-links346, .nav-links347, .nav-links348, .nav-links349, .nav-links350, .nav-links351, 
+   .nav-links352, .nav-links353, .nav-links354, .nav-links355{
+
+    position: fixed;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    height: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+    z-index: 2001;
+    padding-top: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   
+    border-radius: 20px;
+    transition: ease-in-out 0.5s;
+    
+  }
+
+
+  .CloseBTN, .CloseBTN2, .CloseBTN3, .CloseBTN4, .CloseBTN5, .CloseBTN6,
+  .CloseBTN7, .CloseBTN8, .CloseBTN9, .CloseBTN10, .CloseBTN11, .CloseBTN12, 
+  .CloseBTN13, .CloseBTN14, .CloseBTN15, .CloseBTN16,.CloseBTN17, .CloseBTN18, 
+  .CloseBTN19, .CloseBTN20, .CloseBTN21, .CloseBTN22, .CloseBTN22, .CloseBTN23, 
+  .CloseBTN24,.CloseBTN25, .CloseBTN26, .CloseBTN27, .CloseBTN28, .CloseBTN29, 
+  .CloseBTN30, .CloseBTN31, .CloseBTN32, .CloseBTN33, .CloseBTN34, .CloseBTN35, .CloseBTN36, 
+  .CloseBTN37, .CloseBTN38, .CloseBTN39, .CloseBTN40, .CloseBTN41, .CloseBTN42, .CloseBTN43, 
+  .CloseBTN44, .CloseBTN45, .CloseBTN46, .CloseBTN47, .CloseBTN48, .CloseBTN49, .CloseBTN50, .CloseBTN51, 
+  .CloseBTN52, .CloseBTN53, .CloseBTN54, .CloseBTN55, .CloseBTN56, .CloseBTN57, .CloseBTN58, .CloseBTN59, 
+  .CloseBTN60, .CloseBTN61, .CloseBTN62, .CloseBTN63, .CloseBTN64, .CloseBTN65, .CloseBTN66, .CloseBTN67, 
+  .CloseBTN68, .CloseBTN69, .CloseBTN70, .CloseBTN71, .CloseBTN72, .CloseBTN73, .CloseBTN74, .CloseBTN75, 
+  .CloseBTN76, .CloseBTN77, .CloseBTN78, .CloseBTN79, .CloseBTN80, .CloseBTN81, .CloseBTN82, .CloseBTN83, 
+  .CloseBTN84, .CloseBTN85, .CloseBTN86, .CloseBTN87, .CloseBTN88, .CloseBTN89, .CloseBTN90, .CloseBTN91, 
+  .CloseBTN92, .CloseBTN93, .CloseBTN94, .CloseBTN95, .CloseBTN96, .CloseBTN97, .CloseBTN98, .CloseBTN99, 
+  .CloseBTN100, .CloseBTN101, .CloseBTN102, .CloseBTN103, .CloseBTN104, .CloseBTN105, .CloseBTN106, .CloseBTN107, 
+  .CloseBTN108, .CloseBTN109, .CloseBTN110, .CloseBTN111, .CloseBTN112, .CloseBTN113, .CloseBTN114, .CloseBTN115, 
+  .CloseBTN116, .CloseBTN117, .CloseBTN118, .CloseBTN119, .CloseBTN120, .CloseBTN121, .CloseBTN122, .CloseBTN123, 
+  .CloseBTN124, .CloseBTN125, .CloseBTN126, .CloseBTN127, .CloseBTN128, .CloseBTN129, .CloseBTN130, .CloseBTN131, 
+  .CloseBTN132, .CloseBTN133, .CloseBTN134, .CloseBTN135, .CloseBTN136, .CloseBTN137, .CloseBTN138, .CloseBTN139, .CloseBTN140
+  , .CloseBTN141, .CloseBTN142, .CloseBTN143, 
+  .CloseBTN144, .CloseBTN145, .CloseBTN146, .CloseBTN147, .CloseBTN148, .CloseBTN149, .CloseBTN150, .CloseBTN151, 
+  .CloseBTN152, .CloseBTN153, .CloseBTN154, .CloseBTN155, .CloseBTN156, .CloseBTN157, .CloseBTN158, .CloseBTN159, 
+  .CloseBTN160, .CloseBTN161, .CloseBTN162, .CloseBTN163, .CloseBTN164, .CloseBTN165, .CloseBTN166, .CloseBTN167, 
+  .CloseBTN168, .CloseBTN169, .CloseBTN170, .CloseBTN171, .CloseBTN172, .CloseBTN173, .CloseBTN174, .CloseBTN175, 
+  .CloseBTN176, .CloseBTN177, .CloseBTN178, .CloseBTN179, .CloseBTN180, .CloseBTN181, .CloseBTN182, .CloseBTN183, 
+  .CloseBTN184, .CloseBTN185, .CloseBTN186, .CloseBTN187, .CloseBTN188, .CloseBTN189, .CloseBTN190, .CloseBTN191, 
+  .CloseBTN192, .CloseBTN193, .CloseBTN194, .CloseBTN195, .CloseBTN196, .CloseBTN197, .CloseBTN198, .CloseBTN199, 
+  .CloseBTN200, .CloseBTN201, .CloseBTN202, .CloseBTN203, .CloseBTN204, .CloseBTN205, .CloseBTN206,
+  .CloseBTN207, .CloseBTN208, .CloseBTN209, .CloseBTN210, .CloseBTN211, .CloseBTN212, 
+  .CloseBTN213, .CloseBTN214, .CloseBTN215, .CloseBTN216,.CloseBTN217, .CloseBTN218, 
+  .CloseBTN219, .CloseBTN220, .CloseBTN221, .CloseBTN222, .CloseBTN222, .CloseBTN223, 
+  .CloseBTN224,.CloseBTN225, .CloseBTN226, .CloseBTN227, .CloseBTN228, .CloseBTN229, 
+  .CloseBTN230, .CloseBTN231, .CloseBTN232, .CloseBTN233, .CloseBTN234, .CloseBTN235, .CloseBTN236, 
+  .CloseBTN237, .CloseBTN238, .CloseBTN239, .CloseBTN240, .CloseBTN241, .CloseBTN242, .CloseBTN243, 
+  .CloseBTN244, .CloseBTN245, .CloseBTN246, .CloseBTN247, .CloseBTN248, .CloseBTN249, .CloseBTN250, .CloseBTN251, 
+  .CloseBTN252, .CloseBTN253, .CloseBTN254, .CloseBTN255, .CloseBTN256, .CloseBTN257, .CloseBTN258, .CloseBTN259, 
+  .CloseBTN260, .CloseBTN261, .CloseBTN262, .CloseBTN263, .CloseBTN264, .CloseBTN265, .CloseBTN266, .CloseBTN267, 
+  .CloseBTN268, .CloseBTN269, .CloseBTN270, .CloseBTN271, .CloseBTN272, .CloseBTN273, .CloseBTN274, .CloseBTN275, 
+  .CloseBTN276, .CloseBTN277, .CloseBTN278, .CloseBTN279, .CloseBTN280, .CloseBTN281, .CloseBTN282, .CloseBTN283, 
+  .CloseBTN284, .CloseBTN285, .CloseBTN286, .CloseBTN287, .CloseBTN288, .CloseBTN289, .CloseBTN290, .CloseBTN291, 
+  .CloseBTN292, .CloseBTN293, .CloseBTN294, .CloseBTN295, .CloseBTN296, .CloseBTN297, .CloseBTN298, .CloseBTN299, 
+  .CloseBTN300, .CloseBTN301, .CloseBTN302, .CloseBTN303, .CloseBTN304, .CloseBTN305, .CloseBTN306,
+  .CloseBTN307, .CloseBTN308, .CloseBTN309, .CloseBTN310, .CloseBTN311, .CloseBTN312,
+  .CloseBTN313, .CloseBTN314, .CloseBTN315, .CloseBTN316,.CloseBTN317, .CloseBTN318, .CloseBTN3188, 
+  .CloseBTN319, .CloseBTN320, .CloseBTN321, .CloseBTN322, .CloseBTN322, .CloseBTN323, 
+  .CloseBTN324,.CloseBTN325, .CloseBTN326, .CloseBTN327, .CloseBTN328, .CloseBTN329, 
+  .CloseBTN330, .CloseBTN331, .CloseBTN332, .CloseBTN333, .CloseBTN334, .CloseBTN335, .CloseBTN336, 
+  .CloseBTN337, .CloseBTN338, .CloseBTN339, .CloseBTN340, .CloseBTN341, .CloseBTN342, .CloseBTN343, 
+  .CloseBTN344, .CloseBTN345, .CloseBTN346, .CloseBTN347, .CloseBTN348, .CloseBTN349, .CloseBTN350, .CloseBTN351, 
+  .CloseBTN352, .CloseBTN353, .CloseBTN354, .CloseBTN355{
+    position: relative;
+    margin-top: -2.4%;
+    padding: 3.2% 5%;
+    color: white;
+    float: right;
+    /* right: 5%; */
+    font-size: 1.3vw;
+    z-index: 2000;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.2s ease-in;
+  }
+
+
+
+.CloseBTN:hover, .CloseBTN2:hover, .CloseBTN3:hover, .CloseBTN4:hover, .CloseBTN5:hover, .CloseBTN6:hover,
+.CloseBTN7:hover, .CloseBTN8:hover, .CloseBTN9:hover, .CloseBTN10:hover, .CloseBTN11:hover, .CloseBTN12:hover, 
+.CloseBTN13:hover, .CloseBTN14:hover, .CloseBTN15:hover, .CloseBTN16:hover,.CloseBTN17:hover, .CloseBTN18:hover, 
+.CloseBTN19:hover, .CloseBTN20:hover, .CloseBTN21:hover, .CloseBTN22:hover, .CloseBTN22:hover, .CloseBTN23:hover, 
+.CloseBTN24:hover,.CloseBTN25:hover, .CloseBTN26:hover, .CloseBTN27:hover, .CloseBTN28:hover, .CloseBTN29:hover, 
+.CloseBTN30:hover, .CloseBTN31:hover, .CloseBTN32:hover, .CloseBTN33:hover, .CloseBTN34:hover, .CloseBTN35:hover, .CloseBTN36:hover, 
+.CloseBTN37:hover, .CloseBTN38:hover, .CloseBTN39:hover, .CloseBTN40:hover, .CloseBTN41:hover, .CloseBTN42:hover, .CloseBTN43:hover, 
+.CloseBTN44:hover, .CloseBTN45:hover, .CloseBTN46:hover, .CloseBTN47:hover, .CloseBTN48:hover, .CloseBTN49:hover, .CloseBTN50:hover, .CloseBTN51:hover, 
+.CloseBTN52:hover, .CloseBTN53:hover, .CloseBTN54:hover, .CloseBTN55:hover, .CloseBTN56:hover, .CloseBTN57:hover, .CloseBTN58:hover, .CloseBTN59:hover, 
+.CloseBTN60:hover, .CloseBTN61:hover, .CloseBTN62:hover, .CloseBTN63:hover, .CloseBTN64:hover, .CloseBTN65:hover, .CloseBTN66:hover, .CloseBTN67:hover, 
+.CloseBTN68:hover, .CloseBTN69:hover, .CloseBTN70:hover, .CloseBTN71:hover, .CloseBTN72:hover, .CloseBTN73:hover, .CloseBTN74:hover, .CloseBTN75:hover, 
+.CloseBTN76:hover, .CloseBTN77:hover, .CloseBTN78:hover, .CloseBTN79:hover, .CloseBTN80:hover, .CloseBTN81:hover, .CloseBTN82:hover, .CloseBTN83:hover, 
+.CloseBTN84:hover, .CloseBTN85:hover, .CloseBTN86:hover, .CloseBTN87:hover, .CloseBTN88:hover, .CloseBTN89:hover, .CloseBTN90:hover, .CloseBTN91:hover, 
+.CloseBTN92:hover, .CloseBTN93:hover, .CloseBTN94:hover, .CloseBTN95:hover, .CloseBTN96:hover, .CloseBTN97:hover, .CloseBTN98:hover, .CloseBTN99:hover, 
+.CloseBTN100:hover, .CloseBTN101:hover, .CloseBTN102:hover, .CloseBTN103:hover, .CloseBTN104:hover, .CloseBTN105:hover, .CloseBTN106:hover, .CloseBTN108:hover, .CloseBTN107:hover, 
+.CloseBTN109:hover, .CloseBTN110:hover, .CloseBTN111:hover, .CloseBTN112:hover, .CloseBTN113:hover, .CloseBTN114:hover, .CloseBTN115:hover, .CloseBTN116:hover, 
+.CloseBTN117:hover, .CloseBTN118:hover, .CloseBTN119:hover, .CloseBTN120:hover, .CloseBTN121:hover, .CloseBTN122:hover, .CloseBTN123:hover, .CloseBTN124:hover, 
+.CloseBTN125:hover, .CloseBTN126:hover, .CloseBTN127:hover, .CloseBTN128:hover, .CloseBTN129:hover, .CloseBTN130:hover, .CloseBTN131:hover, .CloseBTN132:hover, 
+.CloseBTN133:hover, .CloseBTN134:hover, .CloseBTN135:hover, .CloseBTN136:hover, .CloseBTN137:hover, .CloseBTN138:hover, .CloseBTN139:hover, .CloseBTN140:hover, 
+.CloseBTN141:hover, .CloseBTN142:hover, .CloseBTN143:hover, 
+.CloseBTN144:hover, .CloseBTN145:hover, .CloseBTN146:hover, .CloseBTN147:hover, .CloseBTN148:hover, .CloseBTN149:hover, .CloseBTN150:hover, .CloseBTN151:hover, 
+.CloseBTN152:hover, .CloseBTN153:hover, .CloseBTN154:hover, .CloseBTN155:hover, .CloseBTN156:hover, .CloseBTN157:hover, .CloseBTN158:hover, .CloseBTN159:hover, 
+.CloseBTN160:hover, .CloseBTN161:hover, .CloseBTN162:hover, .CloseBTN163:hover, .CloseBTN164:hover, .CloseBTN165:hover, .CloseBTN166:hover, .CloseBTN167:hover, 
+.CloseBTN168:hover, .CloseBTN169:hover, .CloseBTN170:hover, .CloseBTN171:hover, .CloseBTN172:hover, .CloseBTN173:hover, .CloseBTN174:hover, .CloseBTN175:hover, 
+.CloseBTN176:hover, .CloseBTN177:hover, .CloseBTN178:hover, .CloseBTN179:hover, .CloseBTN180:hover, .CloseBTN181:hover, .CloseBTN182:hover, .CloseBTN183:hover, 
+.CloseBTN184:hover, .CloseBTN185:hover, .CloseBTN186:hover, .CloseBTN187:hover, .CloseBTN188:hover, .CloseBTN189:hover, .CloseBTN190:hover, .CloseBTN191:hover, 
+.CloseBTN192:hover, .CloseBTN193:hover, .CloseBTN194:hover, .CloseBTN195:hover, .CloseBTN196:hover, .CloseBTN197:hover, .CloseBTN198:hover, .CloseBTN199:hover, 
+.CloseBTN200:hover, .CloseBTN201:hover, .CloseBTN202:hover, .CloseBTN203:hover, .CloseBTN204:hover, .CloseBTN205:hover, .CloseBTN206:hover, .CloseBTN108:hover, .CloseBTN107:hover, 
+.CloseBTN209:hover, .CloseBTN210:hover, .CloseBTN211:hover, .CloseBTN212:hover, .CloseBTN213:hover, .CloseBTN214:hover, .CloseBTN215:hover, .CloseBTN116:hover, 
+.CloseBTN217:hover, .CloseBTN218:hover, .CloseBTN219:hover, .CloseBTN220:hover, .CloseBTN221:hover, .CloseBTN222:hover, .CloseBTN223:hover, .CloseBTN124:hover, 
+.CloseBTN225:hover, .CloseBTN226:hover, .CloseBTN227:hover, .CloseBTN228:hover, .CloseBTN229:hover, .CloseBTN230:hover, .CloseBTN231:hover, .CloseBTN132:hover, 
+.CloseBTN233:hover, .CloseBTN234:hover, .CloseBTN235:hover, .CloseBTN236:hover, .CloseBTN237:hover, .CloseBTN238:hover, .CloseBTN239:hover, .CloseBTN140:hover, 
+.CloseBTN241:hover, .CloseBTN242:hover, .CloseBTN243:hover, 
+.CloseBTN244:hover, .CloseBTN245:hover, .CloseBTN246:hover, .CloseBTN247:hover, .CloseBTN248:hover, .CloseBTN249:hover, .CloseBTN250:hover, .CloseBTN251:hover, 
+.CloseBTN252:hover, .CloseBTN253:hover, .CloseBTN254:hover, .CloseBTN255:hover, .CloseBTN256:hover, .CloseBTN257:hover, .CloseBTN258:hover, .CloseBTN259:hover, 
+.CloseBTN260:hover, .CloseBTN261:hover, .CloseBTN262:hover, .CloseBTN263:hover, .CloseBTN264:hover, .CloseBTN265:hover, .CloseBTN266:hover, .CloseBTN267:hover, 
+.CloseBTN268:hover, .CloseBTN269:hover, .CloseBTN270:hover, .CloseBTN271:hover, .CloseBTN272:hover, .CloseBTN273:hover, .CloseBTN274:hover, .CloseBTN275:hover, 
+.CloseBTN276:hover, .CloseBTN277:hover, .CloseBTN278:hover, .CloseBTN279:hover, .CloseBTN280:hover, .CloseBTN281:hover, .CloseBTN282:hover, .CloseBTN283:hover, 
+.CloseBTN284:hover, .CloseBTN285:hover, .CloseBTN286:hover, .CloseBTN287:hover, .CloseBTN288:hover, .CloseBTN289:hover, .CloseBTN290:hover, .CloseBTN291:hover, 
+.CloseBTN292:hover, .CloseBTN293:hover, .CloseBTN294:hover, .CloseBTN295:hover, .CloseBTN296:hover, .CloseBTN297:hover, .CloseBTN298:hover, .CloseBTN299:hover, 
+.CloseBTN300:hover, .CloseBTN301:hover, .CloseBTN302:hover, .CloseBTN303:hover, .CloseBTN304:hover, .CloseBTN305:hover, .CloseBTN306:hover, .CloseBTN308:hover, .CloseBTN307:hover, 
+.CloseBTN309:hover, .CloseBTN310:hover, .CloseBTN311:hover, .CloseBTN312:hover, 
+.CloseBTN313:hover, .CloseBTN314:hover, .CloseBTN315:hover, .CloseBTN316:hover,.CloseBTN317:hover, .CloseBTN318:hover, .CloseBTN3188:hover, 
+.CloseBTN319:hover, .CloseBTN320:hover, .CloseBTN321:hover, .CloseBTN322:hover, .CloseBTN322:hover, .CloseBTN323:hover, 
+.CloseBTN324,  .CloseBTN325:hover, .CloseBTN326:hover, .CloseBTN327:hover, .CloseBTN328:hover, .CloseBTN329:hover, 
+.CloseBTN330:hover, .CloseBTN331:hover, .CloseBTN332:hover, .CloseBTN333:hover, .CloseBTN334:hover, .CloseBTN335:hover, .CloseBTN336:hover, 
+.CloseBTN337:hover, .CloseBTN338:hover, .CloseBTN339:hover, .CloseBTN340:hover, .CloseBTN341:hover, .CloseBTN342:hover, .CloseBTN343:hover, 
+.CloseBTN344:hover, .CloseBTN345:hover, .CloseBTN346:hover, .CloseBTN347:hover, .CloseBTN348:hover, .CloseBTN349:hover, .CloseBTN350:hover, .CloseBTN351:hover, 
+.CloseBTN352:hover, .CloseBTN353:hover, .CloseBTN354:hover, .CloseBTN355:hover{
+
+  transition: 0.2s ease-in;
+  border-bottom: 8px solid white;
+  animation: changeBg 0.5s infinite;
+  background: url(R1.jpeg);
+}
+
+
+.tagselected{
+  color: white;
+  position: fixed;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  width: 14%;
+  left: 7%;
+  bottom: 120px;
+  background-color: #000000;
+  border: 1px solid white;
+  border-radius: 25px;
+  text-align: center;
+  font-size: 1vw;
+
+}
+
+
+.streetarttag{
+  display: none;
+}
+
+.artepublicatag{
+
+  display: none;
+}
+.graffititag{
+
+  display: none;
+}
+
+.tagtag{
+  display: none;
+}
+
+.throw-uptag{
+  display: none;
+}
+
+.letteringtag{
+
+  display: none;
+}
+
+.piecetag{
+  display: none;
+}
+.wildstyletag{
+  display: none;
+}
+
+.muraltag{
+
+  display: none;
+}
+
+.stickertag{
+  display: none;
+}
+.stenciltag{
+  display: none;
+}
+
+.yarnbombingtag{
+
+  display: none;
+}
+
+.postertag{
+  display: none;
+}
+
+.mosaicotag{
+
+  display: none;
+}
+
+.muraltag{
+  display: none;
+
+}
+
+.esculturatag{
+  display: none;
+}
+
+.instalaçõestag{
+
+  display: none;
+}
+
+.sociopoliticatag{
+  display: none;
+}
+.espacialtag{
+  display: none;
+}
+
+.comercialtag{
+  display: none;
+}
+.coletivatag{
+  display: none;
+}
+
+.individualtag{
+
+  display: none;
+}
+
+
+
+
+
+
+
