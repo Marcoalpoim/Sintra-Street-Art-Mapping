@@ -208,7 +208,7 @@ section select {
 
 @media screen and (max-width: 400px) {
   .wrapper {
-    margin-top: 0;
+    margin-top: 40%;
   }
   header {
     flex-direction: column;

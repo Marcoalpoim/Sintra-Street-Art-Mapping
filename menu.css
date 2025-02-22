@@ -64,7 +64,7 @@ body::-webkit-scrollbar {
     text-align: left;
     position: fixed;
     display: block;
-    padding: 0.5% 1% 0.5% 1%;
+    padding: 0.4% 1% 0.5% 1%;
     border: 1px solid rgb(255, 255, 255);
     background-color: #00000091;
     z-index: 100;
@@ -77,7 +77,7 @@ body::-webkit-scrollbar {
 
 color: #ffffff;
 font-style: italic;
-border-bottom: 10px solid white;
+border-bottom:5px solid white;
 cursor: pointer;
 transition: 0.2s ease-in;
 animation: changeBg 0.5s infinite;
@@ -316,7 +316,7 @@ filter: blur(5px);
 .mapa{
  
   margin: 0%;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
   left: 40.88%;
   position: fixed;
   background-color: #00000091;
@@ -333,14 +333,14 @@ filter: blur(5px);
   color: rgb(0, 0, 0);
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   transition: 0.2s ease-in;
 }
 
 .mapa-ativo{
  
   margin: 0%;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
   left: 40.88%;
   position: fixed;
   background-color: #00000091;
@@ -349,7 +349,7 @@ filter: blur(5px);
   transition: 0.2s ease-in;
     width: auto;
     border: 1px solid white;
-    border-bottom: 10px solid white;
+    border-bottom: 5px solid white;
     text-decoration: none;
   
 }
@@ -358,7 +358,7 @@ filter: blur(5px);
   color: rgb(0, 0, 0);
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   transition: 0.2s ease-in;
 }
 
@@ -367,7 +367,7 @@ filter: blur(5px);
 
 .arquivo{
 
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
 align-items: center;
   position: fixed;
   z-index: 100;
@@ -384,7 +384,7 @@ align-items: center;
 }
 .arquivo:hover{
 
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   transition: 0.2s ease-in;
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
@@ -392,7 +392,7 @@ align-items: center;
 
 .arquivo-ativo{
 
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
 align-items: center;
   position: fixed;
   z-index: 100;
@@ -404,7 +404,7 @@ align-items: center;
  left:46%;
  margin: 0%;
  transition: 0.2s ease-in;  
- border-bottom: 10px solid white;
+ border-bottom: 5px solid white;
  animation: changeBg 0.5s infinite;
  background: url(R1.jpeg);
 }
@@ -412,7 +412,7 @@ align-items: center;
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
   background: transparent ;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   transition: 0.2s ease-in;
  
 }
@@ -422,7 +422,7 @@ align-items: center;
 .rede{
  
   margin: 0%;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
   right: 40.8%;
   position: fixed;
   z-index: 100;
@@ -437,7 +437,7 @@ align-items: center;
 }
 .rede:hover{
 
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   transition: 0.2s ease-in;
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
@@ -447,7 +447,7 @@ align-items: center;
 .rede-ativo{
  
   margin: 0%;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
   right: 40.8%;
   position: fixed;
   z-index: 100;
@@ -457,13 +457,13 @@ align-items: center;
       border: 1px solid white;
       text-decoration: none;
       transition: 0.2s ease-in;
-      border-bottom: 10px solid white;
+      border-bottom: 5px solid white;
     
 }
 .rede-ativo:hover{
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   transition: 0.2s ease-in;
  
 }
@@ -471,7 +471,7 @@ align-items: center;
 .blank{
  
   margin: 0%;
-  padding: 0.5% 0.9%;
+  padding: 0.45% 0.9%;
   right: 7.9%;
   position: fixed;
   z-index: 100;
@@ -491,7 +491,7 @@ align-items: center;
   /* margin-top: 6.48%; */
   position: fixed;
   z-index: 6;
-  height: 89.8vh;
+  height: calc(100% - 94px);
   font-size: 1.3vw;
   width: 20%;
   color: #ffffff00;
@@ -503,7 +503,7 @@ align-items: center;
 .addmore{
  
   margin: 0%;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
   right: 5%;
   position: fixed;
 
@@ -521,7 +521,7 @@ align-items: center;
 .addmore:hover{
   background: url(R1.jpeg);
   animation: changeBg 0.5s infinite;
-  border-bottom: 10px solid white;
+  border-bottom: 5px solid white;
   font-style: none !important;
   transition: 0.2s ease-in;
 }
@@ -529,7 +529,7 @@ align-items: center;
 .addmore-ativo{
  
   margin: 0%;
-  padding: 0.5% 1% 0.5% 1%;
+  padding: 0.4% 1% 0.5% 1%;
   right: 5%;
   position: fixed;
 
@@ -541,7 +541,7 @@ align-items: center;
     width: auto;
     border: 1px solid white;
     text-decoration: none;
-    border-bottom: 10px solid white;
+    border-bottom:5px solid white;
   
 }
 .addmore-ativo:hover{
@@ -556,7 +556,7 @@ align-items: center;
 .noise{
  
   margin: 0%;
-  margin: 2.8% 0% 0%;
+  margin: 2.5% 0% 0%;
   left: 5%;
   position: fixed;
   z-index: 50;
@@ -566,7 +566,7 @@ align-items: center;
   transition: 0.2s ease-in;
   width: 90%;
   height: 2.5vw;
-  border: 1px solid white;
+  border-bottom: 1px solid white;
   text-decoration: none;
  
   box-sizing: border-box;
@@ -629,7 +629,7 @@ align-items: center;
   margin-right: auto;
   margin-left: auto;
   color: white;
-  font-size: 1.5vw;
+  font-size: 2.5vw;
 }
 
 
@@ -1053,9 +1053,9 @@ p.radiofilterartepublica{
  @media only screen and (max-width: 550px) {
  
   .mapafilter_container{
-    margin-top: 9vh !important;
+    margin-top: 70vh!important;
     color: rgb(255, 255, 255);
-    left: 61vw;
+    left:55vw;
     right: 0;
     display: block;
     text-align: left;
@@ -1070,7 +1070,7 @@ p.radiofilterartepublica{
     position: relative;
     top: 0px;
     padding-left: 5px;
-    font-size: 1vh;
+    font-size: 2.5vw;
     white-space: nowrap;
   }
   .radiofiltercontainer {
@@ -1085,19 +1085,20 @@ p.radiofilterartepublica{
 
   .container {
   
-    margin-top: 10vh;
+    margin-top: 15vh;
   
     
   
   }
   button.freguesiatag {
-
-    font-size: 1.6vw !important;
+    height: 7vh;
+    font-size: 2vw !important;
+    line-height: 2.5vw;
     white-space: inherit !important;
   }
   
   .blank2 {
-    height: 89.6vh;
+    height: 89.7vh;
   }
   .toparquivo {
     height: 14%;
@@ -1109,11 +1110,12 @@ p.radiofilterartepublica{
   
   }
   .shuffle-button {
+    font-size: 3vw;
     margin-top: 12vh;
    
   }
   .ppicontainer {
-    margin: 55% 5%;
+    margin: 15% 5%;
     margin-right: auto;
     margin-left: auto;
     width: 70%;
@@ -1134,6 +1136,160 @@ p.radiofilterartepublica{
   font-size: 1.6vw;
   text-decoration: none;
 
+}
+.blank {
+ display: none;
+}
+.title {
+  color: rgb(255, 255, 255);
+  margin: 0%;
+  width: 73.5%;
+  left: 13%;
+  display: block;
+  text-align: center;
+  position: fixed;
+  display: block;
+  padding: 0.4% 1% 0.5% 1%;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: #00000091;
+  z-index: 100;
+  font-size: 4vw;
+  transition: 0.2s ease-in;
+}
+.addmore {
+  padding: 0.4% 1% 0.5% 2%;
+  font-size: 4vw;
+
+}
+.addmore-ativo {
+  padding: 0.4% 1% 0.5% 2%;
+  font-size: 4vw;
+
+}
+
+.noise {
+ display: none;
+}
+.aviso{
+  font-size: 3vw;
+}
+.mapa {
+  left: 28.5%;
+  margin-top: 10%;
+   font-size: 4vw;
+ 
+ }
+ .mapa-ativo {
+  left: 28.5%;
+  margin-top: 10%;
+   font-size: 4vw;
+ 
+ }
+.arquivo-ativo{
+  width: auto;
+  left: 40%;
+  margin-top: 10%;
+  font-size: 4vw;
+  border-bottom: 5px solid white;
+
+}
+.arquivo{
+  width: auto;
+  left: 40%;
+  margin-top: 10%;
+  font-size: 4vw;
+
+}
+.rede {
+  right: 30%;
+  margin-top: 10%;
+   font-size: 4vw;
+ 
+ }
+ .rede-ativo {
+  right: 30%;
+  margin-top: 10%;
+   font-size: 4vw;
+ 
+ }
+ .title-about {
+  color: rgb(136, 136, 136);
+  font-size: 3vw;
+  margin-left: 12.5%;
+
+}
+ .texto {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex
+;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  padding-top: 2%;
+  height: 60dvh;
+  flex-direction: column;
+  gap: 5%;
+}
+.about {
+  position: relative;
+  color: white;
+  font-size: 3.1vw;
+  width: 100%;
+  overflow-y: scroll;
+  padding-right: 0%;
+}
+.names {
+  padding-left: 0%;
+  position: relative;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  font-size: 3vw;
+  display: block;
+  overflow-y: scroll;
+}
+.CloseBTNlexicon1 {
+  position: sticky;
+  top: 9%;
+  color: white;
+  float: right;
+  right: 11.5%;
+  margin-top: -10%;
+  font-size: 10vw;
+  z-index: 2000;
+  cursor: pointer;
+}
+.CloseBTNlexicon1:hover{
+
+  font-size: 10vw;
+
+
+}
+.legenda1{
+  position: fixed;
+  bottom: 5%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  z-index: -1;
+  /* border: 1px solid white; */
+  /* background-color: #000000; */
+  text-align: center;
+ 
+}
+
+.legendatexto{
+
+  width: 100%;
+  font-size: 2vw;
+  flex-direction: row;
+  z-index: 80;
+  border: 1px solid white;
+  background-color: #00000083;
+  color: white;
+  text-align: center;
 }
 
 }

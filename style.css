@@ -30,7 +30,7 @@
     font-family: "ocr-aregular";
     float: right;
     position: fixed;
-    top: 30vh;
+    top: 18vh;
     }
 
     b.legenda{
@@ -112,7 +112,7 @@
  
     .info2 {
    
-        font: 1.4vh Arial, Helvetica, sans-serif;
+        font: 1vh   Arial, Helvetica, sans-serif;
         border: 1px solid white;
         
         color: #ffffff;
