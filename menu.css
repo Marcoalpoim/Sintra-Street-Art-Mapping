@@ -1254,11 +1254,9 @@ p.radiofilterstreetart{
 
 p.radiofilterartepublica{
 
-  height: 0.1vw;
-  margin-top: 8%;
-  margin-left: 8%;
-  margin-right: 12%;
-  padding: 0.2vh 0.25vh;
+  height: 10px;
+  width: 10px;
+  padding: 1px;
   color: white;
   border: 1px solid white;
   
@@ -1521,8 +1519,8 @@ margin: 0px 0;}
 }
 
   p.radiofilter2{
-        font-size: 12px;
-        line-height: 14px;
+        font-size: 10px;
+        line-height: 12px;
 
     position: relative;
     top: 0px;
