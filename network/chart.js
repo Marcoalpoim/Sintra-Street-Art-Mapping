@@ -324,7 +324,7 @@ Highcharts.addEvent(
 
 
 
-Highcharts.chart("container", {
+Highcharts.chart("container0", {
 
   
   chart: {
