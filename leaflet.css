@@ -140,7 +140,7 @@
 	pointer-events: none;
 	}
 .leaflet-top {
-	margin-top: 30vh;
+	margin-top: 0;
 	}
 .leaflet-right {
 	left: 0;
@@ -162,8 +162,8 @@
 	margin-bottom: 11vh;
 	}
 .leaflet-left .leaflet-control {
-    margin-left: 170px;
-    margin-top: 160px;
+    margin-left: 0px;
+    margin-top: 260px;
 	}
 
 
@@ -210,6 +210,7 @@
 
 .leaflet-interactive {
 	cursor: pointer;
+	transition: fill-opacity 0.4s ease, stroke 0.4s ease, stroke-width 0.4s ease;
 	}
 .leaflet-grab {
 	cursor: -webkit-grab;
@@ -428,9 +429,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	.leaflet-touch .leaflet-bar {
 		border: 1px solid rgb(255, 255, 255);
 		background-clip: padding-box;
-		float: right;
+		float: left;
 		top: 26%;
-		right: 5%;
+		left: 2%;
 		animation: changeBg 0.5s infinite;
 		background: url(R1.jpeg);
 		}

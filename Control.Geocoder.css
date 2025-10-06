@@ -36,7 +36,8 @@
   display: inline-block;
 }
 .leaflet-control-geocoder-form input {
-  font-size: 120%;
+  font-size: 12px;
+  line-height: 14px;
   border: 0;
   background-color: transparent;
   width: 100%;

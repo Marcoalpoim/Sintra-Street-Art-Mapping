@@ -51,7 +51,7 @@ var pointdata = L.geoJSON(pointJSON , {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mainpage_icon.png",
-            iconSize: [4, 4],
+            iconSize: [6, 6],
              
         });
         return L.marker(latlng, { icon: icons});
@@ -139,16 +139,12 @@ function style(feature) {
 function highlightFeature(e) {
     var layer = e.target;
 
-
     layer.setStyle({
         weight: 2,
         color: 'white',
         dashArray: '',
         fillOpacity: 0.8,
-    
-       
     });
-
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
@@ -165,14 +161,28 @@ function resetHighlight(e) {
 
 
 
-
 function zoomToFeature(e) {
-      // location.href = 'arquivo.html';
-    
-      map.fitBounds(e.target.getBounds());
+    // calcula os limites do polígono
+    var bounds = e.target.getBounds();
 
+    // faz o zoom para os limites
+    map.fitBounds(bounds);
+
+    // calcula o centro
+    var center = bounds.getCenter();
+
+    // converte para coordenadas do ecrã
+    var point = map.latLngToContainerPoint(center);
+
+    // desloca 100px para cima (assim o polígono vai ficar 100px mais abaixo no ecrã)
+    point.y = point.y - 100;
+
+    // converte de volta para coordenadas geográficas
+    var newCenter = map.containerPointToLatLng(point);
+
+    // aplica o pan suave para o novo centro
+    map.panTo(newCenter, { animate: true });
 }
-
 function onclick(e) {
     window.open(e.target.feature.properties.link);
 }
@@ -204,13 +214,26 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Freguesias do Concelho de Sintra</h4>' +  (props ?
-        '<b class="legenda">'+ '<br>' + props.name + '<br>' + '<br>' + props.graffiti + props.tag + props.throwup + props.lettering + props.piece + props.wildstyle + props.sticker + props.stencil + props.yarnbombing + props.poster + props.mosaico + props.mural + props.instalações + props.tags + '</b> ' : 'Hover sobre uma freguesia' );
+    // faz fade-out
+    this._div.classList.add("updating");
 
+    // espera um bocadinho e troca o conteúdo
+    setTimeout(() => {
+        this._div.innerHTML =
+            '<h4>Freguesias do Concelho <br> de Sintra</h4>' +
+            (props
+                ? '<b class="legenda">'+ props.name + '<br><br>' +
+                  props.graffiti + props.tag + props.throwup + props.lettering +
+                  props.piece + props.wildstyle + props.sticker + props.stencil +
+                  props.yarnbombing + props.poster + props.mosaico + props.mural +
+                  props.instalações + props.tags +
+                  '</b>'
+                : 'Hover sobre uma freguesia');
 
-
-
-    };
+        // faz fade-in
+        this._div.classList.remove("updating");
+    }, 150); // deve ser menor que o tempo do CSS
+};
 
 info.addTo(map);
 

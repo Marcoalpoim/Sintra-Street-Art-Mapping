@@ -9,20 +9,25 @@
 
 
 .login-page {
-  width: 100%;
-  margin-top:30%;
-  /* position: relative; */
-  padding: 0% 0 0;
-  margin-right: auto;
-  margin-left: auto;
+width: 100%;
+    height: 100dvh;
+    /* margin-top: 8%; */
+    display: flex
+;
+    position: relative;
+    /* padding: 8% 0 0; */
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    align-items: center;
+    justify-content: center;
+
 }
 .form {
   position: relative;
   z-index: 1;
   background: #000000;
   max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
+  margin: 0 auto ;
   text-align: center;
   font-family: "ocr-aregular";
 }
@@ -183,18 +188,21 @@ a.buttonlogin{
 button.freguesiatag {
 
     margin-bottom: 0%;
+    white-space: inherit;
     color: rgba(255, 255, 255, 0.432);
+    backdrop-filter: blur(15px);
     background: rgba(0, 0, 0, 0);
     text-align: left;
     font-family: "ocr-aregular";
     white-space:nowrap;
-    font-size: 0.8vw;
-    height: 5.1vh;
+    font-size: 14px;
+    height: auto;
+    border-radius: 30px;
       /*  margin-left: 2.5vw; */
-      /*   padding: 2% 2% 2% 2%; */
+     padding: 2px 5px; 
     border: 1px solid rgba(255, 255, 255, 0.432);
     transition: 0.2s ease-out;
-    width: 91%;
+    width: auto;
     z-index: 9;
     box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -203,17 +211,16 @@ button.freguesiatag {
 }
 
 button.freguesiatag:hover{
-    color: white;
+   color: white;
     
     font-style: italic;
     transition: 0.2s ease-in;
-    border-left: 8px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);;
     z-index: 9;
-    background: url(R1.jpeg);
-    animation: changeBg 0.5s infinite;
+
     box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -221,12 +228,10 @@ button.freguesiatag:hover{
 
 button.freguesiatag.active{
   color: white;
-  border-left: 8px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
   border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
   border-right: 2px solid rgb(255, 255, 255);;
-  animation: changeBg 0.5s infinite;
-  background: url(R1.jpeg);
   z-index: 9;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -235,19 +240,19 @@ button.freguesiatag.active{
 
 
 .filterDiv {
-
     float: left;
     background-color: #000000;
     color: #ffffff;
     line-height: 10px;
-    margin: 1%;
+        margin: 5px 10px;
     display: none;
-    width: 15%; 
+width: 280px;
     border: 1px dashed rgb(255, 255, 255);
+    border-radius: 10px;
     transition: box-shadow .25s;
     font-weight: 300;
     font-size: 0.8vw;
-    padding:1%;
+    padding: 10px;
  
     text-align: left;
    
@@ -293,13 +298,16 @@ button.freguesiatag.active{
 
 .containerpreloader {
   position: fixed;
-  left: 0;
+
 	background: #000000;
 	color: #fff;
 	width: 100%;
 	min-height: 100vh;
 	display: flex;
   z-index: 5;
+  align-items: center;
+    justify-content: center;
+
 }
 
 .preloader {
@@ -341,13 +349,15 @@ button.freguesiatag.active{
 
 
   .freguesiascontainer{
-    margin-top: 4.9%;
-    width: 22%;
-    height: 75%;
-    display: block;
-    float: left;
+  width: 80%;
+    /* height: 75%; */
+    display: flex
+;
+  
     z-index: 998;
-    position: fixed;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: center;
     
   }
 
@@ -424,10 +434,7 @@ button.freguesiatag.active{
     transition: text-decoration 0.25s;
   }
   
-  li {
-    height: 5vh;
-  }
-  
+ 
   .container {
     display: block;
     margin-top: 20vh;
@@ -636,3 +643,33 @@ padding-top: 2%;
 }
 
 
+.highcharts-figure, .highcharts-data-table table {
+transition: none !important;
+    width: 100%;
+    height: 100dvh;
+    display: flex
+;padding: 10em 0;
+    border: 1px solid rgba(72, 255, 0, 0);
+    align-items: center;
+}
+
+
+
+#container, #container3, 
+#container6, #container7, #container8, #container9, #container10, #container12,#container13, #container14{
+
+    margin: auto;
+    width: 100%;
+ 
+    border: 1px solid rgba(255, 0, 0, 0);
+
+}
+
+
+ @media only screen and (max-width: 768px) {
+.freguesiascontainer {
+        width: 100%;
+        justify-content: center;
+    
+}
+}

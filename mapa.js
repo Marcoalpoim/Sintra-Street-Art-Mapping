@@ -32,7 +32,7 @@ var pointdata = L.geoJSON(point , {
   pointToLayer: function (feature, latlng) {
       const icons = new L.Icon({
           iconUrl: "images/throwup.png",
-          iconSize: [4, 4],       
+          iconSize: [6, 6],       
       });
       return L.marker(latlng, { icon: icons});
   }}).addTo(map)
@@ -68,7 +68,7 @@ var point2 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/throwup.png",
-            iconSize: [4, 4],       
+            iconSize: [6, 6],       
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map2)
@@ -107,7 +107,7 @@ var point3 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mural.png",
-            iconSize: [4, 4],       
+            iconSize: [6, 6],       
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map3)
@@ -143,7 +143,7 @@ var point4 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/icon.png",
-            iconSize: [4, 4],      
+            iconSize: [6, 6],      
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map4)
@@ -179,7 +179,7 @@ var point5 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mural.png",
-            iconSize: [4, 4],      
+            iconSize: [6, 6],      
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map5)
@@ -215,7 +215,7 @@ var point6 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mural.png",
-            iconSize: [4, 4],      
+            iconSize: [6, 6],      
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map6)
@@ -251,7 +251,7 @@ var point7 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mural.png",
-            iconSize: [4, 4],     
+            iconSize: [6, 6],     
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map7)
@@ -287,7 +287,7 @@ var point8 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl:"images/mural.png",
-            iconSize: [4, 4],     
+            iconSize: [6, 6],     
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map8)
@@ -324,7 +324,7 @@ var point9 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mural.png",
-            iconSize: [4, 4],     
+            iconSize: [6, 6],     
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map9)
@@ -360,7 +360,7 @@ var point10 = {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: "images/mural.png",
-            iconSize: [4, 4],     
+            iconSize: [6, 6],     
         });
         return L.marker(latlng, { icon: icons});
     }}).addTo(map10)
@@ -396,7 +396,7 @@ var point10 = {
         pointToLayer: function (feature, latlng) {
             const icons = new L.Icon({
                 iconUrl: "images/throwup.png",
-                iconSize: [4, 4],       
+                iconSize: [6, 6],       
             });
             return L.marker(latlng, { icon: icons});
         }}).addTo(map11)
@@ -432,7 +432,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/mural.png",
-                  iconSize: [4, 4],       
+                  iconSize: [6, 6],       
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map12)
@@ -469,7 +469,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/wildstyle.png",
-                  iconSize: [4, 4],       
+                  iconSize: [6, 6],       
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map13)
@@ -505,7 +505,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/wildstyle.png",
-                  iconSize: [4, 4],      
+                  iconSize: [6, 6],      
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map14)
@@ -541,7 +541,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/graffiti.png",
-                  iconSize: [4, 4],      
+                  iconSize: [6, 6],      
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map15)
@@ -577,7 +577,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/throwup.png",
-                  iconSize: [4, 4],      
+                  iconSize: [6, 6],      
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map16)
@@ -613,7 +613,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/instalaçoes.png",
-                  iconSize: [4, 4],     
+                  iconSize: [6, 6],     
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map17)
@@ -649,7 +649,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/mural.png",
-                  iconSize: [4, 4],     
+                  iconSize: [6, 6],     
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map18)
@@ -686,7 +686,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/mural.png",
-                  iconSize: [4, 4],     
+                  iconSize: [6, 6],     
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map19)
@@ -722,7 +722,7 @@ var point10 = {
           pointToLayer: function (feature, latlng) {
               const icons = new L.Icon({
                   iconUrl: "images/mural.png",
-                  iconSize: [4, 4],     
+                  iconSize: [6, 6],     
               });
               return L.marker(latlng, { icon: icons});
           }}).addTo(map20)
@@ -758,7 +758,7 @@ var point10 = {
             pointToLayer: function (feature, latlng) {
                 const icons = new L.Icon({
                     iconUrl:  "images/mural.png",
-                    iconSize: [4, 4],       
+                    iconSize: [6, 6],       
                 });
                 return L.marker(latlng, { icon: icons});
             }}).addTo(map21)
@@ -794,7 +794,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],       
+                      iconSize: [6, 6],       
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map22)
@@ -831,7 +831,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],       
+                      iconSize: [6, 6],       
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map23)
@@ -867,7 +867,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mosaico.png",
-                      iconSize: [4, 4],      
+                      iconSize: [6, 6],      
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map24)
@@ -903,7 +903,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],      
+                      iconSize: [6, 6],      
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map25)
@@ -939,7 +939,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],      
+                      iconSize: [6, 6],      
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map26)
@@ -975,7 +975,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],     
+                      iconSize: [6, 6],     
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map27)
@@ -1011,7 +1011,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],     
+                      iconSize: [6, 6],     
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map28)
@@ -1048,7 +1048,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],     
+                      iconSize: [6, 6],     
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map29)
@@ -1084,7 +1084,7 @@ var point10 = {
               pointToLayer: function (feature, latlng) {
                   const icons = new L.Icon({
                       iconUrl: "images/mural.png",
-                      iconSize: [4, 4],     
+                      iconSize: [6, 6],     
                   });
                   return L.marker(latlng, { icon: icons});
               }}).addTo(map30)
@@ -1119,7 +1119,7 @@ var point10 = {
                 pointToLayer: function (feature, latlng) {
                     const icons = new L.Icon({
                         iconUrl: "images/mural.png",
-                        iconSize: [4, 4],       
+                        iconSize: [6, 6],       
                     });
                     return L.marker(latlng, { icon: icons});
                 }}).addTo(map31)
@@ -1155,7 +1155,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],       
+                          iconSize: [6, 6],       
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map32)
@@ -1192,7 +1192,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],       
+                          iconSize: [6, 6],       
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map33)
@@ -1228,7 +1228,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],      
+                          iconSize: [6, 6],      
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map34)
@@ -1264,7 +1264,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],      
+                          iconSize: [6, 6],      
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map35)
@@ -1300,7 +1300,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],      
+                          iconSize: [6, 6],      
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map36)
@@ -1336,7 +1336,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/throwup.png",
-                          iconSize: [4, 4],     
+                          iconSize: [6, 6],     
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map37)
@@ -1372,7 +1372,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/throwup.png",
-                          iconSize: [4, 4],     
+                          iconSize: [6, 6],     
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map38)
@@ -1409,7 +1409,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],     
+                          iconSize: [6, 6],     
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map39)
@@ -1445,7 +1445,7 @@ var point10 = {
                   pointToLayer: function (feature, latlng) {
                       const icons = new L.Icon({
                           iconUrl: "images/mural.png",
-                          iconSize: [4, 4],     
+                          iconSize: [6, 6],     
                       });
                       return L.marker(latlng, { icon: icons});
                   }}).addTo(map40)
@@ -1481,7 +1481,7 @@ var point10 = {
                     pointToLayer: function (feature, latlng) {
                         const icons = new L.Icon({
                             iconUrl: "images/mural.png",
-                            iconSize: [4, 4],       
+                            iconSize: [6, 6],       
                         });
                         return L.marker(latlng, { icon: icons});
                     }}).addTo(map41)
@@ -1517,7 +1517,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/mural.png",
-                              iconSize: [4, 4],       
+                              iconSize: [6, 6],       
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map42)
@@ -1554,7 +1554,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/mural.png",
-                              iconSize: [4, 4],       
+                              iconSize: [6, 6],       
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map43)
@@ -1590,7 +1590,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/throwup.png",
-                              iconSize: [4, 4],      
+                              iconSize: [6, 6],      
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map44)
@@ -1626,7 +1626,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/mural.png",
-                              iconSize: [4, 4],      
+                              iconSize: [6, 6],      
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map45)
@@ -1662,7 +1662,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/wildstyle.png",
-                              iconSize: [4, 4],      
+                              iconSize: [6, 6],      
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map46)
@@ -1698,7 +1698,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/throwup.png",
-                              iconSize: [4, 4],     
+                              iconSize: [6, 6],     
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map47)
@@ -1734,7 +1734,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/mural.png",
-                              iconSize: [4, 4],     
+                              iconSize: [6, 6],     
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map48)
@@ -1771,7 +1771,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/mural.png",
-                              iconSize: [4, 4],     
+                              iconSize: [6, 6],     
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map49)
@@ -1807,7 +1807,7 @@ var point10 = {
                       pointToLayer: function (feature, latlng) {
                           const icons = new L.Icon({
                               iconUrl: "images/graffiti.png",
-                              iconSize: [4, 4],     
+                              iconSize: [6, 6],     
                           });
                           return L.marker(latlng, { icon: icons});
                       }}).addTo(map50)
@@ -1843,7 +1843,7 @@ var point10 = {
                         pointToLayer: function (feature, latlng) {
                             const icons = new L.Icon({
                                 iconUrl: "images/graffiti.png",
-                                iconSize: [4, 4],       
+                                iconSize: [6, 6],       
                             });
                             return L.marker(latlng, { icon: icons});
                         }}).addTo(map51)
@@ -1879,7 +1879,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/wildstyle.png",
-                                  iconSize: [4, 4],       
+                                  iconSize: [6, 6],       
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map52)
@@ -1916,7 +1916,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/mural.png",
-                                  iconSize: [4, 4],       
+                                  iconSize: [6, 6],       
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map53)
@@ -1952,7 +1952,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/mural.png",
-                                  iconSize: [4, 4],      
+                                  iconSize: [6, 6],      
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map54)
@@ -1988,7 +1988,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/mural.png",
-                                  iconSize: [4, 4],      
+                                  iconSize: [6, 6],      
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map55)
@@ -2024,7 +2024,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/mural.png",
-                                  iconSize: [4, 4],      
+                                  iconSize: [6, 6],      
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map56)
@@ -2060,7 +2060,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/lettering.png",
-                                  iconSize: [4, 4],     
+                                  iconSize: [6, 6],     
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map57)
@@ -2096,7 +2096,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/piece.png",
-                                  iconSize: [4, 4],     
+                                  iconSize: [6, 6],     
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map58)
@@ -2133,7 +2133,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/mosaico.png",
-                                  iconSize: [4, 4],     
+                                  iconSize: [6, 6],     
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map59)
@@ -2169,7 +2169,7 @@ var point10 = {
                           pointToLayer: function (feature, latlng) {
                               const icons = new L.Icon({
                                   iconUrl: "images/piece.png",
-                                  iconSize: [4, 4],     
+                                  iconSize: [6, 6],     
                               });
                               return L.marker(latlng, { icon: icons});
                           }}).addTo(map60)
@@ -2205,7 +2205,7 @@ var point10 = {
                             pointToLayer: function (feature, latlng) {
                                 const icons = new L.Icon({
                                     iconUrl: "images/piece.png",
-                                    iconSize: [4, 4],       
+                                    iconSize: [6, 6],       
                                 });
                                 return L.marker(latlng, { icon: icons});
                             }}).addTo(map61)
@@ -2241,7 +2241,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/piece.png",
-                                      iconSize: [4, 4],       
+                                      iconSize: [6, 6],       
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map62)
@@ -2278,7 +2278,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl:"images/mural.png",
-                                      iconSize: [4, 4],       
+                                      iconSize: [6, 6],       
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map63)
@@ -2314,7 +2314,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/mural.png",
-                                      iconSize: [4, 4],      
+                                      iconSize: [6, 6],      
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map64)
@@ -2350,7 +2350,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/mural.png",
-                                      iconSize: [4, 4],      
+                                      iconSize: [6, 6],      
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map65)
@@ -2386,7 +2386,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/mural.png",
-                                      iconSize: [4, 4],      
+                                      iconSize: [6, 6],      
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map66)
@@ -2422,7 +2422,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/throwup.png",
-                                      iconSize: [4, 4],     
+                                      iconSize: [6, 6],     
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map67)
@@ -2458,7 +2458,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/piece.png",
-                                      iconSize: [4, 4],     
+                                      iconSize: [6, 6],     
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map68)
@@ -2495,7 +2495,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/tag.png",
-                                      iconSize: [4, 4],     
+                                      iconSize: [6, 6],     
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map69)
@@ -2531,7 +2531,7 @@ var point10 = {
                               pointToLayer: function (feature, latlng) {
                                   const icons = new L.Icon({
                                       iconUrl: "images/mural.png",
-                                      iconSize: [4, 4],     
+                                      iconSize: [6, 6],     
                                   });
                                   return L.marker(latlng, { icon: icons});
                               }}).addTo(map70)
@@ -2567,7 +2567,7 @@ var point10 = {
                                 pointToLayer: function (feature, latlng) {
                                     const icons = new L.Icon({
                                         iconUrl:  "images/poster.png",
-                                        iconSize: [4, 4],       
+                                        iconSize: [6, 6],       
                                     });
                                     return L.marker(latlng, { icon: icons});
                                 }}).addTo(map71)
@@ -2603,7 +2603,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/mural.png",
-                                          iconSize: [4, 4],       
+                                          iconSize: [6, 6],       
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map72)
@@ -2640,7 +2640,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/escultura.png",
-                                          iconSize: [4, 4],       
+                                          iconSize: [6, 6],       
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map73)
@@ -2676,7 +2676,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/throwup.png",
-                                          iconSize: [4, 4],      
+                                          iconSize: [6, 6],      
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map74)
@@ -2712,7 +2712,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/mosaico.png",
-                                          iconSize: [4, 4],      
+                                          iconSize: [6, 6],      
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map75)
@@ -2748,7 +2748,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/escultura.png",
-                                          iconSize: [4, 4],      
+                                          iconSize: [6, 6],      
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map76)
@@ -2784,7 +2784,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/tag.png",
-                                          iconSize: [4, 4],     
+                                          iconSize: [6, 6],     
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map77)
@@ -2823,7 +2823,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl:"images/throwup.png",
-                                          iconSize: [4, 4],     
+                                          iconSize: [6, 6],     
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map79)
@@ -2859,7 +2859,7 @@ var point10 = {
                                   pointToLayer: function (feature, latlng) {
                                       const icons = new L.Icon({
                                           iconUrl: "images/escultura.png",
-                                          iconSize: [4, 4],     
+                                          iconSize: [6, 6],     
                                       });
                                       return L.marker(latlng, { icon: icons});
                                   }}).addTo(map80)
@@ -2895,7 +2895,7 @@ var point10 = {
                                     pointToLayer: function (feature, latlng) {
                                         const icons = new L.Icon({
                                             iconUrl:"images/mosaico.png",
-                                            iconSize: [4, 4],       
+                                            iconSize: [6, 6],       
                                         });
                                         return L.marker(latlng, { icon: icons});
                                     }}).addTo(map81)
@@ -2931,7 +2931,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/escultura.png",
-                                              iconSize: [4, 4],       
+                                              iconSize: [6, 6],       
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map82)
@@ -2968,7 +2968,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl:  "images/mural.png",
-                                              iconSize: [4, 4],       
+                                              iconSize: [6, 6],       
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map83)
@@ -3004,7 +3004,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/throwup.png",
-                                              iconSize: [4, 4],      
+                                              iconSize: [6, 6],      
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map84)
@@ -3040,7 +3040,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/throwup.png",
-                                              iconSize: [4, 4],      
+                                              iconSize: [6, 6],      
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map85)
@@ -3076,7 +3076,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/escultura.png",
-                                              iconSize: [4, 4],      
+                                              iconSize: [6, 6],      
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map86)
@@ -3112,7 +3112,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl:"images/throwup.png",
-                                              iconSize: [4, 4],     
+                                              iconSize: [6, 6],     
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map87)
@@ -3148,7 +3148,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/piece.png",
-                                              iconSize: [4, 4],     
+                                              iconSize: [6, 6],     
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map88)
@@ -3185,7 +3185,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/mural.png",
-                                              iconSize: [4, 4],     
+                                              iconSize: [6, 6],     
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map89)
@@ -3221,7 +3221,7 @@ var point10 = {
                                       pointToLayer: function (feature, latlng) {
                                           const icons = new L.Icon({
                                               iconUrl: "images/tag.png",
-                                              iconSize: [4, 4],     
+                                              iconSize: [6, 6],     
                                           });
                                           return L.marker(latlng, { icon: icons});
                                       },  }).addTo(map90)
@@ -3257,7 +3257,7 @@ var point10 = {
                                         pointToLayer: function (feature, latlng) {
                                             const icons = new L.Icon({
                                                 iconUrl: "images/throwup.png",
-                                                iconSize: [4, 4],       
+                                                iconSize: [6, 6],       
                                             });
                                             return L.marker(latlng, { icon: icons});
                                         },   }).addTo(map91)
@@ -3295,7 +3295,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/lettering.png",
-                                                  iconSize: [4, 4],       
+                                                  iconSize: [6, 6],       
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map93)
@@ -3331,7 +3331,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/throwup.png",
-                                                  iconSize: [4, 4],      
+                                                  iconSize: [6, 6],      
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map94)
@@ -3367,7 +3367,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/throwup.png",
-                                                  iconSize: [4, 4],      
+                                                  iconSize: [6, 6],      
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map95)
@@ -3403,7 +3403,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/graffiti.png",
-                                                  iconSize: [4, 4],      
+                                                  iconSize: [6, 6],      
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map96)
@@ -3439,7 +3439,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl:"images/graffiti.png",
-                                                  iconSize: [4, 4],     
+                                                  iconSize: [6, 6],     
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map97)
@@ -3475,7 +3475,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/throwup.png",
-                                                  iconSize: [4, 4],     
+                                                  iconSize: [6, 6],     
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map98)
@@ -3512,7 +3512,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/throwup.png",
-                                                  iconSize: [4, 4],     
+                                                  iconSize: [6, 6],     
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map99)
@@ -3548,7 +3548,7 @@ var point10 = {
                                           pointToLayer: function (feature, latlng) {
                                               const icons = new L.Icon({
                                                   iconUrl: "images/tag.png",
-                                                  iconSize: [4, 4],     
+                                                  iconSize: [6, 6],     
                                               });
                                               return L.marker(latlng, { icon: icons});
                                           },   }).addTo(map100)
@@ -3586,7 +3586,7 @@ var point10 = {
                                             pointToLayer: function (feature, latlng) {
                                                 const icons = new L.Icon({
                                                     iconUrl: "images/throwup.png",
-                                                    iconSize: [4, 4],       
+                                                    iconSize: [6, 6],       
                                                 });
                                                 return L.marker(latlng, { icon: icons});
                                             } }).addTo(map101)
@@ -3622,7 +3622,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl:  "images/mural.png",
-                                                      iconSize: [4, 4],       
+                                                      iconSize: [6, 6],       
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map102)
@@ -3659,7 +3659,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],       
+                                                      iconSize: [6, 6],       
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map103)
@@ -3695,7 +3695,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],      
+                                                      iconSize: [6, 6],      
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map104)
@@ -3731,7 +3731,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/throwup.png",
-                                                      iconSize: [4, 4],      
+                                                      iconSize: [6, 6],      
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map105)
@@ -3767,7 +3767,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],      
+                                                      iconSize: [6, 6],      
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map106)
@@ -3803,7 +3803,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],     
+                                                      iconSize: [6, 6],     
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map107)
@@ -3839,7 +3839,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],     
+                                                      iconSize: [6, 6],     
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map108)
@@ -3876,7 +3876,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],     
+                                                      iconSize: [6, 6],     
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map109)
@@ -3912,7 +3912,7 @@ var point10 = {
                                               pointToLayer: function (feature, latlng) {
                                                   const icons = new L.Icon({
                                                       iconUrl: "images/mural.png",
-                                                      iconSize: [4, 4],     
+                                                      iconSize: [6, 6],     
                                                   });
                                                   return L.marker(latlng, { icon: icons});
                                               },    }).addTo(map110)
@@ -3948,7 +3948,7 @@ var point10 = {
                                                   pointToLayer: function (feature, latlng) {
                                                       const icons = new L.Icon({
                                                           iconUrl: "images/wildstyle.png",
-                                                          iconSize: [4, 4],       
+                                                          iconSize: [6, 6],       
                                                       });
                                                       return L.marker(latlng, { icon: icons});
                                                   },}).addTo(map111)
@@ -3984,7 +3984,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/mural.png",
-                                                            iconSize: [4, 4],       
+                                                            iconSize: [6, 6],       
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map112)
@@ -4021,7 +4021,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/throwup.png",
-                                                            iconSize: [4, 4],       
+                                                            iconSize: [6, 6],       
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map113)
@@ -4057,7 +4057,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/throwup.png",
-                                                            iconSize: [4, 4],      
+                                                            iconSize: [6, 6],      
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map114)
@@ -4093,7 +4093,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/throwup.png",
-                                                            iconSize: [4, 4],      
+                                                            iconSize: [6, 6],      
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map115)
@@ -4129,7 +4129,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/graffiti.png",
-                                                            iconSize: [4, 4],      
+                                                            iconSize: [6, 6],      
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map116)
@@ -4165,7 +4165,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/throwup.png",
-                                                            iconSize: [4, 4],     
+                                                            iconSize: [6, 6],     
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map117)
@@ -4201,7 +4201,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/piece.png",
-                                                            iconSize: [4, 4],     
+                                                            iconSize: [6, 6],     
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map118)
@@ -4238,7 +4238,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/lettering.png",
-                                                            iconSize: [4, 4],     
+                                                            iconSize: [6, 6],     
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map119)
@@ -4274,7 +4274,7 @@ var point10 = {
                                                     pointToLayer: function (feature, latlng) {
                                                         const icons = new L.Icon({
                                                             iconUrl: "images/tag.png",
-                                                            iconSize: [4, 4],     
+                                                            iconSize: [6, 6],     
                                                         });
                                                         return L.marker(latlng, { icon: icons});
                                                     },    }).addTo(map120)
@@ -4310,7 +4310,7 @@ var point10 = {
                                                       pointToLayer: function (feature, latlng) {
                                                           const icons = new L.Icon({
                                                               iconUrl: "images/tag.png",
-                                                              iconSize: [4, 4],       
+                                                              iconSize: [6, 6],       
                                                           });
                                                           return L.marker(latlng, { icon: icons});
                                                       }, }).addTo(map121)
@@ -4346,7 +4346,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/mural.png",
-                                                                iconSize: [4, 4],       
+                                                                iconSize: [6, 6],       
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map122)
@@ -4383,7 +4383,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/icon.png",
-                                                                iconSize: [4, 4],       
+                                                                iconSize: [6, 6],       
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map123)
@@ -4419,7 +4419,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/tag.png",
-                                                                iconSize: [4, 4],      
+                                                                iconSize: [6, 6],      
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map124)
@@ -4455,7 +4455,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/mural.png",
-                                                                iconSize: [4, 4],      
+                                                                iconSize: [6, 6],      
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map125)
@@ -4491,7 +4491,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/mural.png",
-                                                                iconSize: [4, 4],      
+                                                                iconSize: [6, 6],      
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map126)
@@ -4527,7 +4527,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/wildstyle.png",
-                                                                iconSize: [4, 4],     
+                                                                iconSize: [6, 6],     
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map127)
@@ -4563,7 +4563,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/graffiti.png", 
-                                                                iconSize: [4, 4],     
+                                                                iconSize: [6, 6],     
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map128)
@@ -4600,7 +4600,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/graffiti.png",
-                                                                iconSize: [4, 4],     
+                                                                iconSize: [6, 6],     
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map129)
@@ -4636,7 +4636,7 @@ var point10 = {
                                                         pointToLayer: function (feature, latlng) {
                                                             const icons = new L.Icon({
                                                                 iconUrl: "images/graffiti.png",
-                                                                iconSize: [4, 4],     
+                                                                iconSize: [6, 6],     
                                                             });
                                                             return L.marker(latlng, { icon: icons});
                                                         },  }).addTo(map130)
@@ -4671,7 +4671,7 @@ var point10 = {
                                                           pointToLayer: function (feature, latlng) {
                                                               const icons = new L.Icon({
                                                                   iconUrl:"images/graffiti.png",
-                                                                  iconSize: [4, 4],       
+                                                                  iconSize: [6, 6],       
                                                               });
                                                               return L.marker(latlng, { icon: icons});
                                                           }, }).addTo(map131)
@@ -4707,7 +4707,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/graffiti.png",
-                                                                    iconSize: [4, 4],       
+                                                                    iconSize: [6, 6],       
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map132)
@@ -4744,7 +4744,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/graffiti.png",
-                                                                    iconSize: [4, 4],       
+                                                                    iconSize: [6, 6],       
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map133)
@@ -4780,7 +4780,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/graffiti.png",
-                                                                    iconSize: [4, 4],      
+                                                                    iconSize: [6, 6],      
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map134)
@@ -4816,7 +4816,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/lettering.png",
-                                                                    iconSize: [4, 4],      
+                                                                    iconSize: [6, 6],      
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map135)
@@ -4852,7 +4852,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/mural.png",
-                                                                    iconSize: [4, 4],     
+                                                                    iconSize: [6, 6],     
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map137)
@@ -4888,7 +4888,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/mural.png",
-                                                                    iconSize: [4, 4],     
+                                                                    iconSize: [6, 6],     
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map138)
@@ -4925,7 +4925,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/mural.png",
-                                                                    iconSize: [4, 4],     
+                                                                    iconSize: [6, 6],     
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map139)
@@ -4961,7 +4961,7 @@ var point10 = {
                                                             pointToLayer: function (feature, latlng) {
                                                                 const icons = new L.Icon({
                                                                     iconUrl: "images/mural.png",
-                                                                    iconSize: [4, 4],     
+                                                                    iconSize: [6, 6],     
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map140)
@@ -4997,7 +4997,7 @@ var point10 = {
                                                               pointToLayer: function (feature, latlng) {
                                                                   const icons = new L.Icon({
                                                                       iconUrl: "images/piece.png",
-                                                                      iconSize: [4, 4],       
+                                                                      iconSize: [6, 6],       
                                                                   });
                                                                   return L.marker(latlng, { icon: icons});
                                                               }, }).addTo(map141)
@@ -5033,7 +5033,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/mural.png",
-                                                                        iconSize: [4, 4],       
+                                                                        iconSize: [6, 6],       
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map142)
@@ -5070,7 +5070,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/mural.png",
-                                                                        iconSize: [4, 4],       
+                                                                        iconSize: [6, 6],       
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map143)
@@ -5106,7 +5106,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/piece.png",
-                                                                        iconSize: [4, 4],      
+                                                                        iconSize: [6, 6],      
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map144)
@@ -5142,7 +5142,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/mural.png",
-                                                                        iconSize: [4, 4],      
+                                                                        iconSize: [6, 6],      
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map145)
@@ -5178,7 +5178,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/mosaico.png",
-                                                                        iconSize: [4, 4],      
+                                                                        iconSize: [6, 6],      
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map146)
@@ -5214,7 +5214,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/mosaico.png",
-                                                                        iconSize: [4, 4],     
+                                                                        iconSize: [6, 6],     
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map147)
@@ -5250,7 +5250,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/escultura.png",
-                                                                        iconSize: [4, 4],     
+                                                                        iconSize: [6, 6],     
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map148)
@@ -5287,7 +5287,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/escultura.png",
-                                                                        iconSize: [4, 4],     
+                                                                        iconSize: [6, 6],     
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map149)
@@ -5323,7 +5323,7 @@ var point10 = {
                                                                 pointToLayer: function (feature, latlng) {
                                                                     const icons = new L.Icon({
                                                                         iconUrl: "images/escultura.png",
-                                                                        iconSize: [4, 4],     
+                                                                        iconSize: [6, 6],     
                                                                     });
                                                                     return L.marker(latlng, { icon: icons});
                                                                 },  }).addTo(map150)
@@ -5359,7 +5359,7 @@ var point10 = {
                                                                   pointToLayer: function (feature, latlng) {
                                                                       const icons = new L.Icon({
                                                                           iconUrl: "images/mosaico.png",
-                                                                          iconSize: [4, 4],       
+                                                                          iconSize: [6, 6],       
                                                                       });
                                                                       return L.marker(latlng, { icon: icons});
                                                                   }, }).addTo(map151)
@@ -5395,7 +5395,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/escultura.png",
-                                                                            iconSize: [4, 4],       
+                                                                            iconSize: [6, 6],       
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map152)
@@ -5432,7 +5432,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/escultura.png",
-                                                                            iconSize: [4, 4],       
+                                                                            iconSize: [6, 6],       
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map153)
@@ -5468,7 +5468,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/escultura.png",
-                                                                            iconSize: [4, 4],      
+                                                                            iconSize: [6, 6],      
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map154)
@@ -5504,7 +5504,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl:  "images/escultura.png",
-                                                                            iconSize: [4, 4],      
+                                                                            iconSize: [6, 6],      
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map155)
@@ -5540,7 +5540,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/escultura.png",
-                                                                            iconSize: [4, 4],      
+                                                                            iconSize: [6, 6],      
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map156)
@@ -5576,7 +5576,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl:  "images/escultura.png",
-                                                                            iconSize: [4, 4],     
+                                                                            iconSize: [6, 6],     
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map157)
@@ -5612,7 +5612,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/mural.png",
-                                                                            iconSize: [4, 4],     
+                                                                            iconSize: [6, 6],     
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map158)
@@ -5649,7 +5649,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/mural.png",
-                                                                            iconSize: [4, 4],     
+                                                                            iconSize: [6, 6],     
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map159)
@@ -5685,7 +5685,7 @@ var point10 = {
                                                                     pointToLayer: function (feature, latlng) {
                                                                         const icons = new L.Icon({
                                                                             iconUrl: "images/mural.png",
-                                                                            iconSize: [4, 4],     
+                                                                            iconSize: [6, 6],     
                                                                         });
                                                                         return L.marker(latlng, { icon: icons});
                                                                     },  }).addTo(map160)
@@ -5721,7 +5721,7 @@ var point10 = {
                                                                       pointToLayer: function (feature, latlng) {
                                                                           const icons = new L.Icon({
                                                                               iconUrl: "images/mural.png",
-                                                                              iconSize: [4, 4],       
+                                                                              iconSize: [6, 6],       
                                                                           });
                                                                           return L.marker(latlng, { icon: icons});
                                                                       },  }).addTo(map161)
@@ -5757,7 +5757,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/mural.png",
-                                                                                iconSize: [4, 4],       
+                                                                                iconSize: [6, 6],       
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map162)
@@ -5794,7 +5794,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/mural.png",
-                                                                                iconSize: [4, 4],       
+                                                                                iconSize: [6, 6],       
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map163)
@@ -5830,7 +5830,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/mural.png",
-                                                                                iconSize: [4, 4],      
+                                                                                iconSize: [6, 6],      
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map164)
@@ -5866,7 +5866,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/graffiti.png",
-                                                                                iconSize: [4, 4],      
+                                                                                iconSize: [6, 6],      
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map165)
@@ -5902,7 +5902,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/mural.png",
-                                                                                iconSize: [4, 4],      
+                                                                                iconSize: [6, 6],      
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map166)
@@ -5938,7 +5938,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/instalaçoes.png",
-                                                                                iconSize: [4, 4],     
+                                                                                iconSize: [6, 6],     
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map167)
@@ -5974,7 +5974,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/mural.png",
-                                                                                iconSize: [4, 4],     
+                                                                                iconSize: [6, 6],     
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map168)
@@ -6011,7 +6011,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl: "images/mural.png",
-                                                                                iconSize: [4, 4],     
+                                                                                iconSize: [6, 6],     
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map169)
@@ -6047,7 +6047,7 @@ var point10 = {
                                                                         pointToLayer: function (feature, latlng) {
                                                                             const icons = new L.Icon({
                                                                                 iconUrl:"images/mural.png",
-                                                                                iconSize: [4, 4],     
+                                                                                iconSize: [6, 6],     
                                                                             });
                                                                             return L.marker(latlng, { icon: icons});
                                                                         },  }).addTo(map170)
@@ -6083,7 +6083,7 @@ var point10 = {
                                                                           pointToLayer: function (feature, latlng) {
                                                                               const icons = new L.Icon({
                                                                                   iconUrl: "images/graffiti.png",
-                                                                                  iconSize: [4, 4],       
+                                                                                  iconSize: [6, 6],       
                                                                               });
                                                                               return L.marker(latlng, { icon: icons});
                                                                           },  }).addTo(map171)
@@ -6119,7 +6119,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/wildstyle.png",
-                                                                                    iconSize: [4, 4],       
+                                                                                    iconSize: [6, 6],       
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map172)
@@ -6156,7 +6156,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/wildstyle.png",
-                                                                                    iconSize: [4, 4],       
+                                                                                    iconSize: [6, 6],       
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map173)
@@ -6192,7 +6192,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/lettering.png",
-                                                                                    iconSize: [4, 4],      
+                                                                                    iconSize: [6, 6],      
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map174)
@@ -6228,7 +6228,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/piece.png",
-                                                                                    iconSize: [4, 4],      
+                                                                                    iconSize: [6, 6],      
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map175)
@@ -6264,7 +6264,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/piece.png",
-                                                                                    iconSize: [4, 4],      
+                                                                                    iconSize: [6, 6],      
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map176)
@@ -6300,7 +6300,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/throwup.png",
-                                                                                    iconSize: [4, 4],     
+                                                                                    iconSize: [6, 6],     
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map177)
@@ -6336,7 +6336,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/throwup.png",
-                                                                                    iconSize: [4, 4],     
+                                                                                    iconSize: [6, 6],     
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map178)
@@ -6373,7 +6373,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl:  "images/mural.png",
-                                                                                    iconSize: [4, 4],     
+                                                                                    iconSize: [6, 6],     
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map179)
@@ -6409,7 +6409,7 @@ var point10 = {
                                                                             pointToLayer: function (feature, latlng) {
                                                                                 const icons = new L.Icon({
                                                                                     iconUrl: "images/mural.png",
-                                                                                    iconSize: [4, 4],     
+                                                                                    iconSize: [6, 6],     
                                                                                 });
                                                                                 return L.marker(latlng, { icon: icons});
                                                                             },  }).addTo(map180)
@@ -6445,7 +6445,7 @@ var point10 = {
                                                                               pointToLayer: function (feature, latlng) {
                                                                                   const icons = new L.Icon({
                                                                                       iconUrl: "images/mural.png",
-                                                                                      iconSize: [4, 4],       
+                                                                                      iconSize: [6, 6],       
                                                                                   });
                                                                                   return L.marker(latlng, { icon: icons});
                                                                               },  }).addTo(map181)
@@ -6481,7 +6481,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/throwup.png",
-                                                                                        iconSize: [4, 4],       
+                                                                                        iconSize: [6, 6],       
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6523,7 +6523,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/throwup.png",
-                                                                                        iconSize: [4, 4],       
+                                                                                        iconSize: [6, 6],       
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6564,7 +6564,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/mural.png",
-                                                                                        iconSize: [4, 4],      
+                                                                                        iconSize: [6, 6],      
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6605,7 +6605,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/throwup.png",
-                                                                                        iconSize: [4, 4],      
+                                                                                        iconSize: [6, 6],      
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6646,7 +6646,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl:"images/mural.png",
-                                                                                        iconSize: [4, 4],      
+                                                                                        iconSize: [6, 6],      
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6687,7 +6687,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl:  "images/throwup.png",
-                                                                                        iconSize: [4, 4],     
+                                                                                        iconSize: [6, 6],     
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6728,7 +6728,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/tag.png",
-                                                                                        iconSize: [4, 4],     
+                                                                                        iconSize: [6, 6],     
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6770,7 +6770,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/mural.png",
-                                                                                        iconSize: [4, 4],     
+                                                                                        iconSize: [6, 6],     
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6811,7 +6811,7 @@ var point10 = {
                                                                                 pointToLayer: function (feature, latlng) {
                                                                                     const icons = new L.Icon({
                                                                                         iconUrl: "images/piece.png",
-                                                                                        iconSize: [4, 4],     
+                                                                                        iconSize: [6, 6],     
                                                                                     });
                                                                                     return L.marker(latlng, { icon: icons});
                                                                                 },  
@@ -6852,7 +6852,7 @@ var point10 = {
                                                                                   pointToLayer: function (feature, latlng) {
                                                                                       const icons = new L.Icon({
                                                                                           iconUrl: "images/mural.png",
-                                                                                          iconSize: [4, 4],       
+                                                                                          iconSize: [6, 6],       
                                                                                       });
                                                                                       return L.marker(latlng, { icon: icons});
                                                                                   },  
@@ -6893,7 +6893,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl:  "images/mosaico.png",
-                                                                                            iconSize: [4, 4],       
+                                                                                            iconSize: [6, 6],       
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -6935,7 +6935,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/icon.png",
-                                                                                            iconSize: [4, 4],       
+                                                                                            iconSize: [6, 6],       
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -6976,7 +6976,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/throwup.png",
-                                                                                            iconSize: [4, 4],      
+                                                                                            iconSize: [6, 6],      
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7017,7 +7017,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/piece.png",
-                                                                                            iconSize: [4, 4],      
+                                                                                            iconSize: [6, 6],      
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7058,7 +7058,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/tag.png",
-                                                                                            iconSize: [4, 4],      
+                                                                                            iconSize: [6, 6],      
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7099,7 +7099,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/piece.png",
-                                                                                            iconSize: [4, 4],     
+                                                                                            iconSize: [6, 6],     
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7140,7 +7140,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/escultura.png",
-                                                                                            iconSize: [4, 4],     
+                                                                                            iconSize: [6, 6],     
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7182,7 +7182,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/mural.png",
-                                                                                            iconSize: [4, 4],     
+                                                                                            iconSize: [6, 6],     
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7223,7 +7223,7 @@ var point10 = {
                                                                                     pointToLayer: function (feature, latlng) {
                                                                                         const icons = new L.Icon({
                                                                                             iconUrl: "images/mural.png",
-                                                                                            iconSize: [4, 4],     
+                                                                                            iconSize: [6, 6],     
                                                                                         });
                                                                                         return L.marker(latlng, { icon: icons});
                                                                                     },  
@@ -7265,7 +7265,7 @@ var point10 = {
                                                                                         pointToLayer: function (feature, latlng) {
                                                                                             const icons = new L.Icon({
                                                                                                 iconUrl: "images/graffiti.png",
-                                                                                                iconSize: [4, 4],       
+                                                                                                iconSize: [6, 6],       
                                                                                             });
                                                                                             return L.marker(latlng, { icon: icons});
                                                                                         },  
@@ -7306,7 +7306,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],       
+                                                                                                  iconSize: [6, 6],       
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7348,7 +7348,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],       
+                                                                                                  iconSize: [6, 6],       
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7389,7 +7389,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],      
+                                                                                                  iconSize: [6, 6],      
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7430,7 +7430,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],      
+                                                                                                  iconSize: [6, 6],      
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7471,7 +7471,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl:  "images/mural.png",
-                                                                                                  iconSize: [4, 4],      
+                                                                                                  iconSize: [6, 6],      
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7512,7 +7512,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],     
+                                                                                                  iconSize: [6, 6],     
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7553,7 +7553,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],     
+                                                                                                  iconSize: [6, 6],     
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7595,7 +7595,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl:  "images/poster.png",
-                                                                                                  iconSize: [4, 4],     
+                                                                                                  iconSize: [6, 6],     
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7636,7 +7636,7 @@ var point10 = {
                                                                                           pointToLayer: function (feature, latlng) {
                                                                                               const icons = new L.Icon({
                                                                                                   iconUrl: "images/mural.png",
-                                                                                                  iconSize: [4, 4],     
+                                                                                                  iconSize: [6, 6],     
                                                                                               });
                                                                                               return L.marker(latlng, { icon: icons});
                                                                                           },  
@@ -7677,7 +7677,7 @@ var point10 = {
                                                                                               pointToLayer: function (feature, latlng) {
                                                                                                   const icons = new L.Icon({
                                                                                                       iconUrl: "images/throwup.png",
-                                                                                                      iconSize: [4, 4],       
+                                                                                                      iconSize: [6, 6],       
                                                                                                   });
                                                                                                   return L.marker(latlng, { icon: icons});
                                                                                               },  
@@ -7718,7 +7718,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/mural.png",
-                                                                                                        iconSize: [4, 4],       
+                                                                                                        iconSize: [6, 6],       
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -7760,7 +7760,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/mural.png",
-                                                                                                        iconSize: [4, 4],       
+                                                                                                        iconSize: [6, 6],       
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -7801,7 +7801,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                        iconSize: [4, 4],      
+                                                                                                        iconSize: [6, 6],      
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -7842,7 +7842,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl:  "images/mural.png",
-                                                                                                        iconSize: [4, 4],      
+                                                                                                        iconSize: [6, 6],      
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -7883,7 +7883,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl:"images/throwup.png",
-                                                                                                        iconSize: [4, 4],      
+                                                                                                        iconSize: [6, 6],      
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -7924,7 +7924,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/mural.png",
-                                                                                                        iconSize: [4, 4],     
+                                                                                                        iconSize: [6, 6],     
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -7965,7 +7965,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/mural.png",
-                                                                                                        iconSize: [4, 4],     
+                                                                                                        iconSize: [6, 6],     
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -8007,7 +8007,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                        iconSize: [4, 4],     
+                                                                                                        iconSize: [6, 6],     
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -8048,7 +8048,7 @@ var point10 = {
                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                     const icons = new L.Icon({
                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                        iconSize: [4, 4],     
+                                                                                                        iconSize: [6, 6],     
                                                                                                     });
                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                 },  
@@ -8089,7 +8089,7 @@ var point10 = {
                                                                                                   pointToLayer: function (feature, latlng) {
                                                                                                       const icons = new L.Icon({
                                                                                                           iconUrl: "images/mural.png",
-                                                                                                          iconSize: [4, 4],       
+                                                                                                          iconSize: [6, 6],       
                                                                                                       });
                                                                                                       return L.marker(latlng, { icon: icons});
                                                                                                   },  
@@ -8130,7 +8130,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/lettering.png",
-                                                                                                            iconSize: [4, 4],       
+                                                                                                            iconSize: [6, 6],       
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8172,7 +8172,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/mural.png",
-                                                                                                            iconSize: [4, 4],       
+                                                                                                            iconSize: [6, 6],       
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8213,7 +8213,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/mural.png",
-                                                                                                            iconSize: [4, 4],      
+                                                                                                            iconSize: [6, 6],      
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8256,7 +8256,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/graffiti.png",
-                                                                                                            iconSize: [4, 4],      
+                                                                                                            iconSize: [6, 6],      
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8297,7 +8297,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/wildstyle.png",
-                                                                                                            iconSize: [4, 4],     
+                                                                                                            iconSize: [6, 6],     
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8338,7 +8338,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl:"images/mural.png",
-                                                                                                            iconSize: [4, 4],     
+                                                                                                            iconSize: [6, 6],     
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8380,7 +8380,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/mural.png",
-                                                                                                            iconSize: [4, 4],     
+                                                                                                            iconSize: [6, 6],     
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8421,7 +8421,7 @@ var point10 = {
                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                         const icons = new L.Icon({
                                                                                                             iconUrl: "images/mural.png",
-                                                                                                            iconSize: [4, 4],     
+                                                                                                            iconSize: [6, 6],     
                                                                                                         });
                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                     },  
@@ -8461,7 +8461,7 @@ var point10 = {
                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                           const icons = new L.Icon({
                                                                                                               iconUrl: "images/mural.png",
-                                                                                                              iconSize: [4, 4],       
+                                                                                                              iconSize: [6, 6],       
                                                                                                           });
                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                       },  
@@ -8502,7 +8502,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],       
+                                                                                                                iconSize: [6, 6],       
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8544,7 +8544,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],       
+                                                                                                                iconSize: [6, 6],       
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8585,7 +8585,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],      
+                                                                                                                iconSize: [6, 6],      
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8626,7 +8626,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],      
+                                                                                                                iconSize: [6, 6],      
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8667,7 +8667,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],      
+                                                                                                                iconSize: [6, 6],      
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8708,7 +8708,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],     
+                                                                                                                iconSize: [6, 6],     
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8749,7 +8749,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],     
+                                                                                                                iconSize: [6, 6],     
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8791,7 +8791,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                iconSize: [4, 4],     
+                                                                                                                iconSize: [6, 6],     
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8832,7 +8832,7 @@ var point10 = {
                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                             const icons = new L.Icon({
                                                                                                                 iconUrl: "images/piece.png",
-                                                                                                                iconSize: [4, 4],     
+                                                                                                                iconSize: [6, 6],     
                                                                                                             });
                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                         },  
@@ -8873,7 +8873,7 @@ var point10 = {
                                                                                                           pointToLayer: function (feature, latlng) {
                                                                                                               const icons = new L.Icon({
                                                                                                                   iconUrl: "images/piece.png",
-                                                                                                                  iconSize: [4, 4],       
+                                                                                                                  iconSize: [6, 6],       
                                                                                                               });
                                                                                                               return L.marker(latlng, { icon: icons});
                                                                                                           },  
@@ -8914,7 +8914,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],       
+                                                                                                                    iconSize: [6, 6],       
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -8956,7 +8956,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],       
+                                                                                                                    iconSize: [6, 6],       
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -8999,7 +8999,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],      
+                                                                                                                    iconSize: [6, 6],      
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -9040,7 +9040,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl:  "images/mural.png",
-                                                                                                                    iconSize: [4, 4],      
+                                                                                                                    iconSize: [6, 6],      
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -9081,7 +9081,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],     
+                                                                                                                    iconSize: [6, 6],     
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -9122,7 +9122,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],     
+                                                                                                                    iconSize: [6, 6],     
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -9164,7 +9164,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],     
+                                                                                                                    iconSize: [6, 6],     
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -9205,7 +9205,7 @@ var point10 = {
                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                 const icons = new L.Icon({
                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                    iconSize: [4, 4],     
+                                                                                                                    iconSize: [6, 6],     
                                                                                                                 });
                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                             },  
@@ -9246,7 +9246,7 @@ var point10 = {
                                                                                                               pointToLayer: function (feature, latlng) {
                                                                                                                   const icons = new L.Icon({
                                                                                                                       iconUrl: "images/mural.png",
-                                                                                                                      iconSize: [4, 4],       
+                                                                                                                      iconSize: [6, 6],       
                                                                                                                   });
                                                                                                                   return L.marker(latlng, { icon: icons});
                                                                                                               },  
@@ -9287,7 +9287,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/mural.png",
-                                                                                                                        iconSize: [4, 4],       
+                                                                                                                        iconSize: [6, 6],       
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9329,7 +9329,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/mural.png",
-                                                                                                                        iconSize: [4, 4],       
+                                                                                                                        iconSize: [6, 6],       
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9370,7 +9370,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/mural.png",
-                                                                                                                        iconSize: [4, 4],      
+                                                                                                                        iconSize: [6, 6],      
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9411,7 +9411,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/lettering.png",
-                                                                                                                        iconSize: [4, 4],      
+                                                                                                                        iconSize: [6, 6],      
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9452,7 +9452,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl:"images/poster.png",
-                                                                                                                        iconSize: [4, 4],      
+                                                                                                                        iconSize: [6, 6],      
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9493,7 +9493,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/poster.png",
-                                                                                                                        iconSize: [4, 4],     
+                                                                                                                        iconSize: [6, 6],     
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9534,7 +9534,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/graffiti.png",
-                                                                                                                        iconSize: [4, 4],     
+                                                                                                                        iconSize: [6, 6],     
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9576,7 +9576,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                                        iconSize: [4, 4],     
+                                                                                                                        iconSize: [6, 6],     
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9617,7 +9617,7 @@ var point10 = {
                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                     const icons = new L.Icon({
                                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                                        iconSize: [4, 4],     
+                                                                                                                        iconSize: [6, 6],     
                                                                                                                     });
                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                 },  
@@ -9658,7 +9658,7 @@ var point10 = {
                                                                                                                   pointToLayer: function (feature, latlng) {
                                                                                                                       const icons = new L.Icon({
                                                                                                                           iconUrl: "images/throwup.png",
-                                                                                                                          iconSize: [4, 4],       
+                                                                                                                          iconSize: [6, 6],       
                                                                                                                       });
                                                                                                                       return L.marker(latlng, { icon: icons});
                                                                                                                   },  
@@ -9699,7 +9699,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/tag.png",
-                                                                                                                            iconSize: [4, 4],       
+                                                                                                                            iconSize: [6, 6],       
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9741,7 +9741,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/mosaico.png",
-                                                                                                                            iconSize: [4, 4],       
+                                                                                                                            iconSize: [6, 6],       
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9782,7 +9782,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/mural.png",
-                                                                                                                            iconSize: [4, 4],      
+                                                                                                                            iconSize: [6, 6],      
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9823,7 +9823,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/mural.png",
-                                                                                                                            iconSize: [4, 4],      
+                                                                                                                            iconSize: [6, 6],      
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9864,7 +9864,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/mural.png",
-                                                                                                                            iconSize: [4, 4],      
+                                                                                                                            iconSize: [6, 6],      
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9905,7 +9905,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/throwup.png",
-                                                                                                                            iconSize: [4, 4],     
+                                                                                                                            iconSize: [6, 6],     
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9946,7 +9946,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/throwup.png",
-                                                                                                                            iconSize: [4, 4],     
+                                                                                                                            iconSize: [6, 6],     
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -9988,7 +9988,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/throwup.png",
-                                                                                                                            iconSize: [4, 4],     
+                                                                                                                            iconSize: [6, 6],     
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -10029,7 +10029,7 @@ var point10 = {
                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                         const icons = new L.Icon({
                                                                                                                             iconUrl: "images/throwup.png",
-                                                                                                                            iconSize: [4, 4],     
+                                                                                                                            iconSize: [6, 6],     
                                                                                                                         });
                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                     },  
@@ -10070,7 +10070,7 @@ var point10 = {
                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                           const icons = new L.Icon({
                                                                                                                               iconUrl: "images/throwup.png",
-                                                                                                                              iconSize: [4, 4],       
+                                                                                                                              iconSize: [6, 6],       
                                                                                                                           });
                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                       },  
@@ -10111,7 +10111,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/graffiti.png",
-                                                                                                                                iconSize: [4, 4],       
+                                                                                                                                iconSize: [6, 6],       
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10153,7 +10153,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl:"images/mural.png",
-                                                                                                                                iconSize: [4, 4],       
+                                                                                                                                iconSize: [6, 6],       
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10194,7 +10194,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],      
+                                                                                                                                iconSize: [6, 6],      
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10235,7 +10235,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],      
+                                                                                                                                iconSize: [6, 6],      
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10276,7 +10276,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],      
+                                                                                                                                iconSize: [6, 6],      
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10317,7 +10317,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                iconSize: [6, 6],     
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10358,7 +10358,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                iconSize: [6, 6],     
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10400,7 +10400,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                iconSize: [6, 6],     
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10441,7 +10441,7 @@ var point10 = {
                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                             const icons = new L.Icon({
                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                iconSize: [6, 6],     
                                                                                                                             });
                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                         },  
@@ -10482,7 +10482,7 @@ var point10 = {
                                                                                                                           pointToLayer: function (feature, latlng) {
                                                                                                                               const icons = new L.Icon({
                                                                                                                                   iconUrl: "images/throwup.png",
-                                                                                                                                  iconSize: [4, 4],       
+                                                                                                                                  iconSize: [6, 6],       
                                                                                                                               });
                                                                                                                               return L.marker(latlng, { icon: icons});
                                                                                                                           },  
@@ -10523,7 +10523,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                                    iconSize: [4, 4],       
+                                                                                                                                    iconSize: [6, 6],       
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10565,7 +10565,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/throwup.png",
-                                                                                                                                    iconSize: [4, 4],       
+                                                                                                                                    iconSize: [6, 6],       
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10606,7 +10606,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/throwup.png",
-                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10647,7 +10647,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10688,7 +10688,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/mural.png",
-                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10729,7 +10729,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/mosaico.png",
-                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10770,7 +10770,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/mosaico.png",
-                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10812,7 +10812,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl: "images/tag.png",
-                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10853,7 +10853,7 @@ var point10 = {
                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                 const icons = new L.Icon({
                                                                                                                                     iconUrl:"images/tag.png",
-                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                 });
                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                             },  
@@ -10894,7 +10894,7 @@ var point10 = {
                                                                                                                               pointToLayer: function (feature, latlng) {
                                                                                                                                   const icons = new L.Icon({
                                                                                                                                       iconUrl: "images/throwup.png",
-                                                                                                                                      iconSize: [4, 4],       
+                                                                                                                                      iconSize: [6, 6],       
                                                                                                                                   });
                                                                                                                                   return L.marker(latlng, { icon: icons});
                                                                                                                               },  
@@ -10935,7 +10935,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl:"images/lettering.png",
-                                                                                                                                        iconSize: [4, 4],       
+                                                                                                                                        iconSize: [6, 6],       
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -10977,7 +10977,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                                                        iconSize: [4, 4],       
+                                                                                                                                        iconSize: [6, 6],       
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11018,7 +11018,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                                                        iconSize: [4, 4],      
+                                                                                                                                        iconSize: [6, 6],      
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11059,7 +11059,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                                                        iconSize: [4, 4],      
+                                                                                                                                        iconSize: [6, 6],      
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11100,7 +11100,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl:"images/throwup.png",
-                                                                                                                                        iconSize: [4, 4],      
+                                                                                                                                        iconSize: [6, 6],      
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11141,7 +11141,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl: "images/icon.png",
-                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11182,7 +11182,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl:"images/mural.png",
-                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11224,7 +11224,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl: "images/mural.png",
-                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11265,7 +11265,7 @@ var point10 = {
                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                     const icons = new L.Icon({
                                                                                                                                         iconUrl: "images/mural.png",
-                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                     });
                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                 },  
@@ -11306,7 +11306,7 @@ var point10 = {
                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                         const icons = new L.Icon({
                                                                                                                                             iconUrl: "images/mural.png",
-                                                                                                                                            iconSize: [4, 4],       
+                                                                                                                                            iconSize: [6, 6],       
                                                                                                                                         });
                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                     },  
@@ -11347,7 +11347,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                              iconSize: [4, 4],       
+                                                                                                                                              iconSize: [6, 6],       
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11389,7 +11389,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                              iconSize: [4, 4],       
+                                                                                                                                              iconSize: [6, 6],       
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11430,7 +11430,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                              iconSize: [4, 4],      
+                                                                                                                                              iconSize: [6, 6],      
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11471,7 +11471,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                              iconSize: [4, 4],      
+                                                                                                                                              iconSize: [6, 6],      
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11512,7 +11512,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                              iconSize: [4, 4],      
+                                                                                                                                              iconSize: [6, 6],      
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11553,7 +11553,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/throwup.png",
-                                                                                                                                              iconSize: [4, 4],     
+                                                                                                                                              iconSize: [6, 6],     
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11594,7 +11594,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                              iconSize: [4, 4],     
+                                                                                                                                              iconSize: [6, 6],     
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11636,7 +11636,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/tag.png",
-                                                                                                                                              iconSize: [4, 4],     
+                                                                                                                                              iconSize: [6, 6],     
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11677,7 +11677,7 @@ var point10 = {
                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                           const icons = new L.Icon({
                                                                                                                                               iconUrl: "images/tag.png",
-                                                                                                                                              iconSize: [4, 4],     
+                                                                                                                                              iconSize: [6, 6],     
                                                                                                                                           });
                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                       },  
@@ -11718,7 +11718,7 @@ var point10 = {
                                                                                                                                           pointToLayer: function (feature, latlng) {
                                                                                                                                               const icons = new L.Icon({
                                                                                                                                                   iconUrl: "images/tag.png",
-                                                                                                                                                  iconSize: [4, 4],       
+                                                                                                                                                  iconSize: [6, 6],       
                                                                                                                                               });
                                                                                                                                               return L.marker(latlng, { icon: icons});
                                                                                                                                           },  
@@ -11759,7 +11759,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/throwup.png",
-                                                                                                                                                    iconSize: [4, 4],       
+                                                                                                                                                    iconSize: [6, 6],       
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -11801,7 +11801,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/throwup.png",
-                                                                                                                                                    iconSize: [4, 4],       
+                                                                                                                                                    iconSize: [6, 6],       
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -11842,7 +11842,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/throwup.png",
-                                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -11883,7 +11883,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/mosaico.png",
-                                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -11924,7 +11924,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl:"images/escultura.png",
-                                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -11965,7 +11965,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/escultura.png",
-                                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -12006,7 +12006,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/mosaico.png",
-                                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -12048,7 +12048,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/piece.png",
-                                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -12089,7 +12089,7 @@ var point10 = {
                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                     iconUrl: "images/piece.png",
-                                                                                                                                                    iconSize: [4, 4],     
+                                                                                                                                                    iconSize: [6, 6],     
                                                                                                                                                 });
                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                             },  
@@ -12130,7 +12130,7 @@ var point10 = {
                                                                                                                                               pointToLayer: function (feature, latlng) {
                                                                                                                                                   const icons = new L.Icon({
                                                                                                                                                       iconUrl: "images/throwup.png",
-                                                                                                                                                      iconSize: [4, 4],       
+                                                                                                                                                      iconSize: [6, 6],       
                                                                                                                                                   });
                                                                                                                                                   return L.marker(latlng, { icon: icons});
                                                                                                                                               },  
@@ -12171,7 +12171,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/throwup.png",
-                                                                                                                                                        iconSize: [4, 4],       
+                                                                                                                                                        iconSize: [6, 6],       
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12213,7 +12213,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/tag.png",
-                                                                                                                                                        iconSize: [4, 4],       
+                                                                                                                                                        iconSize: [6, 6],       
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12254,7 +12254,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/tag.png",
-                                                                                                                                                        iconSize: [4, 4],      
+                                                                                                                                                        iconSize: [6, 6],      
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12295,7 +12295,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/tag.png",
-                                                                                                                                                        iconSize: [4, 4],      
+                                                                                                                                                        iconSize: [6, 6],      
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12336,7 +12336,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/tag.png",
-                                                                                                                                                        iconSize: [4, 4],      
+                                                                                                                                                        iconSize: [6, 6],      
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12377,7 +12377,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/tag.png",
-                                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12418,7 +12418,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/graffiti.png",
-                                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12460,7 +12460,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/tag.png",
-                                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12501,7 +12501,7 @@ var point10 = {
                                                                                                                                                 pointToLayer: function (feature, latlng) {
                                                                                                                                                     const icons = new L.Icon({
                                                                                                                                                         iconUrl: "images/sticker.png",
-                                                                                                                                                        iconSize: [4, 4],     
+                                                                                                                                                        iconSize: [6, 6],     
                                                                                                                                                     });
                                                                                                                                                     return L.marker(latlng, { icon: icons});
                                                                                                                                                 },  
@@ -12541,7 +12541,7 @@ var point10 = {
                                                                                                                                                   pointToLayer: function (feature, latlng) {
                                                                                                                                                       const icons = new L.Icon({
                                                                                                                                                           iconUrl: "images/tag.png",
-                                                                                                                                                          iconSize: [4, 4],       
+                                                                                                                                                          iconSize: [6, 6],       
                                                                                                                                                       });
                                                                                                                                                       return L.marker(latlng, { icon: icons});
                                                                                                                                                   },  
@@ -12582,7 +12582,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/mural.png",
-                                                                                                                                                            iconSize: [4, 4],       
+                                                                                                                                                            iconSize: [6, 6],       
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12624,7 +12624,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/mosaico.png",
-                                                                                                                                                            iconSize: [4, 4],       
+                                                                                                                                                            iconSize: [6, 6],       
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12665,7 +12665,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/tag.png",
-                                                                                                                                                            iconSize: [4, 4],      
+                                                                                                                                                            iconSize: [6, 6],      
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12706,7 +12706,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/tag.png",
-                                                                                                                                                            iconSize: [4, 4],      
+                                                                                                                                                            iconSize: [6, 6],      
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12747,7 +12747,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/icon.png",
-                                                                                                                                                            iconSize: [4, 4],      
+                                                                                                                                                            iconSize: [6, 6],      
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12788,7 +12788,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/tag.png",
-                                                                                                                                                            iconSize: [4, 4],     
+                                                                                                                                                            iconSize: [6, 6],     
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12829,7 +12829,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl: "images/tag.png",
-                                                                                                                                                            iconSize: [4, 4],     
+                                                                                                                                                            iconSize: [6, 6],     
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12871,7 +12871,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl:"images/tag.png",
-                                                                                                                                                            iconSize: [4, 4],     
+                                                                                                                                                            iconSize: [6, 6],     
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12912,7 +12912,7 @@ var point10 = {
                                                                                                                                                     pointToLayer: function (feature, latlng) {
                                                                                                                                                         const icons = new L.Icon({
                                                                                                                                                             iconUrl:"images/tag.png",
-                                                                                                                                                            iconSize: [4, 4],     
+                                                                                                                                                            iconSize: [6, 6],     
                                                                                                                                                         });
                                                                                                                                                         return L.marker(latlng, { icon: icons});
                                                                                                                                                     },  
@@ -12953,7 +12953,7 @@ var point10 = {
                                                                                                                                                       pointToLayer: function (feature, latlng) {
                                                                                                                                                           const icons = new L.Icon({
                                                                                                                                                               iconUrl: "images/mural.png",
-                                                                                                                                                              iconSize: [4, 4],       
+                                                                                                                                                              iconSize: [6, 6],       
                                                                                                                                                           });
                                                                                                                                                           return L.marker(latlng, { icon: icons});
                                                                                                                                                       },  
@@ -12994,7 +12994,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/mural.png",
-                                                                                                                                                                iconSize: [4, 4],       
+                                                                                                                                                                iconSize: [6, 6],       
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13036,7 +13036,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/tag.png",
-                                                                                                                                                                iconSize: [4, 4],       
+                                                                                                                                                                iconSize: [6, 6],       
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13077,7 +13077,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/tag.png",
-                                                                                                                                                                iconSize: [4, 4],      
+                                                                                                                                                                iconSize: [6, 6],      
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13118,7 +13118,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/piece.png",
-                                                                                                                                                                iconSize: [4, 4],      
+                                                                                                                                                                iconSize: [6, 6],      
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13159,7 +13159,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/tag.png",
-                                                                                                                                                                iconSize: [4, 4],      
+                                                                                                                                                                iconSize: [6, 6],      
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13200,7 +13200,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/tag.png",
-                                                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                                                iconSize: [6, 6],     
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13241,7 +13241,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/mosaico.png",
-                                                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                                                iconSize: [6, 6],     
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13283,7 +13283,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/tag.png",
-                                                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                                                iconSize: [6, 6],     
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13324,7 +13324,7 @@ var point10 = {
                                                                                                                                                         pointToLayer: function (feature, latlng) {
                                                                                                                                                             const icons = new L.Icon({
                                                                                                                                                                 iconUrl: "images/tag.png",
-                                                                                                                                                                iconSize: [4, 4],     
+                                                                                                                                                                iconSize: [6, 6],     
                                                                                                                                                             });
                                                                                                                                                             return L.marker(latlng, { icon: icons});
                                                                                                                                                         },  
@@ -13365,7 +13365,7 @@ var point10 = {
                                                                                                                                                           pointToLayer: function (feature, latlng) {
                                                                                                                                                               const icons = new L.Icon({
                                                                                                                                                                   iconUrl: "images/tag.png",
-                                                                                                                                                                  iconSize: [4, 4],       
+                                                                                                                                                                  iconSize: [6, 6],       
                                                                                                                                                               });
                                                                                                                                                               return L.marker(latlng, { icon: icons});
                                                                                                                                                           },  
@@ -13406,7 +13406,7 @@ var point10 = {
                                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                                     iconUrl: "images/tag.png",
-                                                                                                                                                                    iconSize: [4, 4],       
+                                                                                                                                                                    iconSize: [6, 6],       
                                                                                                                                                                 });
                                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                                             },  
@@ -13448,7 +13448,7 @@ var point10 = {
                                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                                     iconUrl:  "images/tag.png",
-                                                                                                                                                                    iconSize: [4, 4],       
+                                                                                                                                                                    iconSize: [6, 6],       
                                                                                                                                                                 });
                                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                                             },  
@@ -13490,7 +13490,7 @@ var point10 = {
                                                                                                                                                             pointToLayer: function (feature, latlng) {
                                                                                                                                                                 const icons = new L.Icon({
                                                                                                                                                                     iconUrl: "images/icon.png",
-                                                                                                                                                                    iconSize: [4, 4],      
+                                                                                                                                                                    iconSize: [6, 6],      
                                                                                                                                                                 });
                                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                                             }, 

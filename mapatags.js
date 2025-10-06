@@ -37,7 +37,7 @@ var pointdata = L.geoJSON(pointJSON , {
     pointToLayer: function (feature, latlng) {
         const icons = new L.Icon({
             iconUrl: `${feature.properties.iconurl }`,
-            iconSize: [4, 4],
+            iconSize: [6, 6],
              
         });
         return L.marker(latlng, { icon: icons});
@@ -58,7 +58,7 @@ var pointdata = L.geoJSON(pointJSON , {
 
 
 
-var Sintradata = L.geoJSON(mapdata, { style: style,  onEachFeature: onEachFeature}).addTo(map);
+var Sintradata = L.geoJSON(mapdata2, { style: style,  onEachFeature: onEachFeature}).addTo(map);
 
 
 /*===================================================
@@ -180,7 +180,7 @@ info.onAdd = function (map) {
 };
 
 info.update = function (props) {
-    this._div.innerHTML = '<h4>Freguesias do Concelho de Sintra</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Freguesias do Concelho <br> de Sintra</h4>' +  (props ?
         '<b class="legenda">'+ '<br>' + props.name + '<br>' + '<br>' + props.graffiti + props.tag + props.throwup + props.lettering + props.piece + props.wildstyle + props.sticker + props.stencil + props.yarnbombing + props.poster + props.mosaico + props.mural + props.instalações + props.tags + '</b> ' : 'Hover sobre uma freguesia' );
 
 

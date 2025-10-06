@@ -32,25 +32,31 @@ width: 22px !important;
 
   position: fixed;
   display: flex;
-  left: 5.1%;
-  bottom: 100px;
-  height: 6vw !important;
-  width: 19.9% !important;
+ left: 5%;
+bottom: 10em;
+gap: 5px;
+padding: 10px;
+    height: auto;
+    width: 25em;
   background-color: rgb(0, 0, 0);
-  border-top: 1px solid white;
+      border: 1px solid white;
+    border-radius: 30px;
   z-index: 1998;
+  align-items: center;
+    justify-content: center;
   visibility: hidden;
 }
 .avisotext p{
 
   align-items: center;
-padding: 11% 5% ;
-line-height: 1vw;
+padding: 5px ;
+font-size: 10px;
+line-height: 12px;
 align-items: center;
 color: rgb(255, 255, 255);
 }
 .avisotext .avisotextimage{
-  padding: 13% 5%;
+ 
   position: relative;
 height: 20px !important;
 width: 20px !important;
@@ -58,26 +64,27 @@ width: 20px !important;
 
 
 .shuffle-button{
-  margin-top: 21vh;
-    right: 5vw;
+  bottom: 5em;
+    right: 5%;
     float: right;
 
-    padding: 1%;
+    padding: 10px;
     line-height: 80%;
     text-align: center;
     justify-content: center;
-    z-index: 88;
-    font-size: 1vw; 
+    z-index: 999;
+    font-size: 14px; 
     width: auto;
     text-decoration: none;
     position: fixed;
   
     color: white;
-    background: rgb(0, 0, 0);
   
     font-family: "ocr-aregular";
-    transition: box-shadow .25s;
+backdrop-filter: blur(15px);
+    background-color: #0000004d;
     border: 1px solid rgb(255, 255, 255);
+    border-radius: 30px;
     box-sizing: border-box;
 
 }
@@ -85,11 +92,8 @@ width: 20px !important;
 .shuffle-button:hover{
 
   color: #ffffff;
- box-shadow: 0px 6px;
- border-bottom: 5px solid rgb(255, 255, 255);
  cursor: pointer;
- animation: changeBg 0.5s infinite;
- background: url(R1.jpeg);
+
 }
 
 
@@ -124,17 +128,19 @@ button.freguesiatag {
     margin-bottom: 0%;
     white-space: inherit;
     color: rgba(255, 255, 255, 0.432);
+    backdrop-filter: blur(15px);
     background: rgba(0, 0, 0, 0);
     text-align: left;
     font-family: "ocr-aregular";
     white-space:nowrap;
-    font-size: 0.8vw;
-    height: 5.1vh;
+    font-size: 14px;
+    height: auto;
+    border-radius: 30px;
       /*  margin-left: 2.5vw; */
-      /*   padding: 2% 2% 2% 2%; */
+     padding: 2px 5px; 
     border: 1px solid rgba(255, 255, 255, 0.432);
     transition: 0.2s ease-out;
-    width: 91%;
+    width: auto;
     z-index: 9;
     box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -147,13 +153,12 @@ button.freguesiatag:hover{
     
     font-style: italic;
     transition: 0.2s ease-in;
-    border-left: 8px solid rgb(255, 255, 255);
+    border-left: 2px solid rgb(255, 255, 255);
     border-top: 2px solid rgb(255, 255, 255);
     border-bottom: 2px solid rgb(255, 255, 255);
     border-right: 2px solid rgb(255, 255, 255);;
     z-index: 9;
-    background: url(R1.jpeg);
-    animation: changeBg 0.5s infinite;
+
     box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -161,12 +166,10 @@ button.freguesiatag:hover{
 
 button.freguesiatag.active{
   color: white;
-  border-left: 8px solid rgb(255, 255, 255);
+  border-left: 2px solid rgb(255, 255, 255);
   border-top: 2px solid rgb(255, 255, 255);
   border-bottom: 2px solid rgb(255, 255, 255);
   border-right: 2px solid rgb(255, 255, 255);;
-  animation: changeBg 0.5s infinite;
-  background: url(R1.jpeg);
   z-index: 9;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -180,19 +183,22 @@ button.freguesiatag.active{
     background-color: #000000;
     color: #ffffff;
     line-height: 10px;
-    margin: 1%;
+        margin: 5px 10px;
     display: none;
-    width: 15%; 
+width: 280px;
     border: 1px dashed rgb(255, 255, 255);
+    border-radius: 10px;
     transition: box-shadow .25s;
     font-weight: 300;
     font-size: 0.8vw;
-    padding:1%;
+    padding: 10px;
  
     text-align: left;
    
   }
-
+.grid {
+  transform: none !important;
+}
   /* clear fix */
   .grid:after {
     content: '';
@@ -200,8 +206,15 @@ button.freguesiatag.active{
     clear: both;
   }
   
+.packery-drop-placeholder {
+ display: none;
 
-
+}
+.grid {
+      max-width: 1200px;
+    width: 100%;
+    margin: 0 0px;  /* centra */
+}
 
 .avisoppi{
 
@@ -313,19 +326,20 @@ bottom: 28px;
 
 
   .freguesiascontainer{
-    margin-top: 4.9%;
-    width: 22%;
-    height: 75%;
-    display: block;
-    float: left;
+  width: 80%;
+    /* height: 75%; */
+    display: flex
+;
+  
     z-index: 998;
-    position: fixed;
-    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: center;
   }
 
   .filterDiv img{
     width:100%;
-    height: 100%;
+    height: 99.5%;
     align-content: center;
     padding: 0%;
     border: 0px solid rgb(255, 255, 255);
@@ -341,8 +355,8 @@ bottom: 28px;
  
   .imagensprojeto{
     max-width: 50%;
-    max-height: 350px;
-overflow: hidden;
+    max-height:100%;
+
     align-content: center;
     padding: 0%;
     border: 0px solid rgb(255, 255, 255);
@@ -396,19 +410,21 @@ overflow: hidden;
     transition: text-decoration 0.25s;
   }
   
-
+  li {
+    height: auto;
+  }
+  
   .container {
-    display: block;
-    margin-top: 20vh;
-    margin-left: 30%;
-    margin-right: auto;
-    padding: 0vw 8vw 2vw 0vw;
-    width: 60%;
+      display: flex;
+    position: absolute;
+top: 25%;
+    width: 100%;
+
     height: auto;
     overflow: visible;
-    float: left;
-    
-
+  
+  margin: 0 auto;     /* centra */
+    justify-content: center;
   }
 
   
@@ -420,9 +436,9 @@ overflow: hidden;
     padding: 1% 1%;
     background-color: #f1f1f100;
     cursor: pointer;
-    line-height: 100%;
+    line-height: 12px;
     font-weight: 300;
-    font-size: 0.6vw;
+    font-size:10px;
     text-decoration: none;
     text-align: left;
     border: 1px solid rgba(255, 255, 255, 0);
@@ -715,7 +731,7 @@ height: 2vh !important;
     display: block;
     margin-left: auto;
   margin-right:auto;
-  border: 0px solid white;
+  border: 1px solid white;
   background-color: #000000;
   
   }
@@ -981,12 +997,12 @@ height: 2vh !important;
   padding: 1%;
   width: 14%;
   left: 7%;
-  bottom: 100px;
+  bottom: 120px;
   background-color: #000000;
   border: 1px solid white;
   border-radius: 25px;
   text-align: center;
-  font-size: 2vw;
+  font-size: 14px;
 
 }
 
@@ -1084,130 +1100,57 @@ height: 2vh !important;
 }
 
 
-@media only screen and (max-width: 550px) {
 
-  .ppi {
+@media screen and (max-width: 1200px) {
+ .grid {
+        max-width: 700px;
+    width: 100%;
+    margin: 0 0px;
+}
+.filterDiv {
+
+width: 212px;
+
+   
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+ .grid {
+        max-width: 300px;
+    width: 100%;
+    margin: 0 0px;
+}
+.filterDiv {
+
+width: 130px;
+
+   
+  }
+.shuffle-button{
+
+
+  bottom: 8em;
+}
+
+.avisotext {
+    position: fixed;
     display: flex
 ;
-    align-items: stretch;
-    margin-right: auto;
-    margin-left: 0%;
-    /* height: 10%; */
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.imagensprojeto{
-  max-width: 100%;
-  max-height: 200px;
-overflow: hidden;
-  align-content: center;
-  padding: 0%;
-  border: 0px solid rgb(255, 255, 255);
-  cursor: pointer;
-
-}
-.imagensprojeto img{
-  border: 0px solid rgb(255, 255, 255);
-
-}
-.informaçaoobra {
-   width: 100%; 
-   border: 0px solid white;
-
-}
-.freguesiatitle {
-  font-size: 3vw;
-}
-.autor {
-  font-size: 2vw;
-}
-.sub-local {
-  font-size: 2vw;
-}
-.local {
-  padding-bottom: 3%;
-}
-.data {
-  font-size: 2vw;
-}
-.categoria{
-  font-size: 2vw;
-}
-.tags {
-  font-size: 2vw;
-}
-.localizaçao .textlocalizaçao {
- 
-  font-size: 2vw;
-  border-top: 1px solid white;
-
+    left: 5%;
+    bottom: 15em;
+    gap: 5px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+    border-radius: 30px;
+    z-index: 1998;
+    align-items: center;
+    justify-content: center;
  
 }
-
-.CloseBTN, .CloseBTN2, .CloseBTN3, .CloseBTN4, .CloseBTN5, .CloseBTN6,
-.CloseBTN7, .CloseBTN8, .CloseBTN9, .CloseBTN10, .CloseBTN11, .CloseBTN12, 
-.CloseBTN13, .CloseBTN14, .CloseBTN15, .CloseBTN16,.CloseBTN17, .CloseBTN18, 
-.CloseBTN19, .CloseBTN20, .CloseBTN21, .CloseBTN22, .CloseBTN22, .CloseBTN23, 
-.CloseBTN24,.CloseBTN25, .CloseBTN26, .CloseBTN27, .CloseBTN28, .CloseBTN29, 
-.CloseBTN30, .CloseBTN31, .CloseBTN32, .CloseBTN33, .CloseBTN34, .CloseBTN35, .CloseBTN36, 
-.CloseBTN37, .CloseBTN38, .CloseBTN39, .CloseBTN40, .CloseBTN41, .CloseBTN42, .CloseBTN43, 
-.CloseBTN44, .CloseBTN45, .CloseBTN46, .CloseBTN47, .CloseBTN48, .CloseBTN49, .CloseBTN50, .CloseBTN51, 
-.CloseBTN52, .CloseBTN53, .CloseBTN54, .CloseBTN55, .CloseBTN56, .CloseBTN57, .CloseBTN58, .CloseBTN59, 
-.CloseBTN60, .CloseBTN61, .CloseBTN62, .CloseBTN63, .CloseBTN64, .CloseBTN65, .CloseBTN66, .CloseBTN67, 
-.CloseBTN68, .CloseBTN69, .CloseBTN70, .CloseBTN71, .CloseBTN72, .CloseBTN73, .CloseBTN74, .CloseBTN75, 
-.CloseBTN76, .CloseBTN77, .CloseBTN78, .CloseBTN79, .CloseBTN80, .CloseBTN81, .CloseBTN82, .CloseBTN83, 
-.CloseBTN84, .CloseBTN85, .CloseBTN86, .CloseBTN87, .CloseBTN88, .CloseBTN89, .CloseBTN90, .CloseBTN91, 
-.CloseBTN92, .CloseBTN93, .CloseBTN94, .CloseBTN95, .CloseBTN96, .CloseBTN97, .CloseBTN98, .CloseBTN99, 
-.CloseBTN100, .CloseBTN101, .CloseBTN102, .CloseBTN103, .CloseBTN104, .CloseBTN105, .CloseBTN106, .CloseBTN107, 
-.CloseBTN108, .CloseBTN109, .CloseBTN110, .CloseBTN111, .CloseBTN112, .CloseBTN113, .CloseBTN114, .CloseBTN115, 
-.CloseBTN116, .CloseBTN117, .CloseBTN118, .CloseBTN119, .CloseBTN120, .CloseBTN121, .CloseBTN122, .CloseBTN123, 
-.CloseBTN124, .CloseBTN125, .CloseBTN126, .CloseBTN127, .CloseBTN128, .CloseBTN129, .CloseBTN130, .CloseBTN131, 
-.CloseBTN132, .CloseBTN133, .CloseBTN134, .CloseBTN135, .CloseBTN136, .CloseBTN137, .CloseBTN138, .CloseBTN139, .CloseBTN140
-, .CloseBTN141, .CloseBTN142, .CloseBTN143, 
-.CloseBTN144, .CloseBTN145, .CloseBTN146, .CloseBTN147, .CloseBTN148, .CloseBTN149, .CloseBTN150, .CloseBTN151, 
-.CloseBTN152, .CloseBTN153, .CloseBTN154, .CloseBTN155, .CloseBTN156, .CloseBTN157, .CloseBTN158, .CloseBTN159, 
-.CloseBTN160, .CloseBTN161, .CloseBTN162, .CloseBTN163, .CloseBTN164, .CloseBTN165, .CloseBTN166, .CloseBTN167, 
-.CloseBTN168, .CloseBTN169, .CloseBTN170, .CloseBTN171, .CloseBTN172, .CloseBTN173, .CloseBTN174, .CloseBTN175, 
-.CloseBTN176, .CloseBTN177, .CloseBTN178, .CloseBTN179, .CloseBTN180, .CloseBTN181, .CloseBTN182, .CloseBTN183, 
-.CloseBTN184, .CloseBTN185, .CloseBTN186, .CloseBTN187, .CloseBTN188, .CloseBTN189, .CloseBTN190, .CloseBTN191, 
-.CloseBTN192, .CloseBTN193, .CloseBTN194, .CloseBTN195, .CloseBTN196, .CloseBTN197, .CloseBTN198, .CloseBTN199, 
-.CloseBTN200, .CloseBTN201, .CloseBTN202, .CloseBTN203, .CloseBTN204, .CloseBTN205, .CloseBTN206,
-.CloseBTN207, .CloseBTN208, .CloseBTN209, .CloseBTN210, .CloseBTN211, .CloseBTN212, 
-.CloseBTN213, .CloseBTN214, .CloseBTN215, .CloseBTN216,.CloseBTN217, .CloseBTN218, 
-.CloseBTN219, .CloseBTN220, .CloseBTN221, .CloseBTN222, .CloseBTN222, .CloseBTN223, 
-.CloseBTN224,.CloseBTN225, .CloseBTN226, .CloseBTN227, .CloseBTN228, .CloseBTN229, 
-.CloseBTN230, .CloseBTN231, .CloseBTN232, .CloseBTN233, .CloseBTN234, .CloseBTN235, .CloseBTN236, 
-.CloseBTN237, .CloseBTN238, .CloseBTN239, .CloseBTN240, .CloseBTN241, .CloseBTN242, .CloseBTN243, 
-.CloseBTN244, .CloseBTN245, .CloseBTN246, .CloseBTN247, .CloseBTN248, .CloseBTN249, .CloseBTN250, .CloseBTN251, 
-.CloseBTN252, .CloseBTN253, .CloseBTN254, .CloseBTN255, .CloseBTN256, .CloseBTN257, .CloseBTN258, .CloseBTN259, 
-.CloseBTN260, .CloseBTN261, .CloseBTN262, .CloseBTN263, .CloseBTN264, .CloseBTN265, .CloseBTN266, .CloseBTN267, 
-.CloseBTN268, .CloseBTN269, .CloseBTN270, .CloseBTN271, .CloseBTN272, .CloseBTN273, .CloseBTN274, .CloseBTN275, 
-.CloseBTN276, .CloseBTN277, .CloseBTN278, .CloseBTN279, .CloseBTN280, .CloseBTN281, .CloseBTN282, .CloseBTN283, 
-.CloseBTN284, .CloseBTN285, .CloseBTN286, .CloseBTN287, .CloseBTN288, .CloseBTN289, .CloseBTN290, .CloseBTN291, 
-.CloseBTN292, .CloseBTN293, .CloseBTN294, .CloseBTN295, .CloseBTN296, .CloseBTN297, .CloseBTN298, .CloseBTN299, 
-.CloseBTN300, .CloseBTN301, .CloseBTN302, .CloseBTN303, .CloseBTN304, .CloseBTN305, .CloseBTN306,
-.CloseBTN307, .CloseBTN308, .CloseBTN309, .CloseBTN310, .CloseBTN311, .CloseBTN312,
-.CloseBTN313, .CloseBTN314, .CloseBTN315, .CloseBTN316,.CloseBTN317, .CloseBTN318, .CloseBTN3188, 
-.CloseBTN319, .CloseBTN320, .CloseBTN321, .CloseBTN322, .CloseBTN322, .CloseBTN323, 
-.CloseBTN324,.CloseBTN325, .CloseBTN326, .CloseBTN327, .CloseBTN328, .CloseBTN329, 
-.CloseBTN330, .CloseBTN331, .CloseBTN332, .CloseBTN333, .CloseBTN334, .CloseBTN335, .CloseBTN336, 
-.CloseBTN337, .CloseBTN338, .CloseBTN339, .CloseBTN340, .CloseBTN341, .CloseBTN342, .CloseBTN343, 
-.CloseBTN344, .CloseBTN345, .CloseBTN346, .CloseBTN347, .CloseBTN348, .CloseBTN349, .CloseBTN350, .CloseBTN351, 
-.CloseBTN352, .CloseBTN353, .CloseBTN354, .CloseBTN355{
-  position: relative;
-  margin-top: -2.4%;
-  padding: 3.6% 5%;
-
-  font-size: 3vw;
-  z-index: 2000;
-  cursor: pointer;
-  border: 0 solid white;
-  transition: 0.2s ease-in;
 }
-
-}
-
-
-
-

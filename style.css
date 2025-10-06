@@ -12,32 +12,46 @@
     font-weight: normal;
     font-style: normal;
   }
-  
+  .info2 {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
 .info2 {
-    padding: 2% 2%;
-    font-size: 1vw;
-    background-color: #00000088;
-    border-left: 1px solid rgb(255, 255, 255);
-    border-top: 1px solid rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    border-right: 10px solid rgb(255, 255, 255);
+    padding: 15px;
+    font-size: 15px;
+    line-height: 17px;
+    border: 1px solid white;
+    border-radius: 20px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    background: url(R1.jpeg);
-    animation: changeBg 0.5s infinite;
+  backdrop-filter: blur(15px);
     color: #ffffff;
-    line-height: 1.1vw;
-    right: 5vw;
+ 
+    right: 20px;
     font-family: "ocr-aregular";
-    float: right;
+    float: left;
     position: fixed;
-    top: 18vh;
+    top: 20%;
+     -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+    }
+.info2.updating {
+  opacity: 0;
+}
+.info2 h4{
+    padding: 0 0 10px ;
+
     }
 
+
     b.legenda{
-        font-size: 1vw;
+        font-size: 14px;
         font-weight: lighter;
-        line-height: 1vw;
+        line-height: 16px;
     color: rgb(255, 255, 255);
+     -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
    
       }
       
@@ -112,7 +126,7 @@
  
     .info2 {
    
-        font: 1vh   Arial, Helvetica, sans-serif;
+        font: 12px Arial, Helvetica, sans-serif;
         border: 1px solid white;
         
         color: #ffffff;
@@ -121,9 +135,9 @@
         }
     
         b.legenda{
-            font-size: 1vh;
+            font-size: 10px;
             font-weight: lighter;
-            line-height: 1.6vh;
+            line-height: 12px;
         padding: 5% 0%;
           }
           
