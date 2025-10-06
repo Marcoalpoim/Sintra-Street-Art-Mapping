@@ -1,12 +1,3 @@
-/*CSS referente rede do highcharts*/
-@font-face {
-  font-family: "ocr-aregular";
-  src: url("font/ocr-aregular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-
 
 
 /*dimensão do objeto*/
@@ -18,14 +9,6 @@ figure {
 }
 
 
-#container{
-  top: 0vw;
-  position: relative;
-  margin: auto;
-  width: 100%;
-  border: 1px solid rgba(255, 0, 0, 0);
-  height: 100%;
-}
 
 /*cor de fundo*/
 rect {
@@ -40,19 +23,6 @@ display: block;
 /*retirar linha do marcador quando a animação parar*/
 .highcharts-markers {
   stroke-width: 2px;
-}
-
-/*dimensão da caixa e bordas*/
-.highcharts-figure,
-.highcharts-data-table table {  
-
-  transition: none !important;
-  width: 70vw;
-  height: 70vh;
-  display: block;
-  margin-top: 10.5%;
-  margin-left: 25%;
-  border: 1px solid rgba(72, 255, 0, 0);
 }
 
 

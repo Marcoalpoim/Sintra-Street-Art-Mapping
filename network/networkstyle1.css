@@ -10,14 +10,6 @@ figure {
 }
 
 
-#container10{
-  top: 0vw;
-  position: relative;
-  margin: auto;
-  width: 100%;
-  border: 1px solid rgba(255, 0, 0, 0);
-  height: 100%;
-}
 
 /*cor de fundo*/
 rect {
@@ -34,18 +26,6 @@ display: block;
   stroke-width: 0px;
 }
 
-/*dimensão da caixa e bordas*/
-.highcharts-figure,
-.highcharts-data-table table {  
-
-  transition: none !important;
-  width: 70vw;
-  height: 70vh;
-  display: block;
-  margin-top: 10.5%;
-  margin-left: 25%;
-  border: 1px solid rgba(72, 255, 0, 0);
-}
 
 
 

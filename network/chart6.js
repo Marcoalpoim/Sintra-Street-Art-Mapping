@@ -22,7 +22,7 @@ Highcharts.addEvent(
            
           nodes["Street Art"] = {
             id: "Street Art",
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "Street Art é um fenómeno artístico, expressivo <br> e social à escala global que deu espaço <br> a uma infindável possibilidade de linguagens <br> criadas ou inspiradas no espaço público",
             dataLabels: {
               style:{
@@ -40,7 +40,7 @@ Highcharts.addEvent(
 
           nodes["Arte Pública"] = {
             id: "Arte Pública",
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "Arte Pública é uma variante inócua, comissionada, <br> institucional e legal da Street Art",
             dataLabels: {
               style:{
@@ -58,7 +58,7 @@ Highcharts.addEvent(
 
           nodes['Graffiti'] = {
             id: 'Graffiti',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "o graffiti é uma arte escrita, pintada ou desenhada <br>  sobre uma parede ou outra superfície, geralmente obscena, <br>  informativa, sem permissão e dentro da vista pública.",
             dataLabels: {
               style:{
@@ -76,7 +76,7 @@ Highcharts.addEvent(
 
           nodes['Mural'] = {
             id: 'Mural',  
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "O Mural distingue-se pelas pinturas e desenhos  <br> de grandes dimensões, elaborados e, geralmente,  <br> executados de forma legal, diretamente sobre as paredes, <br> edifícios e muros do espaço público",
             dataLabels: {
               style:{
@@ -93,7 +93,7 @@ Highcharts.addEvent(
           };
           nodes['Tag'] = {
             id: 'Tag',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "O tag é conhecido e caracterizado como <br> a forma mais básica do graffiti ",
             dataLabels: {
               style:{
@@ -112,7 +112,7 @@ Highcharts.addEvent(
       
           nodes['Throw-up'] = {
             id: 'Throw-up',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "O throw-up, throw ou throwie é visto como uma <br> versão mais complexa e elaborada de um tag",
             dataLabels: {
               style:{
@@ -129,7 +129,7 @@ Highcharts.addEvent(
           };
           nodes['Lettering'] = {
             id: 'Lettering',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "O Lettering consiste num desenho  personalizado <br> de uma ou várias letras, em grandes dimensões",
               dataLabels: {
               style:{
@@ -147,7 +147,7 @@ Highcharts.addEvent(
           
           nodes['Piece'] = {
             id: 'Piece',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "O piece é uma obra grande, complexa e demorada, <br> geralmente, escrita e pintada por writers experientes e habilidosos",
             dataLabels: {
               style:{
@@ -166,7 +166,7 @@ Highcharts.addEvent(
          
           nodes['Wildstyle'] = {
             id: 'Wildstyle',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "O wildstyle é a forma mais complexa <br> de um piece e é composto por letras e formas<br> intrincadas e sobrepostas entre si",
             dataLabels: {
               style:{
@@ -186,7 +186,7 @@ Highcharts.addEvent(
  
           nodes['Narrativa Individual'] = {
             id: 'Narrativa Individual',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "As narrativas individuais têm um caracter pessoal e íntimo,<br> o que as torna menos obvias ou relacionáveis <br> com o publico fora do contexto individual",
             dataLabels: {
               style:{
@@ -203,7 +203,7 @@ Highcharts.addEvent(
           };  
           nodes['Narrativa Coletiva'] = {
             id: 'Narrativa Coletiva',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "As narrativas coletivas surgem como o oposto das narrativas <br> e abarcam questões globalmente conhecidas que afetam  <br> uma vasta parte da população, tendo como argumento principal <br> a justiça, a transparência e a inclusão social",
             dataLabels: {
               style:{
@@ -220,7 +220,7 @@ Highcharts.addEvent(
           }; 
             nodes['Narrativa Comercial'] = {
             id: 'Narrativa Comercial',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "As narrativas comerciais apresentam um interesse comercial,<br> comissionadas, geralmente, por uma empresa privada e desenvolvidas <br> no âmbito de uma campanha publicitária ou de uma estratégia <br> para atingir um publico específico",
             dataLabels: {
               style:{
@@ -237,7 +237,7 @@ Highcharts.addEvent(
           };
           nodes['Narrativa Sociopolítica'] = {
             id: 'Narrativa Sociopolítica',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "As narrativas sociopolíticas e ativas desafiam as estruturas <br> de poder, amplificam as vozes marginalizadas e suscitam diálogo, <br> contribuindo para a mudança, a justiça e a igualdade social.",
             dataLabels: {
               style:{
@@ -254,7 +254,7 @@ Highcharts.addEvent(
           };
           nodes['Narrativa Espacial'] = {
             id: 'Narrativa Espacial',
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             text: "As narrativas espaciais estão ligadas à contestação local,<br> às áreas negligenciadas, à gentrificação e a outras preocupações políticas <br> que de alguma forma, se refletem no ambiente físico",
             dataLabels: {
               style:{
@@ -274,7 +274,7 @@ Highcharts.addEvent(
 
           nodes[link[1]] = {
             id: link[1],
-            url: "arquivo_colares.html",
+            url: "arquivo.html?action=colares",
             dataLabels: {
               style:{
                 fontSize: "0.5vw",
