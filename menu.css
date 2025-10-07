@@ -1558,28 +1558,12 @@ margin: 0px 0;}
 }
 
   .toparquivo {
-    height: 14%;
+    height: 20%;
   
   }
 
 
-  .ppicontainer {
-    margin: 55% 5%;
-    margin-right: auto;
-    margin-left: auto;
-    width: 70%;
-    border: 1px solid white;
-  }
-.toparquivo {
-  position: fixed;
-  border-top: 1px solid white;
-  filter: blur(10px);
-  width: 90%;
-  height: 20%;
-  left: 5%;
-  top: -5%;
-  z-index: 89;
-}
+
 .tagbtn {
   font-size: 10px;
   text-decoration: none;

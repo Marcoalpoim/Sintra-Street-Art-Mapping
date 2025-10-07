@@ -221,9 +221,9 @@ width: 280px;
   position: relative;
   z-index: 50;
   padding: 1% 0%;
-  font-size: 0.8vw;
+  font-size: 12px;
 background-color: #000000;
-line-height: 1.2vw;
+line-height: 14px;
   border: 1px solid white;
   text-decoration: none;
   z-index: 9999;
@@ -249,10 +249,6 @@ bottom: 28px;
     border-radius: 15px;
   }
   
-  .filterDiv:hover .imagensprojeto img{
-   
-    border-radius: 0px;
-  }
  
   .filterDiv:hover .avisoiconimage{
   
@@ -339,7 +335,7 @@ bottom: 28px;
 
   .filterDiv img{
     width:100%;
-    height: 99.5%;
+    height: auto;
     align-content: center;
     padding: 0%;
     border: 0px solid rgb(255, 255, 255);
@@ -347,10 +343,7 @@ bottom: 28px;
   
   }
 
-  .filterDiv:hover img{
-    border-radius: 10px;
   
-  }
 
  
   .imagensprojeto{
@@ -378,11 +371,13 @@ bottom: 28px;
   
   .imagensprojeto img{
   border: 1px solid white;
+  border-radius: 20px;
   line-height: none;
   }
 
   .imagensprojeto2 img{
     border: 1px solid white;
+      border-radius: 20px;
     line-height: none;
     }
   
@@ -489,28 +484,29 @@ top: 25%;
 
 
 .ppicontainer{
-  margin-top: 7vw;
-  margin-right: auto;
-  margin-left: auto;
-  width: 45%;
-  border: 1px solid white;
+       margin: auto;
+    padding: 4rem;
+    max-width: 48rem;
+    width: 100%;
+    height: 100%;
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .ppi{
   display: flex;
   align-items: stretch;
-  margin-right: auto;
-  margin-left: 0%;
-  /* height: 10%; */
+
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .informaçaoobra{
-  width: 70%;
-  padding-left: 0px;
-  border: 1px solid white;
+  width: 100%;
+  padding-left: 10px;
 }
 
 
@@ -519,58 +515,58 @@ color: white;
 
 line-height: 100%;
 padding-top: 2%;
-padding-left: 5%;
+padding-left: 10px;
 padding-bottom: 2%;
 }
 
 .freguesiatitle{
   color: white;
-font-size: 1.3vw;
-line-height: 100%;
+font-size: 14px;
+line-height: 16px;
 padding-top: 2%;
 
 }
 
 .autor{
   color: white;
-  font-size: 0.8vw;
-  line-height: 100%;
-  padding-left: 5%;
+  font-size: 12px;
+  line-height: 14px;
+padding-left: 10px;
   padding-bottom: 2%;
   padding-top: 6%;
   border-top: 1px solid white;
 }
 .sub-local{
   color: white;
-  font-size: 0.8vw;
-  line-height: 100%;
+  font-size: 12px;
+  line-height: 14px;
   padding-bottom: 2%;
-  padding-left: 5%;
+padding-left: 10px;
 }
 
 .data{
   color: white;
-  font-size: 0.8vw;
-  line-height: 100%;
+  font-size: 12px;
+  line-height: 14px;
   padding-bottom: 2%;
-  padding-left: 5%;
+padding-left: 10px;
 }
 
 .categoria{
   color: white;
-  font-size: 0.8vw;
-  line-height: 100%;
+  font-size: 12px;
+  line-height: 14px;
   padding-bottom: 2%;
-  padding-left: 5%;
+padding-left: 10px;
 }
 
 
 .tags{
   color: white;
-  font-size: 0.8vw;
-  line-height: 100%;
+   font-size: 12px;
+  line-height: 14px;
   padding-bottom: 6%;
-  padding-left: 5%;
+padding-left: 10px;
   padding-right: 2%;
 }
 
@@ -614,12 +610,12 @@ height: 2vh !important;
 
 }
 .localizaçao .textlocalizaçao{
+  margin-top: 10px;
   position: relative;
     color: white;
-    font-size: 0.8vw;
-    line-height: 100%;
+    font-size: 14px;
+    line-height: 16px;
     padding: 2%;
-    border: 1px solid white;
   
   }
 
@@ -627,9 +623,9 @@ height: 2vh !important;
 .coment-section{
 
   display: block;
-  color: white;
-  font-size: 0.6vw;
-  line-height: 1vw;
+  color: white;   
+  font-size: 10px;
+  line-height: 12px;
   padding: 2%;
   border: 1px solid white;
   overflow-y: scroll;
@@ -726,13 +722,14 @@ height: 2vh !important;
  #map344, #map345, #map346, #map347, #map348, #map349, #map350, #map351, 
  #map352, #map353, #map354, #map355 {
 
-    height: 5vw;
+    height: 200px;
     padding: 4%;
     display: block;
     margin-left: auto;
   margin-right:auto;
   border: 1px solid white;
   background-color: #000000;
+  border-radius: 20px;
   
   }
 
@@ -855,13 +852,12 @@ height: 2vh !important;
     left: 0%;
     height: 0px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.897);
+    backdrop-filter: blur(55px);
     z-index: 2001;
     padding-top: 0px;
     overflow-x: hidden;
-    overflow-y: hidden;
-   
-    border-radius: 20px;
+    overflow-y: scroll;
+  
     transition: ease-in-out 0.5s;
     
   }
@@ -918,15 +914,12 @@ height: 2vh !important;
   .CloseBTN344, .CloseBTN345, .CloseBTN346, .CloseBTN347, .CloseBTN348, .CloseBTN349, .CloseBTN350, .CloseBTN351, 
   .CloseBTN352, .CloseBTN353, .CloseBTN354, .CloseBTN355{
     position: relative;
-    margin-top: -2.4%;
-    padding: 3.2% 5%;
     color: white;
     float: right;
     /* right: 5%; */
-    font-size: 1.3vw;
+    font-size: 20px;
     z-index: 2000;
     cursor: pointer;
-    border: 1px solid white;
     transition: 0.2s ease-in;
   }
 
@@ -983,9 +976,7 @@ height: 2vh !important;
 .CloseBTN352:hover, .CloseBTN353:hover, .CloseBTN354:hover, .CloseBTN355:hover{
 
   transition: 0.2s ease-in;
-  border-bottom: 8px solid white;
-  animation: changeBg 0.5s infinite;
-  background: url(R1.jpeg);
+font-weight: 900;
 }
 
 
@@ -1152,5 +1143,32 @@ width: 130px;
     align-items: center;
     justify-content: center;
  
+}
+.ppicontainer {
+    margin: auto;
+    padding: 1rem;
+    width: 70%;
+}
+.ppi {
+  display: flex
+;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagensprojeto {
+    max-width: 100%;
+    max-height: 100%;
+    align-content: center;
+    padding: 0%;
+    border: 0px solid rgb(255, 255, 255);
+    cursor: pointer;
+}
+.informaçaoobra{
+  width: 100%;
+  padding-left: 0px;
+  padding-top: 10px;
 }
 }
