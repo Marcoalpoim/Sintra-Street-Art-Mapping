@@ -228,6 +228,28 @@ line-height: 14px;
   text-decoration: none;
   z-index: 9999;
 }
+.avisoppi{
+
+  position: relative;
+  z-index: 50;
+  padding: 1% 0%;
+  font-size: 12px;
+background-color: #000000;
+line-height: 14px;
+  border: 1px solid white;
+  text-decoration: none;
+  z-index: 9999;
+}
+.avisoppi img{
+
+  height: auto;
+max-width: 30px;
+  position: absolute;
+height: 20px !important;
+width: 20px !important;
+left: -11px;
+bottom: 28px;
+}
 
 .avisoiconppi{
   position: absolute;
@@ -340,10 +362,10 @@ bottom: 28px;
     padding: 0%;
     border: 0px solid rgb(255, 255, 255);
     cursor: pointer;
-  
+
   }
 
-  
+ 
 
  
   .imagensprojeto{
@@ -730,6 +752,7 @@ height: 2vh !important;
   border: 1px solid white;
   background-color: #000000;
   border-radius: 20px;
+  margin-bottom: 10px;
   
   }
 

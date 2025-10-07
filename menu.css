@@ -1466,7 +1466,7 @@ backdrop-filter: blur(15px);
    
 }
 .accordion li.open {
-    padding: 10px;
+    padding: 5px;
 
 }
   .mapnav {
@@ -1515,7 +1515,7 @@ margin: 0px 0;}
 }
 
 .accordion li {
-       max-width: 300px;
+       max-width: 250px;
 }
 
   p.radiofilter2{
@@ -1669,6 +1669,13 @@ cubic-bezier(0, 0.84, 0, 0.98);
     justify-content: flex-end;
     align-items: flex-start;
     align-content: center;
+}
+
+ 
+.mapafilter_container{
+ 
+    padding: 5px;
+ 
 }
 .texto {
     width: 85%;
