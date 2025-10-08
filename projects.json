@@ -1,0 +1,26 @@
+[
+  {
+    "location": "agualva-cacem",
+    "author": "Desconhecido",
+    "place": "Área de Lazer Abel dos Santos",
+    "date": "2021",
+    "category": "Street Art",
+    "tags": ["graffiti", "streetart", "tag", "lettering", "sociopolitica", "espacial", "individual"],
+    "image": "fotosstreetart/ALGUALVA-CACEM/Area_de_Lazer_Abel_dos_Santos_agualva_cacem_2022.jpg",
+    "hasWarning": true, 
+    "hasComments": true
+  },
+  {
+    "location": "agualva-cacem",
+    "author": "Desconhecido",
+    "place": "Área de Lazer Abel dos Santos",
+    "date": "2021",
+    "category": "Street Art",
+    "tags": ["graffiti", "streetart", "tag", "lettering", "sociopolitica", "espacial", "individual"],
+    "image": "fotosstreetart/ALGUALVA-CACEM/Area_de_Lazer_Abel_dos_Santos_agualva_cacem_2022_2.jpg",
+     "hasWarning": false, 
+    "hasComments": false
+    
+  }
+]
+

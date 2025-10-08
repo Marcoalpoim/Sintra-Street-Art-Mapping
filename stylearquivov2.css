@@ -196,6 +196,18 @@ width: 280px;
     text-align: left;
    
   }
+
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
 .grid {
   transform: none !important;
 }
@@ -815,76 +827,56 @@ height: 2vh !important;
    color: #000000;
   }
 
+.mapbox {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+  margin-top: 10px;
+  overflow: visible; /* ✅ allow dragging cursor to move freely */
+  position: relative;
+  z-index: 10;
+}
 
-  
- 
-  .nav-links, .nav-links2,  .nav-links3, .nav-links4, .nav-links5, .nav-links6,
-   .nav-links7, .nav-links8, .nav-links9, .nav-links10, .nav-links11, .nav-links12, 
-   .nav-links13, .nav-links14, .nav-links15, .nav-links16, .nav-links17, .nav-links18, 
-   .nav-links19, .nav-links20, .nav-links21, .nav-links22, .nav-links22, .nav-links23, 
-   .nav-links24, .nav-links25, .nav-links26, .nav-links27, .nav-links28, .nav-links29, 
-   .nav-links30, .nav-links31, .nav-links32, .nav-links33, .nav-links34, .nav-links35, .nav-links36, 
-   .nav-links37, .nav-links38, .nav-links39, .nav-links40, .nav-links41, .nav-links42, .nav-links43, 
-   .nav-links44, .nav-links45, .nav-links46, .nav-links47, .nav-links48, .nav-links49, .nav-links50, .nav-links51, 
-   .nav-links52, .nav-links53, .nav-links54, .nav-links55, .nav-links56, .nav-links57, .nav-links58, .nav-links59, 
-   .nav-links60, .nav-links61, .nav-links62, .nav-links63, .nav-links64, .nav-links65, .nav-links66, .nav-links67, 
-   .nav-links68, .nav-links69, .nav-links70, .nav-links71, .nav-links72, .nav-links73, .nav-links74, .nav-links75, 
-   .nav-links76, .nav-links77, .nav-links78, .nav-links79, .nav-links80, .nav-links81, .nav-links82, .nav-links83, 
-   .nav-links84, .nav-links85, .nav-links86, .nav-links87, .nav-links88, .nav-links89, .nav-links90, .nav-links91, 
-   .nav-links92, .nav-links93, .nav-links94, .nav-links95, .nav-links96, .nav-links97, .nav-links98, .nav-links99, 
-   .nav-links100, .nav-links101, .nav-links102, .nav-links103, .nav-links104, .nav-links105, .nav-links106, .nav-links107, .nav-links108, 
-   .nav-links109, .nav-links110, .nav-links111, .nav-links112, .nav-links113, .nav-links114, .nav-links115, .nav-links116, 
-   .nav-links117, .nav-links118, .nav-links119, .nav-links120, .nav-links121, .nav-links122, .nav-links123, .nav-links124, 
-   .nav-links125, .nav-links126, .nav-links127, .nav-links128, .nav-links129, .nav-links130, .nav-links131, .nav-links132, 
-   .nav-links133, .nav-links134, .nav-links135, .nav-links136, .nav-links137, .nav-links138, .nav-links139, .nav-links140, .nav-links141, .nav-links142, .nav-links143, 
-   .nav-links144, .nav-links145, .nav-links146, .nav-links147, .nav-links148, .nav-links149, .nav-links150, .nav-links151, 
-   .nav-links152, .nav-links153, .nav-links154, .nav-links155, .nav-links156, .nav-links157, .nav-links158, .nav-links159, 
-   .nav-links160, .nav-links161, .nav-links162, .nav-links163, .nav-links164, .nav-links165, .nav-links166, .nav-links167, 
-   .nav-links168, .nav-links169, .nav-links170, .nav-links171, .nav-links172, .nav-links173, .nav-links174, .nav-links175, 
-   .nav-links176, .nav-links177, .nav-links178, .nav-links179, .nav-links180, .nav-links181, .nav-links182, .nav-links183, 
-   .nav-links184, .nav-links185, .nav-links186, .nav-links187, .nav-links188, .nav-links189, .nav-links190, .nav-links191, 
-   .nav-links192, .nav-links193, .nav-links194, .nav-links195, .nav-links196, .nav-links197, .nav-links198, .nav-links199, 
-   .nav-links200, .nav-links201, .nav-links202, .nav-links203, .nav-links204, .nav-links205, .nav-links206, .nav-links207, .nav-links208, 
-   .nav-links209, .nav-links210, .nav-links211, .nav-links212,
-   
-   .nav-links213, .nav-links214, .nav-links215, .nav-links216, .nav-links217, .nav-links218, 
-   .nav-links219, .nav-links220, .nav-links221, .nav-links222,  .nav-links223, 
-   .nav-links224, .nav-links225, .nav-links226, .nav-links227, .nav-links228, .nav-links229, 
-   .nav-links230, .nav-links231, .nav-links232, .nav-links233, .nav-links234, .nav-links235, .nav-links236, 
-   .nav-links237, .nav-links238, .nav-links239, .nav-links240, .nav-links241, .nav-links242, .nav-links243, 
-   .nav-links244, .nav-links245, .nav-links246, .nav-links247, .nav-links248, .nav-links249, .nav-links250, .nav-links251, 
-   .nav-links252, .nav-links253, .nav-links254, .nav-links255, .nav-links256, .nav-links257, .nav-links258, .nav-links259, 
-   .nav-links260, .nav-links261, .nav-links262, .nav-links263, .nav-links264, .nav-links265, .nav-links266, .nav-links267, 
-   .nav-links268, .nav-links269, .nav-links270, .nav-links271, .nav-links272, .nav-links273, .nav-links274, .nav-links275, 
-   .nav-links276, .nav-links277, .nav-links278, .nav-links279, .nav-links280, .nav-links281, .nav-links282, .nav-links283, 
-   .nav-links284, .nav-links285, .nav-links286, .nav-links287, .nav-links288, .nav-links289, .nav-links290, .nav-links291, 
-   .nav-links292, .nav-links293, .nav-links294, .nav-links295, .nav-links296, .nav-links297, .nav-links298, .nav-links299, 
-   .nav-links300, .nav-links301, .nav-links302, .nav-links303, .nav-links304, .nav-links305, .nav-links306, .nav-links307, .nav-links308, 
-   .nav-links309, .nav-links310, .nav-links311, .nav-links312, 
-   .nav-links313, .nav-links314, .nav-links315, .nav-links316, .nav-links317, .nav-links318, .nav-links3188, 
-   .nav-links319, .nav-links320, .nav-links321, .nav-links322, .nav-links322, .nav-links323, 
-   .nav-links324, .nav-links325, .nav-links326, .nav-links327, .nav-links328, .nav-links329, 
-   .nav-links330, .nav-links331, .nav-links332, .nav-links333, .nav-links334, .nav-links335, .nav-links336, 
-   .nav-links337, .nav-links338, .nav-links339, .nav-links340, .nav-links341, .nav-links342, .nav-links343, 
-   .nav-links344, .nav-links345, .nav-links346, .nav-links347, .nav-links348, .nav-links349, .nav-links350, .nav-links351, 
-   .nav-links352, .nav-links353, .nav-links354, .nav-links355{
+.leaflet-container {
+  cursor: grab !important; /* ✅ show drag hand */
+}
 
-    position: fixed;
-    align-items: center;
-    top: 0%;
-    left: 0%;
-    height: 0px;
-    width: 100%;
-    backdrop-filter: blur(55px);
-    z-index: 2001;
-    padding-top: 0px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-  
-    transition: ease-in-out 0.5s;
-    
+.leaflet-container:active {
+  cursor: grabbing !important;
+}
+
+  .nav-links {
+    display: none;
+  }
+  .nav-links.active {
+    display: block;
+    animation: fadeIn 0.4s ease-in-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
   }
 
+.nav-links {
+      transition: ease-in-out 0.5s;
+   backdrop-filter: blur(55px);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: auto;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+}
+
+.nav-links.active {
+  display: block;
+  opacity: 1;
+}
 
   .CloseBTN, .CloseBTN2, .CloseBTN3, .CloseBTN4, .CloseBTN5, .CloseBTN6,
   .CloseBTN7, .CloseBTN8, .CloseBTN9, .CloseBTN10, .CloseBTN11, .CloseBTN12, 
