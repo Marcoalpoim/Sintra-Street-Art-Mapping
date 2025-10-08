@@ -826,7 +826,24 @@ height: 2vh !important;
    
    color: #000000;
   }
+/* Highlight active filter */
+.freguesiatag.active {
+  background: #222;
+  color: #fff;
+  border: 1px solid #555;
+}
 
+/* Control what’s visible */
+.filterDiv {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.filterDiv.show {
+  display: block;
+  opacity: 1;
+}
 .mapbox {
   width: 100%;
   height: 250px;

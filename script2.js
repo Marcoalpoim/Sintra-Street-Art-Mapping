@@ -4,6 +4,10 @@ let index = 0;
 const batchSize = 20;
 
 // ====== GEOJSON POINTS ======
+setTimeout(function () {
+    window.dispatchEvent(new Event('resize'));
+}, 1000);
+
 var pointJSON = {
   "type": "FeatureCollection",
   "features": [
@@ -204,7 +208,31 @@ function capitalize(str) {
 }
 
 // ====== INITIAL LOAD ======
-loadProjects();
+// ====== INITIAL LOAD & FILTER SETUP ======
+loadProjects().then(() => {
+  filterSelection('all'); // default filter once projects are loaded
+});
+
+// ====== FILTER FUNCTION ======
+function filterSelection(category) {
+  const items = document.querySelectorAll('.filterDiv');
+  const buttons = document.querySelectorAll('.freguesiatag');
+
+  // Update button active state
+  buttons.forEach(btn => btn.classList.remove('active'));
+  const activeBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick')?.includes(`'${category}'`));
+  if (activeBtn) activeBtn.classList.add('active');
+
+  // Show or hide items
+  items.forEach(el => {
+    if (category === 'all' || el.classList.contains(category)) {
+      el.classList.add('show');
+    } else {
+      el.classList.remove('show');
+    }
+  });
+}
+
 
 
 
