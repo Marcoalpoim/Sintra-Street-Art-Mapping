@@ -1,28 +1,4 @@
 
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDiv");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-
-
-  
-}
-
-
-document.addEventListener("DOMContentLoaded", () => {
-  const params = new URLSearchParams(window.location.search);
-  const action = params.get("action");
-
-  if (action) {
-    const btn = document.getElementById(action + "Button");
-    if (btn) btn.click(); // simulate click
-  }
-
 
 
 
@@ -109,50 +85,7 @@ $(".tagstreetart").on("click",function(){$(".streetarttag").show(),
           $(".muraltag").hide(),$(".instalaçõestag").hide(),$(".sociopoliticatag").hide(),$(".comercialtag").hide(),$(".coletivatag").hide(),$(".individualtag").hide()}),$(".tagcomercialtag").on("click",function(){$(".comercialtag").show(),$(".streetarttag").hide(),$(".artepublicatag").hide(),$(".graffititag").hide(),$(".tagtag").hide(),$(".throw-uptag").hide(),$(".letteringtag").hide(),$(".piecetag").hide(),$(".wildstyletag").hide(),$(".muraltag").hide(),$(".stickertag").hide(),$(".stenciltag").hide(),$(".yarnbombingtag").hide(),$(".postertag").hide(),$(".mosaicotag").hide(),$(".muraltag").hide(),$(".instalaçõestag").hide(),$(".sociopoliticatag").hide(),$(".espacialtag").hide(),$(".coletivatag").hide(),$(".individualtag").hide()}),$(".tagcoletiva").on("click",function(){$(".coletivatag").show(),$(".streetarttag").hide(),$(".artepublicatag").hide(),$(".graffititag").hide(),$(".tagtag").hide(),$(".throw-uptag").hide(),$(".letteringtag").hide(),$(".piecetag").hide(),$(".wildstyletag").hide(),$(".muraltag").hide(),$(".stickertag").hide(),$(".stenciltag").hide(),$(".yarnbombingtag").hide(),$(".postertag").hide(),$(".mosaicotag").hide(),$(".muraltag").hide(),$(".instalaçõestag").hide(),$(".sociopoliticatag").hide(),$(".espacialtag").hide(),$(".comercialtag").hide(),$(".individualtag").hide()}),$(".tagindividual").on("click",function(){$(".resetlocal.active").show(),$(".individualtag").show(),$(".streetarttag").hide(),$(".artepublicatag").hide(),$(".graffititag").hide(),$(".tagtag").hide(),$(".throw-uptag").hide(),$(".letteringtag").hide(),$(".piecetag").hide(),$(".wildstyletag").hide(),$(".muraltag").hide(),$(".stickertag").hide(),$(".stenciltag").hide(),$(".yarnbombingtag").hide(),$(".postertag").hide(),$(".mosaicotag").hide(),$(".muraltag").hide(),$(".instalaçõestag").hide(),$(".sociopoliticatag").hide(),$(".espacialtag").hide(),
       $(".comercialtag").hide(),$(".coletivatag").hide()})
 
-// initialize Packery
-  var $grid = $('.grid').packery({
-itemSelector: '.filterDiv',
-  gutter: 0,
-  transitionDuration:'0.2s'
- 
- });
- 
- 
- 
- // make all grid-items draggable
- $grid.find('.filterDiv').each( function( i, gridItem ) {
-   var draggie = new Draggabilly( gridItem );
- 
-   // bind drag events to Packery
-   $grid.packery( 'bindDraggabillyEvents', draggie );
- });
- 
-// add shuffle method
-Packery.prototype.shuffle = function(){
- var m = this.items.length, t, i;
- while (m) {
-     i = Math.floor(Math.random() * m--);
-     t = this.items[m];
-     this.items[m] = this.items[i];
-     this.items[i] = t;
- }
- this.layout();
-}
 
-// init packery
-var pckry = new Packery('.grid2');
-
-// shuffle on click
-document.querySelector('.shuffle-button').onclick = function() {
-
-pckry.shuffle();
-};
-
-
-$(".btn, .tagbtn").click(function(){
-   $(".shuffle-button").click(); 
-   return false;
-});
 
 const carousel = document.getElementById("carousel");
 const prev = document.getElementById("prev");
@@ -201,41 +134,6 @@ function toggleArrows() {
 
 carousel.addEventListener("scroll", toggleArrows);
 window.addEventListener("load", toggleArrows);
-
-
-
-
-
-$(document).ready(function(){
-    setTimeout(function(){
-       $('.shuffle-button').trigger('click');
-   }, 200);
-});
-
-
-});
-
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
 
 
 // Add active class to the current button (highlight it)

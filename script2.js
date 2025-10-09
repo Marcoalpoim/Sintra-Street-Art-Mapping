@@ -1,138 +1,127 @@
-// ====== GLOBAL VARIABLES ======
+
+// ====== GLOBAL ======
 let allProjects = [];
-let index = 0;
-const batchSize = 20;
+let pckry = null;
 
-// ====== GEOJSON POINTS ======
-setTimeout(function () {
-    window.dispatchEvent(new Event('resize'));
-}, 1000);
-
-var pointJSON = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Graffiti",
-        "link": "arquivo.html?action=agualva-cacem",
-        "iconurl": "images/throwup.png",
-        "imglink": "fotosstreetart/ALGUALVA-CACEM/Area_de_Lazer_Abel_dos_Santos_agualva_cacem_2022.jpg"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-9.30320, 38.77409]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Graffiti",
-        "link": "arquivo.html?action=agualva-cacem",
-        "iconurl": "images/throwup.png",
-        "imglink": "fotosstreetart/ALGUALVA-CACEM/Area_de_Lazer_Abel_dos_Santos_agualva_cacem_2022_2.jpg"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [-9.30320, 38.77459]
-      }
-    }
-  ]
-};
-
-// ====== LOAD PROJECTS.JSON ======
-async function loadProjects() {
-  const res = await fetch("projects.json");
-  allProjects = await res.json();
-  loadBatch(allProjects);
+// ====== HELPERS ======
+function normalizeClassName(str) {
+  if (!str && str !== 0) return '';
+  return String(str)
+    .normalize('NFD')                       // remove accents
+    .replace(/[\u0300-\u036f]/g, '')        // strip diacritics
+    .toLowerCase()
+    .replace(/\s+/g, '-')                   // spaces -> dashes
+    .replace(/[^a-z0-9-]/g, '');            // only safe chars
+}
+function capitalize(s) {
+  if (!s) return '';
+  s = String(s);
+  return s.charAt(0).toUpperCase() + s.slice(1);
+}
+function waitForImagesIn(elements, timeout = 7000) {
+  const imgs = [];
+  elements.forEach(el => {
+    imgs.push(...Array.from(el.querySelectorAll('img')));
+    if (el.tagName === 'IMG') imgs.push(el);
+  });
+  if (imgs.length === 0) return Promise.resolve();
+  const promises = imgs.map(img => new Promise(res => {
+    if (img.complete && img.naturalWidth !== 0) return res();
+    const done = () => { img.removeEventListener('load', done); img.removeEventListener('error', done); res(); };
+    img.addEventListener('load', done);
+    img.addEventListener('error', done);
+    setTimeout(res, timeout); // fallback
+  }));
+  return Promise.all(promises);
 }
 
-// ====== LOAD BATCH ======
-function loadBatch(projects) {
-  const container = document.querySelector(".grid.grid2");
-  const slice = projects.slice(index, index + batchSize);
+// ====== BUILD DOM FROM projects.json (LOAD ALL) ======
+async function loadProjects() {
+  try {
+    const res = await fetch('projects.json');
+    allProjects = await res.json();
+  } catch (err) {
+    console.error('Failed to load projects.json', err);
+    return;
+  }
 
-  slice.forEach((p, i) => {
-    const uniqueId = index + i;
+  buildAllProjectItems(allProjects);
 
-    const div = document.createElement("div");
-    div.className = `filterDiv ${p.location.toLowerCase().replace(/\s+/g, "-")} ${p.tags.join(" ")}`;
+  // Wait images for all items, then init Packery
+  const grid = document.querySelector('.grid.grid2');
+  if (!grid) {
+    console.warn('No .grid.grid2 element found.');
+    return;
+  }
+
+  const items = Array.from(grid.querySelectorAll('.filterDiv'));
+  await waitForImagesIn(items);          // wait for images to avoid layout glitches
+  initPackery();
+
+  // ensure initial view shows everything and packery is laid out
+  filterSelection('all');
+}
+
+// create and append all items
+function buildAllProjectItems(projects) {
+  const container = document.querySelector('.grid.grid2');
+  if (!container) return;
+  container.innerHTML = '';
+
+  projects.forEach((p, i) => {
+    const locationClass = p.location ? normalizeClassName(p.location) : '';
+    const tagClasses = (p.tags || []).map(t => normalizeClassName(t)).join(' ');
+
+    const div = document.createElement('div');
+    div.className = `filterDiv ${locationClass} ${tagClasses}`.trim();
 
     div.innerHTML = `
       ${p.hasComments ? `
-  <div class="avisoicon">
-    <img loading="lazy" src="avisoicon.png" alt="aviso" class="avisoiconimage">
-    <div class="avisotext">
-      <img loading="lazy" src="avisoicon.png" alt="aviso" class="avisotextimage">
-      <p>Esta obra pode conter conteúdos sociopolíticos e culturais</p>
-    </div>
-  </div>
-` : ''}
+        <div class="avisoicon">
+          <img loading="lazy" src="avisoicon.png" alt="aviso" class="avisoiconimage">
+          <div class="avisotext">
+            <img loading="lazy" src="avisoicon.png" alt="aviso" class="avisotextimage">
+            <p>Esta obra pode conter conteúdos sociopolíticos e culturais</p>
+          </div>
+        </div>` : ''}
 
-      <div class="sidebar" data-index="${uniqueId}" onclick="openPPI(${uniqueId})">
-        <img loading="lazy" src="${p.image}" alt="${p.location}">
+      <div class="sidebar" data-index="${i}" onclick="openPPI(${i})">
+        <img loading="lazy" src="${p.image || ''}" alt="${p.location || ''}">
       </div>
-
-      <br>
 
       <div class="tagscontainer">
-        ${p.tags.map(tag => `
-          <button class="tagbtn tag${tag}" onclick="filterSelection('${tag}')">${capitalize(tag)}</button>
-        `).join('')}
+        ${(p.tags || []).map(tag => {
+          const nc = normalizeClassName(tag);
+          return `<button class="tagbtn tag${nc}" onclick="filterSelection('${nc}')">${capitalize(tag)}</button>`;
+        }).join('')}
       </div>
 
-      <div class="nav-links" id="ppi-${uniqueId}">
+      <div class="nav-links" id="ppi-${i}">
         <div class="ppicontainer">
           <div class="ppi">
             <div class="imagensprojeto">
-              <img loading="lazy" src="${p.image}" width="100%">
+              <img loading="lazy" src="${p.image || ''}" width="100%">
             </div>
-
             <div class="informaçaoobra">
               <p class="local">
-                <b class="freguesiatitle">${p.location}</b>
-                <b class="CloseBTN" onclick="closePPI(${uniqueId})">x</b>
+                <b class="freguesiatitle">${p.location || ''}</b>
+                <b class="CloseBTN" onclick="closePPI(${i})">x</b>
               </p>
-              <p class="autor"><b>Autor:</b> ${p.author}</p>
-              <p class="sub-local"><b>Local:</b> ${p.place}</p>
-              <p class="data"><b>Data:</b> ${p.date}</p>
-              <p class="categoria"><b>Categoria:</b> ${p.category}</p>
-
+              <p class="autor"><b>Autor:</b> ${p.author || ''}</p>
+              <p class="sub-local"><b>Local:</b> ${p.place || ''}</p>
+              <p class="data"><b>Data:</b> ${p.date || ''}</p>
+              <p class="categoria"><b>Categoria:</b> ${p.category || ''}</p>
               <div class="tags">
                 <b>Tags:</b><br><br>
-                <ul>
-                  ${p.tags.map(t => `<li><a class="ppitags" href="#">${capitalize(t)}</a></li>`).join('')}
-                </ul>
+                <ul>${(p.tags || []).map(t => `<li><a class="ppitags" href="#">${capitalize(t)}</a></li>`).join('')}</ul>
               </div>
             </div>
           </div>
 
-          <div class="noiseppi"></div>
-
           <div class="localizaçao">
             <div class="textlocalizaçao">Localização</div>
-            <div id="map-${uniqueId}" class="mapbox"></div>
+            <div id="map-${i}" class="mapbox"></div>
           </div>
-
-          ${p.hasComments ? `
-          <div class="avisoppi">
-            <img loading="lazy" src="avisoicon.png" alt="Aviso" class="avisoiconppi">
-            <p class="contentavisoppi">
-              Esta imagem contém conteúdo provocador, que não se reflete e serve apenas de exposição e demonstração histórica e cultural.
-            </p>
-          </div>
-
-          <div class="coment-section">
-            <p><b>user1923423:</b> Incrível!!!</p>
-            <p><b>user1923823:</b> É vandalismo!</p>
-            <p><b>user1923565:</b> Limpem isso!</p>
-          </div>
-
-          <div class="coment-section2">
-            <input class="comentario" type="text" placeholder="Comentário..." id="coment-${uniqueId}">
-            <span class="sendit" id="send-${uniqueId}">send</span>
-          </div>
-          ` : ''}
         </div>
       </div>
     `;
@@ -140,102 +129,188 @@ function loadBatch(projects) {
     container.appendChild(div);
   });
 
-  index += batchSize;
+  // attach global onclicks (freguesia carousel may use inline onclick already)
+  attachFreguesiaClicks();
 }
 
-// ====== SCROLL LOAD ======
-window.addEventListener("scroll", () => {
-  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
-    loadBatch(allProjects);
+// ====== PACKERY INIT & HELPERS ======
+function initPackery() {
+  const gridElem = document.querySelector('.grid2');
+  if (!gridElem) return;
+
+  // if already initialized, reload items & layout
+  if (pckry) {
+    pckry.reloadItems();
+    pckry.layout();
+    return;
   }
-});
 
-// ====== OPEN & CLOSE PPI ======
-function openPPI(id) {
-  const modal = document.getElementById(`ppi-${id}`);
-  if (modal) modal.classList.add("active");
-
-  const p = allProjects[id];
-  if (!p) return;
-
-  const match = pointJSON.features.find(f => f.properties.imglink === p.image);
-  if (match) {
-    const [lng, lat] = match.geometry.coordinates;
-    initMapDark(`map-${id}`, lat, lng, match.properties.iconurl, p.image);
+  // Ensure Packery exists (Packery script must be loaded before this script)
+  if (typeof Packery === 'undefined') {
+    console.error('Packery is not loaded. Include Packery script before this script.');
+    return;
   }
-}
 
-function closePPI(id) {
-  const modal = document.getElementById(`ppi-${id}`);
-  if (modal) modal.classList.remove("active");
-}
-
-// ====== INITIALIZE LEAFLET DARK MAP ======
-function initMapDark(mapId, lat, lng, iconUrl, imageUrl) {
-  const map = L.map(mapId, {
-    center: [lat, lng],
-    zoom: 16,
-    zoomControl: true,
-    dragging: true,
-    scrollWheelZoom: true,
-    doubleClickZoom: true,
-    boxZoom: true,
-    keyboard: true,
-    tap: true,
-    inertia: true,
+  pckry = new Packery(gridElem, {
+    itemSelector: '.filterDiv',
+    gutter: 0,
+    transitionDuration: '0.2s'
   });
 
-  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    subdomains: "abcd",
-    maxZoom: 20
-  }).addTo(map);
+  // add shuffle method if needed
+  Packery.prototype.shuffle = function() {
+    let m = this.items.length, t, i;
+    while (m) {
+      i = Math.floor(Math.random() * m--);
+      t = this.items[m];
+      this.items[m] = this.items[i];
+      this.items[i] = t;
+    }
+    this.layout();
+  };
 
-  const icons = new L.Icon({
-    iconUrl: iconUrl || "images/throwup.png",
-    iconSize: [10, 10],
+  // when any filter/tag button is clicked, re-layout after short delay
+  document.querySelectorAll('.btn, .tagbtn, .freguesiatag').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      // let filterSelection handle show/hide and active classes;
+      // here we only ensure Packery recalculates afterwards.
+      setTimeout(() => {
+        if (pckry) {
+          pckry.reloadItems();
+          pckry.layout();
+        }
+      }, 120);
+    });
   });
 
-  L.marker([lat, lng], { icon: icons })
-    .addTo(map)
-    .bindPopup(`<img src="${imageUrl}" width="150" style="border-radius:8px;">`)
-    .openPopup();
-}
+  window.addEventListener('resize', () => {
+    if (pckry) pckry.layout();
+  });
 
-// ====== UTILITY ======
-function capitalize(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
+  // final layout call
+  setTimeout(() => {
+    if (pckry) pckry.reloadItems(), pckry.layout();
+  }, 100);
 }
-
-// ====== INITIAL LOAD ======
-// ====== INITIAL LOAD & FILTER SETUP ======
-loadProjects().then(() => {
-  filterSelection('all'); // default filter once projects are loaded
-});
 
 // ====== FILTER FUNCTION ======
 function filterSelection(category) {
-  const items = document.querySelectorAll('.filterDiv');
-  const buttons = document.querySelectorAll('.freguesiatag');
+  // category might be a normalized class (kebab-case) OR original string from inline onclick.
+  // Normalize:
+  const catRaw = (category === undefined || category === null) ? 'all' : category;
+  const cat = (String(catRaw) === 'all') ? 'all' : normalizeClassName(catRaw);
 
-  // Update button active state
+  // update active button(s) in the freguesia carousel
+  const buttons = document.querySelectorAll('.freguesiatag');
   buttons.forEach(btn => btn.classList.remove('active'));
-  const activeBtn = Array.from(buttons).find(btn => btn.getAttribute('onclick')?.includes(`'${category}'`));
+
+  // try to find button by id OR onclick content
+  const activeBtn = Array.from(buttons).find(btn => {
+    // id like "agualva-cacemButton"
+    if (btn.id && normalizeClassName(btn.id.replace(/Button$/i, '')) === cat) return true;
+    // onclick content like filterSelection('agualva-cacem')
+    const onclick = btn.getAttribute('onclick') || '';
+    if (onclick.includes(`'${category}'`) || onclick.includes(`"${category}"`)) return true;
+    // also check label text normalized
+    const txt = normalizeClassName(btn.textContent || btn.innerText || '');
+    if (txt === cat) return true;
+    return false;
+  });
   if (activeBtn) activeBtn.classList.add('active');
 
-  // Show or hide items
+  // show/hide items
+  const items = document.querySelectorAll('.filterDiv');
   items.forEach(el => {
-    if (category === 'all' || el.classList.contains(category)) {
+    if (cat === 'all') {
+      el.classList.add('show');
+    } else if (el.classList.contains(cat)) {
       el.classList.add('show');
     } else {
       el.classList.remove('show');
     }
   });
+
+  // recalc Packery
+  if (pckry) {
+    setTimeout(() => {
+      pckry.reloadItems();
+      pckry.layout();
+    }, 120);
+  }
 }
 
+// ====== PPI (modal) open/close ======
+function openPPI(id) {
+  const modal = document.getElementById(`ppi-${id}`);
+  if (modal) modal.classList.add('active');
 
+  const p = allProjects[id];
+  if (!p) return;
 
+  // find matching pointJSON feature (if present) and init map
+  setTimeout(() => {
+    try {
+      const match = (window.pointJSON && pointJSON.features)
+        ? pointJSON.features.find(f => f.properties.imglink === p.image)
+        : null;
+      if (match) {
+        const [lng, lat] = match.geometry.coordinates;
+        initMapDark(`map-${id}`, lat, lng, match.properties.iconurl, p.image);
+      }
+    } catch (err) {
+      console.warn('Map init skipped (no pointJSON)', err);
+    }
+  }, 300);
+}
+function closePPI(id) {
+  const modal = document.getElementById(`ppi-${id}`);
+  if (modal) modal.classList.remove('active');
+}
 
+// ====== MAP helper (Leaflet) ======
+function initMapDark(mapId, lat, lng, iconUrl, imageUrl) {
+  const container = document.getElementById(mapId);
+  if (!container) {
+    console.warn('Map container not available yet:', mapId);
+    return;
+  }
+  try {
+    const map = L.map(mapId, { center: [lat, lng], zoom: 16 });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; OpenStreetMap contributors',
+      maxZoom: 20
+    }).addTo(map);
+    const icon = new L.Icon({ iconUrl: iconUrl || 'images/throwup.png', iconSize: [30, 30] });
+    L.marker([lat, lng], { icon }).addTo(map).bindPopup(`<img src="${imageUrl}" width="150" style="border-radius:8px;">`);
+  } catch (err) {
+    console.error('Leaflet init error', err);
+  }
+}
+
+// attach click handlers for freguesia carousel buttons to smooth-center (optional)
+function attachFreguesiaClicks() {
+  const carousel = document.getElementById('carousel');
+  if (!carousel) return;
+  document.querySelectorAll('.freguesiatag').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // center clicked button in carousel (non-critical)
+      setTimeout(() => {
+        const active = carousel.querySelector('.freguesiatag.active') || btn;
+        const li = active.closest('li');
+        if (!li) return;
+        const center = li.offsetLeft + li.offsetWidth / 2;
+        const scrollTo = Math.max(0, center - carousel.clientWidth / 2);
+        carousel.scrollTo({ left: scrollTo, behavior: 'smooth' });
+      }, 10);
+    });
+  });
+}
+
+// ====== START ======
+document.addEventListener('DOMContentLoaded', () => {
+  // Kick it off
+  loadProjects();
+});
 
 ///////////////////////////////////////////////////////////////////////////////////////
 {
