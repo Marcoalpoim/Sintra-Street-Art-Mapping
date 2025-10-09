@@ -208,26 +208,6 @@ body {
 
 
 
-.grid {
-  transform: none !important;
-}
-  /* clear fix */
-  .grid:after {
-    content: '';
-    display: block;
-    clear: both;
-  }
-  
-.packery-drop-placeholder {
- display: none;
-
-}
-.grid {
-      max-width: 1200px;
-    width: 100%;
-    margin: 0 0px;  /* centra */
-}
-
 .avisoppi{
 
   position: relative;
@@ -269,6 +249,25 @@ height: 20px !important;
 width: 20px !important;
 left: -11px;
 bottom: 28px;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center; /* centers the grid horizontally */
+  width: 100%;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers grid items in each row */
+  align-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto; /* centers the grid container */
+  box-sizing: border-box;
 }
 
 
@@ -369,7 +368,7 @@ bottom: 28px;
 
   .filterDiv img{
     width:100%;
-    height: auto;
+    height:100%;
     align-content: center;
     padding: 0%;
     border: 0px solid rgb(255, 255, 255);
@@ -405,13 +404,13 @@ bottom: 28px;
   
   .imagensprojeto img{
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 10px;
   line-height: none;
   }
 
   .imagensprojeto2 img{
     border: 1px solid white;
-      border-radius: 20px;
+      border-radius: 10px;
     line-height: none;
     }
   
@@ -519,14 +518,17 @@ top: 25%;
 
 .ppicontainer{
        margin: auto;
-    padding: 4rem;
+    padding: 1rem;
     max-width: 48rem;
     width: 100%;
     height: 100%;
-    display: flex
-;
+    display: flex;
+    border: 1px solid white;
     flex-direction: column;
+    height: auto;
+    align-items: center;
     justify-content: center;
+    border-radius: 20px;
 }
 
 .ppi{
@@ -548,7 +550,7 @@ top: 25%;
 color: white;
 
 line-height: 100%;
-padding-top: 2%;
+padding-top: 10px;
 padding-left: 10px;
 padding-bottom: 2%;
 }
@@ -599,7 +601,7 @@ padding-left: 10px;
   color: white;
    font-size: 12px;
   line-height: 14px;
-  padding-bottom: 6%;
+  padding-bottom:5px;
 padding-left: 10px;
   padding-right: 2%;
 }
@@ -611,7 +613,7 @@ padding-left: 10px;
   display: inline;
   list-style: none;
   text-decoration: none;
-  padding-top: 6%;
+  padding-top: 5px;
   flex-wrap: wrap;
 
 }
@@ -641,6 +643,7 @@ height: 2vh !important;
 }
 .localizaçao {
   display: block;
+  width: 100%;
 
 }
 .localizaçao .textlocalizaçao{
@@ -649,7 +652,7 @@ height: 2vh !important;
     color: white;
     font-size: 14px;
     line-height: 16px;
-    padding: 2%;
+    padding: 15px 0 5px;
   
   }
 
@@ -846,7 +849,7 @@ height: 2vh !important;
 }
 .mapbox {
   width: 100%;
-  height: 250px;
+  height: 150px;
   border-radius: 12px;
   margin-top: 10px;
   overflow: visible; /* ✅ allow dragging cursor to move freely */
@@ -891,8 +894,10 @@ height: 2vh !important;
 }
 
 .nav-links.active {
-  display: block;
-  opacity: 1;
+display: flex;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
 }
 
   .CloseBTN, .CloseBTN2, .CloseBTN3, .CloseBTN4, .CloseBTN5, .CloseBTN6,
@@ -1142,13 +1147,13 @@ width: 212px;
 
 @media screen and (max-width: 768px) {
  .grid {
-        max-width: 300px;
+        max-width: 380px;
     width: 100%;
     margin: 0 0px;
 }
 .filterDiv {
 
-width: 130px;
+width: 170px;
 
    
   }
@@ -1201,6 +1206,6 @@ width: 130px;
 .informaçaoobra{
   width: 100%;
   padding-left: 0px;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 }
