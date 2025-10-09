@@ -138,60 +138,57 @@ function initPackery() {
   const gridElem = document.querySelector('.grid2');
   if (!gridElem) return;
 
-  // if already initialized, reload items & layout
-  if (pckry) {
-    pckry.reloadItems();
-    pckry.layout();
-    return;
-  }
+  if (!pckry) {
+    pckry = new Packery(gridElem, {
+      itemSelector: '.filterDiv',
+      gutter: 0,
+      transitionDuration: '0.2s'
+    });
 
-  // Ensure Packery exists (Packery script must be loaded before this script)
-  if (typeof Packery === 'undefined') {
-    console.error('Packery is not loaded. Include Packery script before this script.');
-    return;
-  }
+    console.log("✅ Packery initialized with", pckry.items.length, "items");
 
-  pckry = new Packery(gridElem, {
-    itemSelector: '.filterDiv',
-    gutter: 0,
-    transitionDuration: '0.2s'
-  });
-
-  // add shuffle method if needed
-  Packery.prototype.shuffle = function() {
-    let m = this.items.length, t, i;
-    while (m) {
-      i = Math.floor(Math.random() * m--);
-      t = this.items[m];
-      this.items[m] = this.items[i];
-      this.items[i] = t;
+    // Add shuffle prototype once
+    if (!Packery.prototype.shuffle) {
+      Packery.prototype.shuffle = function () {
+        let m = this.items.length, t, i;
+        while (m) {
+          i = Math.floor(Math.random() * m--);
+          t = this.items[m];
+          this.items[m] = this.items[i];
+          this.items[i] = t;
+        }
+        this.layout();
+      };
     }
-    this.layout();
-  };
 
-  // when any filter/tag button is clicked, re-layout after short delay
-  document.querySelectorAll('.btn, .tagbtn, .freguesiatag').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      // let filterSelection handle show/hide and active classes;
-      // here we only ensure Packery recalculates afterwards.
-      setTimeout(() => {
-        if (pckry) {
+    // ✅ Wait a moment to attach shuffle button (in case DOM loads later)
+    setTimeout(() => {
+      const shuffleBtn = document.querySelector('.shuffle-button');
+      if (shuffleBtn) {
+        shuffleBtn.addEventListener('click', () => {
+          if (pckry) pckry.shuffle();
+        });
+      }
+    }, 500);
+
+    // Re-layout on filter or resize
+    document.querySelectorAll('.btn, .tagbtn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        setTimeout(() => {
           pckry.reloadItems();
           pckry.layout();
-        }
-      }, 120);
+        }, 200);
+      });
     });
-  });
 
-  window.addEventListener('resize', () => {
-    if (pckry) pckry.layout();
-  });
-
-  // final layout call
-  setTimeout(() => {
-    if (pckry) pckry.reloadItems(), pckry.layout();
-  }, 100);
+    window.addEventListener('resize', () => pckry.layout());
+  } else {
+    pckry.reloadItems();
+    pckry.layout();
+  }
 }
+
 
 // ====== FILTER FUNCTION ======
 function filterSelection(category) {
@@ -267,25 +264,52 @@ function closePPI(id) {
   if (modal) modal.classList.remove('active');
 }
 
-// ====== MAP helper (Leaflet) ======
+// ====== MAP INIT ======
 function initMapDark(mapId, lat, lng, iconUrl, imageUrl) {
-  const container = document.getElementById(mapId);
-  if (!container) {
-    console.warn('Map container not available yet:', mapId);
+  const map = L.map(mapId, { center: [lat, lng], zoom: 16 });
+  L.tileLayer("https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png", {
+    attribution: '&copy; OpenStreetMap contributors', subdomains: "abcd", maxZoom: 20
+  }).addTo(map);
+  const icons = new L.Icon({ iconUrl: iconUrl || "images/throwup.png", iconSize: [10, 10] });
+  L.marker([lat, lng], { icon: icons })
+    .addTo(map)
+    .bindPopup(`<img src="${imageUrl}" width="150" style="border-radius:8px;">`)
+    .openPopup();
+}
+
+
+
+// ====== CAROUSEL INIT ======
+function initCarousel() {
+  const carousel = document.getElementById("carousel");
+  const prev = document.getElementById("prev");
+  const next = document.getElementById("next");
+
+  if (!carousel || !prev || !next) {
+    console.error("❌ Carousel elements missing");
     return;
   }
-  try {
-    const map = L.map(mapId, { center: [lat, lng], zoom: 16 });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
-      attribution: '&copy; OpenStreetMap contributors',
-      maxZoom: 20
-    }).addTo(map);
-    const icon = new L.Icon({ iconUrl: iconUrl || 'images/throwup.png', iconSize: [30, 30] });
-    L.marker([lat, lng], { icon }).addTo(map).bindPopup(`<img src="${imageUrl}" width="150" style="border-radius:8px;">`);
-  } catch (err) {
-    console.error('Leaflet init error', err);
-  }
+
+  console.log("✅ Carousel found:", carousel);
+  const scrollAmount = 150;
+
+  prev.addEventListener("click", () => {
+    console.log("⬅️ prev clicked");
+    carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+  });
+
+  next.addEventListener("click", () => {
+    console.log("➡️ next clicked");
+    carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+  });
+
+  carousel.addEventListener("scroll", () => {
+    // Optional debug log:
+    // console.log("scrollLeft:", carousel.scrollLeft);
+  });
 }
+
+
 
 // attach click handlers for freguesia carousel buttons to smooth-center (optional)
 function attachFreguesiaClicks() {
@@ -306,10 +330,10 @@ function attachFreguesiaClicks() {
   });
 }
 
-// ====== START ======
+// ====== DOM READY ======
 document.addEventListener('DOMContentLoaded', () => {
-  // Kick it off
   loadProjects();
+  initCarousel(); // 👈 added here
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////
