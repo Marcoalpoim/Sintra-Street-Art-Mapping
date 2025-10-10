@@ -76,7 +76,7 @@
       background: #000000;
       color: #fff;
       width: 100%;
-      min-height: 100vh;
+      min-height: 100dvh;
       display: flex;
     z-index: 90;
   }
