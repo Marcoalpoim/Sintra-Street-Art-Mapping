@@ -1334,10 +1334,15 @@ border: 1px solid white;
     max-width: 250px;
 }
 
+.accordion li .link{ 
+
+  padding: 10px 10px;
+    margin: 5px 5px;
+}
 
 .accordion li.open { 
 
-padding: 10px;
+padding: 5px;
 max-width: 250px;
 }
 
@@ -1364,13 +1369,13 @@ max-width: 250px;
   transform: rotate(0deg);
 }
 
-.accordion li.open .link { color: #ffffff; }
 
 .accordion li.open .link { 
   color: #000000; 
 background-color: #ffffff;
 border-radius: 30px;
-
+    padding: 10px 10px;
+    margin: 5px 5px;
 }
 
 
@@ -1580,10 +1585,14 @@ margin: 0px 0;}
 }
 
 .accordion .link {
-
+    padding: 10px 10px;
     font-size: 12px;
     line-height: 14px;
 font-weight: 300;
+}
+.accordion li i {
+    top: 5px;
+ 
 }
 .legenda1 {
     position: fixed;
@@ -1705,6 +1714,10 @@ height: 70%;
 .menucontainer {
   
     overflow: visible;
+}
+.accordion li .link {
+    padding: 5px 15px;
+    /* margin: 5px 5px; */
 }
 .blank {
   top: 13%;

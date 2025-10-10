@@ -6,7 +6,12 @@
 var map = L.map('map').setView([33.84000, -9.35000], '8');
 
 
-
+// ✅ Add this right after
+const mapDiv = document.getElementById('map');
+mapDiv.style.transformOrigin = 'center center';
+mapDiv.style.transform = 'rotateX(5deg)';
+mapDiv.style.transition = 'transform 0.8s ease';
+mapDiv.style.perspective = '800px';
     document.getElementById("uno").addEventListener("click", function () {
         map.flyTo([38.84000, -9.35000], '11', {
             animate: true,
@@ -193,17 +198,41 @@ function onclick(e) {
 
 
 
-
 function onEachFeature(feature, layer) {
-    
+    let lastClickTime = 0;
+
     layer.on({
         mouseover: highlightFeature,
-        mouseout: resetHighlight, 
-        click: zoomToFeature,
-        dblclick: onclick
+        mouseout: resetHighlight,
+        click: function(e) {
+            const now = Date.now();
+            const timeSince = now - lastClickTime;
+
+            // If the time between clicks is short, treat as double click
+            if (timeSince < 350 && timeSince > 50) {
+                const link = e.target.feature.properties.link;
+                if (link) {
+                    window.location.href = link;
+                }
+            } else {
+                // Single click: highlight + zoom
+                highlightFeature(e);
+                zoomToFeature(e);
+            }
+
+            lastClickTime = now;
+
+            // Stop click from bubbling up to the map background
+            L.DomEvent.stopPropagation(e);
+        }
     });
 }
 
+// Clear highlight when clicking outside polygons (on map background)
+map.on("click", function() {
+    Sintradata.resetStyle();
+    info.update();
+});
 
 
 
@@ -231,7 +260,7 @@ info.update = function (props) {
                   props.yarnbombing + props.poster + props.mosaico + props.mural +
                   props.instalações + props.tags +
                   '</b>'
-                : 'Hover sobre uma freguesia');
+                : 'Começa já a explorar o mapa!');
 
         // faz fade-in
         this._div.classList.remove("updating");
@@ -241,5 +270,60 @@ info.update = function (props) {
 info.addTo(map);
 
 
+// Make the .info2 leaflet control draggable (desktop + mobile)
+function makeLeafletControlDraggable(selector) {
+  const el = document.querySelector(selector);
+  if (!el) return;
 
+  let isDragging = false;
+  let startX, startY, initialX, initialY;
 
+  // Disable dragging that might interfere with the map
+  L.DomEvent.disableClickPropagation(el);
+  L.DomEvent.disableScrollPropagation(el);
+
+  el.addEventListener("mousedown", startDrag);
+  el.addEventListener("touchstart", startDrag, { passive: true });
+
+  function startDrag(e) {
+    isDragging = true;
+    el.style.transition = "none";
+
+    const rect = el.getBoundingClientRect();
+    startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+    startY = e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+    initialX = rect.left;
+    initialY = rect.top;
+
+    document.addEventListener("mousemove", drag);
+    document.addEventListener("mouseup", endDrag);
+    document.addEventListener("touchmove", drag, { passive: false });
+    document.addEventListener("touchend", endDrag);
+  }
+
+  function drag(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const x = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
+    const y = e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+    const dx = x - startX;
+    const dy = y - startY;
+
+    el.style.left = `${initialX + dx}px`;
+    el.style.top = `${initialY + dy}px`;
+    el.style.right = "auto";
+  }
+
+  function endDrag() {
+    isDragging = false;
+    el.style.transition = "";
+    document.removeEventListener("mousemove", drag);
+    document.removeEventListener("mouseup", endDrag);
+    document.removeEventListener("touchmove", drag);
+    document.removeEventListener("touchend", endDrag);
+  }
+}
+
+// Apply to your Leaflet info control
+setTimeout(() => makeLeafletControlDraggable(".info2.leaflet-control"), 500);

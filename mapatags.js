@@ -156,18 +156,41 @@ function onclick(e) {
 
 
 
-
-
 function onEachFeature(feature, layer) {
-    
+    let lastClickTime = 0;
+
     layer.on({
         mouseover: highlightFeature,
-        mouseout: resetHighlight, 
-        click: zoomToFeature,
-        dblclick: onclick
+        mouseout: resetHighlight,
+        click: function(e) {
+            const now = Date.now();
+            const timeSince = now - lastClickTime;
+
+            // If the time between clicks is short, treat as double click
+            if (timeSince < 350 && timeSince > 50) {
+                const link = e.target.feature.properties.link;
+                if (link) {
+                    window.location.href = link;
+                }
+            } else {
+                // Single click: highlight + zoom
+                highlightFeature(e);
+                zoomToFeature(e);
+            }
+
+            lastClickTime = now;
+
+            // Stop click from bubbling up to the map background
+            L.DomEvent.stopPropagation(e);
+        }
     });
 }
 
+// Clear highlight when clicking outside polygons (on map background)
+map.on("click", function() {
+    Sintradata.resetStyle();
+    info.update();
+});
 
 
 
