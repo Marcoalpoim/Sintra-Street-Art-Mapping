@@ -212,6 +212,63 @@ info.update = function (props) {
     };
 
 info.addTo(map);
+// Make the .info2 leaflet control draggable (desktop + mobile)
+function makeLeafletControlDraggable(selector) {
+  const el = document.querySelector(selector);
+  if (!el) return;
+
+  let isDragging = false;
+  let startX, startY, initialX, initialY;
+
+  // Disable dragging that might interfere with the map
+  L.DomEvent.disableClickPropagation(el);
+  L.DomEvent.disableScrollPropagation(el);
+
+  el.addEventListener("mousedown", startDrag);
+  el.addEventListener("touchstart", startDrag, { passive: true });
+
+  function startDrag(e) {
+    isDragging = true;
+    el.style.transition = "none";
+
+    const rect = el.getBoundingClientRect();
+    startX = e.type === "touchstart" ? e.touches[0].clientX : e.clientX;
+    startY = e.type === "touchstart" ? e.touches[0].clientY : e.clientY;
+    initialX = rect.left;
+    initialY = rect.top;
+
+    document.addEventListener("mousemove", drag);
+    document.addEventListener("mouseup", endDrag);
+    document.addEventListener("touchmove", drag, { passive: false });
+    document.addEventListener("touchend", endDrag);
+  }
+
+  function drag(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+
+    const x = e.type === "touchmove" ? e.touches[0].clientX : e.clientX;
+    const y = e.type === "touchmove" ? e.touches[0].clientY : e.clientY;
+    const dx = x - startX;
+    const dy = y - startY;
+
+    el.style.left = `${initialX + dx}px`;
+    el.style.top = `${initialY + dy}px`;
+    el.style.right = "auto";
+  }
+
+  function endDrag() {
+    isDragging = false;
+    el.style.transition = "";
+    document.removeEventListener("mousemove", drag);
+    document.removeEventListener("mouseup", endDrag);
+    document.removeEventListener("touchmove", drag);
+    document.removeEventListener("touchend", endDrag);
+  }
+}
+
+// Apply to your Leaflet info control
+setTimeout(() => makeLeafletControlDraggable(".info2.leaflet-control"), 500);
 
 
 
