@@ -204,7 +204,7 @@ info.onAdd = function (map) {
 
 info.update = function (props) {
     this._div.innerHTML = '<h4>Freguesias do Concelho <br> de Sintra</h4>' +  (props ?
-        '<b class="legenda">'+ '<br>' + props.name + '<br>' + '<br>' + props.graffiti + props.tag + props.throwup + props.lettering + props.piece + props.wildstyle + props.sticker + props.stencil + props.yarnbombing + props.poster + props.mosaico + props.mural + props.instalações + props.tags + '</b> ' : 'Hover sobre uma freguesia' );
+        '<b class="legenda">'+ '<br>' + props.name + '<br>' + '<br>' + props.graffiti + props.tag + props.throwup + props.lettering + props.piece + props.wildstyle + props.sticker + props.stencil + props.yarnbombing + props.poster + props.mosaico + props.mural + props.instalações + props.tags + '</b> ' : 'Começa já a explorar o mapa!' );
 
 
 
