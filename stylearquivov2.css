@@ -28,6 +28,12 @@ width: 20px !important;
 height: 22px !important;
 width: 22px !important;
 }
+
+
+.avisoicon:hover .avisotext{
+    visibility: visible !important;
+
+}
 .avisotext{ 
 
   position: fixed;
@@ -37,7 +43,8 @@ bottom: 10em;
 gap: 5px;
 padding: 10px;
     height: auto;
-    width: 25em;
+width: auto;
+    max-width: 20em;
   background-color: rgb(0, 0, 0);
       border: 1px solid white;
     border-radius: 30px;
@@ -183,9 +190,9 @@ button.freguesiatag.active{
     background-color: #000000;
     color: #ffffff;
     line-height: 10px;
-        margin: 5px 10px;
+    width: calc(25% - 10px); /* 4 per row */
+  margin: 5px;
     display: none;
-width: 280px;
     border: 1px dashed rgb(255, 255, 255);
     border-radius: 10px;
     transition: box-shadow .25s;
@@ -269,13 +276,14 @@ bottom: 28px;
   margin: 0 auto; /* centers the grid container */
   box-sizing: border-box;
 }
-
+.grid-sizer {
+  width: 33.333%;
+}
 
 
 
   .filterDiv:hover {
     cursor: move;
-    box-shadow: 0px 5px;
     border: 1px solid rgb(255, 255, 255);
     animation: changeBg 0.5s infinite !important;
     background: url(R1.jpeg);
@@ -380,7 +388,7 @@ bottom: 28px;
 
  
   .imagensprojeto{
-    max-width: 50%;
+    max-width: 100%;
     max-height:100%;
 
     align-content: center;
@@ -406,6 +414,8 @@ bottom: 28px;
   border: 1px solid white;
   border-radius: 10px;
   line-height: none;
+
+    max-width: 100%;
   }
 
   .imagensprojeto2 img{
@@ -518,9 +528,9 @@ top: 25%;
 
 .ppicontainer{
        margin: auto;
-    padding: 1rem;
-    max-width: 48rem;
-    width: 100%;
+    padding: 0.5rem;
+     width: auto;
+    max-width:500px;
     height: 100%;
     display: flex;
     border: 1px solid white;
@@ -532,66 +542,72 @@ top: 25%;
 }
 
 .ppi{
-  display: flex;
-  align-items: stretch;
-
-  flex-wrap: nowrap;
-  flex-direction: row;
-  justify-content: space-between;
+    display: flex
+;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .informaçaoobra{
-  width: 100%;
-  padding-left: 10px;
+width: auto;
+    min-width: 50%;
+    padding-top: 10px;
+    /* height: 100%; */
+    display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
 .local{
-color: white;
+color: rgb(0, 0, 0);
 
 line-height: 100%;
-padding-top: 10px;
-padding-left: 10px;
-padding-bottom: 2%;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+background-color: #ffffff;
 }
 
 .freguesiatitle{
-  color: white;
+  color: rgb(0, 0, 0);
 font-size: 14px;
 line-height: 16px;
-padding-top: 2%;
+
 
 }
 
 .autor{
   color: white;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
 padding-left: 10px;
   padding-bottom: 2%;
-  padding-top: 6%;
-  border-top: 1px solid white;
+  padding-top: 10px;
 }
 .sub-local{
   color: white;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   padding-bottom: 2%;
 padding-left: 10px;
 }
 
 .data{
   color: white;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   padding-bottom: 2%;
 padding-left: 10px;
 }
 
 .categoria{
   color: white;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   padding-bottom: 2%;
 padding-left: 10px;
 }
@@ -599,8 +615,8 @@ padding-left: 10px;
 
 .tags{
   color: white;
-   font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 16px;
   padding-bottom:5px;
 padding-left: 10px;
   padding-right: 2%;
@@ -647,12 +663,13 @@ height: 2vh !important;
 
 }
 .localizaçao .textlocalizaçao{
-  margin-top: 10px;
+ 
   position: relative;
     color: white;
     font-size: 14px;
     line-height: 16px;
-    padding: 15px 0 5px;
+    
+    padding: 15px 10px 10px;
   
   }
 
@@ -711,53 +728,7 @@ height: 2vh !important;
 
 
 
- #map, #map2,  #map3, #map4, #map5, #map6,
- #map7, #map8, #map9, #map10, #map11,#map12, 
- #map13,#map14, #map15, #map16, #map17, #map18, 
- #map19, #map20, #map21, #map22, #map22, #map23, 
- #map24,#map25, #map26, #map27, #map28, #map29, 
- #map30, #map31, #map32, #map33, #map34, #map35, #map36, 
- #map37, #map38, #map39, #map40, #map41, #map42, #map43, 
- #map44, #map45, #map46, #map47, #map48, #map49, #map50, #map51, 
- #map52, #map53, #map54, #map55, #map56, #map57, #map58, #map59, 
- #map60, #map61,#map62, #map63, #map64, #map65, #map66, #map67, 
- #map68, #map69, #map70, #map71, #map72, #map73, #map74, #map75, 
- #map76, #map77, #map78, #map79, #map80, #map81, #map82, #map83, 
- #map84, #map85, #map86, #map87, #map88, #map89, #map90, #map91, 
- #map92, #map93, #map94, #map95, #map96, #map97, #map98, #map99,  #map100,
- #map101, #map102, #map103, #map104, #map105, #map106, #map107, #map108, 
- #map109, #map110, #map111, #map112, #map113, #map114, #map115, #map116, 
- #map117, #map118, #map119, #map120, #map121, #map122, #map123, #map124, 
- #map125, #map126, #map127, #map128, #map129, #map130, #map131, #map132, 
- #map133, #map134, #map135, #map136, #map137 , #map138, #map139, #map140, #map141, #map142, #map143, 
- #map144, #map145, #map146, #map147, #map148, #map149, #map150, #map151, 
- #map152, #map153, #map154, #map155, #map156, #map157, #map158, #map159, 
- #map160, #map161,#map162, #map163, #map164, #map165, #map166, #map167, 
- #map168, #map169, #map170, #map171, #map172, #map173, #map174, #map175, 
- #map176, #map177, #map178, #map179, #map180, #map181, #map182, #map183, 
- #map184, #map185, #map186, #map187, #map188, #map189, #map190, #map191, 
- #map192, #map193, #map194, #map195, #map196, #map197, #map198, #map199,  #map200,
- #map201, #map202, #map203, #map204, #map205, #map206, #map207, #map208, 
- #map209, #map210, #map211, #map212, #map213, #map214, #map215, #map216, 
- #map217, #map218, #map219, #map220, #map221, #map222, #map223, #map224, 
- #map226, #map227, #map228, #map229, #map230, #map231, #map232, 
- #map233, #map234, #map235, #map236, #map237 , #map238, #map239, #map240, #map241, #map242, #map243, 
- #map244, #map245, #map246, #map247, #map248, #map249, #map250, #map251, 
- #map252, #map253, #map254, #map255, #map256, #map257, #map258, #map259, 
- #map260, #map261, #map262, #map263, #map264, #map265, #map266, #map267, 
- #map268, #map269, #map270, #map271, #map272, #map273, #map274, #map275, 
- #map276, #map277, #map278, #map279, #map280, #map281, #map282, #map283, 
- #map284, #map285, #map286, #map287, #map288, #map289, #map290, #map291, 
- #map292, #map293, #map294, #map295, #map296, #map297, #map298, #map299,  #map300,
- #map301, #map302, #map303, #map304, #map305, #map306, #map307, #map308, 
- #map309, #map310, #map311, #map312, 
- #map313,#map314, #map315, #map316, #map317, #map318, #map3188, 
- #map319, #map320, #map321, #map322, #map323, 
- #map324,#map325, #map326, #map327, #map328, #map329, 
- #map330, #map331, #map332, #map333, #map334, #map335, #map336, 
- #map337, #map338, #map339, #map340, #map341, #map342, #map343, 
- #map344, #map345, #map346, #map347, #map348, #map349, #map350, #map351, 
- #map352, #map353, #map354, #map355 {
+ #map {
 
     height: 200px;
     padding: 4%;
@@ -771,54 +742,7 @@ height: 2vh !important;
   
   }
 
- .sidebar, .sidebar2,  .sidebar3, .sidebar4, .sidebar5, .sidebar6,
-  .sidebar7, .sidebar8, .sidebar9, .sidebar10, .sidebar11,.sidebar12, 
-  .sidebar13,.sidebar14, .sidebar15, .sidebar16, .sidebar17, .sidebar18, 
-  .sidebar19, .sidebar20, .sidebar21, .sidebar22, .sidebar22, .sidebar23, 
-  .sidebar24,.sidebar25, .sidebar26, .sidebar27, .sidebar28, .sidebar29, 
-  .sidebar30, .sidebar31, .sidebar32, .sidebar33, .sidebar34,.sidebar35, .sidebar36, 
-  .sidebar37, .sidebar38, .sidebar39, .sidebar40, .sidebar41, .sidebar42, .sidebar43, 
-  .sidebar44, .sidebar45, .sidebar46, .sidebar47, .sidebar48, .sidebar49, .sidebar50, .sidebar51, 
-  .sidebar52, .sidebar53, .sidebar54, .sidebar55, .sidebar56, .sidebar57, .sidebar58, .sidebar59, 
-  .sidebar60, .sidebar61,.sidebar62, .sidebar63, .sidebar64, .sidebar65, .sidebar66, .sidebar67, 
-  .sidebar68, .sidebar69, .sidebar70, .sidebar71, .sidebar72, .sidebar73, .sidebar74, .sidebar75, 
-  .sidebar76, .sidebar77, .sidebar78, .sidebar79, .sidebar80, .sidebar81, .sidebar82, .sidebar83, 
-  .sidebar84, .sidebar85, .sidebar86, .sidebar87, .sidebar88, .sidebar89, .sidebar90, .sidebar91, 
-  .sidebar92, .sidebar93, .sidebar94, .sidebar95, .sidebar96, .sidebar97, .sidebar98, .sidebar99, 
-  .sidebar100, .sidebar101, .sidebar102, .sidebar103, .sidebar104, .sidebar105, .sidebar106, .sidebar107, 
-  .sidebar108, .sidebar109, .sidebar110, .sidebar111, .sidebar112, .sidebar113, .sidebar114, .sidebar115, 
-  .sidebar116, .sidebar117, .sidebar118, .sidebar119, .sidebar120, .sidebar121, .sidebar122, .sidebar123, 
-  .sidebar124, .sidebar125, .sidebar126, .sidebar127, .sidebar128, .sidebar129, .sidebar130, .sidebar131, 
-  .sidebar132, .sidebar133, .sidebar134, .sidebar135, .sidebar136, .sidebar137, .sidebar138, .sidebar139, 
-  .sidebar140, .sidebar141, .sidebar142, .sidebar143, .sidebar144, .sidebar145, .sidebar146, .sidebar147, 
-  .sidebar148, .sidebar149, .sidebar150, .sidebar151, .sidebar152, .sidebar153, .sidebar154, .sidebar155, 
-  .sidebar156, .sidebar157, .sidebar158, .sidebar159, .sidebar160, .sidebar161,.sidebar162, .sidebar163, 
-  .sidebar164, .sidebar165, .sidebar166, .sidebar167, .sidebar168, .sidebar169, .sidebar170, .sidebar171, 
-  .sidebar172, .sidebar173, .sidebar174, .sidebar175, .sidebar176, .sidebar177, .sidebar178, .sidebar179, 
-  .sidebar180, .sidebar181, .sidebar182, .sidebar183, .sidebar184, .sidebar185, .sidebar186, .sidebar187, 
-  .sidebar188, .sidebar189, .sidebar190, .sidebar191,  .sidebar192, .sidebar193, .sidebar194, .sidebar195, 
-  .sidebar196, .sidebar197, .sidebar198, .sidebar199, .sidebar200, 
-  .sidebar201, .sidebar202, .sidebar203, .sidebar204, .sidebar205, .sidebar206, .sidebar207, 
-  .sidebar208, .sidebar209, .sidebar210, .sidebar211, .sidebar212, .sidebar213, .sidebar214, .sidebar215, 
-  .sidebar216, .sidebar217, .sidebar218, .sidebar219, .sidebar220, .sidebar221, .sidebar222, .sidebar223, 
-  .sidebar224, .sidebar225, .sidebar226, .sidebar227, .sidebar228, .sidebar229, .sidebar230, .sidebar231, 
-  .sidebar232, .sidebar233, .sidebar234, .sidebar235, .sidebar236, .sidebar237, .sidebar238, .sidebar239, 
-  .sidebar240, .sidebar241, .sidebar242, .sidebar243, .sidebar244, .sidebar245, .sidebar246, .sidebar247, 
-  .sidebar248, .sidebar249, .sidebar250, .sidebar251, .sidebar252, .sidebar253, .sidebar254, .sidebar255, 
-  .sidebar256, .sidebar257, .sidebar258, .sidebar259, .sidebar260, .sidebar261, .sidebar262, .sidebar263, 
-  .sidebar264, .sidebar265, .sidebar266, .sidebar267, .sidebar268, .sidebar269, .sidebar270, .sidebar271, 
-  .sidebar272, .sidebar273, .sidebar274, .sidebar275, .sidebar276, .sidebar277, .sidebar278, .sidebar279, 
-  .sidebar280, .sidebar281, .sidebar282, .sidebar283, .sidebar284, .sidebar285, .sidebar286, .sidebar287, 
-  .sidebar288, .sidebar289, .sidebar290, .sidebar291,  .sidebar292, .sidebar293, .sidebar294, .sidebar295, 
-  .sidebar296, .sidebar297, .sidebar298, .sidebar299, .sidebar300, .sidebar301, .sidebar302, .sidebar303, 
-  .sidebar304, .sidebar305, .sidebar306, .sidebar307, .sidebar308, .sidebar309, .sidebar310, .sidebar311, .sidebar312,
-  .sidebar313,.sidebar314, .sidebar315, .sidebar316, .sidebar317, .sidebar318, .sidebar3188,
-  .sidebar319, .sidebar320, .sidebar321, .sidebar322, .sidebar322, .sidebar323, 
-  .sidebar324,.sidebar325, .sidebar326, .sidebar327, .sidebar328, .sidebar329, 
-  .sidebar330, .sidebar331, .sidebar332, .sidebar333, .sidebar334,.sidebar335, .sidebar336, 
-  .sidebar337, .sidebar338, .sidebar339, .sidebar340, .sidebar341, .sidebar342, .sidebar343, 
-  .sidebar344, .sidebar345, .sidebar346, .sidebar347, .sidebar348, .sidebar349, .sidebar350, .sidebar351, 
-  .sidebar352, .sidebar353, .sidebar354, .sidebar355  {
+ .sidebar  {
  
     cursor: pointer;
     z-index: 1;
@@ -826,7 +750,7 @@ height: 2vh !important;
     border: none;
     display: block;
     outline: none;
-   
+       margin-bottom: 10px;
    color: #000000;
   }
 /* Highlight active filter */
@@ -849,9 +773,9 @@ height: 2vh !important;
 }
 .mapbox {
   width: 100%;
-  height: 150px;
+  height: 130px;
   border-radius: 12px;
-  margin-top: 10px;
+
   overflow: visible; /* ✅ allow dragging cursor to move freely */
   position: relative;
   z-index: 10;
@@ -900,61 +824,13 @@ display: flex;
     justify-content: center;
 }
 
-  .CloseBTN, .CloseBTN2, .CloseBTN3, .CloseBTN4, .CloseBTN5, .CloseBTN6,
-  .CloseBTN7, .CloseBTN8, .CloseBTN9, .CloseBTN10, .CloseBTN11, .CloseBTN12, 
-  .CloseBTN13, .CloseBTN14, .CloseBTN15, .CloseBTN16,.CloseBTN17, .CloseBTN18, 
-  .CloseBTN19, .CloseBTN20, .CloseBTN21, .CloseBTN22, .CloseBTN22, .CloseBTN23, 
-  .CloseBTN24,.CloseBTN25, .CloseBTN26, .CloseBTN27, .CloseBTN28, .CloseBTN29, 
-  .CloseBTN30, .CloseBTN31, .CloseBTN32, .CloseBTN33, .CloseBTN34, .CloseBTN35, .CloseBTN36, 
-  .CloseBTN37, .CloseBTN38, .CloseBTN39, .CloseBTN40, .CloseBTN41, .CloseBTN42, .CloseBTN43, 
-  .CloseBTN44, .CloseBTN45, .CloseBTN46, .CloseBTN47, .CloseBTN48, .CloseBTN49, .CloseBTN50, .CloseBTN51, 
-  .CloseBTN52, .CloseBTN53, .CloseBTN54, .CloseBTN55, .CloseBTN56, .CloseBTN57, .CloseBTN58, .CloseBTN59, 
-  .CloseBTN60, .CloseBTN61, .CloseBTN62, .CloseBTN63, .CloseBTN64, .CloseBTN65, .CloseBTN66, .CloseBTN67, 
-  .CloseBTN68, .CloseBTN69, .CloseBTN70, .CloseBTN71, .CloseBTN72, .CloseBTN73, .CloseBTN74, .CloseBTN75, 
-  .CloseBTN76, .CloseBTN77, .CloseBTN78, .CloseBTN79, .CloseBTN80, .CloseBTN81, .CloseBTN82, .CloseBTN83, 
-  .CloseBTN84, .CloseBTN85, .CloseBTN86, .CloseBTN87, .CloseBTN88, .CloseBTN89, .CloseBTN90, .CloseBTN91, 
-  .CloseBTN92, .CloseBTN93, .CloseBTN94, .CloseBTN95, .CloseBTN96, .CloseBTN97, .CloseBTN98, .CloseBTN99, 
-  .CloseBTN100, .CloseBTN101, .CloseBTN102, .CloseBTN103, .CloseBTN104, .CloseBTN105, .CloseBTN106, .CloseBTN107, 
-  .CloseBTN108, .CloseBTN109, .CloseBTN110, .CloseBTN111, .CloseBTN112, .CloseBTN113, .CloseBTN114, .CloseBTN115, 
-  .CloseBTN116, .CloseBTN117, .CloseBTN118, .CloseBTN119, .CloseBTN120, .CloseBTN121, .CloseBTN122, .CloseBTN123, 
-  .CloseBTN124, .CloseBTN125, .CloseBTN126, .CloseBTN127, .CloseBTN128, .CloseBTN129, .CloseBTN130, .CloseBTN131, 
-  .CloseBTN132, .CloseBTN133, .CloseBTN134, .CloseBTN135, .CloseBTN136, .CloseBTN137, .CloseBTN138, .CloseBTN139, .CloseBTN140
-  , .CloseBTN141, .CloseBTN142, .CloseBTN143, 
-  .CloseBTN144, .CloseBTN145, .CloseBTN146, .CloseBTN147, .CloseBTN148, .CloseBTN149, .CloseBTN150, .CloseBTN151, 
-  .CloseBTN152, .CloseBTN153, .CloseBTN154, .CloseBTN155, .CloseBTN156, .CloseBTN157, .CloseBTN158, .CloseBTN159, 
-  .CloseBTN160, .CloseBTN161, .CloseBTN162, .CloseBTN163, .CloseBTN164, .CloseBTN165, .CloseBTN166, .CloseBTN167, 
-  .CloseBTN168, .CloseBTN169, .CloseBTN170, .CloseBTN171, .CloseBTN172, .CloseBTN173, .CloseBTN174, .CloseBTN175, 
-  .CloseBTN176, .CloseBTN177, .CloseBTN178, .CloseBTN179, .CloseBTN180, .CloseBTN181, .CloseBTN182, .CloseBTN183, 
-  .CloseBTN184, .CloseBTN185, .CloseBTN186, .CloseBTN187, .CloseBTN188, .CloseBTN189, .CloseBTN190, .CloseBTN191, 
-  .CloseBTN192, .CloseBTN193, .CloseBTN194, .CloseBTN195, .CloseBTN196, .CloseBTN197, .CloseBTN198, .CloseBTN199, 
-  .CloseBTN200, .CloseBTN201, .CloseBTN202, .CloseBTN203, .CloseBTN204, .CloseBTN205, .CloseBTN206,
-  .CloseBTN207, .CloseBTN208, .CloseBTN209, .CloseBTN210, .CloseBTN211, .CloseBTN212, 
-  .CloseBTN213, .CloseBTN214, .CloseBTN215, .CloseBTN216,.CloseBTN217, .CloseBTN218, 
-  .CloseBTN219, .CloseBTN220, .CloseBTN221, .CloseBTN222, .CloseBTN222, .CloseBTN223, 
-  .CloseBTN224,.CloseBTN225, .CloseBTN226, .CloseBTN227, .CloseBTN228, .CloseBTN229, 
-  .CloseBTN230, .CloseBTN231, .CloseBTN232, .CloseBTN233, .CloseBTN234, .CloseBTN235, .CloseBTN236, 
-  .CloseBTN237, .CloseBTN238, .CloseBTN239, .CloseBTN240, .CloseBTN241, .CloseBTN242, .CloseBTN243, 
-  .CloseBTN244, .CloseBTN245, .CloseBTN246, .CloseBTN247, .CloseBTN248, .CloseBTN249, .CloseBTN250, .CloseBTN251, 
-  .CloseBTN252, .CloseBTN253, .CloseBTN254, .CloseBTN255, .CloseBTN256, .CloseBTN257, .CloseBTN258, .CloseBTN259, 
-  .CloseBTN260, .CloseBTN261, .CloseBTN262, .CloseBTN263, .CloseBTN264, .CloseBTN265, .CloseBTN266, .CloseBTN267, 
-  .CloseBTN268, .CloseBTN269, .CloseBTN270, .CloseBTN271, .CloseBTN272, .CloseBTN273, .CloseBTN274, .CloseBTN275, 
-  .CloseBTN276, .CloseBTN277, .CloseBTN278, .CloseBTN279, .CloseBTN280, .CloseBTN281, .CloseBTN282, .CloseBTN283, 
-  .CloseBTN284, .CloseBTN285, .CloseBTN286, .CloseBTN287, .CloseBTN288, .CloseBTN289, .CloseBTN290, .CloseBTN291, 
-  .CloseBTN292, .CloseBTN293, .CloseBTN294, .CloseBTN295, .CloseBTN296, .CloseBTN297, .CloseBTN298, .CloseBTN299, 
-  .CloseBTN300, .CloseBTN301, .CloseBTN302, .CloseBTN303, .CloseBTN304, .CloseBTN305, .CloseBTN306,
-  .CloseBTN307, .CloseBTN308, .CloseBTN309, .CloseBTN310, .CloseBTN311, .CloseBTN312,
-  .CloseBTN313, .CloseBTN314, .CloseBTN315, .CloseBTN316,.CloseBTN317, .CloseBTN318, .CloseBTN3188, 
-  .CloseBTN319, .CloseBTN320, .CloseBTN321, .CloseBTN322, .CloseBTN322, .CloseBTN323, 
-  .CloseBTN324,.CloseBTN325, .CloseBTN326, .CloseBTN327, .CloseBTN328, .CloseBTN329, 
-  .CloseBTN330, .CloseBTN331, .CloseBTN332, .CloseBTN333, .CloseBTN334, .CloseBTN335, .CloseBTN336, 
-  .CloseBTN337, .CloseBTN338, .CloseBTN339, .CloseBTN340, .CloseBTN341, .CloseBTN342, .CloseBTN343, 
-  .CloseBTN344, .CloseBTN345, .CloseBTN346, .CloseBTN347, .CloseBTN348, .CloseBTN349, .CloseBTN350, .CloseBTN351, 
-  .CloseBTN352, .CloseBTN353, .CloseBTN354, .CloseBTN355{
+  .CloseBTN{
     position: relative;
-    color: white;
+    color: rgb(0, 0, 0);
     float: right;
     /* right: 5%; */
     font-size: 20px;
+    line-height: 14px;
     z-index: 2000;
     cursor: pointer;
     transition: 0.2s ease-in;
@@ -962,55 +838,7 @@ display: flex;
 
 
 
-.CloseBTN:hover, .CloseBTN2:hover, .CloseBTN3:hover, .CloseBTN4:hover, .CloseBTN5:hover, .CloseBTN6:hover,
-.CloseBTN7:hover, .CloseBTN8:hover, .CloseBTN9:hover, .CloseBTN10:hover, .CloseBTN11:hover, .CloseBTN12:hover, 
-.CloseBTN13:hover, .CloseBTN14:hover, .CloseBTN15:hover, .CloseBTN16:hover,.CloseBTN17:hover, .CloseBTN18:hover, 
-.CloseBTN19:hover, .CloseBTN20:hover, .CloseBTN21:hover, .CloseBTN22:hover, .CloseBTN22:hover, .CloseBTN23:hover, 
-.CloseBTN24:hover,.CloseBTN25:hover, .CloseBTN26:hover, .CloseBTN27:hover, .CloseBTN28:hover, .CloseBTN29:hover, 
-.CloseBTN30:hover, .CloseBTN31:hover, .CloseBTN32:hover, .CloseBTN33:hover, .CloseBTN34:hover, .CloseBTN35:hover, .CloseBTN36:hover, 
-.CloseBTN37:hover, .CloseBTN38:hover, .CloseBTN39:hover, .CloseBTN40:hover, .CloseBTN41:hover, .CloseBTN42:hover, .CloseBTN43:hover, 
-.CloseBTN44:hover, .CloseBTN45:hover, .CloseBTN46:hover, .CloseBTN47:hover, .CloseBTN48:hover, .CloseBTN49:hover, .CloseBTN50:hover, .CloseBTN51:hover, 
-.CloseBTN52:hover, .CloseBTN53:hover, .CloseBTN54:hover, .CloseBTN55:hover, .CloseBTN56:hover, .CloseBTN57:hover, .CloseBTN58:hover, .CloseBTN59:hover, 
-.CloseBTN60:hover, .CloseBTN61:hover, .CloseBTN62:hover, .CloseBTN63:hover, .CloseBTN64:hover, .CloseBTN65:hover, .CloseBTN66:hover, .CloseBTN67:hover, 
-.CloseBTN68:hover, .CloseBTN69:hover, .CloseBTN70:hover, .CloseBTN71:hover, .CloseBTN72:hover, .CloseBTN73:hover, .CloseBTN74:hover, .CloseBTN75:hover, 
-.CloseBTN76:hover, .CloseBTN77:hover, .CloseBTN78:hover, .CloseBTN79:hover, .CloseBTN80:hover, .CloseBTN81:hover, .CloseBTN82:hover, .CloseBTN83:hover, 
-.CloseBTN84:hover, .CloseBTN85:hover, .CloseBTN86:hover, .CloseBTN87:hover, .CloseBTN88:hover, .CloseBTN89:hover, .CloseBTN90:hover, .CloseBTN91:hover, 
-.CloseBTN92:hover, .CloseBTN93:hover, .CloseBTN94:hover, .CloseBTN95:hover, .CloseBTN96:hover, .CloseBTN97:hover, .CloseBTN98:hover, .CloseBTN99:hover, 
-.CloseBTN100:hover, .CloseBTN101:hover, .CloseBTN102:hover, .CloseBTN103:hover, .CloseBTN104:hover, .CloseBTN105:hover, .CloseBTN106:hover, .CloseBTN108:hover, .CloseBTN107:hover, 
-.CloseBTN109:hover, .CloseBTN110:hover, .CloseBTN111:hover, .CloseBTN112:hover, .CloseBTN113:hover, .CloseBTN114:hover, .CloseBTN115:hover, .CloseBTN116:hover, 
-.CloseBTN117:hover, .CloseBTN118:hover, .CloseBTN119:hover, .CloseBTN120:hover, .CloseBTN121:hover, .CloseBTN122:hover, .CloseBTN123:hover, .CloseBTN124:hover, 
-.CloseBTN125:hover, .CloseBTN126:hover, .CloseBTN127:hover, .CloseBTN128:hover, .CloseBTN129:hover, .CloseBTN130:hover, .CloseBTN131:hover, .CloseBTN132:hover, 
-.CloseBTN133:hover, .CloseBTN134:hover, .CloseBTN135:hover, .CloseBTN136:hover, .CloseBTN137:hover, .CloseBTN138:hover, .CloseBTN139:hover, .CloseBTN140:hover, 
-.CloseBTN141:hover, .CloseBTN142:hover, .CloseBTN143:hover, 
-.CloseBTN144:hover, .CloseBTN145:hover, .CloseBTN146:hover, .CloseBTN147:hover, .CloseBTN148:hover, .CloseBTN149:hover, .CloseBTN150:hover, .CloseBTN151:hover, 
-.CloseBTN152:hover, .CloseBTN153:hover, .CloseBTN154:hover, .CloseBTN155:hover, .CloseBTN156:hover, .CloseBTN157:hover, .CloseBTN158:hover, .CloseBTN159:hover, 
-.CloseBTN160:hover, .CloseBTN161:hover, .CloseBTN162:hover, .CloseBTN163:hover, .CloseBTN164:hover, .CloseBTN165:hover, .CloseBTN166:hover, .CloseBTN167:hover, 
-.CloseBTN168:hover, .CloseBTN169:hover, .CloseBTN170:hover, .CloseBTN171:hover, .CloseBTN172:hover, .CloseBTN173:hover, .CloseBTN174:hover, .CloseBTN175:hover, 
-.CloseBTN176:hover, .CloseBTN177:hover, .CloseBTN178:hover, .CloseBTN179:hover, .CloseBTN180:hover, .CloseBTN181:hover, .CloseBTN182:hover, .CloseBTN183:hover, 
-.CloseBTN184:hover, .CloseBTN185:hover, .CloseBTN186:hover, .CloseBTN187:hover, .CloseBTN188:hover, .CloseBTN189:hover, .CloseBTN190:hover, .CloseBTN191:hover, 
-.CloseBTN192:hover, .CloseBTN193:hover, .CloseBTN194:hover, .CloseBTN195:hover, .CloseBTN196:hover, .CloseBTN197:hover, .CloseBTN198:hover, .CloseBTN199:hover, 
-.CloseBTN200:hover, .CloseBTN201:hover, .CloseBTN202:hover, .CloseBTN203:hover, .CloseBTN204:hover, .CloseBTN205:hover, .CloseBTN206:hover, .CloseBTN108:hover, .CloseBTN107:hover, 
-.CloseBTN209:hover, .CloseBTN210:hover, .CloseBTN211:hover, .CloseBTN212:hover, .CloseBTN213:hover, .CloseBTN214:hover, .CloseBTN215:hover, .CloseBTN116:hover, 
-.CloseBTN217:hover, .CloseBTN218:hover, .CloseBTN219:hover, .CloseBTN220:hover, .CloseBTN221:hover, .CloseBTN222:hover, .CloseBTN223:hover, .CloseBTN124:hover, 
-.CloseBTN225:hover, .CloseBTN226:hover, .CloseBTN227:hover, .CloseBTN228:hover, .CloseBTN229:hover, .CloseBTN230:hover, .CloseBTN231:hover, .CloseBTN132:hover, 
-.CloseBTN233:hover, .CloseBTN234:hover, .CloseBTN235:hover, .CloseBTN236:hover, .CloseBTN237:hover, .CloseBTN238:hover, .CloseBTN239:hover, .CloseBTN140:hover, 
-.CloseBTN241:hover, .CloseBTN242:hover, .CloseBTN243:hover, 
-.CloseBTN244:hover, .CloseBTN245:hover, .CloseBTN246:hover, .CloseBTN247:hover, .CloseBTN248:hover, .CloseBTN249:hover, .CloseBTN250:hover, .CloseBTN251:hover, 
-.CloseBTN252:hover, .CloseBTN253:hover, .CloseBTN254:hover, .CloseBTN255:hover, .CloseBTN256:hover, .CloseBTN257:hover, .CloseBTN258:hover, .CloseBTN259:hover, 
-.CloseBTN260:hover, .CloseBTN261:hover, .CloseBTN262:hover, .CloseBTN263:hover, .CloseBTN264:hover, .CloseBTN265:hover, .CloseBTN266:hover, .CloseBTN267:hover, 
-.CloseBTN268:hover, .CloseBTN269:hover, .CloseBTN270:hover, .CloseBTN271:hover, .CloseBTN272:hover, .CloseBTN273:hover, .CloseBTN274:hover, .CloseBTN275:hover, 
-.CloseBTN276:hover, .CloseBTN277:hover, .CloseBTN278:hover, .CloseBTN279:hover, .CloseBTN280:hover, .CloseBTN281:hover, .CloseBTN282:hover, .CloseBTN283:hover, 
-.CloseBTN284:hover, .CloseBTN285:hover, .CloseBTN286:hover, .CloseBTN287:hover, .CloseBTN288:hover, .CloseBTN289:hover, .CloseBTN290:hover, .CloseBTN291:hover, 
-.CloseBTN292:hover, .CloseBTN293:hover, .CloseBTN294:hover, .CloseBTN295:hover, .CloseBTN296:hover, .CloseBTN297:hover, .CloseBTN298:hover, .CloseBTN299:hover, 
-.CloseBTN300:hover, .CloseBTN301:hover, .CloseBTN302:hover, .CloseBTN303:hover, .CloseBTN304:hover, .CloseBTN305:hover, .CloseBTN306:hover, .CloseBTN308:hover, .CloseBTN307:hover, 
-.CloseBTN309:hover, .CloseBTN310:hover, .CloseBTN311:hover, .CloseBTN312:hover, 
-.CloseBTN313:hover, .CloseBTN314:hover, .CloseBTN315:hover, .CloseBTN316:hover,.CloseBTN317:hover, .CloseBTN318:hover, .CloseBTN3188:hover, 
-.CloseBTN319:hover, .CloseBTN320:hover, .CloseBTN321:hover, .CloseBTN322:hover, .CloseBTN322:hover, .CloseBTN323:hover, 
-.CloseBTN324,  .CloseBTN325:hover, .CloseBTN326:hover, .CloseBTN327:hover, .CloseBTN328:hover, .CloseBTN329:hover, 
-.CloseBTN330:hover, .CloseBTN331:hover, .CloseBTN332:hover, .CloseBTN333:hover, .CloseBTN334:hover, .CloseBTN335:hover, .CloseBTN336:hover, 
-.CloseBTN337:hover, .CloseBTN338:hover, .CloseBTN339:hover, .CloseBTN340:hover, .CloseBTN341:hover, .CloseBTN342:hover, .CloseBTN343:hover, 
-.CloseBTN344:hover, .CloseBTN345:hover, .CloseBTN346:hover, .CloseBTN347:hover, .CloseBTN348:hover, .CloseBTN349:hover, .CloseBTN350:hover, .CloseBTN351:hover, 
-.CloseBTN352:hover, .CloseBTN353:hover, .CloseBTN354:hover, .CloseBTN355:hover{
+.CloseBTN:hover{
 
   transition: 0.2s ease-in;
 font-weight: 900;
@@ -1130,30 +958,21 @@ font-weight: 900;
 
 
 @media screen and (max-width: 1200px) {
- .grid {
-        max-width: 700px;
-    width: 100%;
-    margin: 0 0px;
-}
-.filterDiv {
 
-width: 212px;
-
-   
-  }
 
 
 }
 
 @media screen and (max-width: 768px) {
- .grid {
-        max-width: 380px;
-    width: 100%;
-    margin: 0 0px;
+
+.sub-local, .data, .categoria, .tags, .autor,.localizaçao .textlocalizaçao  {
+    padding-left: 0px;
 }
+
+
 .filterDiv {
 
-width: 170px;
+ width: calc(50% - 10px);
 
    
   }
@@ -1172,7 +991,8 @@ width: 170px;
     gap: 5px;
     padding: 10px;
     height: auto;
-    width: auto;
+ width: auto;
+    max-width: 70em;
     background-color: rgb(0, 0, 0);
     border: 1px solid white;
     border-radius: 30px;
@@ -1183,8 +1003,9 @@ width: 170px;
 }
 .ppicontainer {
     margin: auto;
-    padding: 1rem;
-    width: 70%;
+    padding: 0.5rem;
+    width: auto;
+    max-width: 70%;
 }
 .ppi {
   display: flex

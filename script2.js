@@ -99,29 +99,38 @@ function buildAllProjectItems(projects) {
       <div class="nav-links" id="ppi-${i}">
         <div class="ppicontainer">
           <div class="ppi">
+             <p class="local">
+                <b class="freguesiatitle">${p.location || ''}</b>
+                <b class="CloseBTN" onclick="closePPI(${i})">x</b>
+              </p>
             <div class="imagensprojeto">
               <img loading="lazy" src="${p.image || ''}" width="100%">
             </div>
             <div class="informaçaoobra">
-              <p class="local">
-                <b class="freguesiatitle">${p.location || ''}</b>
-                <b class="CloseBTN" onclick="closePPI(${i})">x</b>
-              </p>
+           
               <p class="autor"><b>Autor:</b> ${p.author || ''}</p>
               <p class="sub-local"><b>Local:</b> ${p.place || ''}</p>
               <p class="data"><b>Data:</b> ${p.date || ''}</p>
               <p class="categoria"><b>Categoria:</b> ${p.category || ''}</p>
               <div class="tags">
-                <b>Tags:</b><br><br>
-                <ul>${(p.tags || []).map(t => `<li><a class="ppitags" href="#">${capitalize(t)}</a></li>`).join('')}</ul>
+                <b>Tags:</b><br>
+             <ul>
+                ${(p.tags || [])
+                  .map(t => {
+                    const loc = p.location ? normalizeClassName(p.location) : 'geral';
+                    return `<li><a class="ppitags" href="rede_${loc}.html">${capitalize(t)}</a></li>`;
+                  })
+                  .join('')}
+</ul>
               </div>
-            </div>
-          </div>
-
-          <div class="localizaçao">
+                 <div class="localizaçao">
             <div class="textlocalizaçao">Localização</div>
             <div id="map-${i}" class="mapbox"></div>
           </div>
+            </div>
+          </div>
+
+       
         </div>
       </div>
     `;
@@ -142,7 +151,8 @@ function initPackery() {
     pckry = new Packery(gridElem, {
       itemSelector: '.filterDiv',
       gutter: 0,
-      transitionDuration: '0.2s'
+      transitionDuration: '0.2s',
+      
     });
 
     console.log("✅ Packery initialized with", pckry.items.length, "items");
@@ -169,7 +179,7 @@ function initPackery() {
           if (pckry) pckry.shuffle();
         });
       }
-    }, 500);
+    }, 1500);
 
     // Re-layout on filter or resize
     document.querySelectorAll('.btn, .tagbtn').forEach(btn => {
@@ -192,42 +202,41 @@ function initPackery() {
 
 // ====== FILTER FUNCTION ======
 function filterSelection(category) {
-  // category might be a normalized class (kebab-case) OR original string from inline onclick.
-  // Normalize:
   const catRaw = (category === undefined || category === null) ? 'all' : category;
   const cat = (String(catRaw) === 'all') ? 'all' : normalizeClassName(catRaw);
 
-  // update active button(s) in the freguesia carousel
+  // update active button(s)
   const buttons = document.querySelectorAll('.freguesiatag');
   buttons.forEach(btn => btn.classList.remove('active'));
 
-  // try to find button by id OR onclick content
   const activeBtn = Array.from(buttons).find(btn => {
-    // id like "agualva-cacemButton"
     if (btn.id && normalizeClassName(btn.id.replace(/Button$/i, '')) === cat) return true;
-    // onclick content like filterSelection('agualva-cacem')
     const onclick = btn.getAttribute('onclick') || '';
     if (onclick.includes(`'${category}'`) || onclick.includes(`"${category}"`)) return true;
-    // also check label text normalized
     const txt = normalizeClassName(btn.textContent || btn.innerText || '');
-    if (txt === cat) return true;
-    return false;
+    return txt === cat;
   });
   if (activeBtn) activeBtn.classList.add('active');
 
   // show/hide items
   const items = document.querySelectorAll('.filterDiv');
   items.forEach(el => {
-    if (cat === 'all') {
-      el.classList.add('show');
-    } else if (el.classList.contains(cat)) {
+    if (cat === 'all' || el.classList.contains(cat)) {
       el.classList.add('show');
     } else {
       el.classList.remove('show');
     }
   });
 
-  // recalc Packery
+  // ✅ Scroll grid to top
+  const gridContainer = document.querySelector('.grid2');
+  if (gridContainer) {
+    gridContainer.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  // also scroll the whole page (optional)
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  // recalc Packery layout
   if (pckry) {
     setTimeout(() => {
       pckry.reloadItems();
@@ -331,10 +340,45 @@ function attachFreguesiaClicks() {
 }
 
 // ====== DOM READY ======
-document.addEventListener('DOMContentLoaded', () => {
-  loadProjects();
-  initCarousel(); // 👈 added here
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadProjects();
+  initCarousel();
+
+  const params = new URLSearchParams(window.location.search);
+  const action = params.get('action');
+  const ppi = params.get('ppi'); // optional project id
+
+  if (action) {
+    const normalized = normalizeClassName(action);
+    filterSelection(normalized);
+
+    // scroll carousel
+    setTimeout(() => {
+      const carousel = document.getElementById('carousel');
+      if (!carousel) return;
+
+      const btn = Array.from(document.querySelectorAll('.freguesiatag')).find(el =>
+        normalizeClassName(el.textContent || '') === normalized
+      );
+      if (btn) {
+        btn.classList.add('active');
+        const li = btn.closest('li');
+        if (li) {
+          const center = li.offsetLeft + li.offsetWidth / 2;
+          const scrollTo = Math.max(0, center - carousel.clientWidth / 2);
+          carousel.scrollTo({ left: scrollTo, behavior: 'smooth' });
+        }
+      }
+    }, 800);
+
+    // ✅ Auto-open PPI if id provided
+    if (ppi !== null) {
+      setTimeout(() => openPPI(Number(ppi)), 1500);
+    }
+  }
 });
+
+
 
 ///////////////////////////////////////////////////////////////////////////////////////
 {

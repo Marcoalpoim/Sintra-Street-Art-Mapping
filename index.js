@@ -184,7 +184,10 @@ function zoomToFeature(e) {
     map.panTo(newCenter, { animate: true });
 }
 function onclick(e) {
-    window.open(e.target.feature.properties.link);
+  const link = e.target.feature.properties.link;
+  if (link) {
+    window.location.href = link;
+  }
 }
 
 
