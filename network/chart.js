@@ -1,492 +1,286 @@
-//CONFIGURAÇÕES HIGHCHARTS
-// Add the nodes option through an event call. We want to start with the parent
-// item and apply separate colors to each child element, then the same color to
-// grandchildren.
-
+// ===========================
+// CONFIGURAÇÕES HIGHCHARTS
+// ===========================
 let current_panel = null;
 
-Highcharts.addEvent(
-  Highcharts.Series,
-  'afterSetOptions',
-  function (e) {
-    var colors = Highcharts.getOptions().colors,
-      i = 0,
-      nodes = {};
-    if (
-      this instanceof Highcharts.seriesTypes.networkgraph &&
-      e.options.id === 'lang-tree'
-    ) {
-      e.options.data.forEach(function (link) {
+Highcharts.addEvent(Highcharts.Series, "afterSetOptions", function (e) {
+  const nodes = {};
 
-        if (link[0] === "Street Art", 'Arte Pública', 'Graffiti','Mural','Tag','Throw-up','Lettering','Piece', 'Poster', 'Mosaico', 'Narrativa Individual', 'Narrativa Coletiva', 'Narrativa Comercial', 'Narrativa Sociopolítica', 'Narrativa Espacial') {
-        
-          nodes["Street Art"] = {
-            id: "Street Art",
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "Street Art é um fenómeno artístico, expressivo <br> e social à escala global que deu espaço <br> a uma infindável possibilidade de linguagens <br> criadas ou inspiradas no espaço público",
-            dataLabels: {
-              style:{
-                fontSize: "2vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 7
-            }
-          };
+  if (this instanceof Highcharts.seriesTypes.networkgraph && e.options.id === "lang-tree") {
+    e.options.data.forEach(function (link) {
+      const mainNodes = [
+        "Street Art", "Arte Pública", "Graffiti", "Mural", "Tag", "Throw-up", "Lettering",
+        "Piece", "Poster", "Mosaico", "Narrativa Individual", "Narrativa Coletiva",
+        "Narrativa Comercial", "Narrativa Sociopolítica", "Narrativa Espacial"
+      ];
 
-          nodes["Arte Pública"] = {
-            id: "Arte Pública",
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "Arte Pública é uma variante inócua, comissionada, <br> institucional e legal da Street Art",
-            dataLabels: {
-              style:{
-                fontSize: "1vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 5
-            }
-          };
+      if (mainNodes.includes(link[0])) {
+        // ✅ Define nodes with descriptions
+        nodes["Street Art"] = {
+          id: "Street Art",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Street Art é um fenómeno artístico, expressivo e social à escala global...",
+          dataLabels: {
+            style: { fontSize: "1.8vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 8 }
+        };
 
-          nodes['Graffiti'] = {
-            id: 'Graffiti',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "o graffiti é uma arte escrita, pintada ou desenhada <br>  sobre uma parede ou outra superfície, geralmente obscena, <br>  informativa, sem permissão e dentro da vista pública.",
-            dataLabels: {
-              style:{
-                fontSize: "2vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 7
-            }
-          };
+        nodes["Arte Pública"] = {
+          id: "Arte Pública",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Arte Pública é uma variante inócua, comissionada, institucional e legal da Street Art.",
+          dataLabels: {
+            style: { fontSize: "1.3vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 6 }
+        };
 
-          nodes['Mural'] = {
-            id: 'Mural',  
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O Mural distingue-se pelas pinturas e desenhos  <br> de grandes dimensões, elaborados e, geralmente,  <br> executados de forma legal, diretamente sobre as paredes, <br> edifícios e muros do espaço público",
-            dataLabels: {
-              style:{
-                fontSize: "1.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 6
-            }
-          };
-          nodes['Tag'] = {
-            id: 'Tag',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O tag é conhecido e caracterizado como <br> a forma mais básica do graffiti ",
-            dataLabels: {
-              style:{
-                fontSize: "2vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                stroke: "#0000",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius:7
-            }
-          };
-      
-          nodes['Throw-up'] = {
-            id: 'Throw-up',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O throw-up, throw ou throwie é visto como uma <br> versão mais complexa e elaborada de um tag",
-            dataLabels: {
-              style:{
-                fontSize: "1.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 6
-            }
-          };
-          nodes['Lettering'] = {
-            id: 'Lettering',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O Lettering consiste num desenho  personalizado <br> de uma ou várias letras, em grandes dimensões",
-              dataLabels: {
-              style:{
-                fontSize: "1.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 6
-            }
-          };
-          
-          nodes['Piece'] = {
-            id: 'Piece',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O piece é uma obra grande, complexa e demorada, <br> geralmente, escrita e pintada por writers experientes e habilidosos",
-            dataLabels: {
-              style:{
-                fontSize: "1vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 5
-            }
-          };
-          
+        nodes["Graffiti"] = {
+          id: "Graffiti",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O graffiti é uma arte escrita, pintada ou desenhada sobre uma parede ou superfície pública.",
+          dataLabels: {
+            style: { fontSize: "1.8vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 7 }
+        };
 
-          nodes['Poster'] = {
-            id: 'Poster',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O poster, ou cartaz, é uma tipologia da Street Art <br> que se baseia na disseminação visual de informação <br> através de gráficos, imagens e textos visualmente apelativos",
-            dataLabels: {
-              style:{
-                fontSize: "0.7vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 3
-            }
-          };
-          
-          nodes['Mosaico'] = {
-            id: 'Mosaico',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "O mosaico é uma técnica utilizada em alternativa à <br> tinta e resulta da colagem de pequenos quadrados de vidro,<br>  pedra, plástico ou azulejo, de forma a perfazer uma imagem ",
-            dataLabels: {
-              style:{
-                fontSize: "0.7vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 3
-            }
-          };
-          
- 
-          nodes['Narrativa Individual'] = {
-            id: 'Narrativa Individual',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "As narrativas individuais têm um caracter pessoal e íntimo,<br> o que as torna menos obvias ou relacionáveis <br> com o publico fora do contexto individual",
-            dataLabels: {
-              style:{
-                fontSize: "1.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 6
-            }
-          };  
-          nodes['Narrativa Coletiva'] = {
-            id: 'Narrativa Coletiva',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "As narrativas coletivas surgem como o oposto das narrativas <br> e abarcam questões globalmente conhecidas que afetam  <br> uma vasta parte da população, tendo como argumento principal <br> a justiça, a transparência e a inclusão social",
-            dataLabels: {
-              style:{
-                fontSize: "1vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 5
-            }
-          }; 
-            nodes['Narrativa Comercial'] = {
-            id: 'Narrativa Comercial',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "As narrativas comerciais apresentam um interesse comercial,<br> comissionadas, geralmente, por uma empresa privada e desenvolvidas <br> no âmbito de uma campanha publicitária ou de uma estratégia <br> para atingir um publico específico",
-            dataLabels: {
-              style:{
-                fontSize: "0.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 3
-            }
-          };
-          nodes['Narrativa Sociopolítica'] = {
-            id: 'Narrativa Sociopolítica',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "As narrativas sociopolíticas e ativas desafiam as estruturas <br> de poder, amplificam as vozes marginalizadas e suscitam diálogo, <br> contribuindo para a mudança, a justiça e a igualdade social.",
-            dataLabels: {
-              style:{
-                fontSize: "0.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 3
-            }
-          };
-          nodes['Narrativa Espacial'] = {
-            id: 'Narrativa Espacial',
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            text: "As narrativas espaciais estão ligadas à contestação local,<br> às áreas negligenciadas, à gentrificação e a outras preocupações políticas <br> que de alguma forma, se refletem no ambiente físico",
-            dataLabels: {
-              style:{
-                fontSize: "0.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0
-              }
-            },
-            marker: {
-              radius: 3
-            }
-          };
+        nodes["Mural"] = {
+          id: "Mural",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O Mural distingue-se pelas pinturas e desenhos de grandes dimensões, geralmente legais.",
+          dataLabels: {
+            style: { fontSize: "1.5vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 6 }
+        };
 
-          
+        nodes["Tag"] = {
+          id: "Tag",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O tag é conhecido como a forma mais básica do graffiti.",
+          dataLabels: {
+            style: { fontSize: "1.8vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 7 }
+        };
 
-          nodes[link[1]] = {
-            id: link[1],
-            url: "arquivo.html?action=saojoaodaslampasterrugem",
-            dataLabels: {
-              style:{
-                fontSize: "0.5vw",
-                fontWeight:"light",
-                fontfamily: "ocr-aregular",
-                color: "#ffffff",
-                letterSpacing: 0,
-            
+        nodes["Throw-up"] = {
+          id: "Throw-up",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O throw-up é uma versão mais complexa e elaborada de um tag.",
+          dataLabels: {
+            style: { fontSize: "1.5vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 6 }
+        };
 
-              }
-            },
-         
-          };
-        } else if (nodes[link[0]] && nodes[link[0]].color) {
-          nodes[link[1]] = {
-            id: link[1],
-          };
-        }
-      });
+        nodes["Lettering"] = {
+          id: "Lettering",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O Lettering consiste num desenho personalizado de letras em grandes dimensões.",
+          dataLabels: {
+            style: { fontSize: "1.5vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 6 }
+        };
 
-      e.options.nodes = Object.keys(nodes).map(function (id) {
-        return nodes[id];
-      });
-    }
+        nodes["Piece"] = {
+          id: "Piece",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O piece é uma obra grande, complexa e demorada, feita por writers experientes.",
+          dataLabels: {
+            style: { fontSize: "1.2vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 5 }
+        };
+
+        nodes["Poster"] = {
+          id: "Poster",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O poster é uma tipologia da Street Art que dissemina informação visual.",
+          dataLabels: {
+            style: { fontSize: "1vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 4 }
+        };
+
+        nodes["Mosaico"] = {
+          id: "Mosaico",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "O mosaico utiliza pequenos quadrados de vidro, pedra ou azulejo para criar imagens.",
+          dataLabels: {
+            style: { fontSize: "1vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 4 }
+        };
+
+        nodes["Narrativa Individual"] = {
+          id: "Narrativa Individual",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Narrativas individuais têm caráter pessoal e íntimo, menos relacionável ao público geral.",
+          dataLabels: {
+            style: { fontSize: "1.5vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 6 }
+        };
+
+        nodes["Narrativa Coletiva"] = {
+          id: "Narrativa Coletiva",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Narrativas coletivas abordam questões sociais, de justiça e inclusão.",
+          dataLabels: {
+            style: { fontSize: "1.2vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 5 }
+        };
+
+        nodes["Narrativa Comercial"] = {
+          id: "Narrativa Comercial",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Narrativas comerciais têm fins promocionais ou publicitários.",
+          dataLabels: {
+            style: { fontSize: "1vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 4 }
+        };
+
+        nodes["Narrativa Sociopolítica"] = {
+          id: "Narrativa Sociopolítica",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Narrativas sociopolíticas desafiam o poder e promovem justiça e igualdade.",
+          dataLabels: {
+            style: { fontSize: "1vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 4 }
+        };
+
+        nodes["Narrativa Espacial"] = {
+          id: "Narrativa Espacial",
+          url: "arquivo.html?action=saojoaodaslampasterrugem",
+          text: "Narrativas espaciais refletem preocupações políticas e gentrificação local.",
+          dataLabels: {
+            style: { fontSize: "1vw", fontFamily: "ocr-aregular", color: "#ffffff" }
+          },
+          marker: { radius: 4 }
+        };
+      }
+    });
+
+    e.options.nodes = Object.values(nodes);
   }
-);
+});
 
-
-
-
-
-
+// ===========================
+// CHART CONFIG
+// ===========================
 Highcharts.chart("container0", {
-
-  
   chart: {
-      type: 'networkgraph', 
-      alignTicks: true,
-      marginTop: 0,
-      marginBottom:0,
-      marginRight: 0, 
-      marginLeft: 0,
-      height: 0,
-
+    type: "networkgraph",
+    backgroundColor: "transparent",
+    margin: [0, 0, 0, 0],
+    height: "100%",
+    events: {
+      load: function () {
+        const chart = this;
+        const series = chart.series[0];
+        // keep nodes moving forever
+        setInterval(() => {
+          if (series && series.layout) series.layout.restartSimulation();
+        }, 500);
+      },
+    },
   },
+
+  title: { text: "" },
 
   tooltip: {
-        
-        enabled: true,
-        borderColor: '1px',
-        borderColor: '#000000',
-        borderRadius: '',
-        padding: 10,
-        
-
-
-        formatter: function() {
-          const {
-            text
-          } = this.point.options;
-          return '' + text 
-        }
+    enabled: true,
+    useHTML: true,
+    hideDelay: 999999,
+    formatter: function () {
+      return this.point.options.text || "";
+    },
+    backgroundColor: "rgba(0,0,0,0.85)",
+    borderColor: "#000",
+    borderRadius: 6,
+    padding: 10,
+    style: {
+      color: "#ffffff",
+      fontFamily: "ocr-aregular",
+      fontSize: "1rem",
+    },
   },
 
-  title: {
-    text: ''
-  },
-  
   plotOptions: {
-    series: { 
+    series: {
       cursor: "pointer",
       allowPointSelect: false,
       point: {
-          events: {
-              click: function () {
-                location.href = this.options.url;
-              
-                   }  
-                 },
+        events: {
+          click: function () {
+            const chart = this.series.chart;
+            const now = Date.now();
+            const DOUBLE_CLICK_DELAY = 300;
 
-           
-                 
-               },
-               
-    
-    
+            if (!chart.customClick) chart.customClick = { lastTime: 0, lastId: null };
+
+            // detect double click
+            if (
+              chart.customClick.lastId === this.id &&
+              now - chart.customClick.lastTime < DOUBLE_CLICK_DELAY
+            ) {
+              if (this.options.url) window.location.href = this.options.url;
+              chart.customClick = { lastTime: 0, lastId: null };
+            } else {
+              chart.tooltip.refresh(this);
+              chart.customClick = { lastTime: now, lastId: this.id };
+            }
+          },
+        },
+      },
     },
 
     networkgraph: {
-        keys: ['from', 'to'],
-            layoutAlgorithm: {
-              enableSimulation: true,
-        
-              //linkLength: 320 ,
-              //integration: 'verlet',
-                // Elastic like forces:
-                /*repulsiveForce: function (d, k) {
-                    return Math.max(-(d * d) / (d * 1000), -80);
-                },*/
-                initialPositions: 'random',
-                integration: 'verlet',
-                // Elastic like forces:
-                attractiveForce: function (d, k) {
-                    return Math.max(-(d * d) / (k * 4000), -1);
-                },
-              gravitationalConstant: 25,
+      keys: ["from", "to"],
+      layoutAlgorithm: {
+        enableSimulation: true,
+        integration: "verlet",
+        initialPositions: "random",
+        gravitationalConstant: 25,
       },
-
       link: {
-        width: 2,      
-        dashStyle: 'none'
-    },
-
-
-
-  
-        states:{
-          hover:{
-            halo: null,
-          },
-          inactive:{
-            halo: null,
-          },
+        width: 2,
+        color: "#ffffff",
+      },
+      dataLabels: {
+        enabled: true,
+        linkFormat: "", // no text on links
+        textPath: { enabled: false },
+        allowOverlap: true,
+        style: {
+          fontSize: "1vw",
+          textOutline: "none",
+          fontWeight: "100",
+          color: "#ffffff",
+          fontFamily: "ocr-aregular",
         },
-
-      marker:{
-          lineWidth: 1,
-          fillColor: "#ffffff",
-  
-          states: {
-              hover: {
-                lineWidthPlus:null,
-                radiusPlus:null,
-              }
-          },
-          symbol: "square",
-          hover:{
-            halo: {
-              opacity:0,
-            }
-          }
-        }
-      }
+      },
     },
-
-   credits: {
-    enabled: false
   },
 
-  
+  credits: { enabled: false },
 
-  series: [{
-
-    networkgraph:{
-      link:{
-        color: "#ffffff"
-      }
-    },
-    dataLabels: { 
-      enabled: 'false',
-      width: '0%',
-      textPath: {
-        enabled: false,
-      },
-      linkFormat: '',
-      allowOverlap: true,
-      style:{
-        fontSize: "1vw",
-        textOutline: "#00000",
-        fontWeight:"100",
-        color: "#ffffff",
-  
-        fontfamily: "ocr-aregular",
-      },
-    },
-        
-        
-        
-        
-      
-    
-
+  series: [
+    {
       id: "lang-tree",
       data: window.netdata,
-      events: {
-        click: function(ev) {
-     
-        }
-     
-      }
-
-      
+      marker: {
+        lineWidth: 1,
+        fillColor: "#ffffff",
+        symbol: "square",
+      },
     },
   ],
-
- 
 });
-
