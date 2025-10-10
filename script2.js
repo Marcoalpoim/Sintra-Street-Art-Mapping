@@ -340,36 +340,50 @@ function attachFreguesiaClicks() {
 }
 
 // ====== DOM READY ======
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener("DOMContentLoaded", async () => {
   await loadProjects();
   initCarousel();
+  attachFreguesiaClicks(); // ensure click handlers are attached too
 
   const params = new URLSearchParams(window.location.search);
-  const action = params.get('action');
-  const ppi = params.get('ppi'); // optional project id
+  const action = params.get("action");
+  const ppi = params.get("ppi"); // optional project id
 
   if (action) {
     const normalized = normalizeClassName(action);
     filterSelection(normalized);
 
-    // scroll carousel
-    setTimeout(() => {
-      const carousel = document.getElementById('carousel');
+    // 🧭 Wait for .active freguesia to exist, then center it
+    const waitAndCenter = () => {
+      const carousel = document.getElementById("carousel");
       if (!carousel) return;
 
-      const btn = Array.from(document.querySelectorAll('.freguesiatag')).find(el =>
-        normalizeClassName(el.textContent || '') === normalized
+      const btn = Array.from(document.querySelectorAll(".freguesiatag")).find(
+        (el) => normalizeClassName(el.textContent || "") === normalized
       );
+
       if (btn) {
-        btn.classList.add('active');
-        const li = btn.closest('li');
+        btn.classList.add("active");
+        const li = btn.closest("li");
         if (li) {
           const center = li.offsetLeft + li.offsetWidth / 2;
           const scrollTo = Math.max(0, center - carousel.clientWidth / 2);
-          carousel.scrollTo({ left: scrollTo, behavior: 'smooth' });
+
+          // 🕰 Custom smooth scroll duration (optional)
+          carousel.scrollTo({ left: scrollTo, behavior: "smooth" });
+          console.log("✅ Centered active freguesia:", normalized);
+          return true;
         }
       }
-    }, 800);
+      return false;
+    };
+
+    // Try up to 5 times in case content loads asynchronously
+    let tries = 0;
+    const interval = setInterval(() => {
+      if (waitAndCenter() || tries > 5) clearInterval(interval);
+      tries++;
+    }, 400);
 
     // ✅ Auto-open PPI if id provided
     if (ppi !== null) {

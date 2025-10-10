@@ -1,9 +1,47 @@
-
 const carousel = document.getElementById("carousel");
 const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 
 const scrollAmount = 100; // Adjust if needed
+
+// Center clicked button in carousel, but DON'T change classes
+document.querySelectorAll(".freguesiatag").forEach((btn) => {
+  btn.addEventListener("click", function () {
+    setTimeout(() => {
+      const active = carousel.querySelector(".freguesiatag.active") || this;
+      const li = active.closest("li");
+      if (!li) return;
+
+      const liCenter = li.offsetLeft + li.offsetWidth / 2;
+      const scrollTo = liCenter - carousel.clientWidth / 2;
+
+      carousel.scrollTo({
+        left: scrollTo,
+        behavior: "smooth",
+      });
+    }, 0);
+  });
+});
+
+// 🟢 On page load, center the .active freguesia
+window.addEventListener("load", () => {
+  const active = carousel.querySelector(".freguesiatag.active");
+  if (active) {
+    const li = active.closest("li");
+    if (!li) return;
+
+    const liCenter = li.offsetLeft + li.offsetWidth / 2;
+    const scrollTo = liCenter - carousel.clientWidth / 2;
+
+    // Delay slightly to ensure layout is ready
+    setTimeout(() => {
+      carousel.scrollTo({
+        left: scrollTo,
+        behavior: "smooth",
+      });
+    }, 300);
+  }
+});
 
 // Left / right arrows
 prev.addEventListener("click", () => {
@@ -23,49 +61,5 @@ function toggleArrows() {
       : "0.3";
 }
 
-// Center the active item on page load
-window.addEventListener("load", () => {
-  const active = carousel.querySelector(".freguesiatag.active");
-  if (active) {
-    const li = active.closest("li");
-    if (li) {
-      const liCenter = li.offsetLeft + li.offsetWidth / 2;
-      const scrollTo = liCenter - carousel.clientWidth / 2;
-
-      carousel.scrollTo({
-        left: scrollTo,
-        behavior: "smooth", // Use "smooth" if you want animation
-      });
-    }
-  }
-
-  toggleArrows();
-});
-
-// Update arrows on scroll
 carousel.addEventListener("scroll", toggleArrows);
-
-
-  setTimeout(function() {
-
-      $('#container').fadeOut('slow', function () {
-          });
-  }, 3500);
-  
-
-const items = document.querySelectorAll(".info-extra button");
-
-function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  
-  for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
-  }
-  
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
-  }
-}
-
-items.forEach(item => item.addEventListener('click', toggleAccordion));
-
+window.addEventListener("load", toggleArrows);

@@ -360,7 +360,10 @@ top: 5%;
       padding: 0;
       scrollbar-width: none; /* Firefox */
       align-items: flex-start;
-    }
+       position: relative;
+     mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
 
     .carousel::-webkit-scrollbar {
       display: none; /* Chrome/Safari/Edge */
@@ -1542,7 +1545,7 @@ margin: 0px 0;}
 .carousel-container {
 
     max-width: 100%;
-    width: 90%;
+    width: 100%;
 
 }
   .container {
@@ -1578,6 +1581,13 @@ margin: 0px 0;}
 }
 
  @media only screen and (max-width: 768px) {
+
+
+
+  .aviso{
+  font-size: 12px;
+
+}
   .blank2 {
  
     top: 13%;
