@@ -1,0 +1,147 @@
+#map{
+    margin-top: 0%;
+    height: 100vh;
+    width: 100%;
+    z-index: 0;
+}
+
+
+@font-face {
+    font-family: "ocr-aregular";
+    src: url("font/ocr-aregular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  .info2 {
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+.info2 {
+    padding: 15px;
+    font-size: 15px;
+    line-height: 17px;
+    border: 1px solid white;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  backdrop-filter: blur(15px);
+    color: #ffffff;
+ 
+    right: 20px;
+    font-family: "ocr-aregular";
+    float: left;
+    position: fixed;
+    top: 20%;
+     -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+    }
+.info2.updating {
+  opacity: 0;
+}
+.info2 h4{
+    padding: 0 0 10px ;
+
+    }
+
+
+    b.legenda{
+        font-size: 14px;
+        font-weight: lighter;
+        line-height: 16px;
+    color: rgb(255, 255, 255);
+     -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+   
+      }
+      
+
+
+      img.imgpopup{
+        width:200px;
+        height: auto;
+        align-content: center;
+        padding: 0%;
+        border: 1px solid rgb(255, 255, 255);
+        cursor: pointer;
+      }
+ 
+
+
+
+
+.containerpreloader {
+    position: fixed;
+    left: 0;
+      background: #000000;
+      color: #fff;
+      width: 100%;
+      min-height: 100dvh;
+      display: flex;
+    z-index: 90;
+  }
+  
+  .preloader {
+      margin: auto;
+      width: 10%;
+      
+      background: rgba(0, 0, 0, 0.1);
+      
+      position: relative;
+  }
+  
+  .preloader:before {
+      content: "";
+      position: absolute;
+      background: rgb(255, 255, 255);
+      width: 0;
+      height: 2px;
+      
+      animation: preloader 2s;
+  }
+  
+  
+  .cerrar {
+      opacity: 0;
+      transition: all 1s;
+  }
+
+
+
+
+
+  @keyframes preloader {
+      90% {
+          width: 100%;
+          opacity: 1;
+      }
+      100% {
+          width: 100%;
+          opacity: 0;
+      }
+  }
+  
+
+  @media only screen and (max-width: 550px) {
+ 
+    .info2 {
+   
+        font: 8px Arial, Helvetica, sans-serif;
+        border: 1px solid white;
+        
+        color: #ffffff;
+      
+        margin-right: 0vw;
+        }
+    
+        b.legenda{
+            font-size: 10px;
+            font-weight: lighter;
+            line-height: 12px;
+        padding: 5% 0%;
+          }
+          
+
+     
+  }
+  
