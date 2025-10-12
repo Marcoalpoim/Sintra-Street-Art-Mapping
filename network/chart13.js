@@ -1,219 +1,249 @@
-let current_panel = null;
+// ==================== NETWORK GRAPH: CONTAINER 13 ====================
 
-Highcharts.addEvent(Highcharts.Series, 'afterSetOptions', function (e) {
-  let nodes = {};
-  if (this instanceof Highcharts.seriesTypes.networkgraph && e.options.id === 'lang-tree') {
+Highcharts.addEvent(Highcharts.Series, "afterSetOptions", function (e) {
+  const nodes = {};
+  const baseUrl = "arquivo.html?action=casaldecambra";
+
+  if (this instanceof Highcharts.seriesTypes.networkgraph && e.options.id === "lang-tree") {
     e.options.data.forEach(function (link) {
-      const nodeList = [
+      const mainNodes = [
         "Street Art", "Arte Pública", "Graffiti", "Mural", "Tag", "Throw-up",
         "Lettering", "Piece", "Stencil", "Sticker", "Mosaico", "Wildstyle",
-        "Narrativa Individual", "Narrativa Coletiva", "Narrativa Comercial",
-        "Narrativa Sociopolítica", "Narrativa Espacial"
+        "Narrativa Individual", "Narrativa Coletiva", "Narrativa Sociopolítica",
+        "Narrativa Espacial", "Narrativa Comercial"
       ];
 
-      if (nodeList.includes(link[0])) {
-
+      if (mainNodes.includes(link[0])) {
         nodes["Street Art"] = {
           id: "Street Art",
-          url: "arquivo.html?action=casaldecambra",
-          text: "Street Art é um fenómeno artístico, expressivo <br> e social à escala global que deu espaço <br> a uma infindável possibilidade de linguagens <br> criadas ou inspiradas no espaço público.",
+          url: baseUrl,
+          text: "Street Art é um fenómeno artístico, expressivo e social à escala global que deu espaço a uma infindável possibilidade de linguagens criadas ou inspiradas no espaço público.",
+          dataLabels: { style: { fontSize: "20px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 7 }
         };
 
         nodes["Arte Pública"] = {
           id: "Arte Pública",
-          url: "arquivo.html?action=casaldecambra",
+          url: baseUrl,
           text: "Arte Pública é uma variante inócua, comissionada, institucional e legal da Street Art.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 6 }
         };
 
         nodes["Graffiti"] = {
           id: "Graffiti",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O graffiti é uma arte escrita, pintada ou desenhada sobre uma parede ou superfície, geralmente sem permissão e à vista pública.",
+          url: baseUrl,
+          text: "O graffiti é uma arte escrita, pintada ou desenhada sobre uma parede ou outra superfície, geralmente obscena, informativa, sem permissão e dentro da vista pública.",
+          dataLabels: { style: { fontSize: "20px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 7 }
         };
 
         nodes["Mural"] = {
           id: "Mural",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O Mural distingue-se pelas pinturas e desenhos de grandes dimensões, geralmente executados de forma legal sobre paredes e edifícios.",
+          url: baseUrl,
+          text: "O Mural distingue-se pelas pinturas e desenhos de grandes dimensões, elaborados e, geralmente, executados de forma legal, diretamente sobre paredes e muros do espaço público.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 5 }
         };
 
         nodes["Tag"] = {
           id: "Tag",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O tag é conhecido e caracterizado como a forma mais básica do graffiti.",
+          url: baseUrl,
+          text: "O Tag é conhecido e caracterizado como a forma mais básica do graffiti.",
+          dataLabels: { style: { fontSize: "7px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Throw-up"] = {
           id: "Throw-up",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O throw-up, ou throwie, é visto como uma versão mais complexa e elaborada de um tag.",
+          url: baseUrl,
+          text: "O Throw-up, ou throwie, é visto como uma versão mais complexa e elaborada de um Tag.",
+          dataLabels: { style: { fontSize: "7px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Wildstyle"] = {
           id: "Wildstyle",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O wildstyle é a forma mais complexa de um piece, composta por letras e formas intrincadas e sobrepostas.",
+          url: baseUrl,
+          text: "O Wildstyle é a forma mais complexa de um piece e é composto por letras e formas intrincadas e sobrepostas entre si.",
+          dataLabels: { style: { fontSize: "7px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Lettering"] = {
           id: "Lettering",
-          url: "arquivo.html?action=casaldecambra",
+          url: baseUrl,
           text: "O Lettering consiste num desenho personalizado de uma ou várias letras, em grandes dimensões.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 5 }
         };
 
         nodes["Piece"] = {
           id: "Piece",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O piece é uma obra grande e complexa, geralmente pintada por writers experientes e habilidosos.",
+          url: baseUrl,
+          text: "O Piece é uma obra grande, complexa e demorada, geralmente escrita e pintada por writers experientes e habilidosos.",
+          dataLabels: { style: { fontSize: "7px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Stencil"] = {
           id: "Stencil",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O stencil utiliza moldes pré-recortados para criar desenhos sobre superfícies, através de tinta spray ou outros materiais.",
+          url: baseUrl,
+          text: "O Stencil envolve o uso de um molde pré-recortado para criar desenhos sobre uma superfície com tintas spray e outros materiais.",
+          dataLabels: { style: { fontSize: "7px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Sticker"] = {
           id: "Sticker",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O sticker, ou autocolante, baseia-se na disseminação do nome ou identidade visual em diversos locais, para ganhar notoriedade.",
+          url: baseUrl,
+          text: "O Sticker, ou autocolante, surge do princípio básico do graffiti: espalhar o nome por locais diversos para ganhar notoriedade.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 5 }
         };
 
         nodes["Mosaico"] = {
           id: "Mosaico",
-          url: "arquivo.html?action=casaldecambra",
-          text: "O mosaico é uma técnica alternativa à tinta, resultante da colagem de pequenos fragmentos de materiais que formam uma imagem.",
+          url: baseUrl,
+          text: "O Mosaico é uma técnica que utiliza pequenos quadrados de vidro, pedra, plástico ou azulejo para formar uma imagem.",
+          dataLabels: { style: { fontSize: "7px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Narrativa Individual"] = {
           id: "Narrativa Individual",
-          url: "arquivo.html?action=casaldecambra",
-          text: "As narrativas individuais têm um caráter pessoal e íntimo, sendo menos relacionáveis fora do contexto individual.",
+          url: baseUrl,
+          text: "As narrativas individuais têm caráter pessoal e íntimo, tornando-se menos óbvias e relacionáveis fora do contexto individual.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 5 }
         };
 
         nodes["Narrativa Coletiva"] = {
           id: "Narrativa Coletiva",
-          url: "arquivo.html?action=casaldecambra",
-          text: "As narrativas coletivas abordam temas globais que afetam comunidades inteiras, como justiça, transparência e inclusão social.",
+          url: baseUrl,
+          text: "As narrativas coletivas abordam questões globais de justiça, transparência e inclusão social.",
+          dataLabels: { style: { fontSize: "15px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 6 }
         };
 
         nodes["Narrativa Comercial"] = {
           id: "Narrativa Comercial",
-          url: "arquivo.html?action=casaldecambra",
-          text: "As narrativas comerciais têm propósitos publicitários ou corporativos, normalmente comissionadas por marcas privadas.",
+          url: baseUrl,
+          text: "As narrativas comerciais têm interesse empresarial, comissionadas por marcas no âmbito de campanhas ou estratégias publicitárias.",
+          dataLabels: { style: { fontSize: "5px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 3 }
         };
 
         nodes["Narrativa Sociopolítica"] = {
           id: "Narrativa Sociopolítica",
-          url: "arquivo.html?action=casaldecambra",
-          text: "As narrativas sociopolíticas desafiam estruturas de poder e amplificam vozes marginalizadas, promovendo justiça e igualdade.",
+          url: baseUrl,
+          text: "As narrativas sociopolíticas desafiam estruturas de poder, amplificam vozes marginalizadas e promovem o diálogo social.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 5 }
         };
 
         nodes["Narrativa Espacial"] = {
           id: "Narrativa Espacial",
-          url: "arquivo.html?action=casaldecambra",
-          text: "As narrativas espaciais refletem preocupações locais como gentrificação, abandono urbano e contestação política.",
+          url: baseUrl,
+          text: "As narrativas espaciais abordam a contestação local, a gentrificação e outras questões políticas urbanas.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#ffffff" } },
           marker: { radius: 5 }
-        };
-
-        nodes[link[1]] = {
-          id: link[1],
-          url: "arquivo.html?action=casaldecambra"
         };
       }
     });
+
     e.options.nodes = Object.values(nodes);
   }
 });
 
 Highcharts.chart("container13", {
   chart: {
-    type: 'networkgraph',
-    backgroundColor: 'transparent',
-    margin: [0, 0, 0, 0],
-    height: '100%',
+    type: "networkgraph",
+    backgroundColor: "transparent",
+    height: "100%",
     events: {
       load: function () {
         const series = this.series[0];
-        setInterval(() => series.layout.restartSimulation(), 1000);
+        setInterval(() => series.layout.restartSimulation(), 600); // keeps nodes moving
       }
     }
   },
 
-  title: { text: '' },
+  title: { text: "" },
 
-  tooltip: {
-    enabled: true,
-    useHTML: true,
-    hideDelay: 0,
-    backgroundColor: 'rgba(0,0,0,0.85)',
-    borderColor: '#000000',
-    borderRadius: 6,
-    padding: 10,
-    style: {
-      color: '#ffffff',
-      fontFamily: 'ocr-aregular',
-      fontSize: '1rem'
-    },
-    formatter: function () {
-      return this.point.options.text || '';
-    }
+ tooltip: {
+  enabled: true,
+  useHTML: true,
+  hideDelay: 0,
+  backgroundColor: 'rgba(0,0,0,0.85)',
+  borderColor: '#000',
+  borderRadius: 6,
+  shadow: false,
+  outside: true,
+  style: {
+    color: '#fff',
+    fontFamily: 'ocr-aregular',
+    fontSize: '0.8rem',
+    textAlign: 'center',
+    whiteSpace: 'normal'
   },
+ 
+  formatter: function () {
+    const text = this.point?.options?.text || '';
+    return `
+      <div style="
+        position: fixed;
+        bottom: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1200px;
+        background: rgba(0,0,0,0.85);
+        border: 1px solid #000;
+        border-radius: 8px;
+        padding: 12px 16px;
+        color: #fff;
+        font-family: ocr-aregular;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        text-align: center;
+        z-index: 9999;
+        pointer-events: none;
+      ">
+        ${text}
+      </div>`;
+  }
+},
 
   plotOptions: {
     series: {
-      cursor: 'pointer',
+      cursor: "pointer",
       point: {
-        events: (function () {
-          let lastClickTime = 0;
-          return {
-            click: function () {
-              const now = Date.now();
-              if (now - lastClickTime < 400 && this.options.url) {
-                window.location.href = this.options.url; // double-click
-              } else {
-                this.series.chart.tooltip.refresh(this); // single click tooltip
-              }
-              lastClickTime = now;
-            }
-          };
-        })()
+        events: {
+          click: function () {
+            this.series.chart.tooltip.refresh(this);
+          },
+          dblclick: function () {
+            if (this.options.url) window.location.href = this.options.url;
+          }
+        }
       }
     },
     networkgraph: {
-      keys: ['from', 'to'],
+      keys: ["from", "to"],
       layoutAlgorithm: {
         enableSimulation: true,
-        integration: 'verlet',
-        initialPositions: 'random',
+        integration: "verlet",
+        initialPositions: "random",
         gravitationalConstant: 25
       },
-      link: {
-        width: 2,
-        color: '#ffffff'
-      },
+      link: { width: 2, color: "#ffffff" },
       dataLabels: {
         enabled: true,
-        linkFormat: '',
+        linkFormat: "",
         allowOverlap: true,
         style: {
-          fontSize: "1vw",
+          fontSize: "14px",
           textOutline: "none",
           color: "#ffffff",
           fontFamily: "ocr-aregular"
@@ -227,10 +257,6 @@ Highcharts.chart("container13", {
   series: [{
     id: "lang-tree",
     data: window.netdata13,
-    marker: {
-      lineWidth: 1,
-      fillColor: "#ffffff",
-      symbol: "square"
-    }
+    marker: { lineWidth: 1, fillColor: "#ffffff", symbol: "square" }
   }]
 });

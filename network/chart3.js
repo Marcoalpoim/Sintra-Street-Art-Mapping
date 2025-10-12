@@ -1,118 +1,129 @@
-let current_panel = null;
+// ==================== NETWORK GRAPH: CONTAINER 3 ====================
 
 Highcharts.addEvent(Highcharts.Series, 'afterSetOptions', function (e) {
-  let nodes = {};
+  const nodes = {};
+
   if (this instanceof Highcharts.seriesTypes.networkgraph && e.options.id === 'lang-tree') {
     e.options.data.forEach(function (link) {
-      const nodeList = [
-        "Street Art", "Arte Pública", "Graffiti", "Mural", "Tag", "Throw-up", "Lettering",
-        "Piece", "Stencil", "Mosaico", "Narrativa Individual", "Narrativa Coletiva",
-        "Narrativa Sociopolítica", "Narrativa Espacial"
+      const mainNodes = [
+        "Street Art", "Arte Pública", "Graffiti", "Mural", "Tag", "Throw-up",
+        "Lettering", "Piece", "Stencil", "Mosaico", "Narrativa Individual",
+        "Narrativa Coletiva", "Narrativa Sociopolítica", "Narrativa Espacial"
       ];
 
-      if (nodeList.includes(link[0])) {
-        // Define your nodes (keeping same descriptions)
+      if (mainNodes.includes(link[0])) {
+        const baseUrl = "arquivo.html?action=montelavaralmargemperopinheiro";
+
         nodes["Street Art"] = {
           id: "Street Art",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "Street Art é um fenómeno artístico, expressivo <br> e social à escala global...",
+          url: baseUrl,
+          text: "Street Art é um fenómeno artístico, expressivo e social à escala global que deu espaço a uma infindável possibilidade de linguagens criadas ou inspiradas no espaço público",
+          dataLabels: { style: { fontSize: "15px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 7 }
         };
 
         nodes["Arte Pública"] = {
           id: "Arte Pública",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "Arte Pública é uma variante inócua, comissionada...",
+          url: baseUrl,
+          text: "Arte Pública é uma variante inócua, comissionada, institucional e legal da Street Art",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 5 }
         };
 
         nodes["Graffiti"] = {
           id: "Graffiti",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O graffiti é uma arte escrita, pintada ou desenhada...",
+          url: baseUrl,
+          text: "O graffiti é uma arte escrita, pintada ou desenhada sobre uma parede ou outra superfície, geralmente obscena, informativa, sem permissão e dentro da vista pública.",
+          dataLabels: { style: { fontSize: "14px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 7 }
         };
 
         nodes["Mural"] = {
           id: "Mural",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O Mural distingue-se pelas pinturas e desenhos...",
+          url: baseUrl,
+          text: "O Mural distingue-se pelas pinturas e desenhos de grandes dimensões, elaborados e, geralmente, executados de forma legal, diretamente sobre as paredes, edifícios e muros do espaço público",
+          dataLabels: { style: { fontSize: "12px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 6 }
         };
 
         nodes["Tag"] = {
           id: "Tag",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O tag é conhecido e caracterizado como a forma mais básica...",
+          url: baseUrl,
+          text: "O Tag é conhecido e caracterizado como a forma mais básica do graffiti.",
+          dataLabels: { style: { fontSize: "15px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 6 }
         };
 
         nodes["Throw-up"] = {
           id: "Throw-up",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O throw-up é visto como uma versão mais complexa...",
+          url: baseUrl,
+          text: "O Throw-up, Throw ou Throwie é visto como uma versão mais complexa e elaborada de um Tag.",
+          dataLabels: { style: { fontSize: "12px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 6 }
         };
 
         nodes["Lettering"] = {
           id: "Lettering",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O Lettering consiste num desenho personalizado...",
+          url: baseUrl,
+          text: "O Lettering consiste num desenho personalizado de uma ou várias letras, em grandes dimensões.",
+          dataLabels: { style: { fontSize: "12px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 6 }
         };
 
         nodes["Piece"] = {
           id: "Piece",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O piece é uma obra grande, complexa e demorada...",
+          url: baseUrl,
+          text: "O Piece é uma obra grande, complexa e demorada, geralmente escrita e pintada por writers experientes e habilidosos.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 5 }
         };
 
         nodes["Stencil"] = {
           id: "Stencil",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O stencil envolve a utilização de um molde...",
+          url: baseUrl,
+          text: "O Stencil envolve a utilização de um molde, geralmente pré-recortado, para criar desenhos sobre superfícies com tinta spray ou outros materiais.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 5 }
         };
 
         nodes["Mosaico"] = {
           id: "Mosaico",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "O mosaico é uma técnica alternativa à tinta...",
+          url: baseUrl,
+          text: "O Mosaico é uma técnica utilizada em alternativa à tinta, resultando da colagem de pequenos quadrados de vidro, pedra, plástico ou azulejo, formando uma imagem.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 3 }
         };
 
         nodes["Narrativa Individual"] = {
           id: "Narrativa Individual",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "As narrativas individuais têm um caráter pessoal e íntimo...",
+          url: baseUrl,
+          text: "As narrativas individuais têm um carácter pessoal e íntimo, tornando-se menos óbvias ou relacionáveis com o público geral.",
+          dataLabels: { style: { fontSize: "12px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 6 }
         };
 
         nodes["Narrativa Coletiva"] = {
           id: "Narrativa Coletiva",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "As narrativas coletivas abordam questões globais...",
+          url: baseUrl,
+          text: "As narrativas coletivas abordam temas sociais e globais, com foco em justiça, transparência e inclusão.",
+          dataLabels: { style: { fontSize: "10px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 5 }
         };
 
         nodes["Narrativa Sociopolítica"] = {
           id: "Narrativa Sociopolítica",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "As narrativas sociopolíticas desafiam estruturas de poder...",
+          url: baseUrl,
+          text: "As narrativas sociopolíticas desafiam o poder, amplificam vozes marginalizadas e promovem mudanças sociais.",
+          dataLabels: { style: { fontSize: "9px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 3 }
         };
 
         nodes["Narrativa Espacial"] = {
           id: "Narrativa Espacial",
-          url: "arquivo.html?action=montelavaralmargemperopinheiro",
-          text: "As narrativas espaciais estão ligadas à contestação local...",
+          url: baseUrl,
+          text: "As narrativas espaciais refletem preocupações locais ligadas à gentrificação, negligência e espaço urbano.",
+          dataLabels: { style: { fontSize: "9px", fontFamily: "ocr-aregular", color: "#fff" } },
           marker: { radius: 3 }
-        };
-
-        nodes[link[1]] = {
-          id: link[1],
-          url: "arquivo.html?action=montelavaralmargemperopinheiro"
         };
       }
     });
@@ -124,56 +135,76 @@ Highcharts.chart("container3", {
   chart: {
     type: 'networkgraph',
     backgroundColor: 'transparent',
-    margin: [0, 0, 0, 0],
     height: '100%',
     events: {
       load: function () {
-        const series = this.series[0];
-        setInterval(() => series.layout.restartSimulation(), 1000); // Keep moving
+        const chart = this;
+        const series = chart.series[0];
+        setInterval(() => series.layout.restartSimulation(), 600);
       }
     }
   },
-
   title: { text: '' },
-
-  tooltip: {
-    enabled: true,
-    useHTML: true,
-    hideDelay: 0,
-    formatter: function () {
-      return this.point.options.text || '';
-    },
-    backgroundColor: 'rgba(0,0,0,0.85)',
-    borderColor: '#000000',
-    borderRadius: 6,
-    padding: 10,
-    style: {
-      color: '#ffffff',
-      fontFamily: 'ocr-aregular',
-      fontSize: '1rem'
-    }
+ tooltip: {
+  enabled: true,
+  useHTML: true,
+  hideDelay: 0,
+  backgroundColor: 'rgba(0,0,0,0.85)',
+  borderColor: '#000',
+  borderRadius: 6,
+  shadow: false,
+  outside: true,
+  style: {
+    color: '#fff',
+    fontFamily: 'ocr-aregular',
+    fontSize: '0.8rem',
+    textAlign: 'center',
+    whiteSpace: 'normal'
   },
+ 
+  formatter: function () {
+    const text = this.point?.options?.text || '';
+    return `
+      <div style="
+        position: fixed;
+        bottom: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 1200px;
+        background: rgba(0,0,0,0.85);
+        border: 1px solid #000;
+        border-radius: 8px;
+        padding: 12px 16px;
+        color: #fff;
+        font-family: ocr-aregular;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        text-align: center;
+        z-index: 9999;
+        pointer-events: none;
+      ">
+        ${text}
+      </div>`;
+  }
+}
+
+
+
+,
 
   plotOptions: {
     series: {
       cursor: 'pointer',
       point: {
-        events: (function () {
-          let lastClickTime = 0;
-          return {
-            click: function () {
-              const now = Date.now();
-              if (now - lastClickTime < 400 && this.options.url) {
-                window.location.href = this.options.url; // double click
-              } else {
-                // single click → show tooltip manually
-                const chart = this.series.chart;
-                chart.tooltip.refresh(this);
-              }
-              lastClickTime = now;
-            }
-          };
-        })()
+        events: {
+          click: function () {
+            this.series.chart.tooltip.refresh(this);
+          },
+          dblclick: function () {
+            if (this.options.url) window.location.href = this.options.url;
+          }
+        }
       }
     },
     networkgraph: {
@@ -184,33 +215,18 @@ Highcharts.chart("container3", {
         initialPositions: 'random',
         gravitationalConstant: 25
       },
-      link: {
-        width: 2,
-        color: '#ffffff'
-      },
+      link: { width: 1, color: '#ffffff' },
       dataLabels: {
         enabled: true,
         linkFormat: '',
         allowOverlap: true,
-        style: {
-          fontSize: "1vw",
-          textOutline: "none",
-          color: "#ffffff",
-          fontFamily: "ocr-aregular"
-        }
+        style: { fontSize: "14px", textOutline: "none", color: "#fff", fontFamily: "ocr-aregular" }
       }
     }
   },
-
   credits: { enabled: false },
-
   series: [{
     id: "lang-tree",
-    data: window.netdata3,
-    marker: {
-      lineWidth: 1,
-      fillColor: "#ffffff",
-      symbol: "square"
-    }
+    data: window.netdata3
   }]
 });
