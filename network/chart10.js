@@ -207,7 +207,7 @@ Highcharts.chart("container10", {
     return `
       <div style="
         position: fixed;
-        bottom: 130px;
+        bottom:80px;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
@@ -242,7 +242,7 @@ Highcharts.chart("container10", {
         }
       }
     },
-    networkgraph: {
+ networkgraph: {
       keys: ["from", "to"],
       layoutAlgorithm: {
         enableSimulation: true,
@@ -255,7 +255,12 @@ Highcharts.chart("container10", {
         enabled: true,
         linkFormat: "",
         allowOverlap: true,
-        style: { fontSize: "14px", textOutline: "none", color: "#fff", fontFamily: "ocr-aregular" }
+        style: {
+          fontSize: "14px",
+          textOutline: "none",
+          color: "#ffffff",
+          fontFamily: "ocr-aregular"
+        }
       }
     }
   },

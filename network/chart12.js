@@ -154,8 +154,9 @@ Highcharts.chart("container12", {
     height: "100%",
     events: {
       load: function () {
-        const series = this.series[0];
-        setInterval(() => series.layout.restartSimulation(), 600); // keep nodes moving
+        const chart = this;
+        const series = chart.series[0];
+        setInterval(() => series.layout.restartSimulation(), 600);
       }
     }
   },
@@ -184,7 +185,7 @@ Highcharts.chart("container12", {
     return `
       <div style="
         position: fixed;
-        bottom: 130px;
+        bottom:80px;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;

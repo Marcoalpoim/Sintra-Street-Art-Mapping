@@ -199,7 +199,7 @@ Highcharts.chart("container7", {
     return `
       <div style="
         position: fixed;
-        bottom: 130px;
+        bottom:80px;
         left: 50%;
         transform: translateX(-50%);
         width: 90%;
