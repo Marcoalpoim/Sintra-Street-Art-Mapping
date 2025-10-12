@@ -126,11 +126,11 @@
  
     .info2 {
    
-        font: 12px Arial, Helvetica, sans-serif;
+        font: 10px Arial, Helvetica, sans-serif;
         border: 1px solid white;
         
         color: #ffffff;
-      
+      width: 30%;
         margin-right: 0vw;
         }
     

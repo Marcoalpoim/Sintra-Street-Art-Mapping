@@ -23,8 +23,8 @@ document.querySelectorAll(".freguesiatag").forEach((btn) => {
   });
 });
 
-// 🟢 On page load, center the .active freguesia
-window.addEventListener("load", () => {
+//   On page load, center the .active freguesia
+window.addEventListener("DOMContentLoaded", () => {
   const active = carousel.querySelector(".freguesiatag.active");
   if (active) {
     const li = active.closest("li");
@@ -33,13 +33,8 @@ window.addEventListener("load", () => {
     const liCenter = li.offsetLeft + li.offsetWidth / 2;
     const scrollTo = liCenter - carousel.clientWidth / 2;
 
-    // Delay slightly to ensure layout is ready
-    setTimeout(() => {
-      carousel.scrollTo({
-        left: scrollTo,
-        behavior: "smooth",
-      });
-    }, 300);
+    // Instantly position without animation
+    carousel.scrollLeft = scrollTo;
   }
 });
 
@@ -63,3 +58,13 @@ function toggleArrows() {
 
 carousel.addEventListener("scroll", toggleArrows);
 window.addEventListener("load", toggleArrows);
+
+
+  
+    setTimeout(function() {
+
+        $('#container').fadeOut('slow', function () {
+            });
+    }, 3500);
+    
+ 

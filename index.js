@@ -11,7 +11,6 @@ const mapDiv = document.getElementById('map');
 mapDiv.style.transformOrigin = 'center center';
 mapDiv.style.transform = 'rotateX(5deg)';
 mapDiv.style.transition = 'transform 0.8s ease';
-mapDiv.style.perspective = '800px';
     document.getElementById("uno").addEventListener("click", function () {
         map.flyTo([38.84000, -9.35000], '11', {
             animate: true,
@@ -180,7 +179,7 @@ function zoomToFeature(e) {
     var point = map.latLngToContainerPoint(center);
 
     // desloca 100px para cima (assim o polígono vai ficar 100px mais abaixo no ecrã)
-    point.y = point.y - 100;
+    point.y = point.y - 0;
 
     // converte de volta para coordenadas geográficas
     var newCenter = map.containerPointToLatLng(point);
@@ -199,40 +198,40 @@ function onclick(e) {
 
 
 function onEachFeature(feature, layer) {
-    let lastClickTime = 0;
+  let lastClickTime = 0;
 
-    layer.on({
-        mouseover: highlightFeature,
-        mouseout: resetHighlight,
-        click: function(e) {
-            const now = Date.now();
-            const timeSince = now - lastClickTime;
+  layer.on({
+    mouseover: highlightFeature,
+    mouseout: resetHighlight,
+    click: function (e) {
+      const now = Date.now();
+      const timeSince = now - lastClickTime;
 
-            // If the time between clicks is short, treat as double click
-            if (timeSince < 350 && timeSince > 50) {
-                const link = e.target.feature.properties.link;
-                if (link) {
-                    window.location.href = link;
-                }
-            } else {
-                // Single click: highlight + zoom
-                highlightFeature(e);
-                zoomToFeature(e);
-            }
+      // Double click → go to link
+      if (timeSince < 350 && timeSince > 50) {
+        const link = e.target.feature.properties.link;
+        if (link) window.location.href = link;
+      } else {
+        // Single click → highlight then zoom (with small delay)
+        highlightFeature(e);
 
-            lastClickTime = now;
+        setTimeout(() => {
+          zoomToFeature(e);
+        }, 150); // 🕐 Give the highlight time to render
+      }
 
-            // Stop click from bubbling up to the map background
-            L.DomEvent.stopPropagation(e);
-        }
-    });
+      lastClickTime = now;
+      L.DomEvent.stopPropagation(e);
+    },
+  });
 }
 
-// Clear highlight when clicking outside polygons (on map background)
-map.on("click", function() {
-    Sintradata.resetStyle();
-    info.update();
+// Clear highlight when clicking outside polygons
+map.on("click", function () {
+  Sintradata.resetStyle();
+  info.update();
 });
+
 
 
 
@@ -246,26 +245,35 @@ info.onAdd = function (map) {
 
 // method that we will use to update the control based on feature properties passed
 info.update = function (props) {
-    // faz fade-out
-    this._div.classList.add("updating");
+  // faz fade-out
+  this._div.classList.add("updating");
 
-    // espera um bocadinho e troca o conteúdo
-    setTimeout(() => {
-        this._div.innerHTML =
-            '<h4>Freguesias do Concelho <br> de Sintra</h4>' +
-            (props
-                ? '<b class="legenda">'+ props.name + '<br><br>' +
-                  props.graffiti + props.tag + props.throwup + props.lettering +
-                  props.piece + props.wildstyle + props.sticker + props.stencil +
-                  props.yarnbombing + props.poster + props.mosaico + props.mural +
-                  props.instalações + props.tags +
-                  '</b>'
-                : 'Começa já a explorar o mapa!');
+  setTimeout(() => {
+    this._div.innerHTML = `
+      <h4>Freguesias do Concelho de Sintra</h4>
+      ${
+        props
+          ? `<b class="legenda">
+              ${props.name}<br>
+              ${props.graffiti}${props.tag}${props.throwup}${props.lettering}
+              ${props.piece}${props.wildstyle}${props.sticker}${props.stencil}
+              ${props.yarnbombing}${props.poster}${props.mosaico}${props.mural}
+              ${props.instalações}${props.tags}
+            </b>`
+          : 'Começa já a explorar o mapa!'
+      }
+ 
+      <div class="drag-hint">
+        <span class="drag-icon"><i class="fa-solid fa-hand"></i></span>
+      
+        <span class="drag-text">Move-me</span>
+      </div>
+    `;
 
-        // faz fade-in
-        this._div.classList.remove("updating");
-    }, 150); // deve ser menor que o tempo do CSS
+    this._div.classList.remove("updating");
+  }, 150);
 };
+
 
 info.addTo(map);
 

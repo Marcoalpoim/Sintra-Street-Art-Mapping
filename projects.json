@@ -1541,9 +1541,7 @@
       "street art",
       "individual",
       "lettering",
-      "throw-up",
-      "throw-up/a>",
-      "localização          \n                         +− leaflet | © openstreetmap contributors ©"
+      "throw-up"
     ],
     "image": "fotosstreetart/COLARES/6 Av. Maestro Frederico de Freitas_colares_2022.jpg",
     "hasWarning": false,
@@ -1556,16 +1554,13 @@
     "date": "2022",
     "category": "Street Art",
     "tags": [
-      "esta obra pode conter conteudos sociopoliticos e culturais \n              \n            \n               \n             \n   \n               \n                 \n             \n                 graffiti \n                street art\n                individual\n                lettering\n                sociopolitica\n                tag\n                throw-up",
-      "graffiti",
+     "graffiti",
       "street art",
       "individual",
       "lettering",
       "sociopolitica",
       "tag",
-      "throw-up",
-      "colares   x\n                      autor:?\n                      local:6 av. maestro frederico de freitas\n                     data:2022\n                      categoria:street art",
-      "tags:"
+      "throw-up"
     ],
     "image": "fotosstreetart/COLARES/6 Av. Maestro Frederico de Freitas_colares_2022_3.jpg",
     "hasWarning": true,
