@@ -25,7 +25,7 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
   backdrop-filter: blur(15px);
     color: #ffffff;
- 
+cursor:grab;
     right: 20px;
     font-family: "ocr-aregular";
     float: left;

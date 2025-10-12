@@ -672,8 +672,29 @@ transition: none !important;
     justify-content: center;
 
 }
-
-
+.accordion li i {
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    font-size: 18px;
+    color: #ffffff;
+    -webkit-transition: all 0.4s 
+ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s 
+ease;
+}
+.mapnav {
+    display: flex
+;
+    gap: 15px;
+    margin: 0px auto 10px !important;
+    align-items: flex-end;
+}
+.accordion li .link {
+    padding: 5px 10px !important;
+    margin: 5px 5px;
+}
  @media only screen and (max-width: 768px) {
   .highcharts-figure, .highcharts-data-table table {
   margin-top: 220px !important;
