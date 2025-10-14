@@ -1560,7 +1560,7 @@ backdrop-filter: blur(15px);
     display: flex;
 
     gap: 10px;
-    margin: 0px auto 60px;
+    margin: 0px auto 50px;
         align-items: stretch;
         flex-direction: column;
 }
@@ -1665,17 +1665,17 @@ margin: 0px 0;}
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  margin-top: 10px;
+right: 0;
+        gap: 6px;
+        margin-top: 0px;
   font-family: 'ocr-aregular', sans-serif;
   font-size: 0.8rem;
   opacity:1;
-  animation: fadeInHint 1s ease-out 0.5s forwards;
+  animation: fadeInHint 2s ease-out 0.5s forwards;
   pointer-events: none;
 }
 .drag-icon {
   font-size: 0.8rem;
-  animation: dragWiggle 2s ease-in-out infinite;
   display: inline-block;
 }
 

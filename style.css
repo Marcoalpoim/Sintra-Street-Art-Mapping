@@ -17,16 +17,16 @@
   opacity: 1;
 }
 .info2 {
-    padding: 15px;
+    padding: 10px;
     font-size: 15px;
     line-height: 17px;
     border: 1px solid white;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
   backdrop-filter: blur(15px);
     color: #ffffff;
 cursor:move;
-    right: 20px;
+    left: 5px;
     font-family: "ocr-aregular";
     float: left;
     position: fixed;
@@ -131,7 +131,7 @@ cursor:move;
                 max-width: 150px;
         color: #ffffff;
       width: auto;
-        margin-right: 0vw;
+        margin-left: 0vw;
         }
     
         b.legenda{

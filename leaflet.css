@@ -163,7 +163,7 @@
 	}
 .leaflet-left .leaflet-control {
     margin-left: 0px;
-    margin-top: 260px;
+    margin-top: 125px;
 	}
 
 
@@ -429,9 +429,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	.leaflet-touch .leaflet-bar {
 		border: 1px solid rgb(255, 255, 255);
 		background-clip: padding-box;
-		float: left;
-		top: 26%;
-		left: 2%;
+		float: right;
+    top: 26%;
+    right: 2%;
 		animation: changeBg 0.5s infinite;
 		background: url(R1.jpeg);
 		}
@@ -547,7 +547,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 .leaflet-container a.leaflet-popup-close-button {
 	position: absolute;
 	top: 0;
-	right: 0;
+	left: 0;
 	padding: 4px 4px 0 0;
 	border: none;
 	text-align: center;
@@ -669,8 +669,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	margin-top: -6px;
 	}
 .leaflet-tooltip-left:before {
-	right: 0;
-	margin-right: -12px;
+	left: 0;
+	margin-left: -12px;
 	border-left-color: #fff;
 	}
 .leaflet-tooltip-right:before {

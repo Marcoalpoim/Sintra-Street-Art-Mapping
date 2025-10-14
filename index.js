@@ -79,6 +79,56 @@ var pointdata = L.geoJSON(pointJSON , {
 var Sintradata = L.geoJSON(mapdata, { style: style,  onEachFeature: onEachFeature}).addTo(map);
 
 
+
+// LayerGroup to hold preview markers
+const imagePreviewLayer = L.layerGroup().addTo(map);
+
+function showImagePreviews() {
+  imagePreviewLayer.clearLayers();
+
+  if (map.getZoom() < 14) return; // only show when zoomed in
+
+  pointdata.eachLayer(function (layer) {
+    const { imglink, name, link } = layer.feature.properties || {};
+    if (!imglink) return;
+
+    const latlng = layer.getLatLng();
+
+    // Create a small clickable image preview
+    const html = `
+      <div class="img-preview" title="${name || ''}">
+        <img src="${imglink}" alt="${name || ''}" />
+      </div>
+    `;
+
+    const imgMarker = L.marker(latlng, {
+      icon: L.divIcon({
+        html,
+        className: "preview-icon",
+        iconSize: [80, 80],
+        iconAnchor: [40, 40],
+      }),
+      interactive: !!link, // allow clicks if there’s a link
+    });
+
+    // 🔗 If there's a link, make the preview clickable
+    if (link) {
+      imgMarker.on("click", () => {
+        window.location.href = link;
+      });
+    }
+
+    imagePreviewLayer.addLayer(imgMarker);
+  });
+}
+
+
+// Listen for zoom changes
+map.on("zoomend", showImagePreviews);
+
+
+
+
 /*===================================================
                       LAYER CONTROL               
 ===================================================
@@ -260,13 +310,13 @@ info.update = function (props) {
               ${props.yarnbombing}${props.poster}${props.mosaico}${props.mural}
               ${props.instalações}${props.tags}
             </b>`
-          : 'Começa já a explorar o mapa!'
+          : 'Começa a explorar o mapa!'
       }
  
       <div class="drag-hint">
         <span class="drag-icon"><i class="fa-solid fa-hand"></i></span>
       
-        <span class="drag-text">Move-me</span>
+        <span class="drag-text"></span>
       </div>
     `;
 
