@@ -25,12 +25,12 @@
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
   backdrop-filter: blur(15px);
     color: #ffffff;
-cursor:grab;
+cursor:move;
     right: 20px;
     font-family: "ocr-aregular";
     float: left;
     position: fixed;
-    top: 20%;
+    top: 15%;
      -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
@@ -76,7 +76,7 @@ cursor:grab;
       background: #000000;
       color: #fff;
       width: 100%;
-      min-height: 100dvh;
+       height: 100dvh;
       display: flex;
     z-index: 90;
   }
@@ -128,9 +128,9 @@ cursor:grab;
    
         font: 10px Arial, Helvetica, sans-serif;
         border: 1px solid white;
-        
+                max-width: 150px;
         color: #ffffff;
-      width: 30%;
+      width: auto;
         margin-right: 0vw;
         }
     
