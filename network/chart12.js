@@ -160,9 +160,7 @@ Highcharts.chart("container12", {
       }
     }
   },
-
   title: { text: "" },
-
  tooltip: {
   enabled: true,
   useHTML: true,
@@ -206,7 +204,6 @@ Highcharts.chart("container12", {
       </div>`;
   }
 },
-
   plotOptions: {
     series: {
       cursor: "pointer",
@@ -221,7 +218,7 @@ Highcharts.chart("container12", {
         }
       }
     },
-    networkgraph: {
+ networkgraph: {
       keys: ["from", "to"],
       layoutAlgorithm: {
         enableSimulation: true,
@@ -243,12 +240,9 @@ Highcharts.chart("container12", {
       }
     }
   },
-
   credits: { enabled: false },
-
   series: [{
     id: "lang-tree",
-    data: window.netdata12,
-    marker: { lineWidth: 1, fillColor: "#ffffff", symbol: "square" }
+    data: window.netdata12
   }]
 });

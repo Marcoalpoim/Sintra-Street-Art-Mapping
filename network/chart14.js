@@ -255,7 +255,6 @@ Highcharts.chart("container11", {
 
   series: [{
     id: "lang-tree",
-    data: window.netdata11,
-    marker: { lineWidth: 1, fillColor: "#ffffff", symbol: "square" }
+    data: window.netdata11
   }]
 });
