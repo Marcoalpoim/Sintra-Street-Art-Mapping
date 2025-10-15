@@ -690,25 +690,10 @@ svg.leaflet-image-layer.leaflet-interactive path {
 		.leaflet-bottom .leaflet-control {
 			margin-bottom: 3.3vh;
 			}
+
+	 
 	  }
 	  
 
 
-
-/*
-	  input[type="checkbox"] {
-    opacity: 0;
-    left: 19px
-}
-    input[type=checkbox] + label {
-            background: url('./images/check1.png') no-repeat;
-            padding-left: 23px;
-      padding-top: 1px
-    }
-    input[type=checkbox]:checked + label {
-        background: url('./images/check2.png') no-repeat;
-        padding-left: 23px;
-        padding-top: 1px
-    }
-
-	*/
+ 

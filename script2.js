@@ -390,6 +390,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       setTimeout(() => openPPI(Number(ppi)), 1500);
     }
   }
+
+
+ const slider = document.querySelector(".sliderlegenda");
+  const mapnav = document.querySelector(".mapnav");
+
+  if (slider && mapnav) {
+    slider.addEventListener("click", () => {
+      mapnav.classList.toggle("active");
+      slider.classList.toggle("active");
+    });
+  }
+
+
 });
 
 

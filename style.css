@@ -26,11 +26,11 @@
   backdrop-filter: blur(15px);
     color: #ffffff;
 cursor:move;
-    left: 5px;
+    left: 5%;
     font-family: "ocr-aregular";
     float: left;
     position: fixed;
-    top: 15%;
+    top: 30%;
      -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
