@@ -89,12 +89,16 @@ function buildAllProjectItems(projects) {
         <img loading="lazy" src="${p.image || ''}" alt="${p.location || ''}">
       </div>
 
-      <div class="tagscontainer">
-        ${(p.tags || []).map(tag => {
-          const nc = normalizeClassName(tag);
-          return `<button class="tagbtn tag${nc}" onclick="filterSelection('${nc}')">${capitalize(tag)}</button>`;
-        }).join('')}
-      </div>
+     <div class="tagscontainer">
+  ${(p.tags || []).map(tag => {
+    const nc = normalizeClassName(tag);
+    return `<button 
+              class="tagbtn tag${nc}" 
+              onclick="handleTagClick('${nc}', '${capitalize(tag)}')">
+                ${capitalize(tag)}
+            </button>`;
+  }).join('')}
+</div>
 
       <div class="nav-links" id="ppi-${i}">
         <div class="ppicontainer">
@@ -244,6 +248,23 @@ function filterSelection(category) {
     }, 120);
   }
 }
+
+function handleTagClick(tagClass, tagName) {
+  // Run your filterSelection logic
+  filterSelection(tagClass);
+
+  // Display the active tag name
+  const tagDisplay = document.getElementById('activeTagDisplay');
+  if (tagDisplay) {
+    tagDisplay.innerHTML = `<span class="active-tag-label">${tagName}</span>`;
+  }
+
+  // Optional: add a small fade effect
+  tagDisplay.classList.add('show');
+}
+
+
+
 
 // ====== PPI (modal) open/close ======
 function openPPI(id) {

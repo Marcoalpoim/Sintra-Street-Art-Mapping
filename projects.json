@@ -17,7 +17,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Area_de_Lazer_Abel_dos_Santos_agualva_cacem_2022.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map"
   },
   {
     "location": "agualva-cacem",
@@ -37,7 +38,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Area_de_Lazer_Abel_dos_Santos_agualva_cacem_2022_2.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map1"
   },
   {
     "location": "agualva-cacem",
@@ -58,7 +60,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av._Cidade_de_Lisboa_AGUALVA_CACEM_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map2"
   },
   {
     "location": "agualva-cacem",
@@ -75,7 +78,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map3"
   },
   {
     "location": "agualva-cacem",
@@ -92,7 +96,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map4"
   },
   {
     "location": "agualva-cacem",
@@ -108,7 +113,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map5"
   },
   {
     "location": "agualva-cacem",
@@ -125,7 +131,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map6"
   },
   {
     "location": "agualva-cacem",
@@ -142,7 +149,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map7"
   },
   {
     "location": "agualva-cacem",
@@ -160,7 +168,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av.Bombeiros_Voluntários_agualva_cacem.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map8"
   },
   {
     "location": "agualva-cacem",
@@ -178,7 +187,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av.dos_Missionários_agualva_cacem_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map9"
   },
   {
     "location": "agualva-cacem",
@@ -196,7 +206,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Av.dos_Missionários_agualva_cacem_2022_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map10"
   },
   {
     "location": "agualva-cacem",
@@ -213,7 +224,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Estrada_de_São_Marcos_61-59_AGUALVA_CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map11"
   },
   {
     "location": "agualva-cacem",
@@ -230,7 +242,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Largo_Dona_Maria_II_100_AGUALVA CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map12"
   },
   {
     "location": "agualva-cacem",
@@ -247,7 +260,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Largo_Dona_Maria_II_100_AGUALVA CACEM_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map13"
   },
   {
     "location": "agualva-cacem",
@@ -263,7 +277,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/N249-3_AGUALVA_CACEM_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map14"
   },
   {
     "location": "agualva-cacem",
@@ -280,7 +295,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Praceta_Comunidades_Lusíadas_agualva_cacem_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map15"
   },
   {
     "location": "agualva-cacem",
@@ -296,7 +312,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Praceta_Fraternid_de_Universal_AgualvaCacem.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map16"
   },
   {
     "location": "agualva-cacem",
@@ -312,7 +329,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2018_EDIS ONE.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map17"
   },
   {
     "location": "agualva-cacem",
@@ -328,7 +346,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2018_ôJE.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map18"
   },
   {
     "location": "agualva-cacem",
@@ -344,7 +363,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2019_ANA CRISTINA_DIAS.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map19"
   },
   {
     "location": "agualva-cacem",
@@ -360,7 +380,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map20"
   },
   {
     "location": "agualva-cacem",
@@ -376,7 +397,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_agualva cacem_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map21"
   },
   {
     "location": "agualva-cacem",
@@ -392,7 +414,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_fredy klit_MAR_RAM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map22"
   },
   {
     "location": "agualva-cacem",
@@ -409,7 +432,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_MOSAICO.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map23"
   },
   {
     "location": "agualva-cacem",
@@ -425,7 +449,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_NOMEN.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map24"
   },
   {
     "location": "agualva-cacem",
@@ -441,7 +466,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_odeith_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map25"
   },
   {
     "location": "agualva-cacem",
@@ -457,7 +483,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_slap.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map26"
   },
   {
     "location": "agualva-cacem",
@@ -473,7 +500,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map27"
   },
   {
     "location": "agualva-cacem",
@@ -489,7 +517,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_TAMARA_ALVES.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map28"
   },
   {
     "location": "agualva-cacem",
@@ -505,7 +534,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_Agualva cacem_2022_youthone.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map29"
   },
   {
     "location": "agualva-cacem",
@@ -521,7 +551,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_agualva cacem_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map30"
   },
   {
     "location": "agualva-cacem",
@@ -537,7 +568,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_agualva_cacem_UTOPIA_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map31"
   },
   {
     "location": "agualva-cacem",
@@ -553,7 +585,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Afonso_de_Albuquerque_agualva_cacem_UTOPIA_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map32"
   },
   {
     "location": "agualva-cacem",
@@ -569,7 +602,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Cidade_de_Brasília_AGUALVA CACEM_SEPHER.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map33"
   },
   {
     "location": "agualva-cacem",
@@ -585,7 +619,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Cidade_de_São_Paulo_15_AGUALVA_CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map34"
   },
   {
     "location": "agualva-cacem",
@@ -602,7 +637,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Cidade_de_Évora_AGUALVA_CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map35"
   },
   {
     "location": "agualva-cacem",
@@ -620,7 +656,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Coração_de_Maria, AGUALVA_CACEM_2022_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map36"
   },
   {
     "location": "agualva-cacem",
@@ -638,7 +675,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Coração_de_Maria_AGUALVA_CACEM_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map37"
   },
   {
     "location": "agualva-cacem",
@@ -656,7 +694,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Cândido_dos_Reis_agualva_cacem.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map38"
   },
   {
     "location": "agualva-cacem",
@@ -673,7 +712,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.de_Angola_AGUALVA_CACEM_2020.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map39"
   },
   {
     "location": "agualva-cacem",
@@ -690,7 +730,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.de_São_João_AGUALVA_CACEM_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map40"
   },
   {
     "location": "agualva-cacem",
@@ -707,7 +748,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.de_São_Paulo_14_AGUALVA_CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map41"
   },
   {
     "location": "agualva-cacem",
@@ -725,7 +767,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Elias_Garcia_AGUALVA_CACEM_2022.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map42"
   },
   {
     "location": "agualva-cacem",
@@ -745,7 +788,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Elias_Garcia_AGUALVA_CACEM_2022_!.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map43"
   },
   {
     "location": "agualva-cacem",
@@ -762,7 +806,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Glicínias_AGUALVA_CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map44"
   },
   {
     "location": "agualva-cacem",
@@ -779,7 +824,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Joaquim_Guilherme_da_Costa_Caldas_agualva_cacem_2009.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map45"
   },
   {
     "location": "agualva-cacem",
@@ -796,7 +842,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Joaquim_Guilherme_da_Costa_Caldas_agualva_cacem_scar_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map46"
   },
   {
     "location": "agualva-cacem",
@@ -812,7 +859,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Nova_do_Zambujal_agualva_cacem_klit.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map47"
   },
   {
     "location": "agualva-cacem",
@@ -830,7 +878,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Padeirinha_agualva_cacem.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map48"
   },
   {
     "location": "agualva-cacem",
@@ -847,7 +896,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Prof_António_Joaquim_Neves, AGUALVA_CACEM_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map49"
   },
   {
     "location": "agualva-cacem",
@@ -864,7 +914,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/R.Prof_António_Joaquim_Neves, AGUALVA_CACEM_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map50"
   },
   {
     "location": "agualva-cacem",
@@ -883,7 +934,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Rua_Dr.António_José_de_Almeida_agualva_cacem.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map51"
   },
   {
     "location": "agualva-cacem",
@@ -901,7 +953,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Rua_Fonte_do_Penedo_Agualva..jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map52"
   },
   {
     "location": "agualva-cacem",
@@ -918,7 +971,8 @@
     ],
     "image": "fotosstreetart/ALGUALVA-CACEM/Rua_Marquês_de_Pombal_AGUALVA_CACEM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map53"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -935,7 +989,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av. 29 de Agosto, terrugem, styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map54"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -952,7 +1007,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.29_de_Agosto_terrugem_2022_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map55"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -969,7 +1025,8 @@
     ],
     "image": "fotosstreetart/SAO JOAO DAS LAMPAS/R.cel.vieira_s.joao.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map56"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -985,7 +1042,8 @@
     ],
     "image": "fotosstreetart/SAO JOAO DAS LAMPAS/R.dabarroca2022s.joao.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map57"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1002,7 +1060,8 @@
     ],
     "image": "fotosstreetart/SAO JOAO DAS LAMPAS/R.doPassadouro_-2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map58"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1019,7 +1078,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.29_de_Agosto_terrugem_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map59"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1036,7 +1096,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.29deAgosto2020.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map60"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1052,7 +1113,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.29deAgosto2020_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map61"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1069,7 +1131,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.da_Aviação_Portuguesa_terrugem_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map62"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1086,7 +1149,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.da_Aviação_Portuguesa_terrugem_2022_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map63"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1103,7 +1167,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.da_Aviação_Portuguesa_terrugem_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map64"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1120,7 +1185,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.da_Aviação_Portuguesa_terrugem_2022_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map65"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1137,7 +1203,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/Av.Gen.Humberto_Delgado2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map66"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1154,7 +1221,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/R.afonso-Araujo-Sommer.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map67"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1170,7 +1238,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/R.afonso-Araujo-Sommer_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map68"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1186,7 +1255,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/R.da_Toja_terrugem_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map69"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1202,7 +1272,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/R.daAviaçaoportuguesa, 2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map70"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1220,7 +1291,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/R.daspassarinhas,styler2019.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map71"
   },
   {
     "location": "saojoaodaslampasterrugem",
@@ -1235,7 +1307,8 @@
     ],
     "image": "fotosstreetart/TERRUGEM/terrugem, av.19demaio,escultura.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map72"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1251,7 +1324,8 @@
     ],
     "image": "fotosstreetart/MONTELAVAR/7 R. do Vimal_2022_montelavar.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map73"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1267,7 +1341,8 @@
     ],
     "image": "fotosstreetart/MONTELAVAR/26 R. das Agostinhas_2022_montelavar.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map74"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1282,7 +1357,8 @@
     ],
     "image": "fotosstreetart/MONTELAVAR/51 Alameda Dom Afonso Henriques_2023_montelavar.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map75"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1299,7 +1375,8 @@
     ],
     "image": "fotosstreetart/MONTELAVAR/64 R. das Agostinhas_2023_montelavar.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map76"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1315,7 +1392,8 @@
     ],
     "image": "fotosstreetart/MONTELAVAR/R. do Vimal_2022_montelavar_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map77"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1333,7 +1411,8 @@
     ],
     "image": "fotosstreetart/ALMARGEM DO BISPO/R.Nossa_Sra_Enfermos_almargem_do_bispo.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map78"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1348,7 +1427,8 @@
     ],
     "image": "fotosstreetart/ALMARGEM DO BISPO/R.Prof_Egas_Moniz_almargem_do_bispo.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map79"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1364,7 +1444,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/140_Av.da_Liberdade_pero_pinheiro.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map80"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1381,7 +1462,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/15_Av.Torcato_Pardal_Monteiro_pero_pinheiro_2020.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map81"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1397,7 +1479,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/228_N9_pero_pinheiro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map82"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1413,7 +1496,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/28_Caminho_de_Cortegaça_pero pinheiro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map83"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1428,7 +1512,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/63_N9_pero_pinheiro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map84"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1444,7 +1529,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/698_Av.do_Lapias_pero_pinheiro_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map85"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1460,7 +1546,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/Av. da Liberdade_2023_pero pinheiro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map86"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1477,7 +1564,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/Granja_do_Marquês_museu_do_ar_pero_pinheiro_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map87"
   },
   {
     "location": "montelavaralmargemperopinheiro",
@@ -1494,7 +1582,8 @@
     ],
     "image": "fotosstreetart/PERO PINHEIRO/rua_do_casal_alentejano_pero_pinheiro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map88"
   },
   {
     "location": "colares",
@@ -1511,7 +1600,25 @@
     ],
     "image": "fotosstreetart/COLARES/133_Av.Dr.BrandãodeVasconcelos_colares_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map89"
+  },
+  {
+    "location": "colares",
+    "author": "?",
+    "place": "Av. do Atlântico 141",
+    "date": "2022",
+    "category": "Street Art",
+    "tags": [
+      "graffiti",
+      "street art",
+      "individual",
+      "piece"
+    ],
+    "image": "fotosstreetart/COLARES/141 Av. do Atlântico_2022_colares.jpg",
+    "hasWarning": true,
+    "hasComments": true,
+    "name": "map90"
   },
   {
     "location": "colares",
@@ -1528,7 +1635,8 @@
     ],
     "image": "fotosstreetart/COLARES/56 R. da Capela_colares_2022.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map91"
   },
   {
     "location": "colares",
@@ -1545,7 +1653,8 @@
     ],
     "image": "fotosstreetart/COLARES/6 Av. Maestro Frederico de Freitas_colares_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map92"
   },
   {
     "location": "colares",
@@ -1554,7 +1663,7 @@
     "date": "2022",
     "category": "Street Art",
     "tags": [
-     "graffiti",
+      "graffiti",
       "street art",
       "individual",
       "lettering",
@@ -1564,7 +1673,8 @@
     ],
     "image": "fotosstreetart/COLARES/6 Av. Maestro Frederico de Freitas_colares_2022_3.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map93"
   },
   {
     "location": "colares",
@@ -1581,7 +1691,8 @@
     ],
     "image": "fotosstreetart/COLARES/88_Estr._da_Ulgueira_colares_2022.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map94"
   },
   {
     "location": "colares",
@@ -1598,7 +1709,8 @@
     ],
     "image": "fotosstreetart/COLARES/88_Estr._da_Ulgueira_colares_2022_2.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map95"
   },
   {
     "location": "colares",
@@ -1616,7 +1728,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av. Dr. Brandão de Vasconcelos_colares_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map96"
   },
   {
     "location": "colares",
@@ -1633,7 +1746,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av. Dr. Brandão de Vasconcelos_colares_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map97"
   },
   {
     "location": "colares",
@@ -1650,7 +1764,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av. Dr. Brandão de Vasconcelos_colares_2022_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map98"
   },
   {
     "location": "colares",
@@ -1668,7 +1783,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av._Dr.BrandãodeVasconcelos_colares_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map99"
   },
   {
     "location": "colares",
@@ -1684,7 +1800,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map100"
   },
   {
     "location": "colares",
@@ -1700,7 +1817,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map101"
   },
   {
     "location": "colares",
@@ -1716,7 +1834,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_10.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map102"
   },
   {
     "location": "colares",
@@ -1733,7 +1852,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_11.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map103"
   },
   {
     "location": "colares",
@@ -1749,7 +1869,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map104"
   },
   {
     "location": "colares",
@@ -1765,7 +1886,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map105"
   },
   {
     "location": "colares",
@@ -1781,7 +1903,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map106"
   },
   {
     "location": "colares",
@@ -1797,7 +1920,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map107"
   },
   {
     "location": "colares",
@@ -1813,7 +1937,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_6.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map108"
   },
   {
     "location": "colares",
@@ -1829,7 +1954,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_7.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map109"
   },
   {
     "location": "colares",
@@ -1845,7 +1971,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Alfredo_Coelho_colares_2019_9.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map110"
   },
   {
     "location": "colares",
@@ -1863,7 +1990,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Dr.BrandãodeVasconcelos_colares_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map111"
   },
   {
     "location": "colares",
@@ -1880,7 +2008,8 @@
     ],
     "image": "fotosstreetart/COLARES/Av.Dr.BrandãodeVasconcelos_colares_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map112"
   },
   {
     "location": "colares",
@@ -1897,7 +2026,8 @@
     ],
     "image": "fotosstreetart/COLARES/Cam_da_Amoreira, colares2023.png",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map113"
   },
   {
     "location": "colares",
@@ -1912,7 +2042,8 @@
     ],
     "image": "fotosstreetart/COLARES/N247_colares_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map114"
   },
   {
     "location": "colares",
@@ -1929,7 +2060,8 @@
     ],
     "image": "fotosstreetart/COLARES/R. de Santo André_colares_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map115"
   },
   {
     "location": "sintra",
@@ -1946,7 +2078,8 @@
     ],
     "image": "fotosstreetart/SINTRA/1 Passeio Velhos_sintra_2018.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map116"
   },
   {
     "location": "sintra",
@@ -1962,7 +2095,8 @@
     ],
     "image": "fotosstreetart/SINTRA/1 Passeio Velhos_sintra_2018_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map117"
   },
   {
     "location": "sintra",
@@ -1979,7 +2113,8 @@
     ],
     "image": "fotosstreetart/SINTRA/14 Av. Dr. Desidério Cambournac_2022_sintra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map118"
   },
   {
     "location": "sintra",
@@ -1996,7 +2131,8 @@
     ],
     "image": "fotosstreetart/SINTRA/14 Av. Dr. Desidério Cambournac_2022_sintra_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map119"
   },
   {
     "location": "sintra",
@@ -2013,7 +2149,8 @@
     ],
     "image": "fotosstreetart/SINTRA/60_Volta_do_Duche_SINTRA_VASCO COSTA.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map120"
   },
   {
     "location": "sintra",
@@ -2029,7 +2166,8 @@
     ],
     "image": "fotosstreetart/SINTRA/Av.Mário_Firmino_Miguel_sintra_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map121"
   },
   {
     "location": "sintra",
@@ -2045,7 +2183,8 @@
     ],
     "image": "fotosstreetart/SINTRA/Av.Paul_Harris_sintra_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map122"
   },
   {
     "location": "sintra",
@@ -2061,7 +2200,8 @@
     ],
     "image": "fotosstreetart/SINTRA/bairro_s.josé_sintra_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map123"
   },
   {
     "location": "sintra",
@@ -2078,7 +2218,8 @@
     ],
     "image": "fotosstreetart/SINTRA/esplanada_o_cantinho_de_monserrate_sintra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map124"
   },
   {
     "location": "sintra",
@@ -2095,7 +2236,8 @@
     ],
     "image": "fotosstreetart/SINTRA/estradafagranjadomarquessintra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map125"
   },
   {
     "location": "sintra",
@@ -2111,7 +2253,8 @@
     ],
     "image": "fotosstreetart/SINTRA/linha_do_comboio_sintra_bordallo.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map126"
   },
   {
     "location": "sintra",
@@ -2127,7 +2270,8 @@
     ],
     "image": "fotosstreetart/SINTRA/linha_do_comboio_sintra_bordallo_1.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map127"
   },
   {
     "location": "sintra",
@@ -2143,7 +2287,8 @@
     ],
     "image": "fotosstreetart/SINTRA/linha_do_comboio_sintra_bordallo_2.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map128"
   },
   {
     "location": "sintra",
@@ -2159,7 +2304,8 @@
     ],
     "image": "fotosstreetart/SINTRA/linha_do_comboio_sintra_bordallo_3.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map129"
   },
   {
     "location": "sintra",
@@ -2175,7 +2321,8 @@
     ],
     "image": "fotosstreetart/SINTRA/linha_do_comboio_sintra_bordallo_4.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map130"
   },
   {
     "location": "sintra",
@@ -2191,7 +2338,8 @@
     ],
     "image": "fotosstreetart/SINTRA/praça_dom_afonso_V_sintra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map131"
   },
   {
     "location": "sintra",
@@ -2207,7 +2355,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Alfredo_da_Costa_sintra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map132"
   },
   {
     "location": "sintra",
@@ -2223,7 +2372,26 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.António_José_Soares_sintra_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map133"
+  },
+  {
+    "location": "sintra",
+    "author": "?",
+    "place": "R.Dr.António_José_Soares",
+    "date": "2023",
+    "category": "Street Art",
+    "tags": [
+      "graffiti",
+      "lettering",
+      "individual",
+      "wildstyle",
+      "street art"
+    ],
+    "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023.jpg",
+    "hasWarning": false,
+    "hasComments": false,
+    "name": "map134"
   },
   {
     "location": "sintra",
@@ -2240,7 +2408,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map135"
   },
   {
     "location": "sintra",
@@ -2256,7 +2425,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map136"
   },
   {
     "location": "sintra",
@@ -2274,7 +2444,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map137"
   },
   {
     "location": "sintra",
@@ -2290,7 +2461,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map138"
   },
   {
     "location": "sintra",
@@ -2306,7 +2478,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map139"
   },
   {
     "location": "sintra",
@@ -2324,7 +2497,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_6.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map140"
   },
   {
     "location": "sintra",
@@ -2343,7 +2517,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_7.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map141"
   },
   {
     "location": "sintra",
@@ -2360,7 +2535,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_8.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map142"
   },
   {
     "location": "sintra",
@@ -2376,7 +2552,8 @@
     ],
     "image": "fotosstreetart/SINTRA/R.Dr.Félix_Alves_Pereira_sintra_2023_RAMMIGUEL_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map143"
   },
   {
     "location": "sintra",
@@ -2392,7 +2569,8 @@
     ],
     "image": "fotosstreetart/SINTRA/Rua_do_Visconde_de_Monserrate_São_Martinho_sintra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map144"
   },
   {
     "location": "sintra",
@@ -2408,7 +2586,8 @@
     ],
     "image": "fotosstreetart/SINTRA/sintra_centro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map145"
   },
   {
     "location": "sintra",
@@ -2424,7 +2603,8 @@
     ],
     "image": "fotosstreetart/SINTRA/volta_do_duche.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map146"
   },
   {
     "location": "sintra",
@@ -2440,7 +2620,8 @@
     ],
     "image": "fotosstreetart/SINTRA/volta_do_duche_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map147"
   },
   {
     "location": "sintra",
@@ -2456,7 +2637,8 @@
     ],
     "image": "fotosstreetart/SINTRA/volta_do_duche_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map148"
   },
   {
     "location": "sintra",
@@ -2471,7 +2653,8 @@
     ],
     "image": "fotosstreetart/SINTRA/volta_do_duche_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map149"
   },
   {
     "location": "sintra",
@@ -2487,7 +2670,8 @@
     ],
     "image": "fotosstreetart/SINTRA/volta_do_duche_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map150"
   },
   {
     "location": "sintra",
@@ -2503,7 +2687,8 @@
     ],
     "image": "fotosstreetart/SINTRA/voltadoducheeee.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map151"
   },
   {
     "location": "sintra",
@@ -2519,7 +2704,8 @@
     ],
     "image": "fotosstreetart/SINTRA/voltadoducheeee22.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map152"
   },
   {
     "location": "sintra",
@@ -2535,7 +2721,8 @@
     ],
     "image": "fotosstreetart/SINTRA/voltadoducheeee33.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map153"
   },
   {
     "location": "sintra",
@@ -2551,7 +2738,8 @@
     ],
     "image": "fotosstreetart/SINTRA/voltadoducheeee44.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map154"
   },
   {
     "location": "sintra",
@@ -2567,7 +2755,8 @@
     ],
     "image": "fotosstreetart/SINTRA/voltadoducheeee55.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map155"
   },
   {
     "location": "algueirao",
@@ -2583,7 +2772,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map156"
   },
   {
     "location": "algueirao",
@@ -2599,7 +2789,25 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map157"
+  },
+  {
+    "location": "algueirao",
+    "author": "STYLER",
+    "place": "Av.Alm Gago Coutinho",
+    "date": "2023",
+    "category": "Arte Pública",
+    "tags": [
+      "mural",
+      "graffiti",
+      "espacial",
+      "arte pública"
+    ],
+    "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho_2.jpg",
+    "hasWarning": false,
+    "hasComments": false,
+    "name": "map158"
   },
   {
     "location": "algueirao",
@@ -2615,7 +2823,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map159"
   },
   {
     "location": "algueirao",
@@ -2631,7 +2840,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho_mem_martins_styler_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map160"
   },
   {
     "location": "algueirao",
@@ -2647,7 +2857,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho_mem_martins_styler_vasco costa_2015.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map161"
   },
   {
     "location": "algueirao",
@@ -2663,7 +2874,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Alm_Gago_Coutinho_mem_martins_styler_vasco costa_2015_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map162"
   },
   {
     "location": "algueirao",
@@ -2679,7 +2891,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Miguel_Torga_algueirão_2017.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map163"
   },
   {
     "location": "algueirao",
@@ -2694,7 +2907,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Miguel_Torga_mem_martins_vasco_costa_2017_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map164"
   },
   {
     "location": "algueirao",
@@ -2709,7 +2923,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Av.Miguel_Torga_mem_martins_vasco_costa_2017_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map165"
   },
   {
     "location": "algueirao",
@@ -2726,7 +2941,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/av_alm_gago_coutinho_bordalo.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map166"
   },
   {
     "location": "algueirao",
@@ -2742,7 +2958,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Avenida_Dos_Bombeiros_Voluntários_mem_martins_styler_cpk_vasco costa_2015.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map167"
   },
   {
     "location": "algueirao",
@@ -2758,7 +2975,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Bairro_da_Coopalme_R.Dr_Coutinho_Pais_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map168"
   },
   {
     "location": "algueirao",
@@ -2774,7 +2992,26 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/escola_ferreira_de_castro_mem_martins_sepher_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map169"
+  },
+  {
+    "location": "algueirao",
+    "author": "?",
+    "place": "Estr. Cavaleira",
+    "date": "2020",
+    "category": "Street Art",
+    "tags": [
+      "piece",
+      "graffiti",
+      "individual",
+      "street art",
+      "lettering"
+    ],
+    "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020.jpg",
+    "hasWarning": false,
+    "hasComments": false,
+    "name": "map170"
   },
   {
     "location": "algueirao",
@@ -2791,7 +3028,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map171"
   },
   {
     "location": "algueirao",
@@ -2809,7 +3047,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map172"
   },
   {
     "location": "algueirao",
@@ -2826,7 +3065,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_ESNO_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map173"
   },
   {
     "location": "algueirao",
@@ -2843,7 +3083,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map174"
   },
   {
     "location": "algueirao",
@@ -2860,7 +3101,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_6.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map175"
   },
   {
     "location": "algueirao",
@@ -2877,7 +3119,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_7.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map176"
   },
   {
     "location": "algueirao",
@@ -2894,7 +3137,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr. Cavaleira_algueirao_2020_8.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map177"
   },
   {
     "location": "algueirao",
@@ -2911,7 +3155,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Estr.Mercês_Algueirão_mem martins, 2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map178"
   },
   {
     "location": "algueirao",
@@ -2928,7 +3173,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/largo_da_capela_algueirao_mem_martins.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map179"
   },
   {
     "location": "algueirao",
@@ -2944,7 +3190,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Parque_Infantil_Arriaga_Rua_Manuel_de_Arriaga_Algueirão_Mem_Martins_styler _vasco_costa.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map180"
   },
   {
     "location": "algueirao",
@@ -2960,7 +3207,26 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Parque_Infantil_Arriaga_Rua_Manuel_de_Arriaga_Algueirão_Mem_Martins_styler _vasco_costa_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map181"
+  },
+  {
+    "location": "algueirao",
+    "author": "?",
+    "place": "Praceta Caldas Xavier",
+    "date": "2020",
+    "category": "Street Art",
+    "tags": [
+      "lettering",
+      "throw-up",
+      "graffiti",
+      "street art",
+      "individual"
+    ],
+    "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/praceta_caldas_xavier_mem_martins_2023.jpg",
+    "hasWarning": false,
+    "hasComments": false,
+    "name": "map182"
   },
   {
     "location": "algueirao",
@@ -2977,7 +3243,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/praceta_caldas_xavier_mem_martins_2023_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map183"
   },
   {
     "location": "algueirao",
@@ -2995,7 +3262,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/praceta_caldas_xavier_mem_martins_2023_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map184"
   },
   {
     "location": "algueirao",
@@ -3013,7 +3281,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/praceta_caldas_xavier_mem_martins_2023_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map185"
   },
   {
     "location": "algueirao",
@@ -3032,7 +3301,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_dos_Descobrimentos_mem_martins.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map186"
   },
   {
     "location": "algueirao",
@@ -3048,7 +3318,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_dos_Descobrimentos_mem_martins_vasco_costa_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map187"
   },
   {
     "location": "algueirao",
@@ -3067,7 +3338,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_Ivens_mem_martins_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map188"
   },
   {
     "location": "algueirao",
@@ -3084,7 +3356,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_Ivens_mem_martins_2023_!.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map189"
   },
   {
     "location": "algueirao",
@@ -3100,7 +3373,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_José_Magalhães_Godinho_algueirao_mai_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map190"
   },
   {
     "location": "algueirao",
@@ -3119,7 +3393,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_José_Magalhães_Godinho_mem_martins_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map191"
   },
   {
     "location": "algueirao",
@@ -3135,7 +3410,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Praceta_Simplício_dos_Santos_mem_martins_vasco_costa_2017.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map192"
   },
   {
     "location": "algueirao",
@@ -3150,7 +3426,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R. Florbela Espanca.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map193"
   },
   {
     "location": "algueirao",
@@ -3168,7 +3445,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R. Florbela Espanca_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map194"
   },
   {
     "location": "algueirao",
@@ -3186,7 +3464,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R. Florbela Espanca_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map195"
   },
   {
     "location": "algueirao",
@@ -3203,7 +3482,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R. Florbela Espanca_7.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map196"
   },
   {
     "location": "algueirao",
@@ -3222,7 +3502,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R. Florbela Espanca_10.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map197"
   },
   {
     "location": "algueirao",
@@ -3241,7 +3522,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R. Josefa de Óbidos.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map198"
   },
   {
     "location": "algueirao",
@@ -3255,7 +3537,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.Campos_Monteiro_algueirao_2020.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map199"
   },
   {
     "location": "algueirao",
@@ -3271,7 +3554,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.Dr_João_de_Barros_algueirao_2019.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map200"
   },
   {
     "location": "algueirao",
@@ -3287,7 +3571,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.Estação_mem_martins_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map201"
   },
   {
     "location": "algueirao",
@@ -3303,7 +3588,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.Fernando_Lopes_Graça_mem_martins_vasco_costa_2017.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map202"
   },
   {
     "location": "algueirao",
@@ -3319,7 +3605,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.Ferreira_de_Castro_JUN22 2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map203"
   },
   {
     "location": "algueirao",
@@ -3335,7 +3622,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.padre_António_Vieira_MEM_MARTINS.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map204"
   },
   {
     "location": "algueirao",
@@ -3351,7 +3639,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/R.Padre_António_Vieira_MEM_MARTINS_JFAMM.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map205"
   },
   {
     "location": "algueirao",
@@ -3367,7 +3656,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Rua_Artur_Bual_Mem_Martins_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map206"
   },
   {
     "location": "algueirao",
@@ -3383,7 +3673,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Rua_Prof_Rui_Luís_Gomes_mem_martins_sepher_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map207"
   },
   {
     "location": "algueirao",
@@ -3399,7 +3690,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Rua_Rio_da_Azenha_mem_martins_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map208"
   },
   {
     "location": "algueirao",
@@ -3415,7 +3707,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/Rua_Rio_da_Azenha_mem_martins_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map209"
   },
   {
     "location": "algueirao",
@@ -3431,7 +3724,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/tapada_das_merces_2023_2.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map210"
   },
   {
     "location": "riodemouro",
@@ -3448,7 +3742,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/23_R.Plutão_rio_de_mouro_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map211"
   },
   {
     "location": "riodemouro",
@@ -3465,7 +3760,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/28 n249-2_riodemouro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map212"
   },
   {
     "location": "riodemouro",
@@ -3484,7 +3780,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/42_Av.do_Parque_rinchoa.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map213"
   },
   {
     "location": "riodemouro",
@@ -3502,7 +3799,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/42_Av.do_Parque_rinchoa_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map214"
   },
   {
     "location": "riodemouro",
@@ -3518,7 +3816,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/4_Av.das_Robínia_rio_de_mouro_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map215"
   },
   {
     "location": "riodemouro",
@@ -3536,7 +3835,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/54_Av.do_Parque_rinchoa.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map216"
   },
   {
     "location": "riodemouro",
@@ -3555,7 +3855,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/54_Av.do_Parque_rinchoa_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map217"
   },
   {
     "location": "riodemouro",
@@ -3571,7 +3872,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/54_Av.do_Parque_rinchoa_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map218"
   },
   {
     "location": "riodemouro",
@@ -3590,7 +3892,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/54_Av.do_Parque_rinchoa_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map219"
   },
   {
     "location": "riodemouro",
@@ -3607,7 +3910,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/54_Av.do_Parque_rinchoa_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map220"
   },
   {
     "location": "riodemouro",
@@ -3625,7 +3929,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/54_Av.do_Parque_rinchoa_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map221"
   },
   {
     "location": "riodemouro",
@@ -3641,7 +3946,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map222"
   },
   {
     "location": "riodemouro",
@@ -3659,7 +3965,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map223"
   },
   {
     "location": "riodemouro",
@@ -3675,7 +3982,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map224"
   },
   {
     "location": "riodemouro",
@@ -3692,7 +4000,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_6.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map225"
   },
   {
     "location": "riodemouro",
@@ -3709,7 +4018,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_7.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map226"
   },
   {
     "location": "riodemouro",
@@ -3726,7 +4036,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_8.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map227"
   },
   {
     "location": "riodemouro",
@@ -3744,7 +4055,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_9.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map228"
   },
   {
     "location": "riodemouro",
@@ -3761,7 +4073,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.do_Parque_rinchoa_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map229"
   },
   {
     "location": "riodemouro",
@@ -3778,7 +4091,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.Gago_Coutinho_rio_de_mouro_mai_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map230"
   },
   {
     "location": "riodemouro",
@@ -3795,7 +4109,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.Via_Láctea_rio_de_mouro_styler_cpk_2016.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map231"
   },
   {
     "location": "riodemouro",
@@ -3812,7 +4127,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.Via_Láctea_rio_de_mouro_styler_cpk_2016_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map232"
   },
   {
     "location": "riodemouro",
@@ -3829,7 +4145,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Av.Via_Láctea_rio_de_mouro_styler_cpk_2016_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map233"
   },
   {
     "location": "riodemouro",
@@ -3846,7 +4163,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/av_padre_alberto_neto_rio_de_mouro_2015.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map234"
   },
   {
     "location": "riodemouro",
@@ -3863,7 +4181,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/av_padre_alberto_neto_rio_de_mouro_2017.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map235"
   },
   {
     "location": "riodemouro",
@@ -3880,7 +4199,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Escola_Básica_N2_da_Rinchoa_styler_2019.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map236"
   },
   {
     "location": "riodemouro",
@@ -3897,7 +4217,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/escola_padre_alberto_neto_rio_de_mouro_styler_2015.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map237"
   },
   {
     "location": "riodemouro",
@@ -3914,7 +4235,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Praceta_António_Nobre_rio_de_mouro_mai_2022_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map238"
   },
   {
     "location": "riodemouro",
@@ -3931,7 +4253,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/praceta_do_rouxinol.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map239"
   },
   {
     "location": "riodemouro",
@@ -3948,7 +4271,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Praça_Rosa_Ramalho_rio_de_mouro_ago_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map240"
   },
   {
     "location": "riodemouro",
@@ -3965,7 +4289,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.bernardo_santareno_rio_de_mouro_vasco_costa.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map241"
   },
   {
     "location": "riodemouro",
@@ -3982,7 +4307,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.da_Reserva_Botânica_RIO_DE_MOURO_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map242"
   },
   {
     "location": "riodemouro",
@@ -3999,7 +4325,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.da_Reserva_Botânica_RIO_DE_MOURO_2022_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map243"
   },
   {
     "location": "riodemouro",
@@ -4016,7 +4343,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.de_Neptuno_RIO DE_MOURO_VASCO_COSTA.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map244"
   },
   {
     "location": "riodemouro",
@@ -4033,7 +4361,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.do_alecrim_rio_de_mouro_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map245"
   },
   {
     "location": "riodemouro",
@@ -4050,7 +4379,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.Figueiras_rio_de_mouro_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map246"
   },
   {
     "location": "riodemouro",
@@ -4067,7 +4397,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.Marquês_Pombal_RIO_DE_MOURO_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map247"
   },
   {
     "location": "riodemouro",
@@ -4084,7 +4415,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.pousada_rio_de_mouro_2015_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map248"
   },
   {
     "location": "riodemouro",
@@ -4101,7 +4433,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.pousada_rio_de_mouro_2015_styler_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map249"
   },
   {
     "location": "riodemouro",
@@ -4119,7 +4452,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.pousada_rio_de_mouro_2022_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map250"
   },
   {
     "location": "riodemouro",
@@ -4135,7 +4469,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/R.pousada_rio_de_mouro_2022_styler.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map251"
   },
   {
     "location": "riodemouro",
@@ -4152,7 +4487,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/Rua_Mário_Dionísio_Rio_de_Mouro_styler_2020.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map252"
   },
   {
     "location": "riodemouro",
@@ -4169,7 +4505,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/rua_humberto_da_cruz_rio_de_mouro_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map253"
   },
   {
     "location": "riodemouro",
@@ -4186,7 +4523,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/RUA_VITORINO_NEMESIO_serra_das_minas_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map254"
   },
   {
     "location": "riodemouro",
@@ -4203,7 +4541,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/skate_park_serra das minas_rio_de_mouro_sepher_nuno_trigueiros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map255"
   },
   {
     "location": "riodemouro",
@@ -4220,7 +4559,8 @@
     ],
     "image": "fotosstreetart/RIO DE MOURO/RUA_VITORINO_NEMESIO_serra_das_minas_2022_3.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map256"
   },
   {
     "location": "queluz",
@@ -4237,7 +4577,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/6_Av.Miguel_Bombarda_queluz.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map257"
   },
   {
     "location": "queluz",
@@ -4256,7 +4597,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/30_Av.Miguel_Bombarda_queluz_1.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map258"
   },
   {
     "location": "queluz",
@@ -4273,7 +4615,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/30_Av.Miguel_Bombarda_queluz.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map259"
   },
   {
     "location": "queluz",
@@ -4290,7 +4633,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/51_Av.José_Elias_Garcia_queluz.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map260"
   },
   {
     "location": "queluz",
@@ -4307,7 +4651,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/78_Av.José_Elias_Garcia_QUELUZ.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map261"
   },
   {
     "location": "queluz",
@@ -4324,7 +4669,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/119_Av.da_República_queluz.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map262"
   },
   {
     "location": "queluz",
@@ -4340,7 +4686,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/235_n117_queluz.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map263"
   },
   {
     "location": "queluz",
@@ -4357,7 +4704,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/N117_QUELUZ_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map264"
   },
   {
     "location": "queluz",
@@ -4373,7 +4721,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/Av.Eng_Duarte_Pacheco_queluz_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map265"
   },
   {
     "location": "queluz",
@@ -4392,7 +4741,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/Rotunda_Mário_Marinheiro_queluz_nomen.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map266"
   },
   {
     "location": "queluz",
@@ -4411,7 +4761,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/R.Dom_Diniz_queluz_2022.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map267"
   },
   {
     "location": "casaldecambra",
@@ -4427,7 +4778,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/102 Av.dinamarca_2022_casaldecambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map268"
   },
   {
     "location": "casaldecambra",
@@ -4443,7 +4795,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/110 Av. de Lisboa_2020_casaldecambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map269"
   },
   {
     "location": "casaldecambra",
@@ -4459,7 +4812,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/110 Av. de Lisboa_2020_casaldecambra_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map270"
   },
   {
     "location": "casaldecambra",
@@ -4475,7 +4829,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/127 Av. de Lisboa_2020_casaldecambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map271"
   },
   {
     "location": "casaldecambra",
@@ -4491,7 +4846,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/134 Av. Timor_2022_casaldecambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map272"
   },
   {
     "location": "casaldecambra",
@@ -4507,7 +4863,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/16 Av. Cabo Verde_casaldecambra_2022.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map273"
   },
   {
     "location": "casaldecambra",
@@ -4523,7 +4880,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/167_Av_Dinamarca_casal_de_cambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map274"
   },
   {
     "location": "casaldecambra",
@@ -4540,7 +4898,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/av.de_lisboa_casal_de_cambra_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map275"
   },
   {
     "location": "casaldecambra",
@@ -4557,7 +4916,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/av.de_lisboa_casal_de_cambra_Raivo_2023.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map276"
   },
   {
     "location": "casaldecambra",
@@ -4574,7 +4934,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/av.de_lisboa_casal_de_cambra_Raivo_2023_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map277"
   },
   {
     "location": "casaldecambra",
@@ -4591,7 +4952,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/av.de_lisboa_casal_de_cambra_Raivo_2023_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map278"
   },
   {
     "location": "casaldecambra",
@@ -4608,7 +4970,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map279"
   },
   {
     "location": "casaldecambra",
@@ -4624,7 +4987,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_1.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map280"
   },
   {
     "location": "casaldecambra",
@@ -4640,7 +5004,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map281"
   },
   {
     "location": "casaldecambra",
@@ -4657,7 +5022,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map282"
   },
   {
     "location": "casaldecambra",
@@ -4673,7 +5039,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_4.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map283"
   },
   {
     "location": "casaldecambra",
@@ -4691,7 +5058,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_5.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map284"
   },
   {
     "location": "casaldecambra",
@@ -4707,7 +5075,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_6.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map285"
   },
   {
     "location": "casaldecambra",
@@ -4723,7 +5092,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_7.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map286"
   },
   {
     "location": "casaldecambra",
@@ -4742,7 +5112,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_8.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map287"
   },
   {
     "location": "casaldecambra",
@@ -4759,7 +5130,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/Av.Santa_Marta_casal_de_cambra_dish.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map288"
   },
   {
     "location": "casaldecambra",
@@ -4774,7 +5146,8 @@
     ],
     "image": "fotosstreetart/CASAL DE CAMBRA/43 Av. Espanha_2021_casaldecambra.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map289"
   },
   {
     "location": "massama",
@@ -4792,7 +5165,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/2 R. Alexandre Herculano, massama.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map290"
   },
   {
     "location": "massama",
@@ -4811,7 +5185,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/39 Av. 25 de Abri, monte abraao.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map291"
   },
   {
     "location": "massama",
@@ -4828,7 +5203,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/56 R. Direita de Massamá.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map292"
   },
   {
     "location": "massama",
@@ -4844,7 +5220,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/62 R. Direita de Massamá.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map293"
   },
   {
     "location": "massama",
@@ -4861,7 +5238,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/62 R. Direita de Massamá_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map294"
   },
   {
     "location": "massama",
@@ -4878,7 +5256,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/68 R. Direita de Massamá.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map295"
   },
   {
     "location": "massama",
@@ -4895,7 +5274,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/83057 Av. Cap. António Gomes Rocha, 2022, massama_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map296"
   },
   {
     "location": "massama",
@@ -4911,7 +5291,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/83057 Av. Cap. António Gomes Rocha, 2022, massama .jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map297"
   },
   {
     "location": "massama",
@@ -4928,7 +5309,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/Av. Dr. Fernando Ricardo Ribeiro Leitão, massama.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map298"
   },
   {
     "location": "massama",
@@ -4947,7 +5329,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/estação dos comboios de Monte Abraão da Linha de Sintra, 2021.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map299"
   },
   {
     "location": "massama",
@@ -4963,7 +5346,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/Largo 25 de Abril, monteabraao.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map300"
   },
   {
     "location": "massama",
@@ -4979,7 +5363,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/massama_algures_sephemart.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map301"
   },
   {
     "location": "massama",
@@ -4995,7 +5380,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/massamá_algures, miudo.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map302"
   },
   {
     "location": "massama",
@@ -5011,7 +5397,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/massamá_algures_1, miudo.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map303"
   },
   {
     "location": "massama",
@@ -5027,7 +5414,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/Mercado de massamá, massamá.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map304"
   },
   {
     "location": "massama",
@@ -5043,7 +5431,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/Mercado Municipal de Massamá.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map305"
   },
   {
     "location": "massama",
@@ -5059,7 +5448,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/parque 2 de abril, massama.jpeg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map306"
   },
   {
     "location": "massama",
@@ -5075,7 +5465,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/parque 2 de abril.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map307"
   },
   {
     "location": "massama",
@@ -5092,7 +5483,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/R. direita de massama, 2022.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map308"
   },
   {
     "location": "massama",
@@ -5111,7 +5503,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/R. direita de massama, 2022_2.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map309"
   },
   {
     "location": "massama",
@@ -5127,7 +5520,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/Rua dos Jasmins, massama_2015.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map310"
   },
   {
     "location": "massama",
@@ -5145,7 +5539,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/4 R. Orquídeas, massama.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map311"
   },
   {
     "location": "massama",
@@ -5163,7 +5558,8 @@
     ],
     "image": "fotosstreetart/MASSAMA E MONTE ABRAÃO/31 Av. 25 de Abril, monteabraao.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map312"
   },
   {
     "location": "queluz",
@@ -5180,7 +5576,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/A37, queluz belas.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map313"
   },
   {
     "location": "queluz",
@@ -5197,7 +5594,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/A37, queluz belas _2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map314"
   },
   {
     "location": "queluz",
@@ -5214,7 +5612,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/A37, queluz belas_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map315"
   },
   {
     "location": "queluz",
@@ -5231,7 +5630,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/A37, queluz belas_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map316"
   },
   {
     "location": "queluz",
@@ -5249,7 +5649,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/A37, queluz belas_6.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map317"
   },
   {
     "location": "queluz",
@@ -5264,7 +5665,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/Av. Dr. Francisco Sá Carneiro, queluz e belas.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map318"
   },
   {
     "location": "queluz",
@@ -5279,7 +5681,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/Palácio Nacional e Jardins de Queluz.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map319"
   },
   {
     "location": "queluz",
@@ -5294,7 +5697,8 @@
     ],
     "image": "fotosstreetart/QUELUZ E BELAS/Av. João de Belas_bvelas.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map320"
   },
   {
     "location": "algueirao",
@@ -5311,7 +5715,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/1-Av.-Laranjeiras.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map321"
   },
   {
     "location": "algueirao",
@@ -5328,7 +5733,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/14-Tv.-Dr.-João-de-Barros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map322"
   },
   {
     "location": "algueirao",
@@ -5345,7 +5751,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/18 R. Mario de sa carneiro, algueriao.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map323"
   },
   {
     "location": "algueirao",
@@ -5362,7 +5769,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/18-R.-Chianca-de-Garcia.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map324"
   },
   {
     "location": "algueirao",
@@ -5380,7 +5788,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/23 R. Dr. João de Barros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map325"
   },
   {
     "location": "algueirao",
@@ -5398,7 +5807,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/236 Estr. Mem Martins.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map326"
   },
   {
     "location": "algueirao",
@@ -5416,7 +5826,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/24 R. Estação.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map327"
   },
   {
     "location": "algueirao",
@@ -5432,7 +5843,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/26 R. Dr. João de Barros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map328"
   },
   {
     "location": "algueirao",
@@ -5448,7 +5860,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/26 R. Dr. João de Barros_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map329"
   },
   {
     "location": "algueirao",
@@ -5465,7 +5878,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/2635 R. António Aleixo.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map330"
   },
   {
     "location": "algueirao",
@@ -5482,7 +5896,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/27 Estrada Marquês de Pombal rio de mouro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map331"
   },
   {
     "location": "algueirao",
@@ -5498,7 +5913,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/279 Estr. Mem Martins.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map332"
   },
   {
     "location": "algueirao",
@@ -5514,7 +5930,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/28 Praceta Lima de Freitas_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map333"
   },
   {
     "location": "algueirao",
@@ -5531,7 +5948,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/3 Impasse Virgínia Rau.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map334"
   },
   {
     "location": "algueirao",
@@ -5550,7 +5968,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/3 Largo Dr. Severino Santana Marques.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map335"
   },
   {
     "location": "algueirao",
@@ -5565,7 +5984,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/3 Rua dos Morés.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map336"
   },
   {
     "location": "algueirao",
@@ -5582,7 +6002,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/33 R. Sacadura Cabral.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map337"
   },
   {
     "location": "algueirao",
@@ -5599,7 +6020,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/39 R. Cima de Fanares.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map338"
   },
   {
     "location": "algueirao",
@@ -5616,7 +6038,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/39-R.-Dr.-João-de-Barros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map339"
   },
   {
     "location": "algueirao",
@@ -5632,7 +6055,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/51 R. Dr. João de Barros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map340"
   },
   {
     "location": "algueirao",
@@ -5648,7 +6072,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/56-R.-Dr.-João-de-Barros.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map341"
   },
   {
     "location": "algueirao",
@@ -5665,7 +6090,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/9 R. Francisco Salgado Zenha.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map342"
   },
   {
     "location": "algueirao",
@@ -5681,7 +6107,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Av. Capitães de Abril_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map343"
   },
   {
     "location": "algueirao",
@@ -5697,7 +6124,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Av. Capitães de Abril_algueirao.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map344"
   },
   {
     "location": "algueirao",
@@ -5713,7 +6141,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Av.-Capitães-de-Abril_3.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map345"
   },
   {
     "location": "algueirao",
@@ -5730,7 +6159,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Av. Miguel Torga.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map346"
   },
   {
     "location": "algueirao",
@@ -5746,7 +6176,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Av.-Emb.-Aristides-Sousa-Mendes.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map347"
   },
   {
     "location": "algueirao",
@@ -5762,7 +6193,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/R. António Feijó.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map348"
   },
   {
     "location": "algueirao",
@@ -5780,7 +6212,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/R. Campos Monteiro.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map349"
   },
   {
     "location": "algueirao",
@@ -5797,7 +6230,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/R. Campos Monteiro_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map350"
   },
   {
     "location": "algueirao",
@@ -5814,7 +6248,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/R. Nuno Gonçalves.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map351"
   },
   {
     "location": "algueirao",
@@ -5831,7 +6266,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/R.-Mario-de-sa-carneiro_-algueriao.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map352"
   },
   {
     "location": "algueirao",
@@ -5847,7 +6283,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Rua Escuteiros de Portugal.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map353"
   },
   {
     "location": "algueirao",
@@ -5863,7 +6300,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Rua Escuteiros de Portugal_2.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map354"
   },
   {
     "location": "algueirao",
@@ -5880,7 +6318,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Rua Escuteiros de Portugal_5.jpg",
     "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map355"
   },
   {
     "location": "algueirao",
@@ -5898,7 +6337,8 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Rua-Escuteiros-de-Portugal_3.jpg",
     "hasWarning": true,
-    "hasComments": true
+    "hasComments": true,
+    "name": "map356"
   },
   {
     "location": "algueirao",
@@ -5916,175 +6356,7 @@
     ],
     "image": "fotosstreetart/ALGUEIRAO-MEM MARTINS/newimages/Rua-Escuteiros-de-Portugal_4.jpg",
     "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Desconhecido",
-    "place": "Área de Lazer Abel dos Santos",
-    "date": "2021",
-    "category": "Street Art",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "lettering",
-      "coletiva",
-      "piece"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av._Cidade_de_Lisboa_AGUALVA_CACEM_2022.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Desconhecido",
-    "place": "Av. do Brasil",
-    "date": "2021",
-    "category": "Arte Pública",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "coletiva",
-      "lettering",
-      "piece"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Ezak e Dali",
-    "place": "Av. do Brasil",
-    "date": "2021",
-    "category": "Arte Pública",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "coletiva",
-      "lettering",
-      "piece"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_2.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Ezak e Dali",
-    "place": "Av. do Brasil",
-    "date": "2021",
-    "category": "Arte Pública",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "lettering",
-      "individual"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_3.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Ezak e Dali",
-    "place": "Av. do Brasil",
-    "date": "2021",
-    "category": "Arte Pública",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "coletiva",
-      "lettering",
-      "piece"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_4.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Ezak e Dali",
-    "place": "Av. do Brasil 7-5",
-    "date": "2020",
-    "category": "Arte Pública",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "coletiva",
-      "lettering",
-      "piece"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av._do_Brasil_AGUALVA_CACEM_2022_5.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "?",
-    "place": "Av. Bombeiros Voluntários",
-    "date": "2023",
-    "category": "Street Art",
-    "tags": [
-      "graffiti",
-      "streetart",
-      "lettering",
-      "individual",
-      "throw-up"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av.Bombeiros_Voluntários_agualva_cacem.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Desconhecidos",
-    "place": "Av. dos Missionários",
-    "date": "2020",
-    "category": "Street Art",
-    "tags": [
-      "graffiti",
-      "streetart",
-      "lettering",
-      "individual",
-      "wildstyle"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av.dos_Missionários_agualva_cacem_2022.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Desconhecidos",
-    "place": "Av. dos Missionários",
-    "date": "2020",
-    "category": "Street Art",
-    "tags": [
-      "graffiti",
-      "streetart",
-      "lettering",
-      "individual",
-      "wildstyle"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Av.dos_Missionários_agualva_cacem_2022_1.jpg",
-    "hasWarning": false,
-    "hasComments": false
-  },
-  {
-    "location": "agualva-cacem",
-    "author": "Desconhecidos",
-    "place": "Estrada de São Marcos 61-59",
-    "date": "2020",
-    "category": "Arte Pública",
-    "tags": [
-      "graffiti",
-      "arte-publica",
-      "coletiva",
-      "lettering",
-      "piece"
-    ],
-    "image": "fotosstreetart/ALGUALVA-CACEM/Estrada_de_São_Marcos_61-59_AGUALVA_CACEM.jpg",
-    "hasWarning": false,
-    "hasComments": false
+    "hasComments": false,
+    "name": "map357"
   }
 ]

@@ -105,7 +105,7 @@ function showImagePreviews() {
       icon: L.divIcon({
         html,
         className: "preview-icon",
-        iconSize: [80, 80],
+        iconSize: [60, 60],
         iconAnchor: [40, 40],
       }),
       interactive: !!link, // allow clicks if there’s a link
