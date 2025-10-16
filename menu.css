@@ -1849,7 +1849,7 @@ margin: 0;
     left: 0px;
     height: 0px;
     width: 100%;
-    z-index: 9;
+    z-index: 999;
     overflow: hidden;
     /* padding-top: 100px; */
     transition: 0.5s 
