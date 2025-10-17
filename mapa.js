@@ -37,14 +37,39 @@ var pointdata = L.geoJSON(point , {
       return L.marker(latlng, { icon: icons});
   }}).addTo(map)
 
-// mapa2
+var point1 = {    
+    "type":"FeatureCollection",
+    "features":[{
+            "type":"Feature",
+            "properties":{
+                "name": "Graffiti",
+         
+                "iconurl" :"images/throwup.png",
+            },
+            "geometry":{             
+                "type":"Point",
+                "coordinates":[-9.30320,38.77459 ]
+            }
+        }
+    ]}
+  let map1 = L.map('map1').setView([38.77459,-9.30320],15)
+  
+  // add the OpenStreetMap tiles
+  var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy;',
+      subdomains: 'abcd',
+      maxZoom: 20
+  });
+  CartoDB_DarkMatter.addTo(map1);
+
+  // mapa2
 var point2 = {    
     "type":"FeatureCollection",
     "features":[{
             "type":"Feature",
             "properties":{
                 "name": "Graffiti",
-                "link": "http://127.0.0.1:5501/index.html",
+         
                 "iconurl" :"images/throwup.png",
             },
             "geometry":{             
@@ -2791,7 +2816,31 @@ var point10 = {
                               
                                                       // mapa78
                         
-                              
+                                 var point78 = {    
+                                  "type":"FeatureCollection",
+                                  "features":[{
+                                          "type":"Feature",
+                                          "properties":{
+                                              "name": "Graffiti",
+                                         
+                                              "iconurl" :"images/throwup.png",
+                                          },
+                                          "geometry":{             
+                                              "type":"Point",
+                                              "coordinates":[-9.32939,38.86426]
+                                          }
+                                      }
+                                  ]}
+                                let map78 = L.map('map78').setView([38.86426,-9.32939],15)
+                                
+                                // add the OpenStreetMap tiles
+                                var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy;',
+                                    subdomains: 'abcd',
+                                    maxZoom: 20
+                                });
+                                CartoDB_DarkMatter.addTo(map78);
+                                
                                                           // mapa79
                               var point79 = {    
                                   "type":"FeatureCollection",
@@ -3262,7 +3311,41 @@ var point10 = {
                                             return L.marker(latlng, { icon: icons});
                                         },   }).addTo(map91)
                                       
-                               
+                                   // mapa92
+                                      var point92 = {    
+                                          "type":"FeatureCollection",
+                                          "features":[{
+                                                  "type":"Feature",
+                                                  "properties":{
+                                                      "name": "Graffiti",
+                                                      "link": "http://127.0.0.1:5501/index.html",
+                                                      "iconurl" :"images/lettering.png",
+                                                  },
+                                                  "geometry":{             
+                                                      "type":"Point",
+                                                      "coordinates":[-9.44856,38.81232]
+                                                  }
+                                              }
+                                          ]}
+                                        let map92 = L.map('map92').setView([38.81232,-9.44856],15)
+                                        
+                                        // add the OpenStreetMap tiles
+                                        var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                                            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy;',
+                                            subdomains: 'abcd',
+                                            maxZoom: 20
+                                        });
+                                        CartoDB_DarkMatter.addTo(map92);
+                                        
+                                        
+                                        var pointdata92 = L.geoJSON(point92 , {
+                                          pointToLayer: function (feature, latlng) {
+                                              const icons = new L.Icon({
+                                                  iconUrl: "images/lettering.png",
+                                                  iconSize: [6, 6],       
+                                              });
+                                              return L.marker(latlng, { icon: icons});
+                                          },   }).addTo(map92)
                                       
                                           // mapa93
                                       var point93 = {    
@@ -4820,6 +4903,43 @@ var point10 = {
                                                                 });
                                                                 return L.marker(latlng, { icon: icons});
                                                             },  }).addTo(map135)
+
+
+                                                                         // mapa136
+                                                        var point136 = {    
+                                                            "type":"FeatureCollection",
+                                                            "features":[{
+                                                                    "type":"Feature",
+                                                                    "properties":{
+                                                                        "name": "Graffiti",
+                                                                        "link": "http://127.0.0.1:5501/index.html",
+                                                                        "iconurl" :"images/lettering.png",
+                                                                    },
+                                                                    "geometry":{             
+                                                                        "type":"Point",
+                                                                        "coordinates":[ -9.37754,38.80170]
+                                                                    }
+                                                                }
+                                                            ]}
+                                                          let map136 = L.map('map136').setView([38.80170, -9.37754],15)
+                                                          
+                                                          // add the OpenStreetMap tiles
+                                                          var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                                                              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy;',
+                                                              subdomains: 'abcd',
+                                                              maxZoom: 20
+                                                          });
+                                                          CartoDB_DarkMatter.addTo(map136);
+                                                          
+                                                          
+                                                          var pointdata136 = L.geoJSON(point136 , {
+                                                            pointToLayer: function (feature, latlng) {
+                                                                const icons = new L.Icon({
+                                                                    iconUrl: "images/lettering.png",
+                                                                    iconSize: [6, 6],      
+                                                                });
+                                                                return L.marker(latlng, { icon: icons});
+                                                            },  }).addTo(map136)
                                             
                                                                             // mapa137
                                                         var point137 = {    
@@ -8223,7 +8343,46 @@ var point10 = {
                                                                                                         
                                                                                                     }).addTo(map224)
                                                                                                 
-                                                                                              
+                                                                                                         // mapa225
+                                                                                                var point225 = {    
+                                                                                                    "type":"FeatureCollection",
+                                                                                                    "features":[{
+                                                                                                            "type":"Feature",
+                                                                                                            "properties":{
+                                                                                                                "name": "Graffiti",
+                                                                                                                "link": "http://127.0.0.1:5501/index.html",
+                                                                                                                "iconurl" :"images/mural.png",
+                                                                                                            },
+                                                                                                            "geometry":{             
+                                                                                                                "type":"Point",
+                                                                                                                "coordinates":[-9.31713,38.78963]
+                                                                                                            }
+                                                                                                        }
+                                                                                                    ]}
+                                                                                                  let map225 = L.map('map225').setView([38.78963,-9.31713],15)
+                                                                                                  
+                                                                                                  // add the OpenStreetMap tiles
+                                                                                                  var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                                                                                                      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy;',
+                                                                                                      subdomains: 'abcd',
+                                                                                                      maxZoom: 20
+                                                                                                  });
+                                                                                                  CartoDB_DarkMatter.addTo(map225);
+                                                                                                  
+                                                                                                  
+                                                                                                  var pointdata225 = L.geoJSON(point225 , {
+                                                                                                    pointToLayer: function (feature, latlng) {
+                                                                                                        const icons = new L.Icon({
+                                                                                                            iconUrl: "images/mural.png",
+                                                                                                            iconSize: [6, 6],      
+                                                                                                        });
+                                                                                                        return L.marker(latlng, { icon: icons});
+                                                                                                    },  
+                                                                                                         
+                                                                                                             
+                                                                                                       
+                                                                                                        
+                                                                                                    }).addTo(map225)
                                                                                                 
                                                                                                                 // mapa226
                                                                                                 var point226 = {    
@@ -8966,7 +9125,47 @@ var point10 = {
                                                                                                                 
                                                                                                             }).addTo(map243)
                                                                                                         
-                                                                                                    
+                                                                                                         // mapa244
+                                                                                                        var point244 = {    
+                                                                                                            "type":"FeatureCollection",
+                                                                                                            "features":[{
+                                                                                                                    "type":"Feature",
+                                                                                                                    "properties":{
+                                                                                                                        "name": "Graffiti",
+                                                                                                                        "link": "http://127.0.0.1:5501/index.html",
+                                                                                                                        "iconurl" :"images/mural.png",
+                                                                                                                    },
+                                                                                                                    "geometry":{             
+                                                                                                                        "type":"Point",
+                                                                                                                        "coordinates":[-9.31788,38.78476]
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]}
+                                                                                                          let map244 = L.map('map244').setView([38.78476,-9.31788],15)
+                                                                                                          
+                                                                                                          // add the OpenStreetMap tiles
+                                                                                                          var CartoDB_DarkMatter = L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+                                                                                                              attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy;',
+                                                                                                              subdomains: 'abcd',
+                                                                                                              maxZoom: 20
+                                                                                                          });
+                                                                                                          CartoDB_DarkMatter.addTo(map244);
+                                                                                                          
+                                                                                                          
+                                                                                                          var pointdata244 = L.geoJSON(point244 , {
+                                                                                                            pointToLayer: function (feature, latlng) {
+                                                                                                                const icons = new L.Icon({
+                                                                                                                    iconUrl: "images/mural.png",
+                                                                                                                    iconSize: [6, 6],       
+                                                                                                                });
+                                                                                                                return L.marker(latlng, { icon: icons});
+                                                                                                            },  
+                                                                                                                 
+                                                                                                                     
+                                                                                                               
+                                                                                                                
+                                                                                                            }).addTo(map244)
+                                                                                                        
                                                                                                         
                                                                                                                     // mapa245
                                                                                                         var point245 = {    
@@ -13494,13 +13693,12 @@ var point10 = {
                                                                                                                                                                 });
                                                                                                                                                                 return L.marker(latlng, { icon: icons});
                                                                                                                                                             }, 
-                                                                                                                                                            
-                                                                                                                                                             
-                                                                                                                                                                 
-                                                                                                                                                                     
-                                                                                                                                                               
+                                                                                                           
                                                                                                                                                                 
                                                                                                                                                             }).addTo(map354)
+
+                                                                                                                                                            // 🔧 Normalize missing point numbers
+ 
                                                                                                                                                        
                                                                                                                                                         
                                                                                                                                                        

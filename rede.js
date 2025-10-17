@@ -4,25 +4,7 @@ const next = document.getElementById("next");
 
 const scrollAmount = 100; // Adjust if needed
 
-// Center clicked button in carousel, but DON'T change classes
-document.querySelectorAll(".freguesiatag").forEach((btn) => {
-  btn.addEventListener("click", function () {
-    setTimeout(() => {
-      const active = carousel.querySelector(".freguesiatag.active") || this;
-      const li = active.closest("li");
-      if (!li) return;
-
-      const liCenter = li.offsetLeft + li.offsetWidth / 2;
-      const scrollTo = liCenter - carousel.clientWidth / 2;
-
-      carousel.scrollTo({
-        left: scrollTo,
-        behavior: "smooth",
-      });
-    }, 0);
-  });
-});
-
+ 
 //   On page load, center the .active freguesia
 window.addEventListener("DOMContentLoaded", () => {
   const active = carousel.querySelector(".freguesiatag.active");
