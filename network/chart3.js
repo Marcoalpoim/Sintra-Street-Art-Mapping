@@ -149,9 +149,9 @@ Highcharts.chart("container3", {
   enabled: true,
   useHTML: true,
   hideDelay: 0,
-  backgroundColor: 'rgba(0,0,0,0.85)',
-  borderColor: '#000',
-  borderRadius: 6,
+  backgroundColor: 'rgba(201, 26, 26, 0)',
+  borderColor: '#ee0000',
+  borderRadius: 1,
   shadow: false,
   outside: true,
   style: {

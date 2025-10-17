@@ -152,16 +152,16 @@ Highcharts.chart("container0", {
       }
     }
   },
-  title: { text: '' },
+ 
  tooltip: {
   enabled: true,
   useHTML: true,
   hideDelay: 0,
-  backgroundColor: 'rgba(0,0,0,0.85)',
-  borderColor: '#000',
-  borderRadius: 6,
+  backgroundColor: 'rgba(201, 26, 26, 0)',
+  borderColor: '#ee0000',
+  borderRadius: 1,
   shadow: false,
-  outside: true,
+  outside: false,
   style: {
     color: '#fff',
     fontFamily: 'ocr-aregular',
@@ -196,37 +196,60 @@ Highcharts.chart("container0", {
       </div>`;
   }
 },
-  plotOptions: {
-    series: {
-      cursor: 'pointer',
-      point: {
-        events: {
-          click: function () {
-            this.series.chart.tooltip.refresh(this);
-          },
-          dblclick: function () {
-            if (this.options.url) window.location.href = this.options.url;
-          }
-        }
+plotOptions: {
+  series: {
+    cursor: 'pointer',
+    states: {
+      hover: {
+        halo: { size: 0 }, // removes glowing circle
+        brightness: 0,     // no brightening effect
       }
     },
-    networkgraph: {
-      keys: ['from', 'to'],
-      layoutAlgorithm: {
-        enableSimulation: true,
-        integration: 'verlet',
-        initialPositions: 'random',
-        gravitationalConstant: 25
-      },
-      link: { width: 2, color: '#ffffff' },
-      dataLabels: {
-        enabled: true,
-        linkFormat: '',
-        allowOverlap: true,
-        style: { fontSize: "14px", textOutline: "none", color: "#fff", fontFamily: "ocr-aregular" }
+    point: {
+      events: {
+        click: function () {
+          this.series.chart.tooltip.refresh(this);
+        },
+        dblclick: function () {
+          if (this.options.url) window.location.href = this.options.url;
+        }
       }
     }
   },
+  networkgraph: {
+    keys: ['from', 'to'],
+    layoutAlgorithm: {
+      enableSimulation: true,
+      integration: 'verlet',
+      initialPositions: 'random',
+      gravitationalConstant: 25
+    },
+    link: { width: 2, color: '#ffffff' },
+   dataLabels: {
+      enabled: true,
+      linkFormat: '',
+      allowOverlap: true,
+      style: {
+        fontSize: "14px",
+        textOutline: "none",
+        color: "#fff",
+        fontFamily: "ocr-aregular"
+      }
+    },
+    marker: {
+      states: {
+        hover: {
+           radiusPlus: 0,
+          lineWidthPlus: 0,
+          fillColor: null,
+          lineColor: null,
+ 
+        }
+      }
+    }
+  }
+},
+
   credits: { enabled: false },
   series: [{
     id: "lang-tree",
